@@ -5,7 +5,7 @@ import { StyleSheet, TouchableOpacity, View } from "react-native";
 import { ThemedText } from "@/components/themed-text";
 import { IconSymbol } from "@/components/ui/icon-symbol";
 import { getListCardWidth, LIST_GAP } from "@/constants/list-layout";
-import { BorderRadius, FontFamily, Shadows, Spacing, Typography } from "@/constants/theme";
+import { BorderRadius, FontFamily, Spacing, Typography } from "@/constants/theme";
 import { useTheme } from "@/hooks/use-theme";
 import { getSeriesById } from "@/stores/useCatalogStore";
 import type { Color, Palette } from "@/types";
@@ -127,7 +127,6 @@ const styles = StyleSheet.create({
     borderRadius: BorderRadius.xl,
     borderWidth: 1,
     marginBottom: LIST_GAP,
-    ...Shadows.sm,
   },
   swatchRow: {
     flexDirection: "row",

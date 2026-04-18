@@ -22,7 +22,6 @@ import {
 } from "@/constants/theme";
 import {
   SHEET_BACKDROP_OPACITY,
-  TypeStyles,
   sheetModalBackground,
 } from "@/constants/ui-primitives";
 import { useTheme } from "@/hooks/use-theme";
@@ -137,13 +136,7 @@ export function ColorDetailContent({
         {color.brandName} · {color.seriesName}
       </ThemedText>
 
-      <ThemedText
-        style={[
-          TypeStyles.sectionHeading,
-          styles.sectionTitle,
-          { color: theme.textSecondary },
-        ]}
-      >
+      <ThemedText type="overline" style={styles.sectionTitle}>
         {t("colors.colorDetail.similarInSeries")}
       </ThemedText>
       <ScrollView
@@ -166,13 +159,7 @@ export function ColorDetailContent({
         ))}
       </ScrollView>
 
-      <ThemedText
-        style={[
-          TypeStyles.sectionHeading,
-          styles.sectionTitle,
-          { color: theme.textSecondary },
-        ]}
-      >
+      <ThemedText type="overline" style={styles.sectionTitle}>
         {t("colors.colorDetail.similarInOtherSeries")}
       </ThemedText>
       <ScrollView
@@ -239,6 +226,7 @@ function SimilarColorCard({
         ]}
       />
       <ThemedText
+        type="caption"
         style={[styles.similarLabel, { color: theme.text }]}
         numberOfLines={1}
         ellipsizeMode="tail"
@@ -247,16 +235,15 @@ function SimilarColorCard({
       </ThemedText>
       {subtitle != null && (
         <ThemedText
-          style={[styles.similarSubtitle, { color: theme.textSecondary }]}
+          type="caption"
+          style={styles.similarSubtitle}
           numberOfLines={1}
           ellipsizeMode="tail"
         >
           {subtitle}
         </ThemedText>
       )}
-      <ThemedText
-        style={[styles.similarPct, { color: theme.textSecondary }]}
-      >
+      <ThemedText type="similarity" style={styles.similarPct}>
         {similarity}%
       </ThemedText>
     </TouchableOpacity>

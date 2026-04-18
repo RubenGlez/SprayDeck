@@ -1,6 +1,6 @@
 import { Tabs } from "expo-router";
 import React from "react";
-import { Platform, StyleSheet } from "react-native";
+import { StyleSheet } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { useTranslation } from "react-i18next";
 
@@ -33,15 +33,6 @@ export default function TabLayout() {
             paddingBottom: bottomPad,
             paddingTop: Spacing.sm,
             borderTopColor: theme.border,
-            ...Platform.select({
-              ios: {
-                shadowColor: "#000",
-                shadowOffset: { width: 0, height: -2 },
-                shadowOpacity: 0.12,
-                shadowRadius: 8,
-              },
-              android: { elevation: 12 },
-            }),
           },
         ],
         tabBarItemStyle: styles.tabBarItem,

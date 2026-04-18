@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { useTranslation } from "react-i18next";
-import { Pressable, StyleSheet, Switch, TextInput, View } from "react-native";
+import { Pressable, StyleSheet, Switch, View } from "react-native";
 
 import {
   LanguageSelectBottomSheet,
@@ -9,9 +9,9 @@ import {
 import { Screen } from "@/components/screen";
 import { ScreenHeader } from "@/components/screen-header";
 import { ThemedText } from "@/components/themed-text";
+import { ThemedTextInput } from "@/components/themed-text-input";
 import { IconSymbol } from "@/components/ui/icon-symbol";
 import { FontFamily, Spacing, Typography } from "@/constants/theme";
-import { TypeStyles, themedTextInput } from "@/constants/ui-primitives";
 import { useTheme } from "@/hooks/use-theme";
 import { useLanguageStore } from "@/stores/useLanguageStore";
 import { useProfileStore } from "@/stores/useProfileStore";
@@ -41,19 +41,13 @@ export default function ProfileScreen() {
         <ScreenHeader title={t("tabs.profile")} />
 
         <View style={[styles.section, { borderTopWidth: 0 }]}>
-          <ThemedText
-            style={[
-              TypeStyles.overline,
-              styles.sectionLabel,
-              { color: theme.textSecondary },
-            ]}
-          >
+          <ThemedText type="overline" style={styles.sectionLabel}>
             {t("profile.akaSection")}
           </ThemedText>
-          <TextInput
-            style={[themedTextInput(theme, { minHeight: 48 }), styles.akaInput]}
+          <ThemedTextInput
+            style={styles.akaInput}
+            minInputHeight={48}
             placeholder={t("profile.akaPlaceholder")}
-            placeholderTextColor={theme.textSecondary}
             value={aka}
             onChangeText={setAka}
             autoCapitalize="words"
@@ -65,13 +59,7 @@ export default function ProfileScreen() {
         </View>
 
         <View style={[styles.section, { borderTopColor: theme.border }]}>
-          <ThemedText
-            style={[
-              TypeStyles.overline,
-              styles.sectionLabel,
-              { color: theme.textSecondary },
-            ]}
-          >
+          <ThemedText type="overline" style={styles.sectionLabel}>
             {t("profile.language")}
           </ThemedText>
           <Pressable
@@ -99,13 +87,7 @@ export default function ProfileScreen() {
         />
 
         <View style={[styles.section, { borderTopColor: theme.border }]}>
-          <ThemedText
-            style={[
-              TypeStyles.overline,
-              styles.sectionLabel,
-              { color: theme.textSecondary },
-            ]}
-          >
+          <ThemedText type="overline" style={styles.sectionLabel}>
             {t("profile.appearance")}
           </ThemedText>
           <View style={[styles.row, { borderBottomColor: theme.border }]}>

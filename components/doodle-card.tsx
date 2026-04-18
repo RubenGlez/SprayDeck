@@ -7,7 +7,6 @@ import { getListCardWidth, LIST_GAP } from "@/constants/list-layout";
 import {
   BorderRadius,
   FontFamily,
-  Shadows,
   Spacing,
   Typography,
 } from "@/constants/theme";
@@ -83,7 +82,6 @@ const styles = StyleSheet.create({
     borderRadius: BorderRadius.xl,
     borderWidth: 1,
     marginBottom: LIST_GAP,
-    ...Shadows.sm,
   },
   thumbnailWrap: {
     width: CARD_WIDTH - CARD_PADDING * 2,

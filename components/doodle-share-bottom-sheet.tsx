@@ -14,7 +14,6 @@ import { IconSymbol } from "@/components/ui/icon-symbol";
 import { Spacing } from "@/constants/theme";
 import {
   SHEET_BACKDROP_OPACITY,
-  TypeStyles,
   sheetModalBackground,
 } from "@/constants/ui-primitives";
 import { useTheme } from "@/hooks/use-theme";
@@ -104,9 +103,7 @@ export const DoodleShareBottomSheet = forwardRef<
       enableDynamicSizing
     >
       <BottomSheetScrollView contentContainerStyle={styles.content}>
-        <ThemedText
-          style={[TypeStyles.overline, styles.title, { color: theme.textSecondary }]}
-        >
+        <ThemedText type="overline" style={styles.title}>
           {t("doodles.shareTitle")}
         </ThemedText>
         {options.map((opt) => (
@@ -121,9 +118,7 @@ export const DoodleShareBottomSheet = forwardRef<
               size={24}
               color={theme.tint}
             />
-            <ThemedText
-              style={[TypeStyles.listRowTitle, styles.optionLabel, { color: theme.text }]}
-            >
+            <ThemedText type="rowTitle" style={styles.optionLabel}>
               {opt.label}
             </ThemedText>
             <IconSymbol

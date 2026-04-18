@@ -12,7 +12,6 @@ import { IconSymbol } from "@/components/ui/icon-symbol";
 import { FontFamily, Spacing, Typography } from "@/constants/theme";
 import {
   SHEET_BACKDROP_OPACITY,
-  TypeStyles,
   sheetModalBackground,
 } from "@/constants/ui-primitives";
 import { useTheme } from "@/hooks/use-theme";
@@ -63,13 +62,7 @@ export const LanguageSelectBottomSheet = forwardRef<
       enableDynamicSizing
     >
       <BottomSheetScrollView contentContainerStyle={styles.content}>
-        <ThemedText
-          style={[
-            TypeStyles.overline,
-            styles.sectionLabel,
-            { color: theme.textSecondary },
-          ]}
-        >
+        <ThemedText type="overline" style={styles.sectionLabel}>
           {t("profile.language")}
         </ThemedText>
         <View style={styles.list}>

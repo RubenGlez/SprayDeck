@@ -29,10 +29,7 @@ import { ThemedText } from "@/components/themed-text";
 import { ThemedView } from "@/components/themed-view";
 import { IconSymbol } from "@/components/ui/icon-symbol";
 import { BorderRadius, Spacing, Typography } from "@/constants/theme";
-import {
-  TypeStyles,
-  monoHexFontFamily,
-} from "@/constants/ui-primitives";
+import { monoHexFontFamily } from "@/constants/ui-primitives";
 import { useTheme } from "@/hooks/use-theme";
 import { getColorDisplayName } from "@/lib/color";
 import { extractHexPalette, findClosestColors } from "@/lib/colorMatch";
@@ -284,13 +281,7 @@ export default function ImportFromImageScreen() {
       >
         {!hasImage && !imageUriParam && (
           <View style={styles.pickSection}>
-            <ThemedText
-              style={[
-                TypeStyles.listRowMeta,
-                styles.pickSectionSubtitle,
-                { color: theme.textSecondary },
-              ]}
-            >
+            <ThemedText type="caption" style={styles.pickSectionSubtitle}>
               {t("palettes.choosePhotoSubtitle")}
             </ThemedText>
             {loading ? (
@@ -387,22 +378,10 @@ export default function ImportFromImageScreen() {
 
             {showEquivalents && (
               <>
-                <ThemedText
-                  style={[
-                    TypeStyles.sectionHeading,
-                    styles.sectionLabel,
-                    { color: theme.textSecondary },
-                  ]}
-                >
+                <ThemedText type="overline" style={styles.sectionLabel}>
                   {t("palettes.equivalents")}
                 </ThemedText>
-                <ThemedText
-                  style={[
-                    TypeStyles.listRowMeta,
-                    styles.sectionSubtitle,
-                    { color: theme.textSecondary },
-                  ]}
-                >
+                <ThemedText type="caption" style={styles.sectionSubtitle}>
                   {t("palettes.selectMatchPerColor")}
                 </ThemedText>
                 {similaritiesPerHex.map(({ hex, bySeries }) => {
@@ -432,12 +411,10 @@ export default function ImportFromImageScreen() {
                           ]}
                         />
                         <ThemedText
+                          type="caption"
                           style={[
                             styles.extractedHexLabel,
-                            {
-                              color: theme.textSecondary,
-                              fontFamily: monoHexFontFamily,
-                            },
+                            { fontFamily: monoHexFontFamily },
                           ]}
                         >
                           {hex}
@@ -456,11 +433,8 @@ export default function ImportFromImageScreen() {
                             ]}
                           >
                             <ThemedText
-                              style={[
-                                TypeStyles.sectionHeading,
-                                styles.seriesMatchesLabel,
-                                { color: theme.textSecondary },
-                              ]}
+                              type="overline"
+                              style={styles.seriesMatchesLabel}
                               numberOfLines={1}
                             >
                               {seriesName}
@@ -516,27 +490,14 @@ export default function ImportFromImageScreen() {
                                     ]}
                                   />
                                   <View style={styles.matchInfo}>
-                                    <ThemedText
-                                      style={TypeStyles.matchTitle}
-                                      numberOfLines={1}
-                                    >
+                                    <ThemedText type="rowTitle" numberOfLines={1}>
                                       {name}
                                     </ThemedText>
-                                    <ThemedText
-                                      style={[
-                                        TypeStyles.matchMeta,
-                                        { color: theme.textSecondary },
-                                      ]}
-                                    >
+                                    <ThemedText type="caption">
                                       {match.catalogColor.code}
                                     </ThemedText>
                                   </View>
-                                  <ThemedText
-                                    style={[
-                                      TypeStyles.similarityBadge,
-                                      { color: theme.tint },
-                                    ]}
-                                  >
+                                  <ThemedText type="similarity">
                                     {match.similarity}%
                                   </ThemedText>
                                   {isSelected ? (

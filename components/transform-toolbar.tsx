@@ -3,7 +3,7 @@ import React from "react";
 import { StyleSheet, TouchableOpacity, View } from "react-native";
 
 import { IconSymbol } from "@/components/ui/icon-symbol";
-import { BorderRadius, Shadows, Spacing } from "@/constants/theme";
+import { BorderRadius, Spacing } from "@/constants/theme";
 import { useTheme } from "@/hooks/use-theme";
 
 const TOOLBAR_ICON_SIZE = 40;
@@ -61,7 +61,6 @@ export function TransformToolbar({
             width: TOOLBAR_PILL_WIDTH,
             backgroundColor: theme.card,
             borderColor: theme.border,
-            shadowColor: theme.text,
           },
         ]}
       >
@@ -193,7 +192,6 @@ const styles = StyleSheet.create({
     borderRadius: BorderRadius.pill,
     borderWidth: 1,
     gap: TOOLBAR_GAP,
-    ...Shadows.md,
   },
   toolbarBtn: {
     width: TOOLBAR_ICON_SIZE,

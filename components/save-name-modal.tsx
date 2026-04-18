@@ -4,15 +4,14 @@ import {
   Modal,
   Platform,
   StyleSheet,
-  TextInput,
   TouchableOpacity,
   View,
 } from "react-native";
 
 import { Button } from "@/components/button";
 import { ThemedText } from "@/components/themed-text";
+import { ThemedTextInput } from "@/components/themed-text-input";
 import { BorderRadius, FontFamily, Spacing, Typography } from "@/constants/theme";
-import { themedTextInput } from "@/constants/ui-primitives";
 import { useTheme } from "@/hooks/use-theme";
 
 export type SaveNameModalProps = {
@@ -68,10 +67,9 @@ export function SaveNameModal({
           ]}
         >
           <ThemedText style={styles.title}>{title}</ThemedText>
-          <TextInput
-            style={[themedTextInput(theme), styles.input]}
+          <ThemedTextInput
+            style={styles.input}
             placeholder={placeholder}
-            placeholderTextColor={theme.textSecondary}
             value={value}
             onChangeText={onChangeText}
             autoFocus

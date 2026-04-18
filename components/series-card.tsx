@@ -6,7 +6,6 @@ import { ThemedText } from "@/components/themed-text";
 import {
   BorderRadius,
   FontFamily,
-  Shadows,
   Spacing,
   Typography,
 } from "@/constants/theme";
@@ -73,7 +72,6 @@ const styles = StyleSheet.create({
     borderRadius: BorderRadius.xl,
     borderWidth: 1,
     marginBottom: Spacing.sm,
-    ...Shadows.sm,
   },
   favoriteBtn: {
     position: "absolute",

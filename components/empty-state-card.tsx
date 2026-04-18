@@ -9,7 +9,6 @@ import {
 import {
   BorderRadius,
   FontFamily,
-  Shadows,
   Spacing,
   Typography,
 } from "@/constants/theme";
@@ -66,7 +65,6 @@ const styles = StyleSheet.create({
     borderWidth: 1.5,
     borderStyle: "dashed",
     minHeight: 140,
-    ...Shadows.sm,
   },
   iconWrap: {
     width: 56,

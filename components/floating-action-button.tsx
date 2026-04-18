@@ -3,7 +3,6 @@ import { StyleSheet, type StyleProp, type ViewStyle } from "react-native";
 
 import { Button, type ButtonProps } from "@/components/button";
 import { LIST_FAB_SIZE } from "@/constants/list-layout";
-import { Shadows } from "@/constants/theme";
 
 export type FloatingActionButtonProps = Omit<ButtonProps, "size" | "fullWidth"> & {
   style?: StyleProp<ViewStyle>;
@@ -29,7 +28,6 @@ const styles = StyleSheet.create({
     borderRadius: LIST_FAB_SIZE / 2,
     alignItems: "center",
     justifyContent: "center",
-    ...Shadows.lg,
   },
 });
 

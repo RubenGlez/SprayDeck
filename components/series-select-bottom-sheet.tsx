@@ -12,7 +12,6 @@ import { ThemedText } from "@/components/themed-text";
 import { IconSymbol } from "@/components/ui/icon-symbol";
 import {
   SHEET_BACKDROP_OPACITY,
-  TypeStyles,
   sheetModalBackground,
 } from "@/constants/ui-primitives";
 import { Spacing } from "@/constants/theme";
@@ -75,22 +74,10 @@ export const SeriesSelectBottomSheet = forwardRef<
       {...(snapPoints != null ? { snapPoints } : {})}
     >
       <BottomSheetScrollView contentContainerStyle={styles.content}>
-        <ThemedText
-          style={[
-            TypeStyles.overline,
-            styles.sectionLabel,
-            { color: theme.textSecondary },
-          ]}
-        >
+        <ThemedText type="overline" style={styles.sectionLabel}>
           {t("palettes.selectSeries")}
         </ThemedText>
-        <ThemedText
-          style={[
-            TypeStyles.listRowMeta,
-            styles.sectionSubtitle,
-            { color: theme.textSecondary },
-          ]}
-        >
+        <ThemedText type="caption" style={styles.sectionSubtitle}>
           {t("palettes.selectSeriesSubtitle")}
         </ThemedText>
         <View style={styles.seriesList}>
@@ -126,10 +113,7 @@ export const SeriesSelectBottomSheet = forwardRef<
                     <IconSymbol name="square" size={24} color={theme.icon} />
                   )}
                   <View style={styles.seriesLabelWrap}>
-                    <ThemedText
-                      style={TypeStyles.listRowTitle}
-                      numberOfLines={1}
-                    >
+                    <ThemedText type="rowTitle" numberOfLines={1}>
                       {t("palettes.selectAll")}
                     </ThemedText>
                   </View>
@@ -144,10 +128,7 @@ export const SeriesSelectBottomSheet = forwardRef<
                   style={styles.clearBtn}
                   accessibilityLabel={t("palettes.clearSelection")}
                 >
-                  <ThemedText
-                    style={[TypeStyles.listAction, { color: theme.tint }]}
-                    numberOfLines={1}
-                  >
+                  <ThemedText type="link" numberOfLines={1}>
                     {t("palettes.clearSelection")}
                   </ThemedText>
                 </TouchableOpacity>
@@ -175,19 +156,12 @@ export const SeriesSelectBottomSheet = forwardRef<
                   <IconSymbol name="square" size={24} color={theme.icon} />
                 )}
                 <View style={styles.seriesLabelWrap}>
-                  <ThemedText
-                    style={TypeStyles.listRowTitle}
-                    numberOfLines={1}
-                    ellipsizeMode="tail"
-                  >
+                  <ThemedText type="rowTitle" numberOfLines={1} ellipsizeMode="tail">
                     {s.name}
                   </ThemedText>
                   <ThemedText
-                    style={[
-                      TypeStyles.listRowMeta,
-                      styles.seriesMeta,
-                      { color: theme.textSecondary },
-                    ]}
+                    type="caption"
+                    style={styles.seriesMeta}
                     numberOfLines={1}
                     ellipsizeMode="tail"
                   >

@@ -11,7 +11,7 @@ import { ScreenHeader } from "@/components/screen-header";
 import { SeriesCard } from "@/components/series-card";
 import { ThemedText } from "@/components/themed-text";
 import { IconSymbol } from "@/components/ui/icon-symbol";
-import { FontFamily, Spacing, Typography } from "@/constants/theme";
+import { Spacing } from "@/constants/theme";
 import { useTheme } from "@/hooks/use-theme";
 import { getAllSeriesWithCount } from "@/stores/useCatalogStore";
 import { useDoodlesStore } from "@/stores/useDoodlesStore";
@@ -124,9 +124,7 @@ export default function HomeScreen() {
         {/* Continuar último doodle */}
         {lastDoodle && (
           <View style={styles.section}>
-            <ThemedText
-              style={[styles.sectionTitle, { color: theme.textSecondary }]}
-            >
+            <ThemedText type="overline">
               {t("home.continueLastDoodle")}
             </ThemedText>
             <View style={styles.doodlesGrid}>
@@ -146,9 +144,7 @@ export default function HomeScreen() {
         {/* Recent palettes */}
         {recentPalettes.length > 0 && (
           <View style={styles.section}>
-            <ThemedText
-              style={[styles.sectionTitle, { color: theme.textSecondary }]}
-            >
+            <ThemedText type="overline">
               {t("home.recentPalettes")}
             </ThemedText>
             <View style={styles.palettesGrid}>
@@ -171,9 +167,7 @@ export default function HomeScreen() {
         {/* Favorite series (preview) — only show when there are favorites */}
         {favoriteSeriesPreview.length > 0 && (
           <View style={styles.section}>
-            <ThemedText
-              style={[styles.sectionTitle, { color: theme.textSecondary }]}
-            >
+            <ThemedText type="overline">
               {t("colors.favoriteSeries")}
             </ThemedText>
             <View style={styles.sectionGrid}>
@@ -209,11 +203,6 @@ const styles = StyleSheet.create({
   },
   section: {
     gap: Spacing.sm,
-  },
-  sectionTitle: {
-    fontSize: Typography.fontSize.sm,
-    fontFamily: FontFamily.semibold,
-    textTransform: "uppercase",
   },
   doodlesGrid: {
     flexDirection: "row",
