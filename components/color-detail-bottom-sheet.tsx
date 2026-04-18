@@ -53,7 +53,8 @@ type ContentProps = {
 
 const SIMILAR_IN_SERIES_LIMIT = 6;
 const SIMILAR_OTHER_SERIES_LIMIT = 8;
-const SIMILAR_CARD_WIDTH = 88;
+/** Wide enough for two-line labels; trailing scroll padding balances the row vs sheet edge */
+const SIMILAR_CARD_WIDTH = 96;
 const SIMILAR_SWATCH_SIZE = 56;
 
 export function ColorDetailContent({
@@ -144,7 +145,7 @@ export function ColorDetailContent({
         showsHorizontalScrollIndicator={false}
         contentContainerStyle={styles.similarRow}
       >
-        {sameSeriesMatches.map((match) => (
+        {sameSeriesMatches.map((match, index, arr) => (
           <SimilarColorCard
             key={match.catalogColor.id}
             color={match.catalogColor}
@@ -154,6 +155,7 @@ export function ColorDetailContent({
             )}
             similarity={match.similarity}
             theme={theme}
+            isLast={index === arr.length - 1}
             onPress={() => onOpenColor?.(match.catalogColor)}
           />
         ))}
@@ -167,7 +169,7 @@ export function ColorDetailContent({
         showsHorizontalScrollIndicator={false}
         contentContainerStyle={styles.similarRow}
       >
-        {otherSeriesMatches.map((match) => {
+        {otherSeriesMatches.map((match, index, arr) => {
           const series = getSeriesById(match.catalogColor.seriesId);
           const subtitle = series?.name ?? match.catalogColor.code;
           return (
@@ -181,6 +183,7 @@ export function ColorDetailContent({
               subtitle={subtitle}
               similarity={match.similarity}
               theme={theme}
+              isLast={index === arr.length - 1}
               onPress={() => onOpenColor?.(match.catalogColor)}
             />
           );
@@ -197,6 +200,7 @@ type SimilarColorCardProps = {
   similarity: number;
   theme: SemanticColorPalette;
   onPress: () => void;
+  isLast?: boolean;
 };
 
 function SimilarColorCard({
@@ -206,13 +210,14 @@ function SimilarColorCard({
   similarity,
   theme,
   onPress,
+  isLast,
 }: SimilarColorCardProps) {
   const isVeryLight =
     color.hex.toLowerCase() === "#ffffff" ||
     color.hex.toLowerCase().startsWith("#fff");
   return (
     <TouchableOpacity
-      style={[styles.similarCard, { marginRight: Spacing.sm }]}
+      style={[styles.similarCard, !isLast && styles.similarCardSpacing]}
       onPress={onPress}
       activeOpacity={0.7}
       accessibilityLabel={`${displayName}, ${similarity}% similar`}
@@ -228,7 +233,7 @@ function SimilarColorCard({
       <ThemedText
         type="caption"
         style={[styles.similarLabel, { color: theme.text }]}
-        numberOfLines={1}
+        numberOfLines={2}
         ellipsizeMode="tail"
       >
         {displayName}
@@ -237,7 +242,7 @@ function SimilarColorCard({
         <ThemedText
           type="caption"
           style={styles.similarSubtitle}
-          numberOfLines={1}
+          numberOfLines={2}
           ellipsizeMode="tail"
         >
           {subtitle}
@@ -292,12 +297,18 @@ const styles = StyleSheet.create({
     marginBottom: Spacing.xs,
   },
   similarRow: {
+    flexDirection: "row",
+    flexWrap: "nowrap",
+    alignItems: "flex-start",
     paddingBottom: Spacing.md,
-    gap: Spacing.sm,
+    paddingRight: Spacing.md,
   },
   similarCard: {
     width: SIMILAR_CARD_WIDTH,
     alignItems: "center",
+  },
+  similarCardSpacing: {
+    marginRight: Spacing.sm,
   },
   similarSwatch: {
     width: SIMILAR_SWATCH_SIZE,
