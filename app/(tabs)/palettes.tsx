@@ -14,9 +14,8 @@ import { FloatingActionButton } from "@/components/floating-action-button";
 import { PaletteCard } from "@/components/palette-card";
 import { Screen } from "@/components/screen";
 import { ScreenHeader } from "@/components/screen-header";
-import { ThemedText } from "@/components/themed-text";
 import { IconSymbol } from "@/components/ui/icon-symbol";
-import { BorderRadius, Spacing } from "@/constants/theme";
+import { Spacing } from "@/constants/theme";
 import { useImagePicker } from "@/hooks/use-image-picker";
 import { useTheme } from "@/hooks/use-theme";
 import { usePalettesStore } from "@/stores/usePalettesStore";
@@ -133,7 +132,7 @@ export default function PalettesIndexScreen() {
           style={styles.fab}
           onPress={handleCreateNew}
           accessibilityLabel={t("palettes.createNew")}
-          icon={<IconSymbol name="plus" size={28} color={theme.background} />}
+          icon={<IconSymbol name="plus" size={28} color={theme.onPrimary} />}
         />
       </View>
     </Screen>

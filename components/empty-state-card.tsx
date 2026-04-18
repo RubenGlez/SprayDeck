@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/icon-symbol";
 import {
   BorderRadius,
+  FontFamily,
   Shadows,
   Spacing,
   Typography,
@@ -61,7 +62,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     paddingVertical: Spacing.xl,
     paddingHorizontal: Spacing.lg,
-    borderRadius: BorderRadius.lg,
+    borderRadius: BorderRadius.xl,
     borderWidth: 1.5,
     borderStyle: "dashed",
     minHeight: 140,
@@ -77,7 +78,7 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: Typography.fontSize.md,
-    fontWeight: Typography.fontWeight.semibold,
+    fontFamily: FontFamily.semibold,
     marginBottom: Spacing.xs,
   },
   subtitle: {

@@ -8,5 +8,5 @@ import { useThemeStore } from '@/stores/useThemeStore';
 export function useColorScheme(): 'light' | 'dark' {
   const system = useRNColorScheme();
   const override = useThemeStore((s) => s.colorSchemeOverride);
-  return override ?? system ?? 'light';
+  return override ?? system ?? "dark";
 }

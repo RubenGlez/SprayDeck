@@ -3,14 +3,8 @@ import { StyleSheet, TouchableOpacity } from "react-native";
 
 import { FavoriteIcon } from "@/components/favorite-icon";
 import { ThemedText } from "@/components/themed-text";
-import {
-  BorderRadius,
-  Colors,
-  Shadows,
-  Spacing,
-  Typography,
-} from "@/constants/theme";
-import { useColorScheme } from "@/hooks/use-color-scheme";
+import { BorderRadius, Shadows, Spacing, Typography } from "@/constants/theme";
+import { useTheme } from "@/hooks/use-theme";
 import type { SeriesWithCountAndBrand } from "@/types";
 
 export function SeriesCard({
@@ -25,8 +19,7 @@ export function SeriesCard({
   onFavorite: () => void;
 }) {
   const { t } = useTranslation();
-  const colorScheme = useColorScheme() ?? "light";
-  const theme = Colors[colorScheme];
+  const { theme } = useTheme();
 
   return (
     <TouchableOpacity
@@ -71,7 +64,7 @@ const styles = StyleSheet.create({
   card: {
     width: "48%",
     padding: Spacing.md,
-    borderRadius: BorderRadius.lg,
+    borderRadius: BorderRadius.xl,
     borderWidth: 1,
     marginBottom: Spacing.sm,
     ...Shadows.sm,

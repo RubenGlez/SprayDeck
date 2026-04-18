@@ -1,10 +1,14 @@
 import { useMemo } from "react";
 
-import { Colors } from "@/constants/theme";
+import { Colors, type SemanticColorPalette } from "@/constants/theme";
 import { useColorScheme } from "@/hooks/use-color-scheme";
 
-export function useTheme() {
-  const colorScheme = useColorScheme() ?? "light";
+export function useTheme(): {
+  colorScheme: "light" | "dark";
+  theme: SemanticColorPalette;
+  isDark: boolean;
+} {
+  const colorScheme = useColorScheme();
   const theme = useMemo(() => Colors[colorScheme], [colorScheme]);
   return { colorScheme, theme, isDark: colorScheme === "dark" };
 }

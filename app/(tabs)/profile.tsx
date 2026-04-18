@@ -10,7 +10,13 @@ import { Screen } from "@/components/screen";
 import { ScreenHeader } from "@/components/screen-header";
 import { ThemedText } from "@/components/themed-text";
 import { IconSymbol } from "@/components/ui/icon-symbol";
-import { BorderRadius, Colors, Spacing, Typography } from "@/constants/theme";
+import {
+  BorderRadius,
+  Colors,
+  FontFamily,
+  Spacing,
+  Typography,
+} from "@/constants/theme";
 import { useColorScheme } from "@/hooks/use-color-scheme";
 import { useLanguageStore } from "@/stores/useLanguageStore";
 import { useProfileStore } from "@/stores/useProfileStore";
@@ -134,7 +140,7 @@ const styles = StyleSheet.create({
   },
   sectionLabel: {
     fontSize: 13,
-    fontWeight: "600",
+    fontFamily: FontFamily.semibold,
     textTransform: "uppercase",
     marginBottom: Spacing.sm,
     letterSpacing: 0.5,
@@ -142,9 +148,10 @@ const styles = StyleSheet.create({
   akaInput: {
     height: 48,
     paddingHorizontal: Spacing.md,
-    borderRadius: BorderRadius.md,
+    borderRadius: BorderRadius.pill,
     borderWidth: 1,
     fontSize: Typography.fontSize.md,
+    fontFamily: FontFamily.regular,
     marginBottom: Spacing.xs,
   },
   akaHint: {

@@ -3,7 +3,13 @@ import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
 import { FavoriteIcon } from "@/components/favorite-icon";
 import { IconSymbol } from "@/components/ui/icon-symbol";
-import { BorderRadius, Colors, Spacing, Typography } from "@/constants/theme";
+import {
+  BorderRadius,
+  Colors,
+  FontFamily,
+  Spacing,
+  Typography,
+} from "@/constants/theme";
 import { useColorScheme } from "@/hooks/use-color-scheme";
 import type { Color } from "@/types";
 
@@ -45,7 +51,7 @@ export function ColorGridCard({
   cardWidth,
   swatchSize,
 }: ColorGridCardProps) {
-  const colorScheme = useColorScheme() ?? "light";
+  const colorScheme = useColorScheme();
   const theme = Colors[colorScheme];
   const lightBg = isLightBackground(color.hex);
   const textColor = lightBg ? "#000" : "#fff";
@@ -161,10 +167,11 @@ const styles = StyleSheet.create({
   },
   labelName: {
     fontSize: Typography.fontSize.xs,
-    fontWeight: Typography.fontWeight.semibold,
+    fontFamily: FontFamily.semibold,
   },
   labelCode: {
     fontSize: 10,
+    fontFamily: FontFamily.regular,
     opacity: 0.9,
   },
   selectedBadge: {

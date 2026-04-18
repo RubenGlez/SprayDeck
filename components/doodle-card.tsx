@@ -74,7 +74,7 @@ const styles = StyleSheet.create({
   card: {
     width: CARD_WIDTH,
     padding: CARD_PADDING,
-    borderRadius: BorderRadius.lg,
+    borderRadius: BorderRadius.xl,
     borderWidth: 1,
     marginBottom: LIST_GAP,
     ...Shadows.sm,
@@ -82,7 +82,7 @@ const styles = StyleSheet.create({
   thumbnailWrap: {
     width: CARD_WIDTH - CARD_PADDING * 2,
     height: THUMBNAIL_HEIGHT,
-    borderRadius: BorderRadius.md,
+    borderRadius: BorderRadius.lg,
     overflow: "hidden",
     marginBottom: Spacing.sm,
   },

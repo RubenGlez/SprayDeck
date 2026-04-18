@@ -61,7 +61,7 @@ export default function DoodlesIndexScreen() {
           style={styles.fab}
           onPress={handleNewDoodle}
           accessibilityLabel={t("doodles.newDoodle")}
-          icon={<IconSymbol name="plus" size={28} color={theme.background} />}
+          icon={<IconSymbol name="plus" size={28} color={theme.onPrimary} />}
         />
       </View>
     </Screen>

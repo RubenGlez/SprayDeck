@@ -14,6 +14,7 @@ import { ThemedText } from "@/components/themed-text";
 import {
   BorderRadius,
   Colors,
+  FontFamily,
   Spacing,
   Typography,
 } from "@/constants/theme";
@@ -44,7 +45,7 @@ export function SaveNameModal({
   cancelLabel,
   saveLabel,
 }: SaveNameModalProps) {
-  const colorScheme = useColorScheme() ?? "light";
+  const colorScheme = useColorScheme();
   const theme = Colors[colorScheme];
 
   return (
@@ -113,22 +114,23 @@ const styles = StyleSheet.create({
     backgroundColor: "rgba(0,0,0,0.5)",
   },
   card: {
-    borderRadius: BorderRadius.lg,
+    borderRadius: BorderRadius.xl,
     borderWidth: 1,
     padding: Spacing.lg,
     zIndex: 1,
   },
   title: {
     fontSize: Typography.fontSize.lg,
-    fontWeight: Typography.fontWeight.semibold,
+    fontFamily: FontFamily.semibold,
     marginBottom: Spacing.md,
   },
   input: {
     height: 44,
     paddingHorizontal: Spacing.md,
-    borderRadius: BorderRadius.md,
+    borderRadius: BorderRadius.pill,
     borderWidth: 1,
     fontSize: Typography.fontSize.md,
+    fontFamily: FontFamily.regular,
     marginBottom: Spacing.lg,
   },
   actions: {

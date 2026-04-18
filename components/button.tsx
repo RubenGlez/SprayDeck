@@ -12,6 +12,7 @@ import { ThemedText } from "@/components/themed-text";
 import {
   BorderRadius,
   Colors,
+  FontFamily,
   Spacing,
   Typography,
 } from "@/constants/theme";
@@ -103,7 +104,7 @@ export function Button({
 
   const textColor =
     variant === "primary"
-      ? theme.background
+      ? theme.onPrimary
       : variant === "destructive"
         ? theme.error
         : theme.text;
@@ -121,7 +122,7 @@ export function Button({
     justifyContent: "center",
     paddingVertical: padding.vertical,
     paddingHorizontal: padding.horizontal,
-    borderRadius: BorderRadius.md,
+    borderRadius: BorderRadius.pill,
     minHeight: size === "icon" ? Spacing.touchTarget : undefined,
     opacity: isDisabled ? 0.5 : 1,
     gap: children && icon ? Spacing.sm : 0,
@@ -151,10 +152,10 @@ export function Button({
             {
               color: textColor,
               fontSize,
-              fontWeight:
+              fontFamily:
                 variant === "primary" || variant === "secondary"
-                  ? Typography.fontWeight.semibold
-                  : Typography.fontWeight.medium,
+                  ? FontFamily.semibold
+                  : FontFamily.medium,
             },
           ]}
           numberOfLines={1}

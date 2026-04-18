@@ -3,12 +3,12 @@
  * https://docs.expo.dev/guides/color-schemes/
  */
 
-import { Colors } from "@/constants/theme";
+import { Colors, type SemanticColorPalette } from "@/constants/theme";
 import { useTheme } from "./use-theme";
 
 export function useThemeColor(
   props: { light?: string; dark?: string },
-  colorName: keyof typeof Colors.light & keyof typeof Colors.dark,
+  colorName: keyof SemanticColorPalette,
 ) {
   const { colorScheme } = useTheme();
   const colorFromProps = props[colorScheme];

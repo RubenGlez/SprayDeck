@@ -3,7 +3,7 @@ import React from "react";
 import { StyleSheet, TouchableOpacity, View } from "react-native";
 
 import { IconSymbol } from "@/components/ui/icon-symbol";
-import { Colors, Shadows, Spacing } from "@/constants/theme";
+import { BorderRadius, Colors, Shadows, Spacing } from "@/constants/theme";
 import { useColorScheme } from "@/hooks/use-color-scheme";
 
 const TOOLBAR_ICON_SIZE = 40;
@@ -47,7 +47,7 @@ export function TransformToolbar({
   bottom = Spacing.sm,
   labels,
 }: TransformToolbarProps) {
-  const colorScheme = useColorScheme() ?? "light";
+  const colorScheme = useColorScheme();
   const theme = Colors[colorScheme];
 
   return (
@@ -77,7 +77,7 @@ export function TransformToolbar({
               <IconSymbol
                 name="square.and.arrow.down"
                 size={22}
-                color={theme.background}
+                color={theme.onPrimary}
               />
             </TouchableOpacity>
             <TouchableOpacity
@@ -191,7 +191,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     paddingVertical: Spacing.sm,
     paddingHorizontal: TOOLBAR_PILL_PADDING_H,
-    borderRadius: 9999,
+    borderRadius: BorderRadius.pill,
     borderWidth: 1,
     gap: TOOLBAR_GAP,
     ...Shadows.md,

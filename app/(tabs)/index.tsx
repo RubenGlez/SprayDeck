@@ -1,7 +1,7 @@
 import { useRouter } from "expo-router";
 import React, { useMemo } from "react";
 import { useTranslation } from "react-i18next";
-import { ScrollView, StyleSheet, View } from "react-native";
+import { Pressable, ScrollView, StyleSheet, View } from "react-native";
 
 import { Button } from "@/components/button";
 import { DoodleCard } from "@/components/doodle-card";
@@ -11,7 +11,7 @@ import { ScreenHeader } from "@/components/screen-header";
 import { SeriesCard } from "@/components/series-card";
 import { ThemedText } from "@/components/themed-text";
 import { IconSymbol } from "@/components/ui/icon-symbol";
-import { Spacing, Typography } from "@/constants/theme";
+import { FontFamily, Spacing, Typography } from "@/constants/theme";
 import { useTheme } from "@/hooks/use-theme";
 import { getAllSeriesWithCount } from "@/stores/useCatalogStore";
 import { useDoodlesStore } from "@/stores/useDoodlesStore";
@@ -83,7 +83,7 @@ export default function HomeScreen() {
               <IconSymbol
                 name="paintpalette"
                 size={22}
-                color={theme.background}
+                color={theme.onPrimary}
               />
             }
             onPress={() => router.push("/palettes/create")}
@@ -98,7 +98,7 @@ export default function HomeScreen() {
               <IconSymbol
                 name="square.stack.3d.up"
                 size={22}
-                color={theme.background}
+                color={theme.onPrimary}
               />
             }
             onPress={() => router.push("/doodles/create")}
@@ -106,17 +106,20 @@ export default function HomeScreen() {
             {t("home.newDoodle")}
           </Button>
         </View>
-        <Button
-          variant="secondary"
-          size="lg"
-          fullWidth
-          icon={
-            <IconSymbol name="square.grid.2x2" size={22} color={theme.text} />
-          }
+        <Pressable
           onPress={() => router.push("/(tabs)/catalog")}
+          style={({ pressed }) => [
+            styles.catalogLink,
+            { opacity: pressed ? 0.75 : 1 },
+          ]}
+          accessibilityRole="button"
+          accessibilityLabel={t("home.exploreColors")}
         >
-          {t("home.exploreColors")}
-        </Button>
+          <ThemedText type="defaultSemiBold" style={{ color: theme.tint }}>
+            {t("home.exploreColors")}
+          </ThemedText>
+          <IconSymbol name="arrow.right.circle.fill" size={22} color={theme.tint} />
+        </Pressable>
 
         {/* Continuar último doodle */}
         {lastDoodle && (
@@ -209,7 +212,7 @@ const styles = StyleSheet.create({
   },
   sectionTitle: {
     fontSize: Typography.fontSize.sm,
-    fontWeight: Typography.fontWeight.semibold,
+    fontFamily: FontFamily.semibold,
     textTransform: "uppercase",
   },
   doodlesGrid: {
@@ -226,5 +229,12 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     flexWrap: "wrap",
     justifyContent: "space-between",
+  },
+  catalogLink: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+    gap: Spacing.sm,
+    paddingVertical: Spacing.xs,
   },
 });

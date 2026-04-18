@@ -5,7 +5,7 @@ import { StyleSheet, TouchableOpacity, View } from "react-native";
 
 import { ThemedText } from "@/components/themed-text";
 import { IconSymbol } from "@/components/ui/icon-symbol";
-import { Spacing, Typography } from "@/constants/theme";
+import { FontFamily, Spacing, Typography } from "@/constants/theme";
 import { useTheme } from "@/hooks/use-theme";
 import { useThemeColor } from "@/hooks/use-theme-color";
 
@@ -67,7 +67,7 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: Typography.fontSize.lg,
-    fontWeight: Typography.fontWeight.semibold,
+    fontFamily: FontFamily.semibold,
   },
   right: {
     flexDirection: "row",

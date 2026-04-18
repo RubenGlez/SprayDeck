@@ -1,31 +1,40 @@
-import { StyleSheet, Text, type TextProps } from 'react-native';
+import { StyleSheet, Text, type TextProps } from "react-native";
 
-import { useThemeColor } from '@/hooks/use-theme-color';
+import { FontFamily, Typography } from "@/constants/theme";
+import { useTheme } from "@/hooks/use-theme";
+import { useThemeColor } from "@/hooks/use-theme-color";
 
 export type ThemedTextProps = TextProps & {
   lightColor?: string;
   darkColor?: string;
-  type?: 'default' | 'title' | 'defaultSemiBold' | 'subtitle' | 'link';
+  type?: "default" | "title" | "defaultSemiBold" | "subtitle" | "link";
 };
 
 export function ThemedText({
   style,
   lightColor,
   darkColor,
-  type = 'default',
+  type = "default",
   ...rest
 }: ThemedTextProps) {
-  const color = useThemeColor({ light: lightColor, dark: darkColor }, 'text');
+  const { theme } = useTheme();
+  const color = useThemeColor(
+    { light: lightColor, dark: darkColor },
+    "text",
+  );
+
+  const linkColor = type === "link" ? theme.link : color;
 
   return (
     <Text
       style={[
-        { color },
-        type === 'default' ? styles.default : undefined,
-        type === 'title' ? styles.title : undefined,
-        type === 'defaultSemiBold' ? styles.defaultSemiBold : undefined,
-        type === 'subtitle' ? styles.subtitle : undefined,
-        type === 'link' ? styles.link : undefined,
+        { color: linkColor },
+        styles.base,
+        type === "default" ? styles.default : undefined,
+        type === "title" ? styles.title : undefined,
+        type === "defaultSemiBold" ? styles.defaultSemiBold : undefined,
+        type === "subtitle" ? styles.subtitle : undefined,
+        type === "link" ? styles.link : undefined,
         style,
       ]}
       {...rest}
@@ -34,27 +43,31 @@ export function ThemedText({
 }
 
 const styles = StyleSheet.create({
+  base: {
+    fontFamily: FontFamily.regular,
+  },
   default: {
-    fontSize: 16,
-    lineHeight: 24,
+    fontSize: Typography.fontSize.md,
+    lineHeight: Math.round(Typography.fontSize.md * Typography.lineHeight.normal),
   },
   defaultSemiBold: {
-    fontSize: 16,
-    lineHeight: 24,
-    fontWeight: '600',
+    fontSize: Typography.fontSize.md,
+    lineHeight: Math.round(Typography.fontSize.md * Typography.lineHeight.normal),
+    fontFamily: FontFamily.semibold,
   },
   title: {
-    fontSize: 32,
-    fontWeight: 'bold',
-    lineHeight: 32,
+    fontSize: Typography.fontSize.xxxl,
+    fontFamily: FontFamily.bold,
+    lineHeight: Math.round(Typography.fontSize.xxxl * Typography.lineHeight.tight),
   },
   subtitle: {
-    fontSize: 20,
-    fontWeight: 'bold',
+    fontSize: Typography.fontSize.xl,
+    fontFamily: FontFamily.bold,
+    lineHeight: Math.round(Typography.fontSize.xl * Typography.lineHeight.tight),
   },
   link: {
-    lineHeight: 30,
-    fontSize: 16,
-    color: '#0a7ea4',
+    fontSize: Typography.fontSize.md,
+    lineHeight: Math.round(Typography.fontSize.md * Typography.lineHeight.normal),
+    fontFamily: FontFamily.medium,
   },
 });

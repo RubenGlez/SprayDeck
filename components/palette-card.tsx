@@ -124,7 +124,7 @@ const styles = StyleSheet.create({
   card: {
     width: CARD_WIDTH,
     padding: CARD_PADDING,
-    borderRadius: BorderRadius.lg,
+    borderRadius: BorderRadius.xl,
     borderWidth: 1,
     marginBottom: LIST_GAP,
     ...Shadows.sm,

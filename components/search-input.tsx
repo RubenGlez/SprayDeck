@@ -3,7 +3,13 @@ import { StyleSheet, TextInput, View } from "react-native";
 
 import { Button } from "@/components/button";
 import { IconSymbol } from "@/components/ui/icon-symbol";
-import { BorderRadius, Colors, Spacing, Typography } from "@/constants/theme";
+import {
+  BorderRadius,
+  Colors,
+  FontFamily,
+  Spacing,
+  Typography,
+} from "@/constants/theme";
 import { useColorScheme } from "@/hooks/use-color-scheme";
 
 export type SearchInputProps = {
@@ -68,9 +74,10 @@ const styles = StyleSheet.create({
     height: 44,
     paddingHorizontal: Spacing.md,
     paddingRight: 44,
-    borderRadius: BorderRadius.md,
+    borderRadius: BorderRadius.pill,
     borderWidth: 1,
     fontSize: Typography.fontSize.md,
+    fontFamily: FontFamily.regular,
   },
   clearBtn: {
     position: "absolute",
