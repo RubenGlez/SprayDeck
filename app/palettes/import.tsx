@@ -1,8 +1,3 @@
-import {
-  BottomSheetBackdrop,
-  BottomSheetModal,
-  BottomSheetScrollView,
-} from "@gorhom/bottom-sheet";
 import * as ImagePicker from "expo-image-picker";
 import { useLocalSearchParams, useRouter } from "expo-router";
 import React, {
@@ -26,11 +21,19 @@ import { getColors } from "react-native-image-colors";
 import { Button } from "@/components/button";
 import { HeaderBackButton } from "@/components/header-back-button";
 import { SaveNameModal } from "@/components/save-name-modal";
+import {
+  SeriesSelectBottomSheet,
+  type SeriesSelectBottomSheetRef,
+} from "@/components/series-select-bottom-sheet";
 import { ThemedText } from "@/components/themed-text";
 import { ThemedView } from "@/components/themed-view";
 import { IconSymbol } from "@/components/ui/icon-symbol";
-import { BorderRadius, Colors, Spacing, Typography } from "@/constants/theme";
-import { useColorScheme } from "@/hooks/use-color-scheme";
+import { BorderRadius, Spacing, Typography } from "@/constants/theme";
+import {
+  TypeStyles,
+  monoHexFontFamily,
+} from "@/constants/ui-primitives";
+import { useTheme } from "@/hooks/use-theme";
 import { getColorDisplayName } from "@/lib/color";
 import { extractHexPalette, findClosestColors } from "@/lib/colorMatch";
 import {
@@ -38,7 +41,7 @@ import {
   getColorsBySeriesId,
 } from "@/stores/useCatalogStore";
 import { usePalettesStore } from "@/stores/usePalettesStore";
-import type { Color, SeriesWithCountAndBrand } from "@/types";
+import type { Color } from "@/types";
 
 export default function ImportFromImageScreen() {
   const { imageUri: imageUriParam } = useLocalSearchParams<{
@@ -46,8 +49,7 @@ export default function ImportFromImageScreen() {
   }>();
   const { t, i18n } = useTranslation();
   const router = useRouter();
-  const colorScheme = useColorScheme() ?? "light";
-  const theme = Colors[colorScheme];
+  const { theme } = useTheme();
   const addPalette = usePalettesStore((s) => s.addPalette);
 
   const allSeries = useMemo(() => getAllSeriesWithCount(), []);
@@ -65,7 +67,7 @@ export default function ImportFromImageScreen() {
   const [error, setError] = useState<string | null>(null);
   const [showNameModal, setShowNameModal] = useState(false);
   const [paletteName, setPaletteName] = useState("");
-  const seriesFilterSheetRef = useRef<BottomSheetModal>(null);
+  const seriesFilterSheetRef = useRef<SeriesSelectBottomSheetRef>(null);
   const hasInitializedSeriesSelection = useRef(false);
   const hasProcessedParamImage = useRef(false);
 
@@ -246,18 +248,6 @@ export default function ImportFromImageScreen() {
   const showEquivalents =
     hasImage && hasSeriesSelected && similaritiesPerHex.length > 0;
 
-  const renderSeriesSheetBackdrop = useCallback(
-    (props: React.ComponentProps<typeof BottomSheetBackdrop>) => (
-      <BottomSheetBackdrop
-        {...props}
-        appearsOnIndex={0}
-        disappearsOnIndex={-1}
-        opacity={0.5}
-      />
-    ),
-    [],
-  );
-
   return (
     <ThemedView style={styles.container} safeArea="top">
       <HeaderBackButton
@@ -278,79 +268,14 @@ export default function ImportFromImageScreen() {
           />
         }
       />
-      <BottomSheetModal
+      <SeriesSelectBottomSheet
         ref={seriesFilterSheetRef}
+        series={allSeries}
+        selectedSeriesIds={selectedSeriesIds}
+        onToggleSeries={toggleSeriesSelection}
+        showFavorites={false}
         snapPoints={["60%", "90%"]}
-        backgroundStyle={{
-          backgroundColor: theme.background,
-          borderTopLeftRadius: 20,
-          borderTopRightRadius: 20,
-        }}
-        backdropComponent={renderSeriesSheetBackdrop}
-      >
-        <BottomSheetScrollView
-          contentContainerStyle={styles.seriesSheetContent}
-        >
-          <ThemedText
-            style={[styles.sectionLabel, { color: theme.textSecondary }]}
-          >
-            {t("palettes.selectSeries")}
-          </ThemedText>
-          <ThemedText
-            style={[styles.sectionSubtitle, { color: theme.textSecondary }]}
-          >
-            {t("palettes.selectSeriesSubtitle")}
-          </ThemedText>
-          <View style={styles.seriesList}>
-            {allSeries.map((s: SeriesWithCountAndBrand) => {
-              const isSelected = selectedSeriesIds.has(s.id);
-              return (
-                <TouchableOpacity
-                  key={s.id}
-                  style={[
-                    styles.seriesRow,
-                    { borderBottomColor: theme.border },
-                  ]}
-                  onPress={() => toggleSeriesSelection(s.id)}
-                  activeOpacity={0.7}
-                  accessibilityRole="checkbox"
-                  accessibilityState={{ checked: isSelected }}
-                >
-                  {isSelected ? (
-                    <IconSymbol
-                      name="checkmark.square.fill"
-                      size={24}
-                      color={theme.tint}
-                    />
-                  ) : (
-                    <IconSymbol name="square" size={24} color={theme.icon} />
-                  )}
-                  <View style={styles.seriesLabelWrap}>
-                    <ThemedText
-                      style={styles.seriesName}
-                      numberOfLines={1}
-                      ellipsizeMode="tail"
-                    >
-                      {s.name}
-                    </ThemedText>
-                    <ThemedText
-                      style={[
-                        styles.seriesMeta,
-                        { color: theme.textSecondary },
-                      ]}
-                      numberOfLines={1}
-                      ellipsizeMode="tail"
-                    >
-                      {s.brandName} ·{" "}
-                      {t("colors.colorCount", { count: s.colorCount })}
-                    </ThemedText>
-                  </View>
-                </TouchableOpacity>
-              );
-            })}
-          </View>
-        </BottomSheetScrollView>
-      </BottomSheetModal>
+      />
 
       <ScrollView
         style={styles.scroll}
@@ -361,6 +286,7 @@ export default function ImportFromImageScreen() {
           <View style={styles.pickSection}>
             <ThemedText
               style={[
+                TypeStyles.listRowMeta,
                 styles.pickSectionSubtitle,
                 { color: theme.textSecondary },
               ]}
@@ -462,12 +388,17 @@ export default function ImportFromImageScreen() {
             {showEquivalents && (
               <>
                 <ThemedText
-                  style={[styles.sectionLabel, { color: theme.textSecondary }]}
+                  style={[
+                    TypeStyles.sectionHeading,
+                    styles.sectionLabel,
+                    { color: theme.textSecondary },
+                  ]}
                 >
                   {t("palettes.equivalents")}
                 </ThemedText>
                 <ThemedText
                   style={[
+                    TypeStyles.listRowMeta,
                     styles.sectionSubtitle,
                     { color: theme.textSecondary },
                   ]}
@@ -503,7 +434,10 @@ export default function ImportFromImageScreen() {
                         <ThemedText
                           style={[
                             styles.extractedHexLabel,
-                            { color: theme.textSecondary },
+                            {
+                              color: theme.textSecondary,
+                              fontFamily: monoHexFontFamily,
+                            },
                           ]}
                         >
                           {hex}
@@ -523,6 +457,7 @@ export default function ImportFromImageScreen() {
                           >
                             <ThemedText
                               style={[
+                                TypeStyles.sectionHeading,
                                 styles.seriesMatchesLabel,
                                 { color: theme.textSecondary },
                               ]}
@@ -582,14 +517,14 @@ export default function ImportFromImageScreen() {
                                   />
                                   <View style={styles.matchInfo}>
                                     <ThemedText
-                                      style={styles.matchName}
+                                      style={TypeStyles.matchTitle}
                                       numberOfLines={1}
                                     >
                                       {name}
                                     </ThemedText>
                                     <ThemedText
                                       style={[
-                                        styles.matchCode,
+                                        TypeStyles.matchMeta,
                                         { color: theme.textSecondary },
                                       ]}
                                     >
@@ -598,7 +533,7 @@ export default function ImportFromImageScreen() {
                                   </View>
                                   <ThemedText
                                     style={[
-                                      styles.similarity,
+                                      TypeStyles.similarityBadge,
                                       { color: theme.tint },
                                     ]}
                                   >
@@ -692,7 +627,7 @@ const styles = StyleSheet.create({
     flex: 1,
     paddingVertical: Spacing.xl,
     paddingHorizontal: Spacing.md,
-    borderRadius: BorderRadius.lg,
+    borderRadius: BorderRadius.xl,
     borderWidth: 2,
     borderStyle: "dashed",
     alignItems: "center",
@@ -701,11 +636,6 @@ const styles = StyleSheet.create({
   },
   pickOptionIcon: {
     marginBottom: Spacing.sm,
-  },
-  pickOptionTitle: {
-    fontSize: Typography.fontSize.sm,
-    fontWeight: Typography.fontWeight.semibold,
-    textAlign: "center",
   },
   error: {
     fontSize: Typography.fontSize.sm,
@@ -717,7 +647,7 @@ const styles = StyleSheet.create({
   thumbnail: {
     width: "100%",
     height: 200,
-    borderRadius: BorderRadius.lg,
+    borderRadius: BorderRadius.xl,
     marginBottom: Spacing.sm,
   },
   swatchRow: {
@@ -731,44 +661,14 @@ const styles = StyleSheet.create({
     borderRadius: BorderRadius.sm,
   },
   sectionLabel: {
-    fontSize: Typography.fontSize.sm,
-    fontWeight: Typography.fontWeight.semibold,
     marginBottom: Spacing.sm,
-    textTransform: "uppercase",
   },
   sectionSubtitle: {
-    fontSize: Typography.fontSize.sm,
     marginBottom: Spacing.md,
-  },
-  seriesSheetContent: {
-    paddingHorizontal: Spacing.md,
-    paddingBottom: Spacing.xl * 2,
-  },
-  seriesList: {
-    marginBottom: Spacing.lg,
-  },
-  seriesRow: {
-    flexDirection: "row",
-    alignItems: "center",
-    paddingVertical: Spacing.sm,
-    borderBottomWidth: 1,
-  },
-  seriesLabelWrap: {
-    flex: 1,
-    marginLeft: Spacing.sm,
-    minWidth: 0,
-  },
-  seriesName: {
-    fontSize: Typography.fontSize.md,
-    fontWeight: Typography.fontWeight.semibold,
-  },
-  seriesMeta: {
-    fontSize: Typography.fontSize.sm,
-    marginTop: 2,
   },
   extractedColorBlock: {
     borderWidth: 1,
-    borderRadius: BorderRadius.md,
+    borderRadius: BorderRadius.xl,
     overflow: "hidden",
     marginBottom: Spacing.md,
   },
@@ -787,12 +687,9 @@ const styles = StyleSheet.create({
   },
   extractedHexLabel: {
     fontSize: Typography.fontSize.sm,
-    fontFamily: "monospace",
   },
   seriesMatchesSection: {},
   seriesMatchesLabel: {
-    fontSize: Typography.fontSize.sm,
-    fontWeight: Typography.fontWeight.semibold,
     paddingHorizontal: Spacing.md,
     paddingTop: Spacing.sm,
     paddingBottom: Spacing.xs,
@@ -819,17 +716,6 @@ const styles = StyleSheet.create({
   },
   matchInfo: {
     flex: 1,
-  },
-  matchName: {
-    fontSize: Typography.fontSize.md,
-    fontWeight: Typography.fontWeight.semibold,
-  },
-  matchCode: {
-    fontSize: Typography.fontSize.sm,
-  },
-  similarity: {
-    fontSize: Typography.fontSize.md,
-    fontWeight: Typography.fontWeight.semibold,
   },
   footerActions: {
     marginTop: Spacing.lg,

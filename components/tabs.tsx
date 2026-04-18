@@ -2,8 +2,8 @@ import React from "react";
 import { StyleSheet, TouchableOpacity, View } from "react-native";
 
 import { ThemedText } from "@/components/themed-text";
-import { Colors, Spacing, Typography } from "@/constants/theme";
-import { useColorScheme } from "@/hooks/use-color-scheme";
+import { FontFamily, Spacing, Typography } from "@/constants/theme";
+import { useTheme } from "@/hooks/use-theme";
 
 const TAB_BAR_HEIGHT = 48;
 
@@ -23,8 +23,7 @@ export type TabsProps = {
 };
 
 export function Tabs({ value, onChange, tabs }: TabsProps) {
-  const colorScheme = useColorScheme() ?? "light";
-  const theme = Colors[colorScheme];
+  const { theme } = useTheme();
 
   return (
     <View style={[styles.tabBar, { borderBottomColor: theme.border }]}>
@@ -87,6 +86,6 @@ const styles = StyleSheet.create({
   },
   tabLabel: {
     fontSize: Typography.fontSize.sm,
-    fontWeight: Typography.fontWeight.semibold,
+    fontFamily: FontFamily.semibold,
   },
 });

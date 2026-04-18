@@ -28,7 +28,12 @@ import { Tabs } from "@/components/tabs";
 import { ThemedText } from "@/components/themed-text";
 import { TransformToolbar } from "@/components/transform-toolbar";
 import { IconSymbol, type IconSymbolName } from "@/components/ui/icon-symbol";
-import { BorderRadius, Colors, Spacing, Typography } from "@/constants/theme";
+import {
+  BorderRadius,
+  Spacing,
+  Typography,
+  type SemanticColorPalette,
+} from "@/constants/theme";
 import { useImagePicker } from "@/hooks/use-image-picker";
 import { useTheme } from "@/hooks/use-theme";
 import { useDoodlesStore } from "@/stores/useDoodlesStore";
@@ -781,7 +786,7 @@ function PlaceholderSlot({
   onTakePhoto: () => void;
   onPickGallery: () => void;
   loading: boolean;
-  theme: (typeof Colors)["light"];
+  theme: SemanticColorPalette;
   t: (key: string) => string;
 }) {
   return (
@@ -846,7 +851,7 @@ const styles = StyleSheet.create({
   },
   placeholderWrap: {
     flex: 1,
-    borderRadius: BorderRadius.lg,
+    borderRadius: BorderRadius.xl,
     alignItems: "center",
     justifyContent: "center",
     padding: Spacing.lg,
@@ -866,7 +871,7 @@ const styles = StyleSheet.create({
     gap: Spacing.xs,
     paddingVertical: Spacing.md,
     paddingHorizontal: Spacing.lg,
-    borderRadius: BorderRadius.md,
+    borderRadius: BorderRadius.pill,
     borderWidth: 1,
     minHeight: 48,
   },
@@ -877,7 +882,7 @@ const styles = StyleSheet.create({
   singleImage: {
     width: "100%",
     height: "100%",
-    borderRadius: BorderRadius.md,
+    borderRadius: BorderRadius.lg,
   },
   replaceBtn: {
     position: "absolute",
@@ -885,13 +890,13 @@ const styles = StyleSheet.create({
     alignSelf: "center",
     paddingVertical: Spacing.sm,
     paddingHorizontal: Spacing.md,
-    borderRadius: BorderRadius.md,
+    borderRadius: BorderRadius.pill,
     borderWidth: 1,
   },
   superpositionWrap: {
     flex: 1,
     position: "relative",
-    borderRadius: BorderRadius.md,
+    borderRadius: BorderRadius.lg,
     overflow: "hidden",
   },
   superpositionLayer: {

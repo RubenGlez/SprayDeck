@@ -6,14 +6,13 @@ import { useTranslation } from "react-i18next";
 
 import { HapticTab } from "@/components/haptic-tab";
 import { IconSymbol } from "@/components/ui/icon-symbol";
-import { BorderRadius, Colors, FontFamily, Spacing } from "@/constants/theme";
-import { useColorScheme } from "@/hooks/use-color-scheme";
+import { BorderRadius, FontFamily, Spacing } from "@/constants/theme";
+import { useTheme } from "@/hooks/use-theme";
 
 export default function TabLayout() {
-  const colorScheme = useColorScheme();
   const { t } = useTranslation();
   const insets = useSafeAreaInsets();
-  const theme = Colors[colorScheme];
+  const { theme } = useTheme();
 
   const bottomPad = Math.max(insets.bottom, Spacing.sm);
   const tabBarHeight = 56 + bottomPad;

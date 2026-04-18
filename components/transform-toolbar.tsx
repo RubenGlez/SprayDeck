@@ -3,8 +3,8 @@ import React from "react";
 import { StyleSheet, TouchableOpacity, View } from "react-native";
 
 import { IconSymbol } from "@/components/ui/icon-symbol";
-import { BorderRadius, Colors, Shadows, Spacing } from "@/constants/theme";
-import { useColorScheme } from "@/hooks/use-color-scheme";
+import { BorderRadius, Shadows, Spacing } from "@/constants/theme";
+import { useTheme } from "@/hooks/use-theme";
 
 const TOOLBAR_ICON_SIZE = 40;
 const TOOLBAR_GAP = Spacing.sm;
@@ -47,8 +47,7 @@ export function TransformToolbar({
   bottom = Spacing.sm,
   labels,
 }: TransformToolbarProps) {
-  const colorScheme = useColorScheme();
-  const theme = Colors[colorScheme];
+  const { theme } = useTheme();
 
   return (
     <View

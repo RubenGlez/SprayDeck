@@ -10,8 +10,13 @@ import { StyleSheet, TouchableOpacity, View } from "react-native";
 import { FavoriteIcon } from "@/components/favorite-icon";
 import { ThemedText } from "@/components/themed-text";
 import { IconSymbol } from "@/components/ui/icon-symbol";
-import { Colors, Spacing, Typography } from "@/constants/theme";
-import { useColorScheme } from "@/hooks/use-color-scheme";
+import {
+  SHEET_BACKDROP_OPACITY,
+  TypeStyles,
+  sheetModalBackground,
+} from "@/constants/ui-primitives";
+import { Spacing } from "@/constants/theme";
+import { useTheme } from "@/hooks/use-theme";
 import { useFavoritesStore } from "@/stores/useFavoritesStore";
 import type { SeriesWithCountAndBrand } from "@/types";
 
@@ -23,18 +28,29 @@ type Props = {
   onToggleSeries: (seriesId: string) => void;
   onSelectAll?: () => void;
   onClear?: () => void;
+  /** When false, hides per-row favorite star (e.g. import-from-image flow). Default true. */
+  showFavorites?: boolean;
+  /** Fixed heights; omit for dynamic sheet height. */
+  snapPoints?: (string | number)[];
 };
 
 export const SeriesSelectBottomSheet = forwardRef<
   SeriesSelectBottomSheetRef,
   Props
 >(function SeriesSelectBottomSheet(
-  { series, selectedSeriesIds, onToggleSeries, onSelectAll, onClear },
+  {
+    series,
+    selectedSeriesIds,
+    onToggleSeries,
+    onSelectAll,
+    onClear,
+    showFavorites = true,
+    snapPoints,
+  },
   ref,
 ) {
   const { t } = useTranslation();
-  const colorScheme = useColorScheme() ?? "light";
-  const theme = Colors[colorScheme];
+  const { theme } = useTheme();
   const favoriteSeriesIds = useFavoritesStore((s) => s.favoriteSeriesIds);
   const toggleFavoriteSeries = useFavoritesStore((s) => s.toggleFavoriteSeries);
 
@@ -44,7 +60,7 @@ export const SeriesSelectBottomSheet = forwardRef<
         {...props}
         appearsOnIndex={0}
         disappearsOnIndex={-1}
-        opacity={0.5}
+        opacity={SHEET_BACKDROP_OPACITY}
       />
     ),
     [],
@@ -53,22 +69,27 @@ export const SeriesSelectBottomSheet = forwardRef<
   return (
     <BottomSheetModal
       ref={ref}
-      backgroundStyle={{
-        backgroundColor: theme.background,
-        borderTopLeftRadius: 20,
-        borderTopRightRadius: 20,
-      }}
+      backgroundStyle={sheetModalBackground(theme)}
       backdropComponent={renderBackdrop}
-      enableDynamicSizing
+      enableDynamicSizing={snapPoints == null}
+      {...(snapPoints != null ? { snapPoints } : {})}
     >
       <BottomSheetScrollView contentContainerStyle={styles.content}>
         <ThemedText
-          style={[styles.sectionLabel, { color: theme.textSecondary }]}
+          style={[
+            TypeStyles.overline,
+            styles.sectionLabel,
+            { color: theme.textSecondary },
+          ]}
         >
           {t("palettes.selectSeries")}
         </ThemedText>
         <ThemedText
-          style={[styles.sectionSubtitle, { color: theme.textSecondary }]}
+          style={[
+            TypeStyles.listRowMeta,
+            styles.sectionSubtitle,
+            { color: theme.textSecondary },
+          ]}
         >
           {t("palettes.selectSeriesSubtitle")}
         </ThemedText>
@@ -105,7 +126,10 @@ export const SeriesSelectBottomSheet = forwardRef<
                     <IconSymbol name="square" size={24} color={theme.icon} />
                   )}
                   <View style={styles.seriesLabelWrap}>
-                    <ThemedText style={styles.seriesName} numberOfLines={1}>
+                    <ThemedText
+                      style={TypeStyles.listRowTitle}
+                      numberOfLines={1}
+                    >
                       {t("palettes.selectAll")}
                     </ThemedText>
                   </View>
@@ -121,7 +145,7 @@ export const SeriesSelectBottomSheet = forwardRef<
                   accessibilityLabel={t("palettes.clearSelection")}
                 >
                   <ThemedText
-                    style={[styles.clearLabel, { color: theme.tint }]}
+                    style={[TypeStyles.listAction, { color: theme.tint }]}
                     numberOfLines={1}
                   >
                     {t("palettes.clearSelection")}
@@ -152,14 +176,18 @@ export const SeriesSelectBottomSheet = forwardRef<
                 )}
                 <View style={styles.seriesLabelWrap}>
                   <ThemedText
-                    style={styles.seriesName}
+                    style={TypeStyles.listRowTitle}
                     numberOfLines={1}
                     ellipsizeMode="tail"
                   >
                     {s.name}
                   </ThemedText>
                   <ThemedText
-                    style={[styles.seriesMeta, { color: theme.textSecondary }]}
+                    style={[
+                      TypeStyles.listRowMeta,
+                      styles.seriesMeta,
+                      { color: theme.textSecondary },
+                    ]}
                     numberOfLines={1}
                     ellipsizeMode="tail"
                   >
@@ -167,24 +195,26 @@ export const SeriesSelectBottomSheet = forwardRef<
                     {t("colors.colorCount", { count: s.colorCount })}
                   </ThemedText>
                 </View>
-                <TouchableOpacity
-                  style={styles.favoriteBtn}
-                  onPress={(e) => {
-                    e.stopPropagation();
-                    toggleFavoriteSeries(s.id);
-                  }}
-                  accessibilityLabel={
-                    favoriteSeriesIds.includes(s.id)
-                      ? t("colors.removeFromFavorites")
-                      : t("colors.addToFavorites")
-                  }
-                  accessibilityRole="button"
-                >
-                  <FavoriteIcon
-                    isFavorite={favoriteSeriesIds.includes(s.id)}
-                    size={22}
-                  />
-                </TouchableOpacity>
+                {showFavorites ? (
+                  <TouchableOpacity
+                    style={styles.favoriteBtn}
+                    onPress={(e) => {
+                      e.stopPropagation();
+                      toggleFavoriteSeries(s.id);
+                    }}
+                    accessibilityLabel={
+                      favoriteSeriesIds.includes(s.id)
+                        ? t("colors.removeFromFavorites")
+                        : t("colors.addToFavorites")
+                    }
+                    accessibilityRole="button"
+                  >
+                    <FavoriteIcon
+                      isFavorite={favoriteSeriesIds.includes(s.id)}
+                      size={22}
+                    />
+                  </TouchableOpacity>
+                ) : null}
               </TouchableOpacity>
             );
           })}
@@ -200,13 +230,9 @@ const styles = StyleSheet.create({
     paddingBottom: Spacing.xl * 2,
   },
   sectionLabel: {
-    fontSize: Typography.fontSize.sm,
-    fontWeight: Typography.fontWeight.semibold,
     marginBottom: Spacing.sm,
-    textTransform: "uppercase",
   },
   sectionSubtitle: {
-    fontSize: Typography.fontSize.sm,
     marginBottom: Spacing.md,
   },
   seriesList: {
@@ -233,21 +259,12 @@ const styles = StyleSheet.create({
     paddingVertical: Spacing.xs,
     paddingLeft: Spacing.sm,
   },
-  clearLabel: {
-    fontSize: Typography.fontSize.md,
-    fontWeight: Typography.fontWeight.medium,
-  },
   seriesLabelWrap: {
     flex: 1,
     marginLeft: Spacing.sm,
     minWidth: 0,
   },
-  seriesName: {
-    fontSize: Typography.fontSize.md,
-    fontWeight: Typography.fontWeight.semibold,
-  },
   seriesMeta: {
-    fontSize: Typography.fontSize.sm,
     marginTop: 2,
   },
   favoriteBtn: {

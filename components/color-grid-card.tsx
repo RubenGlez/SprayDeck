@@ -3,14 +3,8 @@ import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
 import { FavoriteIcon } from "@/components/favorite-icon";
 import { IconSymbol } from "@/components/ui/icon-symbol";
-import {
-  BorderRadius,
-  Colors,
-  FontFamily,
-  Spacing,
-  Typography,
-} from "@/constants/theme";
-import { useColorScheme } from "@/hooks/use-color-scheme";
+import { BorderRadius, FontFamily, Spacing, Typography } from "@/constants/theme";
+import { useTheme } from "@/hooks/use-theme";
 import type { Color } from "@/types";
 
 /** Returns true if the background is light (use black text), false if dark (use white text). */
@@ -51,8 +45,7 @@ export function ColorGridCard({
   cardWidth,
   swatchSize,
 }: ColorGridCardProps) {
-  const colorScheme = useColorScheme();
-  const theme = Colors[colorScheme];
+  const { theme } = useTheme();
   const lightBg = isLightBackground(color.hex);
   const textColor = lightBg ? "#000" : "#fff";
   const isVeryLight =
@@ -155,7 +148,7 @@ const styles = StyleSheet.create({
     position: "relative",
   },
   swatch: {
-    borderRadius: BorderRadius.md,
+    borderRadius: BorderRadius.lg,
     overflow: "hidden",
     position: "relative",
   },

@@ -11,12 +11,11 @@ import {
 import { ThemedText } from "@/components/themed-text";
 import {
   BorderRadius,
-  Colors,
   FontFamily,
   Spacing,
   Typography,
 } from "@/constants/theme";
-import { useColorScheme } from "@/hooks/use-color-scheme";
+import { useTheme } from "@/hooks/use-theme";
 
 export type ButtonVariant =
   | "primary"
@@ -61,8 +60,7 @@ export function Button({
   style,
   children,
 }: ButtonProps) {
-  const colorScheme = useColorScheme() ?? "light";
-  const theme = Colors[colorScheme];
+  const { theme } = useTheme();
   const isDisabled = disabled || loading;
 
   const padding = SIZE_PADDING[size];

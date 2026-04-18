@@ -14,9 +14,18 @@ import {
 
 import { FavoriteIcon } from "@/components/favorite-icon";
 import { ThemedText } from "@/components/themed-text";
-import { IconSymbol } from "@/components/ui/icon-symbol";
-import { BorderRadius, Colors, Spacing, Typography } from "@/constants/theme";
-import { useColorScheme } from "@/hooks/use-color-scheme";
+import {
+  BorderRadius,
+  Spacing,
+  Typography,
+  type SemanticColorPalette,
+} from "@/constants/theme";
+import {
+  SHEET_BACKDROP_OPACITY,
+  TypeStyles,
+  sheetModalBackground,
+} from "@/constants/ui-primitives";
+import { useTheme } from "@/hooks/use-theme";
 import { findClosestColors } from "@/lib/colorMatch";
 import { getColorDisplayName } from "@/lib/color";
 import {
@@ -55,8 +64,7 @@ export function ColorDetailContent({
   onOpenColor,
 }: ContentProps) {
   const { t, i18n } = useTranslation();
-  const colorScheme = useColorScheme() ?? "light";
-  const theme = Colors[colorScheme];
+  const { theme } = useTheme();
   const isLight =
     color?.color.hex.toLowerCase() === "#ffffff" ||
     color?.color.hex.toLowerCase().startsWith("#fff");
@@ -129,7 +137,13 @@ export function ColorDetailContent({
         {color.brandName} · {color.seriesName}
       </ThemedText>
 
-      <ThemedText style={[styles.sectionTitle, { color: theme.textSecondary }]}>
+      <ThemedText
+        style={[
+          TypeStyles.sectionHeading,
+          styles.sectionTitle,
+          { color: theme.textSecondary },
+        ]}
+      >
         {t("colors.colorDetail.similarInSeries")}
       </ThemedText>
       <ScrollView
@@ -152,7 +166,13 @@ export function ColorDetailContent({
         ))}
       </ScrollView>
 
-      <ThemedText style={[styles.sectionTitle, { color: theme.textSecondary }]}>
+      <ThemedText
+        style={[
+          TypeStyles.sectionHeading,
+          styles.sectionTitle,
+          { color: theme.textSecondary },
+        ]}
+      >
         {t("colors.colorDetail.similarInOtherSeries")}
       </ThemedText>
       <ScrollView
@@ -188,7 +208,7 @@ type SimilarColorCardProps = {
   displayName: string;
   subtitle?: string;
   similarity: number;
-  theme: (typeof Colors)["light"];
+  theme: SemanticColorPalette;
   onPress: () => void;
 };
 
@@ -282,8 +302,6 @@ const styles = StyleSheet.create({
     marginBottom: Spacing.lg,
   },
   sectionTitle: {
-    fontSize: Typography.fontSize.sm,
-    fontWeight: Typography.fontWeight.semibold,
     marginBottom: Spacing.xs,
   },
   similarRow: {
@@ -297,7 +315,7 @@ const styles = StyleSheet.create({
   similarSwatch: {
     width: SIMILAR_SWATCH_SIZE,
     height: SIMILAR_SWATCH_SIZE,
-    borderRadius: BorderRadius.md,
+    borderRadius: BorderRadius.lg,
     marginBottom: Spacing.xs,
   },
   similarLabel: {
@@ -326,8 +344,7 @@ export const ColorDetailBottomSheet = forwardRef<
   { color, isFavorite, onToggleFavorite, onOpenColor },
   ref,
 ) {
-  const colorScheme = useColorScheme() ?? "light";
-  const theme = Colors[colorScheme];
+  const { theme } = useTheme();
 
   const renderBackdrop = useCallback(
     (props: React.ComponentProps<typeof BottomSheetBackdrop>) => (
@@ -335,7 +352,7 @@ export const ColorDetailBottomSheet = forwardRef<
         {...props}
         appearsOnIndex={0}
         disappearsOnIndex={-1}
-        opacity={0.5}
+        opacity={SHEET_BACKDROP_OPACITY}
       />
     ),
     [],
@@ -344,11 +361,7 @@ export const ColorDetailBottomSheet = forwardRef<
   return (
     <BottomSheetModal
       ref={ref}
-      backgroundStyle={{
-        backgroundColor: theme.background,
-        borderTopLeftRadius: 20,
-        borderTopRightRadius: 20,
-      }}
+      backgroundStyle={sheetModalBackground(theme)}
       backdropComponent={renderBackdrop}
       enableDynamicSizing
     >

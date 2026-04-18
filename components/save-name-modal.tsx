@@ -11,14 +11,9 @@ import {
 
 import { Button } from "@/components/button";
 import { ThemedText } from "@/components/themed-text";
-import {
-  BorderRadius,
-  Colors,
-  FontFamily,
-  Spacing,
-  Typography,
-} from "@/constants/theme";
-import { useColorScheme } from "@/hooks/use-color-scheme";
+import { BorderRadius, FontFamily, Spacing, Typography } from "@/constants/theme";
+import { themedTextInput } from "@/constants/ui-primitives";
+import { useTheme } from "@/hooks/use-theme";
 
 export type SaveNameModalProps = {
   visible: boolean;
@@ -45,8 +40,7 @@ export function SaveNameModal({
   cancelLabel,
   saveLabel,
 }: SaveNameModalProps) {
-  const colorScheme = useColorScheme();
-  const theme = Colors[colorScheme];
+  const { theme } = useTheme();
 
   return (
     <Modal
@@ -75,14 +69,7 @@ export function SaveNameModal({
         >
           <ThemedText style={styles.title}>{title}</ThemedText>
           <TextInput
-            style={[
-              styles.input,
-              {
-                backgroundColor: theme.backgroundSecondary,
-                borderColor: theme.border,
-                color: theme.text,
-              },
-            ]}
+            style={[themedTextInput(theme), styles.input]}
             placeholder={placeholder}
             placeholderTextColor={theme.textSecondary}
             value={value}
@@ -126,11 +113,6 @@ const styles = StyleSheet.create({
   },
   input: {
     height: 44,
-    paddingHorizontal: Spacing.md,
-    borderRadius: BorderRadius.pill,
-    borderWidth: 1,
-    fontSize: Typography.fontSize.md,
-    fontFamily: FontFamily.regular,
     marginBottom: Spacing.lg,
   },
   actions: {

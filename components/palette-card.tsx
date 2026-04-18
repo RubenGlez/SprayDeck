@@ -5,7 +5,7 @@ import { StyleSheet, TouchableOpacity, View } from "react-native";
 import { ThemedText } from "@/components/themed-text";
 import { IconSymbol } from "@/components/ui/icon-symbol";
 import { getListCardWidth, LIST_GAP } from "@/constants/list-layout";
-import { BorderRadius, Shadows, Spacing, Typography } from "@/constants/theme";
+import { BorderRadius, FontFamily, Shadows, Spacing, Typography } from "@/constants/theme";
 import { useTheme } from "@/hooks/use-theme";
 import { getSeriesById } from "@/stores/useCatalogStore";
 import type { Color, Palette } from "@/types";
@@ -156,7 +156,7 @@ const styles = StyleSheet.create({
   },
   swatchMoreText: {
     fontSize: Typography.fontSize.xs,
-    fontWeight: Typography.fontWeight.semibold,
+    fontFamily: FontFamily.semibold,
   },
   seriesLabel: {
     fontSize: Typography.fontSize.sm,
@@ -164,6 +164,6 @@ const styles = StyleSheet.create({
   },
   cardTitle: {
     fontSize: Typography.fontSize.md,
-    fontWeight: Typography.fontWeight.semibold,
+    fontFamily: FontFamily.semibold,
   },
 });

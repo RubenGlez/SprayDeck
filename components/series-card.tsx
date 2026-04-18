@@ -3,7 +3,13 @@ import { StyleSheet, TouchableOpacity } from "react-native";
 
 import { FavoriteIcon } from "@/components/favorite-icon";
 import { ThemedText } from "@/components/themed-text";
-import { BorderRadius, Shadows, Spacing, Typography } from "@/constants/theme";
+import {
+  BorderRadius,
+  FontFamily,
+  Shadows,
+  Spacing,
+  Typography,
+} from "@/constants/theme";
 import { useTheme } from "@/hooks/use-theme";
 import type { SeriesWithCountAndBrand } from "@/types";
 
@@ -78,7 +84,7 @@ const styles = StyleSheet.create({
   },
   cardTitle: {
     fontSize: Typography.fontSize.md,
-    fontWeight: Typography.fontWeight.semibold,
+    fontFamily: FontFamily.semibold,
     marginBottom: Spacing.xs,
   },
   cardMeta: {

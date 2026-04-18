@@ -7,8 +7,7 @@ import Animated, {
 } from "react-native-reanimated";
 
 import { IconSymbol } from "@/components/ui/icon-symbol";
-import { Colors } from "@/constants/theme";
-import { useColorScheme } from "@/hooks/use-color-scheme";
+import { useTheme } from "@/hooks/use-theme";
 
 const SPRING_CONFIG = { damping: 22, stiffness: 500 };
 
@@ -31,8 +30,7 @@ export function FavoriteIcon({
   color,
   colorFavorite,
 }: FavoriteIconProps) {
-  const colorScheme = useColorScheme() ?? "light";
-  const theme = Colors[colorScheme];
+  const { theme } = useTheme();
   const defaultColor = color ?? theme.icon;
   const defaultColorFavorite = colorFavorite ?? theme.warning;
 

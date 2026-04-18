@@ -3,14 +3,9 @@ import { StyleSheet, TextInput, View } from "react-native";
 
 import { Button } from "@/components/button";
 import { IconSymbol } from "@/components/ui/icon-symbol";
-import {
-  BorderRadius,
-  Colors,
-  FontFamily,
-  Spacing,
-  Typography,
-} from "@/constants/theme";
-import { useColorScheme } from "@/hooks/use-color-scheme";
+import { Spacing } from "@/constants/theme";
+import { themedTextInput } from "@/constants/ui-primitives";
+import { useTheme } from "@/hooks/use-theme";
 
 export type SearchInputProps = {
   value: string;
@@ -25,20 +20,12 @@ export function SearchInput({
   placeholder,
   clearAccessibilityLabel,
 }: SearchInputProps) {
-  const colorScheme = useColorScheme() ?? "light";
-  const theme = Colors[colorScheme];
+  const { theme } = useTheme();
 
   return (
     <View style={styles.wrap}>
       <TextInput
-        style={[
-          styles.input,
-          {
-            backgroundColor: theme.backgroundSecondary,
-            borderColor: theme.border,
-            color: theme.text,
-          },
-        ]}
+        style={[themedTextInput(theme), styles.input]}
         placeholder={placeholder}
         placeholderTextColor={theme.textSecondary}
         value={value}
@@ -72,12 +59,7 @@ const styles = StyleSheet.create({
   },
   input: {
     height: 44,
-    paddingHorizontal: Spacing.md,
     paddingRight: 44,
-    borderRadius: BorderRadius.pill,
-    borderWidth: 1,
-    fontSize: Typography.fontSize.md,
-    fontFamily: FontFamily.regular,
   },
   clearBtn: {
     position: "absolute",

@@ -272,7 +272,7 @@ export default function CreatePaletteScreen() {
               value={showOnlySelected}
               onValueChange={setShowOnlySelected}
               trackColor={{ false: theme.border, true: theme.tint }}
-              thumbColor={theme.background}
+              thumbColor={theme.card}
             />
             <ThemedText
               style={[styles.switchLabel, { color: theme.textSecondary }]}

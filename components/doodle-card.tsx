@@ -4,7 +4,13 @@ import { Image, StyleSheet, TouchableOpacity, View } from "react-native";
 import { ThemedText } from "@/components/themed-text";
 import { IconSymbol } from "@/components/ui/icon-symbol";
 import { getListCardWidth, LIST_GAP } from "@/constants/list-layout";
-import { BorderRadius, Shadows, Spacing, Typography } from "@/constants/theme";
+import {
+  BorderRadius,
+  FontFamily,
+  Shadows,
+  Spacing,
+  Typography,
+} from "@/constants/theme";
 import { useTheme } from "@/hooks/use-theme";
 import { formatRelativeDate } from "@/lib/date";
 import type { Doodle } from "@/types";
@@ -98,7 +104,7 @@ const styles = StyleSheet.create({
   },
   cardTitle: {
     fontSize: Typography.fontSize.md,
-    fontWeight: Typography.fontWeight.semibold,
+    fontFamily: FontFamily.semibold,
     marginBottom: Spacing.xs,
   },
   cardDate: {

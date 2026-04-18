@@ -9,8 +9,13 @@ import { StyleSheet, TouchableOpacity, View } from "react-native";
 
 import { ThemedText } from "@/components/themed-text";
 import { IconSymbol } from "@/components/ui/icon-symbol";
-import { Colors, Spacing, Typography } from "@/constants/theme";
-import { useColorScheme } from "@/hooks/use-color-scheme";
+import { FontFamily, Spacing, Typography } from "@/constants/theme";
+import {
+  SHEET_BACKDROP_OPACITY,
+  TypeStyles,
+  sheetModalBackground,
+} from "@/constants/ui-primitives";
+import { useTheme } from "@/hooks/use-theme";
 import { SUPPORTED_LANGUAGES } from "@/stores/useLanguageStore";
 import type { LanguageCode } from "@/types";
 
@@ -29,8 +34,7 @@ export const LanguageSelectBottomSheet = forwardRef<
   ref,
 ) {
   const { t } = useTranslation();
-  const colorScheme = useColorScheme() ?? "light";
-  const theme = Colors[colorScheme];
+  const { theme } = useTheme();
 
   const renderBackdrop = useCallback(
     (props: React.ComponentProps<typeof BottomSheetBackdrop>) => (
@@ -38,7 +42,7 @@ export const LanguageSelectBottomSheet = forwardRef<
         {...props}
         appearsOnIndex={0}
         disappearsOnIndex={-1}
-        opacity={0.5}
+        opacity={SHEET_BACKDROP_OPACITY}
       />
     ),
     [],
@@ -54,17 +58,17 @@ export const LanguageSelectBottomSheet = forwardRef<
   return (
     <BottomSheetModal
       ref={ref}
-      backgroundStyle={{
-        backgroundColor: theme.background,
-        borderTopLeftRadius: 20,
-        borderTopRightRadius: 20,
-      }}
+      backgroundStyle={sheetModalBackground(theme)}
       backdropComponent={renderBackdrop}
       enableDynamicSizing
     >
       <BottomSheetScrollView contentContainerStyle={styles.content}>
         <ThemedText
-          style={[styles.sectionLabel, { color: theme.textSecondary }]}
+          style={[
+            TypeStyles.overline,
+            styles.sectionLabel,
+            { color: theme.textSecondary },
+          ]}
         >
           {t("profile.language")}
         </ThemedText>
@@ -105,10 +109,7 @@ const styles = StyleSheet.create({
     paddingBottom: Spacing.xl * 2,
   },
   sectionLabel: {
-    fontSize: Typography.fontSize.sm,
-    fontWeight: Typography.fontWeight.semibold,
     marginBottom: Spacing.md,
-    textTransform: "uppercase",
   },
   list: {
     marginBottom: Spacing.lg,
@@ -122,5 +123,6 @@ const styles = StyleSheet.create({
   },
   rowLabel: {
     fontSize: Typography.fontSize.md,
+    fontFamily: FontFamily.regular,
   },
 });

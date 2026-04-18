@@ -10,14 +10,9 @@ import { Screen } from "@/components/screen";
 import { ScreenHeader } from "@/components/screen-header";
 import { ThemedText } from "@/components/themed-text";
 import { IconSymbol } from "@/components/ui/icon-symbol";
-import {
-  BorderRadius,
-  Colors,
-  FontFamily,
-  Spacing,
-  Typography,
-} from "@/constants/theme";
-import { useColorScheme } from "@/hooks/use-color-scheme";
+import { FontFamily, Spacing, Typography } from "@/constants/theme";
+import { TypeStyles, themedTextInput } from "@/constants/ui-primitives";
+import { useTheme } from "@/hooks/use-theme";
 import { useLanguageStore } from "@/stores/useLanguageStore";
 import { useProfileStore } from "@/stores/useProfileStore";
 import { useThemeStore } from "@/stores/useThemeStore";
@@ -25,12 +20,10 @@ import type { LanguageCode } from "@/types";
 
 export default function ProfileScreen() {
   const { t, i18n } = useTranslation();
-  const colorScheme = useColorScheme();
-  const theme = Colors[colorScheme];
+  const { theme, isDark } = useTheme();
   const aka = useProfileStore((s) => s.aka);
   const setAka = useProfileStore((s) => s.setAka);
   const setColorSchemeOverride = useThemeStore((s) => s.setColorSchemeOverride);
-  const isDark = colorScheme === "dark";
   const language = useLanguageStore((s) => s.language);
   const setLanguage = useLanguageStore((s) => s.setLanguage);
   const languageSheetRef = useRef<LanguageSelectBottomSheetRef>(null);
@@ -49,19 +42,16 @@ export default function ProfileScreen() {
 
         <View style={[styles.section, { borderTopWidth: 0 }]}>
           <ThemedText
-            style={[styles.sectionLabel, { color: theme.textSecondary }]}
+            style={[
+              TypeStyles.overline,
+              styles.sectionLabel,
+              { color: theme.textSecondary },
+            ]}
           >
             {t("profile.akaSection")}
           </ThemedText>
           <TextInput
-            style={[
-              styles.akaInput,
-              {
-                backgroundColor: theme.backgroundSecondary,
-                borderColor: theme.border,
-                color: theme.text,
-              },
-            ]}
+            style={[themedTextInput(theme, { minHeight: 48 }), styles.akaInput]}
             placeholder={t("profile.akaPlaceholder")}
             placeholderTextColor={theme.textSecondary}
             value={aka}
@@ -76,7 +66,11 @@ export default function ProfileScreen() {
 
         <View style={[styles.section, { borderTopColor: theme.border }]}>
           <ThemedText
-            style={[styles.sectionLabel, { color: theme.textSecondary }]}
+            style={[
+              TypeStyles.overline,
+              styles.sectionLabel,
+              { color: theme.textSecondary },
+            ]}
           >
             {t("profile.language")}
           </ThemedText>
@@ -106,7 +100,11 @@ export default function ProfileScreen() {
 
         <View style={[styles.section, { borderTopColor: theme.border }]}>
           <ThemedText
-            style={[styles.sectionLabel, { color: theme.textSecondary }]}
+            style={[
+              TypeStyles.overline,
+              styles.sectionLabel,
+              { color: theme.textSecondary },
+            ]}
           >
             {t("profile.appearance")}
           </ThemedText>
@@ -139,19 +137,9 @@ const styles = StyleSheet.create({
     paddingTop: Spacing.md,
   },
   sectionLabel: {
-    fontSize: 13,
-    fontFamily: FontFamily.semibold,
-    textTransform: "uppercase",
     marginBottom: Spacing.sm,
-    letterSpacing: 0.5,
   },
   akaInput: {
-    height: 48,
-    paddingHorizontal: Spacing.md,
-    borderRadius: BorderRadius.pill,
-    borderWidth: 1,
-    fontSize: Typography.fontSize.md,
-    fontFamily: FontFamily.regular,
     marginBottom: Spacing.xs,
   },
   akaHint: {
@@ -167,6 +155,7 @@ const styles = StyleSheet.create({
   },
   rowLabel: {
     fontSize: 16,
+    fontFamily: FontFamily.regular,
   },
   languageRow: {
     flexDirection: "row",

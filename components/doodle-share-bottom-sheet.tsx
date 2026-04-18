@@ -7,12 +7,17 @@ import * as MediaLibrary from "expo-media-library";
 import * as Sharing from "expo-sharing";
 import React, { forwardRef, useCallback } from "react";
 import { useTranslation } from "react-i18next";
-import { Alert, StyleSheet, TouchableOpacity, View } from "react-native";
+import { Alert, StyleSheet, TouchableOpacity } from "react-native";
 
 import { ThemedText } from "@/components/themed-text";
 import { IconSymbol } from "@/components/ui/icon-symbol";
-import { Colors, Spacing, Typography } from "@/constants/theme";
-import { useColorScheme } from "@/hooks/use-color-scheme";
+import { Spacing } from "@/constants/theme";
+import {
+  SHEET_BACKDROP_OPACITY,
+  TypeStyles,
+  sheetModalBackground,
+} from "@/constants/ui-primitives";
+import { useTheme } from "@/hooks/use-theme";
 
 export type DoodleShareBottomSheetRef = BottomSheetModal;
 
@@ -30,8 +35,7 @@ export const DoodleShareBottomSheet = forwardRef<
   ref,
 ) {
   const { t } = useTranslation();
-  const colorScheme = useColorScheme() ?? "light";
-  const theme = Colors[colorScheme];
+  const { theme } = useTheme();
 
   const renderBackdrop = useCallback(
     (props: React.ComponentProps<typeof BottomSheetBackdrop>) => (
@@ -39,7 +43,7 @@ export const DoodleShareBottomSheet = forwardRef<
         {...props}
         appearsOnIndex={0}
         disappearsOnIndex={-1}
-        opacity={0.5}
+        opacity={SHEET_BACKDROP_OPACITY}
       />
     ),
     [],
@@ -95,17 +99,13 @@ export const DoodleShareBottomSheet = forwardRef<
   return (
     <BottomSheetModal
       ref={ref}
-      backgroundStyle={{
-        backgroundColor: theme.background,
-        borderTopLeftRadius: 20,
-        borderTopRightRadius: 20,
-      }}
+      backgroundStyle={sheetModalBackground(theme)}
       backdropComponent={renderBackdrop}
       enableDynamicSizing
     >
       <BottomSheetScrollView contentContainerStyle={styles.content}>
         <ThemedText
-          style={[styles.title, { color: theme.textSecondary }]}
+          style={[TypeStyles.overline, styles.title, { color: theme.textSecondary }]}
         >
           {t("doodles.shareTitle")}
         </ThemedText>
@@ -121,7 +121,9 @@ export const DoodleShareBottomSheet = forwardRef<
               size={24}
               color={theme.tint}
             />
-            <ThemedText style={[styles.optionLabel, { color: theme.text }]}>
+            <ThemedText
+              style={[TypeStyles.listRowTitle, styles.optionLabel, { color: theme.text }]}
+            >
               {opt.label}
             </ThemedText>
             <IconSymbol
@@ -142,10 +144,7 @@ const styles = StyleSheet.create({
     paddingBottom: Spacing.xl * 2,
   },
   title: {
-    fontSize: Typography.fontSize.sm,
-    fontWeight: Typography.fontWeight.semibold,
     marginBottom: Spacing.md,
-    textTransform: "uppercase",
   },
   optionRow: {
     flexDirection: "row",
@@ -156,6 +155,5 @@ const styles = StyleSheet.create({
   },
   optionLabel: {
     flex: 1,
-    fontSize: Typography.fontSize.md,
   },
 });
