@@ -139,12 +139,10 @@ export default function CatalogScreen() {
         >
           <IconSymbol
             name="slider.horizontal.3"
-            size={15}
+            size={18}
             color={activeCount < totalCount ? Accent.primary : Accent.onSurfaceMuted}
           />
-          <ThemedText style={[styles.filterChipText, activeCount < totalCount && styles.filterChipTextActive]}>
-            {activeCount}/{totalCount}
-          </ThemedText>
+          {activeCount < totalCount && <View style={styles.filterDot} />}
         </TouchableOpacity>
       </View>
     </View>
@@ -261,24 +259,24 @@ const styles = StyleSheet.create({
     color: Accent.primary,
   },
   filterChip: {
-    flexDirection: "row",
+    width: 34,
+    height: 34,
     alignItems: "center",
-    gap: 4,
-    paddingHorizontal: Spacing.sm + 2,
-    paddingVertical: Spacing.xs + 2,
+    justifyContent: "center",
     borderRadius: BorderRadius.full,
     backgroundColor: Surface.high,
   },
   filterChipActive: {
     backgroundColor: `${Accent.primary}22`,
   },
-  filterChipText: {
-    fontSize: Typography.fontSize.xs,
-    color: Accent.onSurfaceMuted,
-    fontFamily: FontFamily.displayMedium,
-  },
-  filterChipTextActive: {
-    color: Accent.primary,
+  filterDot: {
+    position: "absolute",
+    top: 5,
+    right: 5,
+    width: 7,
+    height: 7,
+    borderRadius: BorderRadius.full,
+    backgroundColor: Accent.primary,
   },
   listContent: {
     paddingTop: COLOR_GRID.GAP,
