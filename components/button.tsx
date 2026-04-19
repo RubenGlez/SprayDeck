@@ -162,7 +162,7 @@ export function Button({
     variant === "secondary"
       ? { backgroundColor: Surface.high }
       : variant === "outline"
-      ? { backgroundColor: "transparent", borderWidth: 1, borderColor: `${Accent.outlineVariant}40` }
+      ? { backgroundColor: "transparent", borderWidth: 1, borderColor: `${Accent.outlineVariant}26` }
       : variant === "destructive"
       ? { backgroundColor: "transparent", borderWidth: 1, borderColor: `${Accent.error}60` }
       : { backgroundColor: "transparent" };

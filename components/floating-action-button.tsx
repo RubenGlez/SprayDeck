@@ -75,8 +75,6 @@ const styles = StyleSheet.create({
   },
   glassOverlay: {
     backgroundColor: `${Glass.backgroundColor}99`,
-    borderWidth: 1,
-    borderColor: `${Accent.outlineVariant}26`,
     borderRadius: BorderRadius.full,
   },
 });

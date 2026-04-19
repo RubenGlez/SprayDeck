@@ -11,7 +11,7 @@ import {
 
 import { Button } from "@/components/button";
 import { ThemedText } from "@/components/themed-text";
-import { Accent, BorderRadius, FontFamily, Spacing, Surface, Typography } from "@/constants/theme";
+import { Accent, BorderRadius, FontFamily, Shadows, Spacing, Surface, Typography } from "@/constants/theme";
 
 export type SaveNameModalProps = {
   visible: boolean;
@@ -90,10 +90,11 @@ const styles = StyleSheet.create({
     backgroundColor: "rgba(0,0,0,0.7)",
   },
   card: {
-    backgroundColor: Surface.high,
+    backgroundColor: Surface.highest,
     borderRadius: BorderRadius.xl,
     padding: Spacing.lg,
     zIndex: 1,
+    ...Shadows.neonGlow,
   },
   title: {
     fontFamily: FontFamily.displaySemiBold,

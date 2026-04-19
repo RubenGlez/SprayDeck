@@ -166,8 +166,8 @@ const styles = StyleSheet.create({
     color: Accent.onSurfaceMuted,
   },
   inputWrap: {
-    backgroundColor: Surface.base,
-    borderRadius: BorderRadius.lg,
+    backgroundColor: Surface.highest,
+    borderRadius: BorderRadius.full,
     overflow: "hidden",
   },
   akaInput: {

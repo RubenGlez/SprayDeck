@@ -91,6 +91,7 @@ const styles = StyleSheet.create({
     color: Accent.onSurface,
   },
   brandName: {
+    fontFamily: FontFamily.displaySemiBold,
     fontSize: Typography.fontSize.xs,
     color: Accent.onSurfaceMuted,
     textTransform: "uppercase",

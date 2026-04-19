@@ -26,7 +26,7 @@ import type { Palette } from "@/types";
 function SwipeableDeleteAction({ onDelete }: { onDelete: () => void }) {
   return (
     <TouchableOpacity style={styles.deleteAction} onPress={onDelete} activeOpacity={0.8}>
-      <IconSymbol name="trash.fill" size={20} color="#fff" />
+      <IconSymbol name="trash.fill" size={20} color={Accent.onSurface} />
       <ThemedText style={styles.deleteActionText}>Delete</ThemedText>
     </TouchableOpacity>
   );
@@ -225,7 +225,7 @@ const styles = StyleSheet.create({
     gap: 4,
   },
   deleteActionText: {
-    color: "#fff",
+    color: Accent.onSurface,
     fontSize: Typography.fontSize.xs,
     fontFamily: FontFamily.displaySemiBold,
   },

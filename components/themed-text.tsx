@@ -55,8 +55,8 @@ const styles = StyleSheet.create({
     color: Accent.primary,
   },
   label: {
+    fontFamily: FontFamily.displaySemiBold,
     fontSize: Typography.fontSize.xs,
-    fontWeight: Typography.fontWeight.semibold,
     textTransform: 'uppercase',
     letterSpacing: Typography.letterSpacing.label,
     color: Accent.onSurfaceMuted,

@@ -3,7 +3,7 @@ import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
 import { FavoriteIcon } from "@/components/favorite-icon";
 import { IconSymbol } from "@/components/ui/icon-symbol";
-import { Accent, BorderRadius, Spacing, Typography } from "@/constants/theme";
+import { Accent, BorderRadius, FontFamily, Spacing, Typography } from "@/constants/theme";
 import type { Color } from "@/types";
 
 function isLightBackground(hex: string): boolean {
@@ -129,9 +129,9 @@ const styles = StyleSheet.create({
     gap: 1,
   },
   labelCode: {
+    fontFamily: FontFamily.displaySemiBold,
     fontSize: 9,
-    letterSpacing: 0.5,
-    fontWeight: "600",
+    letterSpacing: Typography.letterSpacing.label,
     textTransform: "uppercase",
   },
   labelName: {

@@ -15,6 +15,7 @@ import { BottomSheetModalProvider } from '@gorhom/bottom-sheet';
 import 'react-native-reanimated';
 import i18n from 'i18next';
 
+import { Surface } from '@/constants/theme';
 import { useLanguageStore } from '@/stores/useLanguageStore';
 import '@/i18n';
 
@@ -41,7 +42,7 @@ export default function RootLayout() {
   if (!fontsLoaded) return null;
 
   return (
-    <GestureHandlerRootView style={{ flex: 1, backgroundColor: '#000000' }}>
+    <GestureHandlerRootView style={{ flex: 1, backgroundColor: Surface.lowest }}>
       <SafeAreaProvider>
         <BottomSheetModalProvider>
           <ThemeProvider value={DarkTheme}>

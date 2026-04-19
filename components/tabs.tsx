@@ -2,7 +2,7 @@ import React from "react";
 import { StyleSheet, TouchableOpacity, View } from "react-native";
 
 import { ThemedText } from "@/components/themed-text";
-import { Accent, Spacing, Typography } from "@/constants/theme";
+import { Accent, BorderRadius, Spacing, Surface, Typography } from "@/constants/theme";
 
 const TAB_BAR_HEIGHT = 48;
 
@@ -24,50 +24,53 @@ export type TabsProps = {
 export function Tabs({ value, onChange, tabs }: TabsProps) {
   return (
     <View style={styles.tabBar}>
-      {tabs.map((tab) => {
-        const isSelected = value === tab.value;
-        return (
-          <TouchableOpacity
-            key={tab.value}
-            style={[
-              styles.tab,
-              isSelected && {
-                borderBottomColor: Accent.primary,
-                borderBottomWidth: 2,
-              },
-            ]}
-            onPress={() => onChange(tab.value)}
-            accessibilityRole="tab"
-            accessibilityState={{ selected: isSelected }}
-            accessibilityLabel={tab.label}
-          >
-            {(tab.renderIcon != null || tab.icon != null) && (
-              <View style={styles.tabIconWrap}>
-                {tab.renderIcon != null
-                  ? tab.renderIcon(isSelected)
-                  : tab.icon}
-              </View>
-            )}
-            <ThemedText
-              style={[
-                styles.tabLabel,
-                { color: isSelected ? Accent.primary : Accent.onSurfaceMuted },
-              ]}
+      <View style={styles.tabTrack}>
+        {tabs.map((tab) => {
+          const isSelected = value === tab.value;
+          return (
+            <TouchableOpacity
+              key={tab.value}
+              style={[styles.tab, isSelected && styles.tabSelected]}
+              onPress={() => onChange(tab.value)}
+              accessibilityRole="tab"
+              accessibilityState={{ selected: isSelected }}
+              accessibilityLabel={tab.label}
             >
-              {tab.label}
-            </ThemedText>
-          </TouchableOpacity>
-        );
-      })}
+              {(tab.renderIcon != null || tab.icon != null) && (
+                <View style={styles.tabIconWrap}>
+                  {tab.renderIcon != null
+                    ? tab.renderIcon(isSelected)
+                    : tab.icon}
+                </View>
+              )}
+              <ThemedText
+                style={[
+                  styles.tabLabel,
+                  { color: isSelected ? Accent.primary : Accent.onSurfaceMuted },
+                ]}
+              >
+                {tab.label}
+              </ThemedText>
+            </TouchableOpacity>
+          );
+        })}
+      </View>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   tabBar: {
-    flexDirection: "row",
     height: TAB_BAR_HEIGHT,
     paddingHorizontal: Spacing.sm,
+    paddingVertical: Spacing.xs,
+  },
+  tabTrack: {
+    flex: 1,
+    flexDirection: "row",
+    backgroundColor: Surface.high,
+    borderRadius: BorderRadius.full,
+    padding: 3,
   },
   tab: {
     flex: 1,
@@ -75,6 +78,10 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     gap: Spacing.xs,
+    borderRadius: BorderRadius.full,
+  },
+  tabSelected: {
+    backgroundColor: Surface.bright,
   },
   tabIconWrap: {
     alignItems: "center",

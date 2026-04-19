@@ -143,6 +143,7 @@ const styles = StyleSheet.create({
     gap: 1,
   },
   seriesLabel: {
+    fontFamily: FontFamily.displaySemiBold,
     fontSize: Typography.fontSize.xs,
     color: Accent.onSurfaceMuted,
     textTransform: "uppercase",

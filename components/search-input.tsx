@@ -68,13 +68,8 @@ const styles = StyleSheet.create({
     paddingHorizontal: Spacing.md,
     height: 46,
     gap: Spacing.sm,
-    // subtle border for structure
-    borderWidth: 1,
-    borderColor: "transparent",
   },
   wrapFocused: {
-    borderColor: `${Accent.primary}33`,
-    // neon glow approximation via shadow
     shadowColor: Accent.primary,
     shadowOffset: { width: 0, height: 0 },
     shadowOpacity: 0.2,

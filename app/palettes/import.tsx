@@ -366,7 +366,7 @@ export default function ImportFromImageScreen() {
                       { backgroundColor: hex },
                       (hex === "#ffffff" || hex.startsWith("#fff")) && {
                         borderWidth: 1,
-                        borderColor: `${Accent.outlineVariant}30`,
+                        borderColor: `${Accent.outlineVariant}26`,
                       },
                     ]}
                   />

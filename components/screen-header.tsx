@@ -43,7 +43,6 @@ const styles = StyleSheet.create({
   },
   title: {
     flex: 1,
-    fontSize: 26,
   },
   subtitle: {
     fontSize: Typography.fontSize.sm,

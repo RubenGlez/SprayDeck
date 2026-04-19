@@ -10,7 +10,7 @@ import { StyleSheet, TouchableOpacity, View } from "react-native";
 import { FavoriteIcon } from "@/components/favorite-icon";
 import { ThemedText } from "@/components/themed-text";
 import { IconSymbol } from "@/components/ui/icon-symbol";
-import { Accent, Spacing, Surface, Typography } from "@/constants/theme";
+import { Accent, BorderRadius, Spacing, Surface, Typography } from "@/constants/theme";
 import { useFavoritesStore } from "@/stores/useFavoritesStore";
 import type { SeriesWithCountAndBrand } from "@/types";
 
@@ -51,7 +51,7 @@ export const SeriesSelectBottomSheet = forwardRef<
     <BottomSheetModal
       ref={ref}
       backgroundStyle={{
-        backgroundColor: Surface.low,
+        backgroundColor: Surface.highest,
         borderTopLeftRadius: 20,
         borderTopRightRadius: 20,
       }}
@@ -59,9 +59,7 @@ export const SeriesSelectBottomSheet = forwardRef<
       enableDynamicSizing
     >
       <BottomSheetScrollView contentContainerStyle={styles.content}>
-        <ThemedText
-          style={[styles.sectionLabel, { color: Accent.onSurfaceMuted }]}
-        >
+        <ThemedText type="label" style={styles.sectionLabel}>
           {t("palettes.selectSeries")}
         </ThemedText>
         <ThemedText
@@ -71,13 +69,7 @@ export const SeriesSelectBottomSheet = forwardRef<
         </ThemedText>
         <View style={styles.seriesList}>
           {(onSelectAll != null || onClear != null) && (
-            <View
-              style={[
-                styles.seriesRow,
-                styles.selectAllRow,
-                { borderBottomColor: Accent.outlineVariant },
-              ]}
-            >
+            <View style={[styles.seriesRow, styles.selectAllRow]}>
               {onSelectAll != null ? (
                 <TouchableOpacity
                   style={styles.selectAllLeft}
@@ -132,7 +124,7 @@ export const SeriesSelectBottomSheet = forwardRef<
             return (
               <TouchableOpacity
                 key={s.id}
-                style={[styles.seriesRow, { borderBottomColor: Accent.outlineVariant }]}
+                style={[styles.seriesRow, isSelected && styles.seriesRowSelected]}
                 onPress={() => onToggleSeries(s.id)}
                 activeOpacity={0.7}
                 accessibilityRole="checkbox"
@@ -197,10 +189,7 @@ const styles = StyleSheet.create({
     paddingBottom: Spacing.xl * 2,
   },
   sectionLabel: {
-    fontSize: Typography.fontSize.sm,
-    fontWeight: Typography.fontWeight.semibold,
     marginBottom: Spacing.sm,
-    textTransform: "uppercase",
   },
   sectionSubtitle: {
     fontSize: Typography.fontSize.sm,
@@ -213,7 +202,13 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     paddingVertical: Spacing.sm,
-    borderBottomWidth: 1,
+    paddingHorizontal: Spacing.sm,
+    backgroundColor: Surface.high,
+    borderRadius: BorderRadius.lg,
+    marginBottom: Spacing.xs,
+  },
+  seriesRowSelected: {
+    backgroundColor: Surface.bright,
   },
   selectAllRow: {
     flexDirection: "row",

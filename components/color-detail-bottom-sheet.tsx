@@ -99,7 +99,7 @@ export function ColorDetailContent({
           style={[
             styles.swatch,
             { backgroundColor: color.color.hex },
-            isLight && { borderWidth: 1, borderColor: `${Accent.outlineVariant}40` },
+            isLight && { borderWidth: 1, borderColor: `${Accent.outlineVariant}26` },
           ]}
         />
         <TouchableOpacity
@@ -211,7 +211,7 @@ function SimilarColorCard({
         style={[
           styles.similarSwatch,
           { backgroundColor: color.hex },
-          isVeryLight && { borderWidth: 1, borderColor: `${Accent.outlineVariant}40` },
+          isVeryLight && { borderWidth: 1, borderColor: `${Accent.outlineVariant}26` },
         ]}
       />
       <ThemedText

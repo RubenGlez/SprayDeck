@@ -11,7 +11,7 @@ import { Alert, StyleSheet, TouchableOpacity, View } from "react-native";
 
 import { ThemedText } from "@/components/themed-text";
 import { IconSymbol } from "@/components/ui/icon-symbol";
-import { Accent, Spacing, Surface, Typography } from "@/constants/theme";
+import { Accent, BorderRadius, Spacing, Surface, Typography } from "@/constants/theme";
 
 export type DoodleShareBottomSheetRef = BottomSheetModal;
 
@@ -93,7 +93,7 @@ export const DoodleShareBottomSheet = forwardRef<
     <BottomSheetModal
       ref={ref}
       backgroundStyle={{
-        backgroundColor: Surface.low,
+        backgroundColor: Surface.highest,
         borderTopLeftRadius: 20,
         borderTopRightRadius: 20,
       }}
@@ -101,15 +101,13 @@ export const DoodleShareBottomSheet = forwardRef<
       enableDynamicSizing
     >
       <BottomSheetScrollView contentContainerStyle={styles.content}>
-        <ThemedText
-          style={[styles.title, { color: Accent.onSurfaceMuted }]}
-        >
+        <ThemedText type="label" style={styles.title}>
           {t("doodles.shareTitle")}
         </ThemedText>
         {options.map((opt) => (
           <TouchableOpacity
             key={opt.key}
-            style={[styles.optionRow, { borderBottomColor: Accent.outlineVariant }]}
+            style={styles.optionRow}
             onPress={opt.onPress}
             activeOpacity={0.7}
           >
@@ -118,7 +116,7 @@ export const DoodleShareBottomSheet = forwardRef<
               size={24}
               color={Accent.primary}
             />
-            <ThemedText style={[styles.optionLabel, { color: Accent.onSurface }]}>
+            <ThemedText style={styles.optionLabel}>
               {opt.label}
             </ThemedText>
             <IconSymbol
@@ -139,16 +137,16 @@ const styles = StyleSheet.create({
     paddingBottom: Spacing.xl * 2,
   },
   title: {
-    fontSize: Typography.fontSize.sm,
-    fontWeight: Typography.fontWeight.semibold,
     marginBottom: Spacing.md,
-    textTransform: "uppercase",
   },
   optionRow: {
     flexDirection: "row",
     alignItems: "center",
     paddingVertical: Spacing.md,
-    borderBottomWidth: 1,
+    paddingHorizontal: Spacing.md,
+    backgroundColor: Surface.high,
+    borderRadius: BorderRadius.lg,
+    marginBottom: Spacing.sm,
     gap: Spacing.sm,
   },
   optionLabel: {
