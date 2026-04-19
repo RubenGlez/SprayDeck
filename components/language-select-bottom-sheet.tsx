@@ -1,5 +1,4 @@
 import {
-  BottomSheetBackdrop,
   BottomSheetModal,
   BottomSheetScrollView,
 } from "@gorhom/bottom-sheet";
@@ -9,8 +8,8 @@ import { StyleSheet, TouchableOpacity, View } from "react-native";
 
 import { ThemedText } from "@/components/themed-text";
 import { IconSymbol } from "@/components/ui/icon-symbol";
-import { Colors, Spacing, Typography } from "@/constants/theme";
-import { useColorScheme } from "@/hooks/use-color-scheme";
+import { Accent, BorderRadius, Spacing, Surface, Typography } from "@/constants/theme";
+import { useSheetBackdrop } from "@/hooks/use-sheet-backdrop";
 import { SUPPORTED_LANGUAGES } from "@/stores/useLanguageStore";
 import type { LanguageCode } from "@/types";
 
@@ -29,20 +28,7 @@ export const LanguageSelectBottomSheet = forwardRef<
   ref,
 ) {
   const { t } = useTranslation();
-  const colorScheme = useColorScheme() ?? "light";
-  const theme = Colors[colorScheme];
-
-  const renderBackdrop = useCallback(
-    (props: React.ComponentProps<typeof BottomSheetBackdrop>) => (
-      <BottomSheetBackdrop
-        {...props}
-        appearsOnIndex={0}
-        disappearsOnIndex={-1}
-        opacity={0.5}
-      />
-    ),
-    [],
-  );
+  const renderBackdrop = useSheetBackdrop();
 
   const handleSelect = useCallback(
     (code: LanguageCode) => {
@@ -55,17 +41,15 @@ export const LanguageSelectBottomSheet = forwardRef<
     <BottomSheetModal
       ref={ref}
       backgroundStyle={{
-        backgroundColor: theme.background,
-        borderTopLeftRadius: 20,
-        borderTopRightRadius: 20,
+        backgroundColor: Surface.highest,
+        borderTopLeftRadius: BorderRadius.xl,
+        borderTopRightRadius: BorderRadius.xl,
       }}
       backdropComponent={renderBackdrop}
       enableDynamicSizing
     >
       <BottomSheetScrollView contentContainerStyle={styles.content}>
-        <ThemedText
-          style={[styles.sectionLabel, { color: theme.textSecondary }]}
-        >
+        <ThemedText type="label" style={styles.sectionLabel}>
           {t("profile.language")}
         </ThemedText>
         <View style={styles.list}>
@@ -74,7 +58,7 @@ export const LanguageSelectBottomSheet = forwardRef<
             return (
               <TouchableOpacity
                 key={code}
-                style={[styles.row, { borderBottomColor: theme.border }]}
+                style={[styles.row, isSelected && styles.rowSelected]}
                 onPress={() => handleSelect(code)}
                 activeOpacity={0.7}
                 accessibilityRole="radio"
@@ -87,7 +71,7 @@ export const LanguageSelectBottomSheet = forwardRef<
                   <IconSymbol
                     name="checkmark.circle.fill"
                     size={22}
-                    color={theme.tint}
+                    color={Accent.primary}
                   />
                 )}
               </TouchableOpacity>
@@ -105,10 +89,7 @@ const styles = StyleSheet.create({
     paddingBottom: Spacing.xl * 2,
   },
   sectionLabel: {
-    fontSize: Typography.fontSize.sm,
-    fontWeight: Typography.fontWeight.semibold,
     marginBottom: Spacing.md,
-    textTransform: "uppercase",
   },
   list: {
     marginBottom: Spacing.lg,
@@ -118,7 +99,13 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "space-between",
     paddingVertical: Spacing.md,
-    borderBottomWidth: 1,
+    paddingHorizontal: Spacing.md,
+    backgroundColor: Surface.high,
+    borderRadius: BorderRadius.lg,
+    marginBottom: Spacing.sm,
+  },
+  rowSelected: {
+    backgroundColor: Surface.bright,
   },
   rowLabel: {
     fontSize: Typography.fontSize.md,

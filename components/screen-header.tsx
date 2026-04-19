@@ -2,8 +2,7 @@ import type { ReactNode } from "react";
 import { StyleSheet, View } from "react-native";
 
 import { ThemedText } from "@/components/themed-text";
-import { Spacing } from "@/constants/theme";
-import { useTheme } from "@/hooks/use-theme";
+import { Accent, Spacing, Typography } from "@/constants/theme";
 
 type ScreenHeaderProps = {
   title: ReactNode;
@@ -12,17 +11,17 @@ type ScreenHeaderProps = {
 };
 
 export function ScreenHeader({ title, subtitle, right }: ScreenHeaderProps) {
-  const { theme } = useTheme();
-
   return (
     <View style={styles.wrapper}>
-      <View style={styles.titleContainer}>
-        <ThemedText type="title">{title}</ThemedText>
-        {right != null && <View>{right}</View>}
+      <View style={styles.titleRow}>
+        <ThemedText type="title" style={styles.title} numberOfLines={1}>
+          {title}
+        </ThemedText>
+        {right != null && <View style={styles.rightSlot}>{right}</View>}
       </View>
 
       {subtitle != null && (
-        <ThemedText type="default" style={{ color: theme.textSecondary }}>
+        <ThemedText style={styles.subtitle}>
           {subtitle}
         </ThemedText>
       )}
@@ -32,13 +31,27 @@ export function ScreenHeader({ title, subtitle, right }: ScreenHeaderProps) {
 
 const styles = StyleSheet.create({
   wrapper: {
-    gap: Spacing.sm,
-    paddingVertical: Spacing.sm,
+    gap: 2,
+    paddingTop: Spacing.sm,
+    paddingBottom: Spacing.sm,
   },
-  titleContainer: {
+  titleRow: {
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between",
     gap: Spacing.sm,
+  },
+  title: {
+    flex: 1,
+  },
+  subtitle: {
+    fontSize: Typography.fontSize.sm,
+    color: Accent.onSurfaceMuted,
+    marginTop: 2,
+  },
+  rightSlot: {
+    flexShrink: 0,
+    flexDirection: "row",
+    alignItems: "center",
   },
 });

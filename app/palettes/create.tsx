@@ -7,11 +7,12 @@ import React, {
   useState,
 } from "react";
 import { useTranslation } from "react-i18next";
-import { Alert, FlatList, StyleSheet, Switch, View } from "react-native";
+import { StyleSheet, Switch, View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 import { Button } from "@/components/button";
 import { ColorGridCard } from "@/components/color-grid-card";
+import { ColorGridList } from "@/components/color-grid-list";
 import { HeaderBackButton } from "@/components/header-back-button";
 import { SaveNameModal } from "@/components/save-name-modal";
 import { SearchInput } from "@/components/search-input";
@@ -23,15 +24,16 @@ import { ThemedText } from "@/components/themed-text";
 import { ThemedView } from "@/components/themed-view";
 import { IconSymbol } from "@/components/ui/icon-symbol";
 import { COLOR_GRID } from "@/constants/color-grid";
-import { Spacing, Typography } from "@/constants/theme";
+import { LinearGradient } from "expo-linear-gradient";
+
+import { Accent, Spacing, Surface, Typography } from "@/constants/theme";
 import { useSeriesColorSelection } from "@/hooks/use-series-color-selection";
-import { useTheme } from "@/hooks/use-theme";
 import { filterColorsBySearch, getColorDisplayName } from "@/lib/color";
+import { confirmDelete } from "@/lib/confirm-delete";
 import { usePalettesStore } from "@/stores/usePalettesStore";
 import type { Color } from "@/types";
 
-const { NUM_COLUMNS, GAP, HORIZONTAL_PADDING, CARD_WIDTH, SWATCH_SIZE } =
-  COLOR_GRID;
+const { GAP, HORIZONTAL_PADDING } = COLOR_GRID;
 
 export default function CreatePaletteScreen() {
   const { paletteId, initialColorIds } = useLocalSearchParams<{
@@ -40,7 +42,6 @@ export default function CreatePaletteScreen() {
   }>();
   const router = useRouter();
   const { t, i18n } = useTranslation();
-  const { theme } = useTheme();
   const insets = useSafeAreaInsets();
   const {
     allSeries,
@@ -90,21 +91,16 @@ export default function CreatePaletteScreen() {
 
   const handleDeletePalette = useCallback(() => {
     if (!paletteId) return;
-    Alert.alert(
-      t("projects.removePaletteTitle"),
-      t("projects.removePaletteMessage"),
-      [
-        { text: t("common.cancel"), style: "cancel" },
-        {
-          text: t("projects.remove"),
-          style: "destructive",
-          onPress: () => {
-            removePalette(paletteId);
-            router.replace("/(tabs)/palettes");
-          },
-        },
-      ],
-    );
+    confirmDelete({
+      title: t("projects.removePaletteTitle"),
+      message: t("projects.removePaletteMessage"),
+      confirmLabel: t("projects.remove"),
+      cancelLabel: t("common.cancel"),
+      onConfirm: () => {
+        removePalette(paletteId);
+        router.replace("/(tabs)/palettes");
+      },
+    });
   }, [paletteId, removePalette, router, t]);
 
   const headerTitle = useMemo(() => {
@@ -175,24 +171,17 @@ export default function CreatePaletteScreen() {
     router,
   ]);
 
-  const renderItem = useCallback(
-    ({ item, index }: { item: Color; index: number }) => (
-      <View
-        style={{
-          width: CARD_WIDTH,
-          marginRight: index % NUM_COLUMNS === NUM_COLUMNS - 1 ? 0 : GAP,
-        }}
-      >
-        <ColorGridCard
-          color={item}
-          displayName={getColorDisplayName(item, i18n.language)}
-          onPress={() => toggleColorInPalette(item)}
-          isInPalette={selectedIds.has(item.id)}
-          selectionMode
-          cardWidth={CARD_WIDTH}
-          swatchSize={SWATCH_SIZE}
-        />
-      </View>
+  const renderCard = useCallback(
+    (item: Color) => (
+      <ColorGridCard
+        color={item}
+        displayName={getColorDisplayName(item, i18n.language)}
+        onPress={() => toggleColorInPalette(item)}
+        isInPalette={selectedIds.has(item.id)}
+        selectionMode
+        cardWidth={COLOR_GRID.CARD_WIDTH}
+        swatchSize={COLOR_GRID.SWATCH_SIZE}
+      />
     ),
     [i18n.language, selectedIds, toggleColorInPalette],
   );
@@ -209,7 +198,7 @@ export default function CreatePaletteScreen() {
                 size="icon"
                 onPress={handleDeletePalette}
                 accessibilityLabel={t("projects.remove")}
-                icon={<IconSymbol name="trash" size={24} color={theme.tint} />}
+                icon={<IconSymbol name="trash" size={22} color={Accent.error} />}
               />
             ) : null}
             <Button
@@ -220,8 +209,8 @@ export default function CreatePaletteScreen() {
               icon={
                 <IconSymbol
                   name="line.3.horizontal.decrease.circle.fill"
-                  size={24}
-                  color={theme.tint}
+                  size={22}
+                  color={Accent.primary}
                 />
               }
             />
@@ -246,51 +235,45 @@ export default function CreatePaletteScreen() {
         clearAccessibilityLabel={t("common.clear")}
       />
 
-      <FlatList
-        data={listData}
-        keyExtractor={(item) => item.id}
-        renderItem={renderItem}
-        numColumns={NUM_COLUMNS}
-        columnWrapperStyle={styles.row}
+      <ColorGridList
+        colors={listData}
+        renderCard={renderCard}
         contentContainerStyle={styles.listContent}
-        showsVerticalScrollIndicator={false}
       />
 
-      <View
-        style={[
-          styles.footer,
-          {
-            backgroundColor: theme.background,
-            borderTopColor: theme.border,
-            paddingBottom: Spacing.md + insets.bottom,
-          },
-        ]}
+      <LinearGradient
+        colors={["transparent", Surface.lowest]}
+        style={styles.footerGradient}
+        pointerEvents="box-none"
       >
-        <View style={styles.footerActionsRow}>
-          <View style={styles.switchWrap}>
-            <Switch
-              value={showOnlySelected}
-              onValueChange={setShowOnlySelected}
-              trackColor={{ false: theme.border, true: theme.tint }}
-              thumbColor={theme.background}
-            />
-            <ThemedText
-              style={[styles.switchLabel, { color: theme.textSecondary }]}
+        <View
+          style={[styles.footerContent, { paddingBottom: Spacing.md + insets.bottom }]}
+          pointerEvents="box-none"
+        >
+          <View style={styles.footerActionsRow}>
+            <View style={styles.switchWrap}>
+              <Switch
+                value={showOnlySelected}
+                onValueChange={setShowOnlySelected}
+                trackColor={{ false: Accent.outlineVariant, true: `${Accent.primary}60` }}
+                thumbColor={showOnlySelected ? Accent.primary : Accent.onSurfaceMuted}
+              />
+              <ThemedText style={[styles.switchLabel, { color: Accent.onSurfaceMuted }]}>
+                {t("colors.colorCount", { count: selectedColors.length })}
+              </ThemedText>
+            </View>
+            <Button
+              variant="primary"
+              size="md"
+              fullWidth
+              onPress={handleSave}
+              disabled={selectedColors.length === 0}
             >
-              {t("colors.colorCount", { count: selectedColors.length })}
-            </ThemedText>
+              {t("palettes.savePalette")}
+            </Button>
           </View>
-          <Button
-            variant="primary"
-            size="md"
-            fullWidth
-            onPress={handleSave}
-            disabled={selectedColors.length === 0}
-          >
-            {t("palettes.savePalette")}
-          </Button>
         </View>
-      </View>
+      </LinearGradient>
 
       <SaveNameModal
         visible={showNameModal}
@@ -321,17 +304,16 @@ const styles = StyleSheet.create({
     paddingTop: GAP,
     paddingBottom: 160,
   },
-  row: {
-    flexDirection: "row",
-    marginBottom: GAP,
-  },
-  footer: {
+  footerGradient: {
     position: "absolute",
     left: 0,
     right: 0,
     bottom: 0,
-    padding: Spacing.md,
-    borderTopWidth: 1,
+    paddingTop: Spacing.xxl,
+  },
+  footerContent: {
+    paddingHorizontal: Spacing.md,
+    paddingTop: Spacing.sm,
   },
   footerActionsRow: {
     flexDirection: "row",

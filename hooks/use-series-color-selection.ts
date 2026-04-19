@@ -2,7 +2,6 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 
 import { getColorsForSeriesIds } from "@/lib/color";
 import { getAllSeriesWithCount, getColorsBySeriesId } from "@/stores/useCatalogStore";
-import type { Color } from "@/types";
 
 export function useSeriesColorSelection() {
   const allSeries = useMemo(() => getAllSeriesWithCount(), []);

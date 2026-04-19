@@ -8,19 +8,45 @@ import { EmptyStateCard } from "@/components/empty-state-card";
 import { FloatingActionButton } from "@/components/floating-action-button";
 import { Screen } from "@/components/screen";
 import { ScreenHeader } from "@/components/screen-header";
+import { SwipeableRow } from "@/components/swipeable-row";
 import { IconSymbol } from "@/components/ui/icon-symbol";
-import { Spacing } from "@/constants/theme";
-import { useTheme } from "@/hooks/use-theme";
+import { Accent, Spacing } from "@/constants/theme";
+import { confirmDelete } from "@/lib/confirm-delete";
 import { useDoodlesStore } from "@/stores/useDoodlesStore";
+import type { Doodle } from "@/types";
+
+function SwipeableDoodleCard({
+  doodle,
+  onPress,
+  onDelete,
+}: {
+  doodle: Doodle;
+  onPress: () => void;
+  onDelete: () => void;
+}) {
+  return (
+    <SwipeableRow onDelete={onDelete}>
+      <DoodleCard doodle={doodle} onPress={onPress} />
+    </SwipeableRow>
+  );
+}
 
 export default function DoodlesIndexScreen() {
   const { t } = useTranslation();
   const router = useRouter();
-  const { theme } = useTheme();
   const doodles = useDoodlesStore((s) => s.doodles);
+  const removeDoodle = useDoodlesStore((s) => s.removeDoodle);
 
-  const handleNewDoodle = () => {
-    router.push("/doodles/create");
+  const handleNewDoodle = () => router.push("/doodles/create");
+
+  const handleDelete = (doodle: Doodle) => {
+    confirmDelete({
+      title: t("doodles.deleteTitle", { name: doodle.name }),
+      message: t("doodles.deleteMessage"),
+      confirmLabel: t("common.delete"),
+      cancelLabel: t("common.cancel"),
+      onConfirm: () => removeDoodle(doodle.id),
+    });
   };
 
   return (
@@ -30,7 +56,8 @@ export default function DoodlesIndexScreen() {
           title={t("doodles.myDoodles")}
           subtitle={t("doodles.subtitle")}
         />
-        <ScrollView showsVerticalScrollIndicator={false}>
+
+        <ScrollView showsVerticalScrollIndicator={false} style={styles.scroll}>
           {doodles.length === 0 ? (
             <EmptyStateCard
               icon="paintbrush"
@@ -41,15 +68,11 @@ export default function DoodlesIndexScreen() {
           ) : (
             <View style={styles.grid}>
               {doodles.map((doodle) => (
-                <DoodleCard
+                <SwipeableDoodleCard
                   key={doodle.id}
                   doodle={doodle}
-                  onPress={() => {
-                    router.push({
-                      pathname: "/doodles/create",
-                      params: { doodleId: doodle.id },
-                    });
-                  }}
+                  onPress={() => router.push({ pathname: "/doodles/create", params: { doodleId: doodle.id } })}
+                  onDelete={() => handleDelete(doodle)}
                 />
               ))}
             </View>
@@ -57,11 +80,10 @@ export default function DoodlesIndexScreen() {
         </ScrollView>
 
         <FloatingActionButton
-          variant="primary"
           style={styles.fab}
           onPress={handleNewDoodle}
           accessibilityLabel={t("doodles.newDoodle")}
-          icon={<IconSymbol name="plus" size={28} color={theme.background} />}
+          icon={<IconSymbol name="plus" size={26} color={Accent.onPrimary} />}
         />
       </View>
     </Screen>
@@ -72,16 +94,19 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     paddingHorizontal: Spacing.md,
-    gap: Spacing.md,
+    gap: Spacing.sm,
   },
-  fab: {
-    position: "absolute",
-    bottom: Spacing.md,
-    right: Spacing.md,
+  scroll: {
+    flex: 1,
   },
   grid: {
     flexDirection: "row",
     flexWrap: "wrap",
     justifyContent: "space-between",
+  },
+  fab: {
+    position: "absolute",
+    bottom: Spacing.md,
+    right: Spacing.md,
   },
 });

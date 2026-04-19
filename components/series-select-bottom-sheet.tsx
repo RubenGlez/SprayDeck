@@ -1,17 +1,16 @@
 import {
-  BottomSheetBackdrop,
   BottomSheetModal,
   BottomSheetScrollView,
 } from "@gorhom/bottom-sheet";
-import React, { forwardRef, useCallback } from "react";
+import React, { forwardRef } from "react";
 import { useTranslation } from "react-i18next";
 import { StyleSheet, TouchableOpacity, View } from "react-native";
 
 import { FavoriteIcon } from "@/components/favorite-icon";
 import { ThemedText } from "@/components/themed-text";
 import { IconSymbol } from "@/components/ui/icon-symbol";
-import { Colors, Spacing, Typography } from "@/constants/theme";
-import { useColorScheme } from "@/hooks/use-color-scheme";
+import { Accent, BorderRadius, Spacing, Surface, Typography } from "@/constants/theme";
+import { useSheetBackdrop } from "@/hooks/use-sheet-backdrop";
 import { useFavoritesStore } from "@/stores/useFavoritesStore";
 import type { SeriesWithCountAndBrand } from "@/types";
 
@@ -33,54 +32,33 @@ export const SeriesSelectBottomSheet = forwardRef<
   ref,
 ) {
   const { t } = useTranslation();
-  const colorScheme = useColorScheme() ?? "light";
-  const theme = Colors[colorScheme];
   const favoriteSeriesIds = useFavoritesStore((s) => s.favoriteSeriesIds);
   const toggleFavoriteSeries = useFavoritesStore((s) => s.toggleFavoriteSeries);
-
-  const renderBackdrop = useCallback(
-    (props: React.ComponentProps<typeof BottomSheetBackdrop>) => (
-      <BottomSheetBackdrop
-        {...props}
-        appearsOnIndex={0}
-        disappearsOnIndex={-1}
-        opacity={0.5}
-      />
-    ),
-    [],
-  );
+  const renderBackdrop = useSheetBackdrop();
 
   return (
     <BottomSheetModal
       ref={ref}
       backgroundStyle={{
-        backgroundColor: theme.background,
-        borderTopLeftRadius: 20,
-        borderTopRightRadius: 20,
+        backgroundColor: Surface.highest,
+        borderTopLeftRadius: BorderRadius.xl,
+        borderTopRightRadius: BorderRadius.xl,
       }}
       backdropComponent={renderBackdrop}
       enableDynamicSizing
     >
       <BottomSheetScrollView contentContainerStyle={styles.content}>
-        <ThemedText
-          style={[styles.sectionLabel, { color: theme.textSecondary }]}
-        >
+        <ThemedText type="label" style={styles.sectionLabel}>
           {t("palettes.selectSeries")}
         </ThemedText>
         <ThemedText
-          style={[styles.sectionSubtitle, { color: theme.textSecondary }]}
+          style={[styles.sectionSubtitle, { color: Accent.onSurfaceMuted }]}
         >
           {t("palettes.selectSeriesSubtitle")}
         </ThemedText>
         <View style={styles.seriesList}>
           {(onSelectAll != null || onClear != null) && (
-            <View
-              style={[
-                styles.seriesRow,
-                styles.selectAllRow,
-                { borderBottomColor: theme.border },
-              ]}
-            >
+            <View style={[styles.seriesRow, styles.selectAllRow]}>
               {onSelectAll != null ? (
                 <TouchableOpacity
                   style={styles.selectAllLeft}
@@ -99,10 +77,10 @@ export const SeriesSelectBottomSheet = forwardRef<
                     <IconSymbol
                       name="checkmark.square.fill"
                       size={24}
-                      color={theme.tint}
+                      color={Accent.primary}
                     />
                   ) : (
-                    <IconSymbol name="square" size={24} color={theme.icon} />
+                    <IconSymbol name="square" size={24} color={Accent.onSurfaceMuted} />
                   )}
                   <View style={styles.seriesLabelWrap}>
                     <ThemedText style={styles.seriesName} numberOfLines={1}>
@@ -121,7 +99,7 @@ export const SeriesSelectBottomSheet = forwardRef<
                   accessibilityLabel={t("palettes.clearSelection")}
                 >
                   <ThemedText
-                    style={[styles.clearLabel, { color: theme.tint }]}
+                    style={[styles.clearLabel, { color: Accent.primary }]}
                     numberOfLines={1}
                   >
                     {t("palettes.clearSelection")}
@@ -135,7 +113,7 @@ export const SeriesSelectBottomSheet = forwardRef<
             return (
               <TouchableOpacity
                 key={s.id}
-                style={[styles.seriesRow, { borderBottomColor: theme.border }]}
+                style={[styles.seriesRow, isSelected && styles.seriesRowSelected]}
                 onPress={() => onToggleSeries(s.id)}
                 activeOpacity={0.7}
                 accessibilityRole="checkbox"
@@ -145,10 +123,10 @@ export const SeriesSelectBottomSheet = forwardRef<
                   <IconSymbol
                     name="checkmark.square.fill"
                     size={24}
-                    color={theme.tint}
+                    color={Accent.primary}
                   />
                 ) : (
-                  <IconSymbol name="square" size={24} color={theme.icon} />
+                  <IconSymbol name="square" size={24} color={Accent.onSurfaceMuted} />
                 )}
                 <View style={styles.seriesLabelWrap}>
                   <ThemedText
@@ -159,7 +137,7 @@ export const SeriesSelectBottomSheet = forwardRef<
                     {s.name}
                   </ThemedText>
                   <ThemedText
-                    style={[styles.seriesMeta, { color: theme.textSecondary }]}
+                    style={[styles.seriesMeta, { color: Accent.onSurfaceMuted }]}
                     numberOfLines={1}
                     ellipsizeMode="tail"
                   >
@@ -200,10 +178,7 @@ const styles = StyleSheet.create({
     paddingBottom: Spacing.xl * 2,
   },
   sectionLabel: {
-    fontSize: Typography.fontSize.sm,
-    fontWeight: Typography.fontWeight.semibold,
     marginBottom: Spacing.sm,
-    textTransform: "uppercase",
   },
   sectionSubtitle: {
     fontSize: Typography.fontSize.sm,
@@ -216,7 +191,13 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     paddingVertical: Spacing.sm,
-    borderBottomWidth: 1,
+    paddingHorizontal: Spacing.sm,
+    backgroundColor: Surface.high,
+    borderRadius: BorderRadius.lg,
+    marginBottom: Spacing.xs,
+  },
+  seriesRowSelected: {
+    backgroundColor: Surface.bright,
   },
   selectAllRow: {
     flexDirection: "row",

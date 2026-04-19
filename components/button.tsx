@@ -7,15 +7,10 @@ import {
   type StyleProp,
   type ViewStyle,
 } from "react-native";
+import { LinearGradient } from "expo-linear-gradient";
 
 import { ThemedText } from "@/components/themed-text";
-import {
-  BorderRadius,
-  Colors,
-  Spacing,
-  Typography,
-} from "@/constants/theme";
-import { useColorScheme } from "@/hooks/use-color-scheme";
+import { Accent, BorderRadius, FontFamily, Spacing, Surface, Typography } from "@/constants/theme";
 
 export type ButtonVariant =
   | "primary"
@@ -40,11 +35,11 @@ export type ButtonProps = {
   children?: React.ReactNode;
 };
 
-const SIZE_PADDING = {
-  sm: { vertical: Spacing.xs, horizontal: Spacing.sm },
-  md: { vertical: Spacing.sm, horizontal: Spacing.md },
-  lg: { vertical: Spacing.md, horizontal: Spacing.lg },
-  icon: { vertical: Spacing.sm, horizontal: Spacing.sm },
+const SIZE_CONFIG = {
+  sm: { vertical: 8, horizontal: Spacing.md, fontSize: Typography.fontSize.sm },
+  md: { vertical: 10, horizontal: Spacing.md + 4, fontSize: Typography.fontSize.md },
+  lg: { vertical: 13, horizontal: Spacing.lg, fontSize: Typography.fontSize.md },
+  icon: { vertical: Spacing.sm, horizontal: Spacing.sm, fontSize: Typography.fontSize.md },
 } as const;
 
 export function Button({
@@ -60,110 +55,133 @@ export function Button({
   style,
   children,
 }: ButtonProps) {
-  const colorScheme = useColorScheme() ?? "light";
-  const theme = Colors[colorScheme];
   const isDisabled = disabled || loading;
+  const cfg = SIZE_CONFIG[size];
+  const isIconOnly = size === "icon" || (!children && icon);
 
-  const padding = SIZE_PADDING[size];
-
-  const variantStyles: ViewStyle = (() => {
-    switch (variant) {
-      case "primary":
-        return {
-          backgroundColor: theme.tint,
-          borderWidth: 0,
-        };
-      case "secondary":
-        return {
-          backgroundColor: theme.backgroundSecondary,
-          borderWidth: 1,
-          borderColor: theme.border,
-        };
-      case "outline":
-        return {
-          backgroundColor: "transparent",
-          borderWidth: 1,
-          borderColor: theme.border,
-        };
-      case "ghost":
-        return {
-          backgroundColor: "transparent",
-          borderWidth: 0,
-        };
-      case "destructive":
-        return {
-          backgroundColor: "transparent",
-          borderWidth: 1,
-          borderColor: theme.error,
-        };
-      default:
-        return {};
-    }
-  })();
-
-  const textColor =
-    variant === "primary"
-      ? theme.background
-      : variant === "destructive"
-        ? theme.error
-        : theme.text;
-
-  const fontSize =
-    size === "sm"
-      ? Typography.fontSize.sm
-      : size === "lg"
-        ? Typography.fontSize.md
-        : Typography.fontSize.md;
-
-  const containerStyle: ViewStyle = {
+  const baseContainerStyle: ViewStyle = {
     flexDirection: iconPosition === "right" ? "row-reverse" : "row",
     alignItems: "center",
     justifyContent: "center",
-    paddingVertical: padding.vertical,
-    paddingHorizontal: padding.horizontal,
-    borderRadius: BorderRadius.md,
-    minHeight: size === "icon" ? Spacing.touchTarget : undefined,
-    opacity: isDisabled ? 0.5 : 1,
+    borderRadius: BorderRadius.full,
+    paddingVertical: cfg.vertical,
+    paddingHorizontal: isIconOnly ? cfg.vertical : cfg.horizontal,
+    minHeight: Spacing.touchTarget,
     gap: children && icon ? Spacing.sm : 0,
+    ...(isIconOnly ? { width: Spacing.touchTarget } : {}),
     ...(fullWidth ? { alignSelf: "stretch" } : {}),
-    ...(size === "icon" ? { width: Spacing.touchTarget, paddingHorizontal: 0 } : {}),
-    ...variantStyles,
   };
+
+  const textColor =
+    variant === "primary" ? Accent.onPrimary :
+    variant === "destructive" ? Accent.error :
+    Accent.primary;
+
+  const inner = loading ? (
+    <ActivityIndicator size="small" color={textColor} />
+  ) : (
+    <>
+      {icon != null && <View style={styles.iconWrap}>{icon}</View>}
+      {children != null && (
+        <ThemedText
+          style={{
+            color: textColor,
+            fontSize: cfg.fontSize,
+            fontFamily: FontFamily.displaySemiBold,
+          }}
+          numberOfLines={1}
+        >
+          {children}
+        </ThemedText>
+      )}
+    </>
+  );
+
+  if (variant === "primary") {
+    if (isDisabled) {
+      return (
+        <TouchableOpacity
+          disabled
+          style={[
+            baseContainerStyle,
+            { backgroundColor: Surface.highest },
+            fullWidth ? { alignSelf: "stretch" } : {},
+            style,
+          ]}
+          accessibilityRole="button"
+          accessibilityLabel={accessibilityLabel}
+        >
+          {loading ? (
+            <ActivityIndicator size="small" color={Accent.onSurfaceMuted} />
+          ) : (
+            <>
+              {icon != null && <View style={styles.iconWrap}>{icon}</View>}
+              {children != null && (
+                <ThemedText
+                  style={{
+                    color: Accent.onSurfaceMuted,
+                    fontSize: cfg.fontSize,
+                    fontFamily: FontFamily.displaySemiBold,
+                  }}
+                  numberOfLines={1}
+                >
+                  {children}
+                </ThemedText>
+              )}
+            </>
+          )}
+        </TouchableOpacity>
+      );
+    }
+    return (
+      <TouchableOpacity
+        onPress={onPress}
+        disabled={false}
+        style={[
+          { borderRadius: BorderRadius.full, overflow: "hidden" },
+          fullWidth ? { alignSelf: "stretch" } : {},
+          style,
+        ]}
+        accessibilityRole="button"
+        accessibilityLabel={accessibilityLabel}
+        activeOpacity={0.8}
+      >
+        <LinearGradient
+          colors={[Accent.primary, Accent.primaryContainer]}
+          start={{ x: 0, y: 0 }}
+          end={{ x: 1, y: 1 }}
+          style={baseContainerStyle}
+        >
+          {inner}
+        </LinearGradient>
+      </TouchableOpacity>
+    );
+  }
+
+  const variantStyle: ViewStyle =
+    variant === "secondary"
+      ? { backgroundColor: Surface.high }
+      : variant === "outline"
+      ? { backgroundColor: "transparent", borderWidth: 1, borderColor: `${Accent.outlineVariant}26` }
+      : variant === "destructive"
+      ? { backgroundColor: "transparent", borderWidth: 1, borderColor: `${Accent.error}60` }
+      : { backgroundColor: "transparent" };
 
   return (
     <TouchableOpacity
       onPress={onPress}
       disabled={isDisabled}
-      style={[containerStyle, style]}
+      style={[
+        baseContainerStyle,
+        variantStyle,
+        isDisabled && { opacity: 0.35 },
+        style,
+      ]}
       accessibilityRole="button"
       accessibilityLabel={accessibilityLabel}
       activeOpacity={0.7}
     >
-      {loading ? (
-        <ActivityIndicator size="small" color={textColor} />
-      ) : (
-        <>
-          {icon != null && <View style={styles.iconWrap}>{icon}</View>}
-          {children != null && (
-            <ThemedText
-          style={[
-            styles.label,
-            {
-              color: textColor,
-              fontSize,
-              fontWeight:
-                variant === "primary" || variant === "secondary"
-                  ? Typography.fontWeight.semibold
-                  : Typography.fontWeight.medium,
-            },
-          ]}
-          numberOfLines={1}
-        >
-          {children}
-        </ThemedText>
-          )}
-        </>
-      )}
+      {inner}
     </TouchableOpacity>
   );
 }
@@ -173,5 +191,4 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
-  label: {},
 });

@@ -1,22 +1,39 @@
 import { Tabs } from "expo-router";
 import React from "react";
 import { useTranslation } from "react-i18next";
+import { Platform } from "react-native";
 
 import { HapticTab } from "@/components/haptic-tab";
 import { IconSymbol } from "@/components/ui/icon-symbol";
-import { Colors } from "@/constants/theme";
-import { useColorScheme } from "@/hooks/use-color-scheme";
+import { Accent, FontFamily, Surface, Typography } from "@/constants/theme";
 
 export default function TabLayout() {
-  const colorScheme = useColorScheme();
   const { t } = useTranslation();
 
   return (
     <Tabs
       screenOptions={{
-        tabBarActiveTintColor: Colors[colorScheme ?? "light"].tint,
         headerShown: false,
         tabBarButton: HapticTab,
+        tabBarActiveTintColor: Accent.primary,
+        tabBarInactiveTintColor: Accent.onSurfaceMuted,
+        tabBarStyle: {
+          backgroundColor: Surface.low,
+          borderTopWidth: 0,
+          elevation: 0,
+          shadowOpacity: 0,
+          height: Platform.OS === "ios" ? 84 : 64,
+          paddingBottom: Platform.OS === "ios" ? 28 : 10,
+          paddingTop: 8,
+        },
+        tabBarLabelStyle: {
+          fontFamily: FontFamily.displayMedium,
+          fontSize: Typography.fontSize.xs,
+          letterSpacing: Typography.letterSpacing.normal,
+        },
+        tabBarIconStyle: {
+          marginBottom: 0,
+        },
       }}
     >
       <Tabs.Screen
@@ -25,7 +42,7 @@ export default function TabLayout() {
           title: t("tabs.home"),
           tabBarIcon: ({ color, focused }) => (
             <IconSymbol
-              size={28}
+              size={24}
               name={focused ? "house.fill" : "house"}
               color={color}
             />
@@ -38,7 +55,7 @@ export default function TabLayout() {
           title: t("tabs.catalog"),
           tabBarIcon: ({ color, focused }) => (
             <IconSymbol
-              size={28}
+              size={24}
               name={focused ? "square.grid.2x2.fill" : "square.grid.2x2"}
               color={color}
             />
@@ -51,7 +68,7 @@ export default function TabLayout() {
           title: t("tabs.palettes"),
           tabBarIcon: ({ color, focused }) => (
             <IconSymbol
-              size={28}
+              size={24}
               name={focused ? "paintpalette.fill" : "paintpalette"}
               color={color}
             />
@@ -64,7 +81,7 @@ export default function TabLayout() {
           title: t("tabs.doodles"),
           tabBarIcon: ({ color, focused }) => (
             <IconSymbol
-              size={28}
+              size={24}
               name={focused ? "square.stack.3d.up.fill" : "square.stack.3d.up"}
               color={color}
             />
@@ -77,7 +94,7 @@ export default function TabLayout() {
           title: t("tabs.profile"),
           tabBarIcon: ({ color, focused }) => (
             <IconSymbol
-              size={28}
+              size={24}
               name={focused ? "person.fill" : "person"}
               color={color}
             />

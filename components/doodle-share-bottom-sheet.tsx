@@ -1,5 +1,4 @@
 import {
-  BottomSheetBackdrop,
   BottomSheetModal,
   BottomSheetScrollView,
 } from "@gorhom/bottom-sheet";
@@ -7,12 +6,12 @@ import * as MediaLibrary from "expo-media-library";
 import * as Sharing from "expo-sharing";
 import React, { forwardRef, useCallback } from "react";
 import { useTranslation } from "react-i18next";
-import { Alert, StyleSheet, TouchableOpacity, View } from "react-native";
+import { Alert, StyleSheet, TouchableOpacity } from "react-native";
 
 import { ThemedText } from "@/components/themed-text";
 import { IconSymbol } from "@/components/ui/icon-symbol";
-import { Colors, Spacing, Typography } from "@/constants/theme";
-import { useColorScheme } from "@/hooks/use-color-scheme";
+import { Accent, BorderRadius, Spacing, Surface, Typography } from "@/constants/theme";
+import { useSheetBackdrop } from "@/hooks/use-sheet-backdrop";
 
 export type DoodleShareBottomSheetRef = BottomSheetModal;
 
@@ -30,20 +29,7 @@ export const DoodleShareBottomSheet = forwardRef<
   ref,
 ) {
   const { t } = useTranslation();
-  const colorScheme = useColorScheme() ?? "light";
-  const theme = Colors[colorScheme];
-
-  const renderBackdrop = useCallback(
-    (props: React.ComponentProps<typeof BottomSheetBackdrop>) => (
-      <BottomSheetBackdrop
-        {...props}
-        appearsOnIndex={0}
-        disappearsOnIndex={-1}
-        opacity={0.5}
-      />
-    ),
-    [],
-  );
+  const renderBackdrop = useSheetBackdrop();
 
   const handleSaveToPhotos = useCallback(async () => {
     if (!imageUri) return;
@@ -96,38 +82,36 @@ export const DoodleShareBottomSheet = forwardRef<
     <BottomSheetModal
       ref={ref}
       backgroundStyle={{
-        backgroundColor: theme.background,
-        borderTopLeftRadius: 20,
-        borderTopRightRadius: 20,
+        backgroundColor: Surface.highest,
+        borderTopLeftRadius: BorderRadius.xl,
+        borderTopRightRadius: BorderRadius.xl,
       }}
       backdropComponent={renderBackdrop}
       enableDynamicSizing
     >
       <BottomSheetScrollView contentContainerStyle={styles.content}>
-        <ThemedText
-          style={[styles.title, { color: theme.textSecondary }]}
-        >
+        <ThemedText type="label" style={styles.title}>
           {t("doodles.shareTitle")}
         </ThemedText>
         {options.map((opt) => (
           <TouchableOpacity
             key={opt.key}
-            style={[styles.optionRow, { borderBottomColor: theme.border }]}
+            style={styles.optionRow}
             onPress={opt.onPress}
             activeOpacity={0.7}
           >
             <IconSymbol
               name={opt.icon}
               size={24}
-              color={theme.tint}
+              color={Accent.primary}
             />
-            <ThemedText style={[styles.optionLabel, { color: theme.text }]}>
+            <ThemedText style={styles.optionLabel}>
               {opt.label}
             </ThemedText>
             <IconSymbol
               name="chevron.right"
               size={20}
-              color={theme.textSecondary}
+              color={Accent.onSurfaceMuted}
             />
           </TouchableOpacity>
         ))}
@@ -142,16 +126,16 @@ const styles = StyleSheet.create({
     paddingBottom: Spacing.xl * 2,
   },
   title: {
-    fontSize: Typography.fontSize.sm,
-    fontWeight: Typography.fontWeight.semibold,
     marginBottom: Spacing.md,
-    textTransform: "uppercase",
   },
   optionRow: {
     flexDirection: "row",
     alignItems: "center",
     paddingVertical: Spacing.md,
-    borderBottomWidth: 1,
+    paddingHorizontal: Spacing.md,
+    backgroundColor: Surface.high,
+    borderRadius: BorderRadius.lg,
+    marginBottom: Spacing.sm,
     gap: Spacing.sm,
   },
   optionLabel: {

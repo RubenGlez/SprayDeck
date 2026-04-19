@@ -2,7 +2,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { create } from 'zustand';
 import { createJSONStorage, persist } from 'zustand/middleware';
 import { generateId } from '@/lib/id';
-import type { Color, Palette } from '@/types';
+import type { Palette } from '@/types';
 
 type PalettesState = {
   palettes: Palette[];

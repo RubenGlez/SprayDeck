@@ -3,8 +3,7 @@ import React from "react";
 import { StyleSheet, TouchableOpacity, View } from "react-native";
 
 import { IconSymbol } from "@/components/ui/icon-symbol";
-import { Colors, Shadows, Spacing } from "@/constants/theme";
-import { useColorScheme } from "@/hooks/use-color-scheme";
+import { Accent, BorderRadius, Glass, Shadows, Spacing, Surface } from "@/constants/theme";
 
 const TOOLBAR_ICON_SIZE = 40;
 const TOOLBAR_GAP = Spacing.sm;
@@ -47,9 +46,6 @@ export function TransformToolbar({
   bottom = Spacing.sm,
   labels,
 }: TransformToolbarProps) {
-  const colorScheme = useColorScheme() ?? "light";
-  const theme = Colors[colorScheme];
-
   return (
     <View
       style={[styles.floatingWrap, { bottom }]}
@@ -60,16 +56,14 @@ export function TransformToolbar({
           styles.pill,
           {
             width: TOOLBAR_PILL_WIDTH,
-            backgroundColor: theme.card,
-            borderColor: theme.border,
-            shadowColor: theme.text,
+            backgroundColor: `${Glass.backgroundColor}99`,
           },
         ]}
       >
         {view === "icons" ? (
           <>
             <TouchableOpacity
-              style={[styles.toolbarBtn, { backgroundColor: theme.tint }]}
+              style={[styles.toolbarBtn, { backgroundColor: Accent.primary }]}
               onPress={onSave}
               accessibilityRole="button"
               accessibilityLabel={labels.save}
@@ -77,40 +71,27 @@ export function TransformToolbar({
               <IconSymbol
                 name="square.and.arrow.down"
                 size={22}
-                color={theme.background}
+                color={Accent.onPrimary}
               />
             </TouchableOpacity>
             <TouchableOpacity
-              style={[
-                styles.toolbarBtn,
-                { backgroundColor: theme.backgroundSecondary },
-              ]}
+              style={[styles.toolbarBtn, { backgroundColor: Surface.highest }]}
               onPress={onReset}
               accessibilityRole="button"
               accessibilityLabel={labels.reset}
             >
-              <IconSymbol
-                name="arrow.clockwise"
-                size={22}
-                color={theme.tint}
-              />
+              <IconSymbol name="arrow.clockwise" size={22} color={Accent.primary} />
             </TouchableOpacity>
             <TouchableOpacity
-              style={[
-                styles.toolbarBtn,
-                { backgroundColor: theme.backgroundSecondary },
-              ]}
+              style={[styles.toolbarBtn, { backgroundColor: Surface.highest }]}
               onPress={onFlipH}
               accessibilityRole="button"
               accessibilityLabel={labels.flipH}
             >
-              <IconSymbol name="arrow.left.and.right" size={22} color={theme.tint} />
+              <IconSymbol name="arrow.left.and.right" size={22} color={Accent.primary} />
             </TouchableOpacity>
             <TouchableOpacity
-              style={[
-                styles.toolbarBtn,
-                { backgroundColor: theme.backgroundSecondary },
-              ]}
+              style={[styles.toolbarBtn, { backgroundColor: Surface.highest }]}
               onPress={onFlipV}
               accessibilityRole="button"
               accessibilityLabel={labels.flipV}
@@ -118,48 +99,34 @@ export function TransformToolbar({
               <IconSymbol
                 name="arrow.left.and.right"
                 size={22}
-                color={theme.tint}
+                color={Accent.primary}
                 style={{ transform: [{ rotate: "90deg" }] }}
               />
             </TouchableOpacity>
             <TouchableOpacity
-              style={[
-                styles.toolbarBtn,
-                { backgroundColor: theme.backgroundSecondary },
-              ]}
+              style={[styles.toolbarBtn, { backgroundColor: Surface.highest }]}
               onPress={() => onViewChange("opacity")}
               accessibilityRole="button"
               accessibilityLabel={labels.opacity}
             >
-              <IconSymbol
-                name="circle.lefthalf.filled"
-                size={22}
-                color={theme.tint}
-              />
+              <IconSymbol name="circle.lefthalf.filled" size={22} color={Accent.primary} />
             </TouchableOpacity>
           </>
         ) : (
           <>
             <TouchableOpacity
-              style={[
-                styles.toolbarBtn,
-                { backgroundColor: theme.backgroundSecondary },
-              ]}
+              style={[styles.toolbarBtn, { backgroundColor: Surface.highest }]}
               onPress={() => onViewChange("icons")}
               accessibilityRole="button"
               accessibilityLabel={labels.back}
             >
-              <IconSymbol
-                name="chevron.left"
-                size={22}
-                color={theme.tint}
-              />
+              <IconSymbol name="chevron.left" size={22} color={Accent.primary} />
             </TouchableOpacity>
             <View style={styles.opacityRow}>
               <IconSymbol
                 name="circle.lefthalf.filled"
                 size={20}
-                color={theme.textSecondary}
+                color={Accent.onSurfaceMuted}
               />
               <Slider
                 style={styles.slider}
@@ -167,9 +134,9 @@ export function TransformToolbar({
                 maximumValue={1}
                 value={opacityValue}
                 onValueChange={onOpacityChange}
-                minimumTrackTintColor={theme.tint}
-                maximumTrackTintColor={theme.border}
-                thumbTintColor={theme.tint}
+                minimumTrackTintColor={Accent.primary}
+                maximumTrackTintColor={Accent.outlineVariant}
+                thumbTintColor={Accent.primary}
               />
             </View>
           </>
@@ -191,15 +158,14 @@ const styles = StyleSheet.create({
     alignItems: "center",
     paddingVertical: Spacing.sm,
     paddingHorizontal: TOOLBAR_PILL_PADDING_H,
-    borderRadius: 9999,
-    borderWidth: 1,
+    borderRadius: BorderRadius.full,
     gap: TOOLBAR_GAP,
     ...Shadows.md,
   },
   toolbarBtn: {
     width: TOOLBAR_ICON_SIZE,
     height: TOOLBAR_ICON_SIZE,
-    borderRadius: TOOLBAR_ICON_SIZE / 2,
+    borderRadius: BorderRadius.full,
     alignItems: "center",
     justifyContent: "center",
   },

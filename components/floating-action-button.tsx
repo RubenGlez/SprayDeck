@@ -1,35 +1,44 @@
 import React from "react";
-import { StyleSheet, type StyleProp, type ViewStyle } from "react-native";
+import { StyleSheet, TouchableOpacity, type StyleProp, type ViewStyle } from "react-native";
 
-import { Button, type ButtonProps } from "@/components/button";
-import { LIST_FAB_SIZE } from "@/constants/list-layout";
-import { Shadows } from "@/constants/theme";
+import { Accent, BorderRadius, Shadows } from "@/constants/theme";
 
-export type FloatingActionButtonProps = Omit<ButtonProps, "size" | "fullWidth"> & {
+export type FloatingActionButtonProps = {
+  onPress: () => void;
+  icon: React.ReactNode;
+  accessibilityLabel?: string;
   style?: StyleProp<ViewStyle>;
 };
 
 export function FloatingActionButton({
+  onPress,
+  icon,
+  accessibilityLabel,
   style,
-  ...props
 }: FloatingActionButtonProps) {
   return (
-    <Button
-      {...props}
-      size="icon"
+    <TouchableOpacity
+      onPress={onPress}
+      accessibilityRole="button"
+      accessibilityLabel={accessibilityLabel}
+      activeOpacity={0.8}
       style={[styles.fab, style]}
-    />
+    >
+      {icon}
+    </TouchableOpacity>
   );
 }
 
 const styles = StyleSheet.create({
   fab: {
-    width: LIST_FAB_SIZE,
-    height: LIST_FAB_SIZE,
-    borderRadius: LIST_FAB_SIZE / 2,
+    width: 56,
+    height: 56,
+    borderRadius: BorderRadius.full,
     alignItems: "center",
     justifyContent: "center",
+    overflow: "hidden",
+    backgroundColor: Accent.primary,
+    ...Shadows.neonGlow,
     ...Shadows.lg,
   },
 });
-
