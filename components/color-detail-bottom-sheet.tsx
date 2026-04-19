@@ -194,7 +194,7 @@ function SimilarColorCard({
 }: SimilarColorCardProps) {
   return (
     <TouchableOpacity
-      style={[styles.similarCard, { marginRight: Spacing.sm }]}
+      style={styles.similarCard}
       onPress={onPress}
       activeOpacity={0.7}
       accessibilityLabel={`${displayName}, ${similarity}% similar`}
@@ -277,6 +277,7 @@ const styles = StyleSheet.create({
   },
   similarRow: {
     paddingBottom: Spacing.md,
+    paddingRight: Spacing.md,
     gap: Spacing.sm,
   },
   similarCard: {
