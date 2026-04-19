@@ -67,12 +67,12 @@ const styles = StyleSheet.create({
   },
   metric: {
     position: "absolute",
-    top: Spacing.xs,
-    right: Spacing.md,
+    top: Spacing.sm,
+    right: Spacing.sm,
     fontFamily: FontFamily.displayBold,
-    fontSize: Typography.fontSize.xxl,
+    fontSize: Typography.fontSize.lg,
     color: Accent.primary,
-    opacity: 0.2,
+    opacity: 0.25,
   },
   favoriteBtn: {
     position: "absolute",
