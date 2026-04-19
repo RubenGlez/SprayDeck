@@ -3,11 +3,9 @@ import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
 import { FavoriteIcon } from "@/components/favorite-icon";
 import { IconSymbol } from "@/components/ui/icon-symbol";
-import { BorderRadius, Colors, Spacing, Typography } from "@/constants/theme";
-import { useColorScheme } from "@/hooks/use-color-scheme";
+import { Accent, BorderRadius, Spacing, Typography } from "@/constants/theme";
 import type { Color } from "@/types";
 
-/** Returns true if the background is light (use black text), false if dark (use white text). */
 function isLightBackground(hex: string): boolean {
   const h = hex.replace(/^#/, "");
   const r = parseInt(h.slice(0, 2), 16);
@@ -22,11 +20,8 @@ export type ColorGridCardProps = {
   displayName: string;
   onPress: () => void;
   onAddToPalette?: () => void;
-  /** When true, show checkmark and "in palette" state */
   isInPalette?: boolean;
-  /** When true, tap on card toggles selection; no add button; check icon in swatch when selected */
   selectionMode?: boolean;
-  /** When provided, show favorite button */
   isFavorite?: boolean;
   onFavorite?: () => void;
   cardWidth: number;
@@ -45,29 +40,18 @@ export function ColorGridCard({
   cardWidth,
   swatchSize,
 }: ColorGridCardProps) {
-  const colorScheme = useColorScheme() ?? "light";
-  const theme = Colors[colorScheme];
   const lightBg = isLightBackground(color.hex);
-  const textColor = lightBg ? "#000" : "#fff";
-  const isVeryLight =
-    color.hex.toLowerCase() === "#ffffff" ||
-    color.hex.toLowerCase().startsWith("#fff");
+  const textColor = lightBg ? "rgba(0,0,0,0.85)" : "rgba(255,255,255,0.9)";
+  const subTextColor = lightBg ? "rgba(0,0,0,0.55)" : "rgba(255,255,255,0.55)";
   const showActionsRow = !selectionMode && onAddToPalette != null;
 
   return (
     <TouchableOpacity
       style={[styles.cell, { width: cardWidth, height: swatchSize }]}
       onPress={onPress}
-      activeOpacity={0.7}
+      activeOpacity={0.8}
       accessibilityRole={selectionMode ? "checkbox" : "button"}
       accessibilityState={selectionMode ? { checked: isInPalette } : undefined}
-      accessibilityLabel={
-        selectionMode
-          ? isInPalette
-            ? "Remove from palette"
-            : "Add to palette"
-          : undefined
-      }
     >
       <View
         style={[
@@ -77,65 +61,49 @@ export function ColorGridCard({
             height: swatchSize,
             backgroundColor: color.hex,
           },
-          isVeryLight && { borderWidth: 1, borderColor: theme.border },
         ]}
       >
+        {/* Labels bottom-left */}
         <View style={styles.labelOverlay} pointerEvents="none">
-          <Text
-            style={[styles.labelName, { color: textColor }]}
-            numberOfLines={1}
-            ellipsizeMode="tail"
-          >
-            {displayName}
-          </Text>
-          <Text
-            style={[styles.labelCode, { color: textColor }]}
-            numberOfLines={1}
-            ellipsizeMode="tail"
-          >
+          <Text style={[styles.labelCode, { color: subTextColor }]} numberOfLines={1}>
             {color.code}
           </Text>
+          <Text style={[styles.labelName, { color: textColor }]} numberOfLines={1} ellipsizeMode="tail">
+            {displayName}
+          </Text>
         </View>
+
+        {/* Selection check */}
         {selectionMode && isInPalette && (
           <View style={styles.selectedBadge} pointerEvents="none">
-            <IconSymbol
-              name="checkmark.circle.fill"
-              size={20}
-              color={textColor}
-            />
+            <IconSymbol name="checkmark.circle.fill" size={18} color={textColor} />
           </View>
         )}
+
+        {/* Favorite */}
         {onFavorite != null && (
           <TouchableOpacity
             style={styles.favoriteBtn}
             onPress={onFavorite}
-            accessibilityLabel={
-              isFavorite ? "Remove from favorites" : "Add to favorites"
-            }
+            hitSlop={{ top: 4, bottom: 4, left: 4, right: 4 }}
+            accessibilityLabel={isFavorite ? "Remove from favorites" : "Add to favorites"}
           >
-            <FavoriteIcon
-              isFavorite={isFavorite ?? false}
-              size={18}
-              color={textColor}
-            />
+            <FavoriteIcon isFavorite={isFavorite ?? false} size={16} color={textColor} />
           </TouchableOpacity>
         )}
+
+        {/* Add to palette */}
         {showActionsRow && (
           <TouchableOpacity
             style={styles.addBtn}
             onPress={onAddToPalette}
-            accessibilityLabel={
-              isInPalette ? "Remove from palette" : "Add to palette"
-            }
+            hitSlop={{ top: 4, bottom: 4, left: 4, right: 4 }}
+            accessibilityLabel={isInPalette ? "Remove from palette" : "Add to palette"}
           >
             {isInPalette ? (
-              <IconSymbol
-                name="checkmark.circle.fill"
-                size={20}
-                color={theme.tint}
-              />
+              <IconSymbol name="checkmark.circle.fill" size={18} color={Accent.primary} />
             ) : (
-              <IconSymbol name="plus" size={20} color={theme.icon} />
+              <IconSymbol name="plus.circle" size={18} color={textColor} />
             )}
           </TouchableOpacity>
         )}
@@ -156,16 +124,19 @@ const styles = StyleSheet.create({
   labelOverlay: {
     position: "absolute",
     left: Spacing.xs,
-    right: Spacing.xs,
+    right: Spacing.xs + 24,
     bottom: Spacing.xs,
+    gap: 1,
+  },
+  labelCode: {
+    fontSize: 9,
+    letterSpacing: 0.5,
+    fontWeight: "600",
+    textTransform: "uppercase",
   },
   labelName: {
     fontSize: Typography.fontSize.xs,
     fontWeight: Typography.fontWeight.semibold,
-  },
-  labelCode: {
-    fontSize: 10,
-    opacity: 0.9,
   },
   selectedBadge: {
     position: "absolute",

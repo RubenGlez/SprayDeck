@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { useTranslation } from "react-i18next";
-import { Pressable, StyleSheet, Switch, TextInput, View } from "react-native";
+import { Pressable, ScrollView, StyleSheet, TextInput, View } from "react-native";
 
 import {
   LanguageSelectBottomSheet,
@@ -10,21 +10,48 @@ import { Screen } from "@/components/screen";
 import { ScreenHeader } from "@/components/screen-header";
 import { ThemedText } from "@/components/themed-text";
 import { IconSymbol } from "@/components/ui/icon-symbol";
-import { BorderRadius, Colors, Spacing, Typography } from "@/constants/theme";
-import { useColorScheme } from "@/hooks/use-color-scheme";
+import { Accent, BorderRadius, FontFamily, Spacing, Surface, Typography } from "@/constants/theme";
 import { useLanguageStore } from "@/stores/useLanguageStore";
 import { useProfileStore } from "@/stores/useProfileStore";
-import { useThemeStore } from "@/stores/useThemeStore";
 import type { LanguageCode } from "@/types";
+
+function SettingsRow({
+  label,
+  value,
+  onPress,
+  right,
+}: {
+  label: string;
+  value?: string;
+  onPress?: () => void;
+  right?: React.ReactNode;
+}) {
+  return (
+    <Pressable
+      style={({ pressed }) => [styles.settingsRow, { opacity: pressed && onPress ? 0.7 : 1 }]}
+      onPress={onPress}
+    >
+      <View style={styles.settingsRowText}>
+        <ThemedText style={styles.settingsRowLabel}>{label}</ThemedText>
+        {value && (
+          <ThemedText style={styles.settingsRowValue}>{value}</ThemedText>
+        )}
+      </View>
+      {right ?? (
+        onPress && <IconSymbol name="chevron.right" size={16} color={Accent.onSurfaceMuted} />
+      )}
+    </Pressable>
+  );
+}
+
+function SectionHeader({ label }: { label: string }) {
+  return <ThemedText type="label" style={styles.sectionLabel}>{label}</ThemedText>;
+}
 
 export default function ProfileScreen() {
   const { t, i18n } = useTranslation();
-  const colorScheme = useColorScheme();
-  const theme = Colors[colorScheme];
   const aka = useProfileStore((s) => s.aka);
   const setAka = useProfileStore((s) => s.setAka);
-  const setColorSchemeOverride = useThemeStore((s) => s.setColorSchemeOverride);
-  const isDark = colorScheme === "dark";
   const language = useLanguageStore((s) => s.language);
   const setLanguage = useLanguageStore((s) => s.setLanguage);
   const languageSheetRef = useRef<LanguageSelectBottomSheetRef>(null);
@@ -38,58 +65,40 @@ export default function ProfileScreen() {
 
   return (
     <Screen>
-      <View style={styles.container}>
+      <ScrollView
+        contentContainerStyle={styles.scroll}
+        showsVerticalScrollIndicator={false}
+      >
         <ScreenHeader title={t("tabs.profile")} />
 
-        <View style={[styles.section, { borderTopWidth: 0 }]}>
-          <ThemedText
-            style={[styles.sectionLabel, { color: theme.textSecondary }]}
-          >
-            {t("profile.akaSection")}
-          </ThemedText>
-          <TextInput
-            style={[
-              styles.akaInput,
-              {
-                backgroundColor: theme.backgroundSecondary,
-                borderColor: theme.border,
-                color: theme.text,
-              },
-            ]}
-            placeholder={t("profile.akaPlaceholder")}
-            placeholderTextColor={theme.textSecondary}
-            value={aka}
-            onChangeText={setAka}
-            autoCapitalize="words"
-            autoCorrect={false}
-          />
-          <ThemedText style={[styles.akaHint, { color: theme.textSecondary }]}>
-            {t("profile.akaHint")}
-          </ThemedText>
+        {/* Artist identity */}
+        <View style={styles.section}>
+          <SectionHeader label={t("profile.akaSection")} />
+          <View style={styles.inputWrap}>
+            <TextInput
+              style={styles.akaInput}
+              placeholder={t("profile.akaPlaceholder")}
+              placeholderTextColor={Accent.onSurfaceMuted}
+              value={aka}
+              onChangeText={setAka}
+              autoCapitalize="words"
+              autoCorrect={false}
+              selectionColor={Accent.primary}
+            />
+          </View>
+          <ThemedText style={styles.hint}>{t("profile.akaHint")}</ThemedText>
         </View>
 
-        <View style={[styles.section, { borderTopColor: theme.border }]}>
-          <ThemedText
-            style={[styles.sectionLabel, { color: theme.textSecondary }]}
-          >
-            {t("profile.language")}
-          </ThemedText>
-          <Pressable
-            style={({ pressed }) => [
-              styles.languageRow,
-              { opacity: pressed ? 0.7 : 1 },
-            ]}
-            onPress={() => languageSheetRef.current?.present()}
-          >
-            <ThemedText style={styles.rowLabel}>
-              {t(`profile.lang_${currentLang}` as const)}
-            </ThemedText>
-            <IconSymbol
-              name="chevron.right"
-              size={20}
-              color={theme.textSecondary}
+        {/* Preferences */}
+        <View style={styles.section}>
+          <SectionHeader label={t("profile.language")} />
+          <View style={styles.card}>
+            <SettingsRow
+              label={t("profile.language")}
+              value={t(`profile.lang_${currentLang}` as const)}
+              onPress={() => languageSheetRef.current?.present()}
             />
-          </Pressable>
+          </View>
         </View>
 
         <LanguageSelectBottomSheet
@@ -98,73 +107,91 @@ export default function ProfileScreen() {
           onSelectLanguage={handleSelectLanguage}
         />
 
-        <View style={[styles.section, { borderTopColor: theme.border }]}>
-          <ThemedText
-            style={[styles.sectionLabel, { color: theme.textSecondary }]}
-          >
-            {t("profile.appearance")}
-          </ThemedText>
-          <View style={[styles.row, { borderBottomColor: theme.border }]}>
-            <ThemedText style={styles.rowLabel}>
-              {t("profile.darkMode")}
-            </ThemedText>
-            <Switch
-              value={isDark}
-              onValueChange={(value) =>
-                setColorSchemeOverride(value ? "dark" : "light")
+        {/* App info */}
+        <View style={styles.section}>
+          <SectionHeader label="App" />
+          <View style={styles.card}>
+            <SettingsRow
+              label="Theme"
+              value="Dark (Obsidian)"
+              right={
+                <View style={styles.themeDot} />
               }
-              trackColor={{ false: theme.border, true: theme.tint }}
-              thumbColor={theme.background}
             />
           </View>
         </View>
-      </View>
+
+        <ThemedText style={styles.version}>WallAI · For the streets</ThemedText>
+      </ScrollView>
     </Screen>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
+  scroll: {
     paddingHorizontal: Spacing.md,
+    paddingBottom: Spacing.xxl,
+    gap: Spacing.lg,
   },
   section: {
-    borderTopWidth: 1,
-    paddingTop: Spacing.md,
+    gap: Spacing.sm,
   },
   sectionLabel: {
-    fontSize: 13,
-    fontWeight: "600",
-    textTransform: "uppercase",
-    marginBottom: Spacing.sm,
-    letterSpacing: 0.5,
+    paddingHorizontal: Spacing.xs,
+  },
+  card: {
+    backgroundColor: Surface.base,
+    borderRadius: BorderRadius.lg,
+    overflow: "hidden",
+  },
+  settingsRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    paddingHorizontal: Spacing.md,
+    paddingVertical: Spacing.md,
+    gap: Spacing.sm,
+    minHeight: 52,
+  },
+  settingsRowText: {
+    flex: 1,
+    gap: 1,
+  },
+  settingsRowLabel: {
+    fontSize: Typography.fontSize.md,
+    color: Accent.onSurface,
+  },
+  settingsRowValue: {
+    fontSize: Typography.fontSize.sm,
+    color: Accent.onSurfaceMuted,
+  },
+  inputWrap: {
+    backgroundColor: Surface.base,
+    borderRadius: BorderRadius.lg,
+    overflow: "hidden",
   },
   akaInput: {
-    height: 48,
+    height: 52,
     paddingHorizontal: Spacing.md,
-    borderRadius: BorderRadius.md,
-    borderWidth: 1,
     fontSize: Typography.fontSize.md,
-    marginBottom: Spacing.xs,
+    color: Accent.onSurface,
+    fontFamily: FontFamily.displayMedium,
   },
-  akaHint: {
+  hint: {
     fontSize: Typography.fontSize.sm,
-    marginBottom: Spacing.md,
+    color: Accent.onSurfaceMuted,
+    paddingHorizontal: Spacing.xs,
   },
-  row: {
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "space-between",
-    paddingVertical: Spacing.md,
-    borderBottomWidth: 1,
+  themeDot: {
+    width: 14,
+    height: 14,
+    borderRadius: 7,
+    backgroundColor: Accent.primary,
   },
-  rowLabel: {
-    fontSize: 16,
-  },
-  languageRow: {
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "space-between",
-    paddingVertical: Spacing.md,
+  version: {
+    fontSize: Typography.fontSize.xs,
+    color: Accent.onSurfaceMuted,
+    textAlign: "center",
+    paddingTop: Spacing.md,
   },
 });

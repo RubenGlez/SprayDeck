@@ -2,8 +2,7 @@ import React from "react";
 import { StyleSheet, TouchableOpacity, View } from "react-native";
 
 import { ThemedText } from "@/components/themed-text";
-import { Colors, Spacing, Typography } from "@/constants/theme";
-import { useColorScheme } from "@/hooks/use-color-scheme";
+import { Accent, Spacing, Typography } from "@/constants/theme";
 
 const TAB_BAR_HEIGHT = 48;
 
@@ -23,11 +22,8 @@ export type TabsProps = {
 };
 
 export function Tabs({ value, onChange, tabs }: TabsProps) {
-  const colorScheme = useColorScheme() ?? "light";
-  const theme = Colors[colorScheme];
-
   return (
-    <View style={[styles.tabBar, { borderBottomColor: theme.border }]}>
+    <View style={styles.tabBar}>
       {tabs.map((tab) => {
         const isSelected = value === tab.value;
         return (
@@ -36,7 +32,7 @@ export function Tabs({ value, onChange, tabs }: TabsProps) {
             style={[
               styles.tab,
               isSelected && {
-                borderBottomColor: theme.tint,
+                borderBottomColor: Accent.primary,
                 borderBottomWidth: 2,
               },
             ]}
@@ -55,7 +51,7 @@ export function Tabs({ value, onChange, tabs }: TabsProps) {
             <ThemedText
               style={[
                 styles.tabLabel,
-                { color: isSelected ? theme.tint : theme.textSecondary },
+                { color: isSelected ? Accent.primary : Accent.onSurfaceMuted },
               ]}
             >
               {tab.label}
@@ -71,7 +67,6 @@ const styles = StyleSheet.create({
   tabBar: {
     flexDirection: "row",
     height: TAB_BAR_HEIGHT,
-    borderBottomWidth: 1,
     paddingHorizontal: Spacing.sm,
   },
   tab: {

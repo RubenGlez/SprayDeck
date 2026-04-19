@@ -15,8 +15,8 @@ import {
 import { FavoriteIcon } from "@/components/favorite-icon";
 import { ThemedText } from "@/components/themed-text";
 import { IconSymbol } from "@/components/ui/icon-symbol";
-import { BorderRadius, Colors, Spacing, Typography } from "@/constants/theme";
-import { useColorScheme } from "@/hooks/use-color-scheme";
+import { Accent, BorderRadius, FontFamily, Spacing, Surface, Typography } from "@/constants/theme";
+
 import { findClosestColors } from "@/lib/colorMatch";
 import { getColorDisplayName } from "@/lib/color";
 import {
@@ -55,8 +55,8 @@ export function ColorDetailContent({
   onOpenColor,
 }: ContentProps) {
   const { t, i18n } = useTranslation();
-  const colorScheme = useColorScheme() ?? "light";
-  const theme = Colors[colorScheme];
+  
+  
   const isLight =
     color?.color.hex.toLowerCase() === "#ffffff" ||
     color?.color.hex.toLowerCase().startsWith("#fff");
@@ -91,7 +91,7 @@ export function ColorDetailContent({
 
   return (
     <BottomSheetScrollView
-      style={[styles.scroll, { backgroundColor: theme.background }]}
+      style={[styles.scroll, { backgroundColor: Surface.low }]}
       contentContainerStyle={styles.content}
     >
       <View style={styles.swatchWrap}>
@@ -99,7 +99,7 @@ export function ColorDetailContent({
           style={[
             styles.swatch,
             { backgroundColor: color.color.hex },
-            isLight && { borderWidth: 1, borderColor: theme.border },
+            isLight && { borderWidth: 1, borderColor: `${Accent.outlineVariant}40` },
           ]}
         />
         <TouchableOpacity
@@ -122,14 +122,14 @@ export function ColorDetailContent({
       >
         {color.displayName}
       </ThemedText>
-      <ThemedText style={[styles.code, { color: theme.textSecondary }]}>
+      <ThemedText style={[styles.code, { color: Accent.onSurfaceMuted }]}>
         {color.color.code}
       </ThemedText>
-      <ThemedText style={[styles.meta, { color: theme.textSecondary }]}>
+      <ThemedText style={[styles.meta, { color: Accent.onSurfaceMuted }]}>
         {color.brandName} · {color.seriesName}
       </ThemedText>
 
-      <ThemedText style={[styles.sectionTitle, { color: theme.textSecondary }]}>
+      <ThemedText style={[styles.sectionTitle, { color: Accent.onSurfaceMuted }]}>
         {t("colors.colorDetail.similarInSeries")}
       </ThemedText>
       <ScrollView
@@ -146,13 +146,12 @@ export function ColorDetailContent({
               i18n.language,
             )}
             similarity={match.similarity}
-            theme={theme}
             onPress={() => onOpenColor?.(match.catalogColor)}
           />
         ))}
       </ScrollView>
 
-      <ThemedText style={[styles.sectionTitle, { color: theme.textSecondary }]}>
+      <ThemedText style={[styles.sectionTitle, { color: Accent.onSurfaceMuted }]}>
         {t("colors.colorDetail.similarInOtherSeries")}
       </ThemedText>
       <ScrollView
@@ -173,7 +172,6 @@ export function ColorDetailContent({
               )}
               subtitle={subtitle}
               similarity={match.similarity}
-              theme={theme}
               onPress={() => onOpenColor?.(match.catalogColor)}
             />
           );
@@ -188,7 +186,6 @@ type SimilarColorCardProps = {
   displayName: string;
   subtitle?: string;
   similarity: number;
-  theme: (typeof Colors)["light"];
   onPress: () => void;
 };
 
@@ -197,7 +194,6 @@ function SimilarColorCard({
   displayName,
   subtitle,
   similarity,
-  theme,
   onPress,
 }: SimilarColorCardProps) {
   const isVeryLight =
@@ -215,11 +211,11 @@ function SimilarColorCard({
         style={[
           styles.similarSwatch,
           { backgroundColor: color.hex },
-          isVeryLight && { borderWidth: 1, borderColor: theme.border },
+          isVeryLight && { borderWidth: 1, borderColor: `${Accent.outlineVariant}40` },
         ]}
       />
       <ThemedText
-        style={[styles.similarLabel, { color: theme.text }]}
+        style={[styles.similarLabel, { color: Accent.onSurface }]}
         numberOfLines={1}
         ellipsizeMode="tail"
       >
@@ -227,7 +223,7 @@ function SimilarColorCard({
       </ThemedText>
       {subtitle != null && (
         <ThemedText
-          style={[styles.similarSubtitle, { color: theme.textSecondary }]}
+          style={[styles.similarSubtitle, { color: Accent.onSurfaceMuted }]}
           numberOfLines={1}
           ellipsizeMode="tail"
         >
@@ -235,7 +231,7 @@ function SimilarColorCard({
         </ThemedText>
       )}
       <ThemedText
-        style={[styles.similarPct, { color: theme.textSecondary }]}
+        style={[styles.similarPct, { color: Accent.onSurfaceMuted }]}
       >
         {similarity}%
       </ThemedText>
@@ -326,8 +322,8 @@ export const ColorDetailBottomSheet = forwardRef<
   { color, isFavorite, onToggleFavorite, onOpenColor },
   ref,
 ) {
-  const colorScheme = useColorScheme() ?? "light";
-  const theme = Colors[colorScheme];
+  
+  
 
   const renderBackdrop = useCallback(
     (props: React.ComponentProps<typeof BottomSheetBackdrop>) => (
@@ -345,7 +341,7 @@ export const ColorDetailBottomSheet = forwardRef<
     <BottomSheetModal
       ref={ref}
       backgroundStyle={{
-        backgroundColor: theme.background,
+        backgroundColor: Surface.low,
         borderTopLeftRadius: 20,
         borderTopRightRadius: 20,
       }}

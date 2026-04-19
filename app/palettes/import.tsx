@@ -29,8 +29,7 @@ import { SaveNameModal } from "@/components/save-name-modal";
 import { ThemedText } from "@/components/themed-text";
 import { ThemedView } from "@/components/themed-view";
 import { IconSymbol } from "@/components/ui/icon-symbol";
-import { BorderRadius, Colors, Spacing, Typography } from "@/constants/theme";
-import { useColorScheme } from "@/hooks/use-color-scheme";
+import { Accent, BorderRadius, FontFamily, Spacing, Surface, Typography } from "@/constants/theme";
 import { getColorDisplayName } from "@/lib/color";
 import { extractHexPalette, findClosestColors } from "@/lib/colorMatch";
 import {
@@ -46,8 +45,6 @@ export default function ImportFromImageScreen() {
   }>();
   const { t, i18n } = useTranslation();
   const router = useRouter();
-  const colorScheme = useColorScheme() ?? "light";
-  const theme = Colors[colorScheme];
   const addPalette = usePalettesStore((s) => s.addPalette);
 
   const allSeries = useMemo(() => getAllSeriesWithCount(), []);
@@ -272,7 +269,7 @@ export default function ImportFromImageScreen() {
               <IconSymbol
                 name="line.3.horizontal.decrease.circle.fill"
                 size={24}
-                color={theme.tint}
+                color={Accent.primary}
               />
             }
           />
@@ -282,7 +279,7 @@ export default function ImportFromImageScreen() {
         ref={seriesFilterSheetRef}
         snapPoints={["60%", "90%"]}
         backgroundStyle={{
-          backgroundColor: theme.background,
+          backgroundColor: Surface.low,
           borderTopLeftRadius: 20,
           borderTopRightRadius: 20,
         }}
@@ -292,12 +289,12 @@ export default function ImportFromImageScreen() {
           contentContainerStyle={styles.seriesSheetContent}
         >
           <ThemedText
-            style={[styles.sectionLabel, { color: theme.textSecondary }]}
+            style={[styles.sectionLabel, { color: Accent.onSurfaceMuted }]}
           >
             {t("palettes.selectSeries")}
           </ThemedText>
           <ThemedText
-            style={[styles.sectionSubtitle, { color: theme.textSecondary }]}
+            style={[styles.sectionSubtitle, { color: Accent.onSurfaceMuted }]}
           >
             {t("palettes.selectSeriesSubtitle")}
           </ThemedText>
@@ -309,7 +306,7 @@ export default function ImportFromImageScreen() {
                   key={s.id}
                   style={[
                     styles.seriesRow,
-                    { borderBottomColor: theme.border },
+                    { borderBottomColor: `${Accent.outlineVariant}30` },
                   ]}
                   onPress={() => toggleSeriesSelection(s.id)}
                   activeOpacity={0.7}
@@ -320,10 +317,10 @@ export default function ImportFromImageScreen() {
                     <IconSymbol
                       name="checkmark.square.fill"
                       size={24}
-                      color={theme.tint}
+                      color={Accent.primary}
                     />
                   ) : (
-                    <IconSymbol name="square" size={24} color={theme.icon} />
+                    <IconSymbol name="square" size={24} color={Accent.onSurfaceMuted} />
                   )}
                   <View style={styles.seriesLabelWrap}>
                     <ThemedText
@@ -336,7 +333,7 @@ export default function ImportFromImageScreen() {
                     <ThemedText
                       style={[
                         styles.seriesMeta,
-                        { color: theme.textSecondary },
+                        { color: Accent.onSurfaceMuted },
                       ]}
                       numberOfLines={1}
                       ellipsizeMode="tail"
@@ -362,14 +359,14 @@ export default function ImportFromImageScreen() {
             <ThemedText
               style={[
                 styles.pickSectionSubtitle,
-                { color: theme.textSecondary },
+                { color: Accent.onSurfaceMuted },
               ]}
             >
               {t("palettes.choosePhotoSubtitle")}
             </ThemedText>
             {loading ? (
               <View style={styles.pickLoadingWrap}>
-                <ActivityIndicator size="large" color={theme.tint} />
+                <ActivityIndicator size="large" color={Accent.primary} />
               </View>
             ) : (
               <View style={styles.pickButtonsRow}>
@@ -380,15 +377,15 @@ export default function ImportFromImageScreen() {
                     <IconSymbol
                       name="photo.on.rectangle.angled"
                       size={32}
-                      color={theme.tint}
+                      color={Accent.primary}
                       style={styles.pickOptionIcon}
                     />
                   }
                   style={[
                     styles.pickOption,
                     {
-                      backgroundColor: theme.backgroundSecondary,
-                      borderColor: theme.border,
+                      backgroundColor: Surface.high,
+                      borderColor: `${Accent.outlineVariant}30`,
                     },
                   ]}
                   onPress={pickImage}
@@ -402,15 +399,15 @@ export default function ImportFromImageScreen() {
                     <IconSymbol
                       name="camera.fill"
                       size={32}
-                      color={theme.tint}
+                      color={Accent.primary}
                       style={styles.pickOptionIcon}
                     />
                   }
                   style={[
                     styles.pickOption,
                     {
-                      backgroundColor: theme.backgroundSecondary,
-                      borderColor: theme.border,
+                      backgroundColor: Surface.high,
+                      borderColor: `${Accent.outlineVariant}30`,
                     },
                   ]}
                   onPress={takePhoto}
@@ -424,12 +421,12 @@ export default function ImportFromImageScreen() {
 
         {!hasImage && imageUriParam && loading && (
           <View style={styles.pickLoadingWrap}>
-            <ActivityIndicator size="large" color={theme.tint} />
+            <ActivityIndicator size="large" color={Accent.primary} />
           </View>
         )}
 
         {error && (
-          <ThemedText style={[styles.error, { color: theme.error }]}>
+          <ThemedText style={[styles.error, { color: Accent.error }]}>
             {error}
           </ThemedText>
         )}
@@ -451,7 +448,7 @@ export default function ImportFromImageScreen() {
                       { backgroundColor: hex },
                       (hex === "#ffffff" || hex.startsWith("#fff")) && {
                         borderWidth: 1,
-                        borderColor: theme.border,
+                        borderColor: `${Accent.outlineVariant}30`,
                       },
                     ]}
                   />
@@ -462,14 +459,14 @@ export default function ImportFromImageScreen() {
             {showEquivalents && (
               <>
                 <ThemedText
-                  style={[styles.sectionLabel, { color: theme.textSecondary }]}
+                  style={[styles.sectionLabel, { color: Accent.onSurfaceMuted }]}
                 >
                   {t("palettes.equivalents")}
                 </ThemedText>
                 <ThemedText
                   style={[
                     styles.sectionSubtitle,
-                    { color: theme.textSecondary },
+                    { color: Accent.onSurfaceMuted },
                   ]}
                 >
                   {t("palettes.selectMatchPerColor")}
@@ -481,13 +478,13 @@ export default function ImportFromImageScreen() {
                       key={hex}
                       style={[
                         styles.extractedColorBlock,
-                        { borderColor: theme.border },
+                        { borderColor: `${Accent.outlineVariant}30` },
                       ]}
                     >
                       <View
                         style={[
                           styles.extractedColorHeader,
-                          { borderBottomColor: theme.border },
+                          { borderBottomColor: `${Accent.outlineVariant}30` },
                         ]}
                       >
                         <View
@@ -496,14 +493,14 @@ export default function ImportFromImageScreen() {
                             { backgroundColor: hex },
                             (hex === "#ffffff" || hex.startsWith("#fff")) && {
                               borderWidth: 1,
-                              borderColor: theme.border,
+                              borderColor: `${Accent.outlineVariant}30`,
                             },
                           ]}
                         />
                         <ThemedText
                           style={[
                             styles.extractedHexLabel,
-                            { color: theme.textSecondary },
+                            { color: Accent.onSurfaceMuted },
                           ]}
                         >
                           {hex}
@@ -517,14 +514,14 @@ export default function ImportFromImageScreen() {
                               styles.seriesMatchesSection,
                               seriesIndex > 0 && {
                                 borderTopWidth: 1,
-                                borderTopColor: theme.border,
+                                borderTopColor: `${Accent.outlineVariant}30`,
                               },
                             ]}
                           >
                             <ThemedText
                               style={[
                                 styles.seriesMatchesLabel,
-                                { color: theme.textSecondary },
+                                { color: Accent.onSurfaceMuted },
                               ]}
                               numberOfLines={1}
                             >
@@ -548,11 +545,10 @@ export default function ImportFromImageScreen() {
                                       ? { borderBottomWidth: 0 }
                                       : {
                                           borderBottomWidth: 1,
-                                          borderBottomColor: theme.border,
+                                          borderBottomColor: `${Accent.outlineVariant}30`,
                                         },
                                     isSelected && {
-                                      backgroundColor:
-                                        theme.backgroundSecondary,
+                                      backgroundColor: Surface.high,
                                     },
                                   ]}
                                   onPress={() =>
@@ -576,7 +572,7 @@ export default function ImportFromImageScreen() {
                                           "#fff",
                                         )) && {
                                         borderWidth: 1,
-                                        borderColor: theme.border,
+                                        borderColor: `${Accent.outlineVariant}30`,
                                       },
                                     ]}
                                   />
@@ -590,7 +586,7 @@ export default function ImportFromImageScreen() {
                                     <ThemedText
                                       style={[
                                         styles.matchCode,
-                                        { color: theme.textSecondary },
+                                        { color: Accent.onSurfaceMuted },
                                       ]}
                                     >
                                       {match.catalogColor.code}
@@ -599,7 +595,7 @@ export default function ImportFromImageScreen() {
                                   <ThemedText
                                     style={[
                                       styles.similarity,
-                                      { color: theme.tint },
+                                      { color: Accent.primary },
                                     ]}
                                   >
                                     {match.similarity}%
@@ -608,13 +604,13 @@ export default function ImportFromImageScreen() {
                                     <IconSymbol
                                       name="checkmark.circle.fill"
                                       size={24}
-                                      color={theme.tint}
+                                      color={Accent.primary}
                                     />
                                   ) : (
                                     <IconSymbol
                                       name="circle"
                                       size={24}
-                                      color={theme.icon}
+                                      color={Accent.onSurfaceMuted}
                                     />
                                   )}
                                 </TouchableOpacity>

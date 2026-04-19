@@ -28,9 +28,8 @@ import { Tabs } from "@/components/tabs";
 import { ThemedText } from "@/components/themed-text";
 import { TransformToolbar } from "@/components/transform-toolbar";
 import { IconSymbol, type IconSymbolName } from "@/components/ui/icon-symbol";
-import { BorderRadius, Colors, Spacing, Typography } from "@/constants/theme";
+import { Accent, BorderRadius, Spacing, Surface, Typography } from "@/constants/theme";
 import { useImagePicker } from "@/hooks/use-image-picker";
-import { useTheme } from "@/hooks/use-theme";
 import { useDoodlesStore } from "@/stores/useDoodlesStore";
 
 const CONTENT_PADDING = Spacing.md;
@@ -68,7 +67,6 @@ function isLayerTransformData(v: unknown): v is LayerTransformData {
 export default function DoodlesCreateScreen() {
   const { t } = useTranslation();
   const params = useLocalSearchParams<{ doodleId?: string }>();
-  const { theme } = useTheme();
   const router = useRouter();
   const getDoodle = useDoodlesStore((s) => s.getDoodle);
   const addDoodle = useDoodlesStore((s) => s.addDoodle);
@@ -171,6 +169,7 @@ export default function DoodlesCreateScreen() {
   const [toolbarView, setToolbarView] = useState<"icons" | "opacity">("icons");
   const [showNameModal, setShowNameModal] = useState(false);
   const [doodleName, setDoodleName] = useState("");
+  const [pendingThumbnailUri, setPendingThumbnailUri] = useState<string | null>(null);
 
   const resetTransform = useCallback(() => {
     if (activeTab === "wall") {
@@ -294,6 +293,11 @@ export default function DoodlesCreateScreen() {
   const openSaveModal = useCallback(() => {
     if (!wallUri || !sketchUri) return;
     setDoodleName(doodleId ? (getDoodle(doodleId)?.name ?? "") : "");
+    if (montageRef.current) {
+      captureRef(montageRef, { result: "tmpfile", format: "png", quality: 0.8 })
+        .then((uri) => setPendingThumbnailUri(uri))
+        .catch(() => setPendingThumbnailUri(null));
+    }
     setShowNameModal(true);
   }, [wallUri, sketchUri, doodleId, getDoodle]);
 
@@ -355,12 +359,14 @@ export default function DoodlesCreateScreen() {
         opacity: sketchOpacity.value,
       },
     };
+    const thumbnailUri = pendingThumbnailUri ?? undefined;
     if (doodleId) {
       updateDoodle(doodleId, {
         name,
         wallImageUri: wallUri,
         sketchImageUri: sketchUri,
         transformData,
+        ...(thumbnailUri && { thumbnailUri }),
       });
     } else {
       addDoodle({
@@ -368,16 +374,19 @@ export default function DoodlesCreateScreen() {
         wallImageUri: wallUri,
         sketchImageUri: sketchUri,
         transformData,
+        ...(thumbnailUri && { thumbnailUri }),
       });
     }
     setShowNameModal(false);
     setDoodleName("");
+    setPendingThumbnailUri(null);
     router.back();
   }, [
     wallUri,
     sketchUri,
     doodleId,
     doodleName,
+    pendingThumbnailUri,
     t,
     addDoodle,
     updateDoodle,
@@ -449,7 +458,6 @@ export default function DoodlesCreateScreen() {
             onTakePhoto={() => takePhoto("wall")}
             onPickGallery={() => pickFromGallery("wall")}
             loading={loadingSlot === "wall"}
-            theme={theme}
             t={t}
           />
         );
@@ -464,10 +472,7 @@ export default function DoodlesCreateScreen() {
           <Button
             variant="outline"
             size="sm"
-            style={[
-              styles.replaceBtn,
-              { backgroundColor: theme.card, borderColor: theme.border },
-            ]}
+            style={[styles.replaceBtn, { backgroundColor: Surface.high }]}
             onPress={() => setWallUri(null)}
           >
             {t("doodles.replaceImage")}
@@ -485,7 +490,6 @@ export default function DoodlesCreateScreen() {
             onTakePhoto={() => takePhoto("sketch")}
             onPickGallery={() => pickFromGallery("sketch")}
             loading={loadingSlot === "sketch"}
-            theme={theme}
             t={t}
           />
         );
@@ -500,10 +504,7 @@ export default function DoodlesCreateScreen() {
           <Button
             variant="outline"
             size="sm"
-            style={[
-              styles.replaceBtn,
-              { backgroundColor: theme.card, borderColor: theme.border },
-            ]}
+            style={[styles.replaceBtn, { backgroundColor: Surface.high }]}
             onPress={() => setSketchUri(null)}
           >
             {t("doodles.replaceImage")}
@@ -541,7 +542,7 @@ export default function DoodlesCreateScreen() {
                     onPress={handleDeleteDoodle}
                     accessibilityLabel={t("doodles.deleteDoodle")}
                     icon={
-                      <IconSymbol name="trash" size={24} color={theme.tint} />
+                      <IconSymbol name="trash" size={24} color={Accent.error} />
                     }
                   />
                 ) : null}
@@ -555,7 +556,7 @@ export default function DoodlesCreateScreen() {
                       <IconSymbol
                         name="square.and.arrow.up"
                         size={24}
-                        color={theme.tint}
+                        color={Accent.primary}
                       />
                     }
                   />
@@ -576,7 +577,7 @@ export default function DoodlesCreateScreen() {
               <IconSymbol
                 name="photo.fill.on.rectangle.fill"
                 size={20}
-                color={selected ? theme.tint : theme.textSecondary}
+                color={selected ? Accent.primary : Accent.onSurfaceMuted}
               />
             ),
           },
@@ -587,7 +588,7 @@ export default function DoodlesCreateScreen() {
               <IconSymbol
                 name="paintbrush"
                 size={20}
-                color={selected ? theme.tint : theme.textSecondary}
+                color={selected ? Accent.primary : Accent.onSurfaceMuted}
               />
             ),
           },
@@ -632,7 +633,7 @@ export default function DoodlesCreateScreen() {
 
       {error ? (
         <View style={styles.errorWrap}>
-          <ThemedText style={[styles.error, { color: theme.error }]}>
+          <ThemedText style={[styles.error, { color: Accent.error }]}>
             {error}
           </ThemedText>
         </View>
@@ -773,7 +774,6 @@ function PlaceholderSlot({
   onTakePhoto,
   onPickGallery,
   loading,
-  theme,
   t,
 }: {
   icon: IconSymbolName;
@@ -781,31 +781,20 @@ function PlaceholderSlot({
   onTakePhoto: () => void;
   onPickGallery: () => void;
   loading: boolean;
-  theme: (typeof Colors)["light"];
   t: (key: string) => string;
 }) {
   return (
-    <View
-      style={[
-        styles.placeholderWrap,
-        { backgroundColor: theme.backgroundSecondary },
-      ]}
-    >
-      <IconSymbol name={icon} size={48} color={theme.textSecondary} />
-      <ThemedText
-        style={[styles.placeholderLabel, { color: theme.textSecondary }]}
-      >
+    <View style={[styles.placeholderWrap, { backgroundColor: Surface.high }]}>
+      <IconSymbol name={icon} size={48} color={Accent.onSurfaceMuted} />
+      <ThemedText style={[styles.placeholderLabel, { color: Accent.onSurfaceMuted }]}>
         {label}
       </ThemedText>
       <View style={styles.placeholderButtons}>
         <Button
           variant="secondary"
           size="md"
-          icon={<IconSymbol name="camera.fill" size={24} color={theme.tint} />}
-          style={[
-            styles.placeholderBtn,
-            { backgroundColor: theme.card, borderColor: theme.border },
-          ]}
+          icon={<IconSymbol name="camera.fill" size={24} color={Accent.primary} />}
+          style={styles.placeholderBtn}
           onPress={onTakePhoto}
           disabled={loading}
           loading={loading}
@@ -820,13 +809,10 @@ function PlaceholderSlot({
             <IconSymbol
               name="photo.on.rectangle.angled"
               size={24}
-              color={theme.tint}
+              color={Accent.primary}
             />
           }
-          style={[
-            styles.placeholderBtn,
-            { backgroundColor: theme.card, borderColor: theme.border },
-          ]}
+          style={styles.placeholderBtn}
           onPress={onPickGallery}
           disabled={loading}
           accessibilityLabel={t("doodles.pickFromGallery")}
@@ -866,8 +852,6 @@ const styles = StyleSheet.create({
     gap: Spacing.xs,
     paddingVertical: Spacing.md,
     paddingHorizontal: Spacing.lg,
-    borderRadius: BorderRadius.md,
-    borderWidth: 1,
     minHeight: 48,
   },
   singleImageWrap: {
@@ -885,8 +869,6 @@ const styles = StyleSheet.create({
     alignSelf: "center",
     paddingVertical: Spacing.sm,
     paddingHorizontal: Spacing.md,
-    borderRadius: BorderRadius.md,
-    borderWidth: 1,
   },
   superpositionWrap: {
     flex: 1,

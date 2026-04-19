@@ -11,13 +11,7 @@ import {
 
 import { Button } from "@/components/button";
 import { ThemedText } from "@/components/themed-text";
-import {
-  BorderRadius,
-  Colors,
-  Spacing,
-  Typography,
-} from "@/constants/theme";
-import { useColorScheme } from "@/hooks/use-color-scheme";
+import { Accent, BorderRadius, FontFamily, Spacing, Surface, Typography } from "@/constants/theme";
 
 export type SaveNameModalProps = {
   visible: boolean;
@@ -44,9 +38,6 @@ export function SaveNameModal({
   cancelLabel,
   saveLabel,
 }: SaveNameModalProps) {
-  const colorScheme = useColorScheme() ?? "light";
-  const theme = Colors[colorScheme];
-
   return (
     <Modal
       visible={visible}
@@ -63,29 +54,15 @@ export function SaveNameModal({
           activeOpacity={1}
           onPress={onRequestClose}
         />
-        <View
-          style={[
-            styles.card,
-            {
-              backgroundColor: theme.card,
-              borderColor: theme.border,
-            },
-          ]}
-        >
+        <View style={styles.card}>
           <ThemedText style={styles.title}>{title}</ThemedText>
           <TextInput
-            style={[
-              styles.input,
-              {
-                backgroundColor: theme.backgroundSecondary,
-                borderColor: theme.border,
-                color: theme.text,
-              },
-            ]}
+            style={styles.input}
             placeholder={placeholder}
-            placeholderTextColor={theme.textSecondary}
+            placeholderTextColor={Accent.onSurfaceMuted}
             value={value}
             onChangeText={onChangeText}
+            selectionColor={Accent.primary}
             autoFocus
           />
           <View style={styles.actions}>
@@ -110,26 +87,28 @@ const styles = StyleSheet.create({
   },
   backdrop: {
     ...StyleSheet.absoluteFillObject,
-    backgroundColor: "rgba(0,0,0,0.5)",
+    backgroundColor: "rgba(0,0,0,0.7)",
   },
   card: {
-    borderRadius: BorderRadius.lg,
-    borderWidth: 1,
+    backgroundColor: Surface.high,
+    borderRadius: BorderRadius.xl,
     padding: Spacing.lg,
     zIndex: 1,
   },
   title: {
+    fontFamily: FontFamily.displaySemiBold,
     fontSize: Typography.fontSize.lg,
-    fontWeight: Typography.fontWeight.semibold,
     marginBottom: Spacing.md,
+    color: Accent.onSurface,
   },
   input: {
-    height: 44,
+    height: 48,
     paddingHorizontal: Spacing.md,
-    borderRadius: BorderRadius.md,
-    borderWidth: 1,
+    borderRadius: BorderRadius.full,
+    backgroundColor: Surface.highest,
     fontSize: Typography.fontSize.md,
     marginBottom: Spacing.lg,
+    color: Accent.onSurface,
   },
   actions: {
     flexDirection: "row",

@@ -5,9 +5,7 @@ import { StyleSheet, TouchableOpacity, View } from "react-native";
 
 import { ThemedText } from "@/components/themed-text";
 import { IconSymbol } from "@/components/ui/icon-symbol";
-import { Spacing, Typography } from "@/constants/theme";
-import { useTheme } from "@/hooks/use-theme";
-import { useThemeColor } from "@/hooks/use-theme-color";
+import { Accent, FontFamily, Spacing, Typography } from "@/constants/theme";
 
 type HeaderBackButtonProps = {
   title?: string;
@@ -17,8 +15,6 @@ type HeaderBackButtonProps = {
 export function HeaderBackButton({ title, right }: HeaderBackButtonProps) {
   const router = useRouter();
   const { t } = useTranslation();
-  const tint = useThemeColor({}, "tint");
-  const { theme } = useTheme();
 
   return (
     <View style={styles.wrapper}>
@@ -26,16 +22,14 @@ export function HeaderBackButton({ title, right }: HeaderBackButtonProps) {
         <TouchableOpacity
           onPress={() => router.back()}
           style={styles.backButton}
+          hitSlop={{ top: 10, bottom: 10, left: 10, right: 10 }}
           accessibilityRole="button"
           accessibilityLabel={t("common.back")}
         >
-          <IconSymbol name="chevron.left" size={24} color={tint} />
+          <IconSymbol name="chevron.left" size={22} color={Accent.primary} />
         </TouchableOpacity>
         {title ? (
-          <ThemedText
-            style={[styles.title, { color: theme.text }]}
-            numberOfLines={1}
-          >
+          <ThemedText style={styles.title} numberOfLines={1}>
             {title}
           </ThemedText>
         ) : null}
@@ -53,7 +47,7 @@ const styles = StyleSheet.create({
     gap: Spacing.sm,
     paddingRight: Spacing.sm,
     paddingVertical: Spacing.sm,
-    minHeight: 44,
+    minHeight: 48,
   },
   left: {
     flexDirection: "row",
@@ -64,10 +58,14 @@ const styles = StyleSheet.create({
   backButton: {
     justifyContent: "center",
     alignItems: "center",
+    width: 32,
+    height: 32,
   },
   title: {
+    fontFamily: FontFamily.displaySemiBold,
     fontSize: Typography.fontSize.lg,
-    fontWeight: Typography.fontWeight.semibold,
+    color: Accent.onSurface,
+    flex: 1,
   },
   right: {
     flexDirection: "row",

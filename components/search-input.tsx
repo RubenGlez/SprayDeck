@@ -1,10 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { StyleSheet, TextInput, View } from "react-native";
 
 import { Button } from "@/components/button";
 import { IconSymbol } from "@/components/ui/icon-symbol";
-import { BorderRadius, Colors, Spacing, Typography } from "@/constants/theme";
-import { useColorScheme } from "@/hooks/use-color-scheme";
+import { Accent, BorderRadius, Spacing, Surface, Typography } from "@/constants/theme";
 
 export type SearchInputProps = {
   value: string;
@@ -19,25 +18,26 @@ export function SearchInput({
   placeholder,
   clearAccessibilityLabel,
 }: SearchInputProps) {
-  const colorScheme = useColorScheme() ?? "light";
-  const theme = Colors[colorScheme];
+  const [focused, setFocused] = useState(false);
 
   return (
-    <View style={styles.wrap}>
+    <View style={[styles.wrap, focused && styles.wrapFocused]}>
+      <IconSymbol
+        name="magnifyingglass"
+        size={17}
+        color={focused ? Accent.primary : Accent.onSurfaceMuted}
+        style={styles.searchIcon}
+      />
       <TextInput
-        style={[
-          styles.input,
-          {
-            backgroundColor: theme.backgroundSecondary,
-            borderColor: theme.border,
-            color: theme.text,
-          },
-        ]}
+        style={styles.input}
         placeholder={placeholder}
-        placeholderTextColor={theme.textSecondary}
+        placeholderTextColor={Accent.onSurfaceMuted}
         value={value}
         onChangeText={onChangeText}
         returnKeyType="search"
+        onFocus={() => setFocused(true)}
+        onBlur={() => setFocused(false)}
+        selectionColor={Accent.primary}
       />
       {value.length > 0 && (
         <Button
@@ -49,8 +49,8 @@ export function SearchInput({
           icon={
             <IconSymbol
               name="xmark.circle.fill"
-              size={22}
-              color={theme.textSecondary}
+              size={18}
+              color={Accent.onSurfaceMuted}
             />
           }
         />
@@ -61,23 +61,39 @@ export function SearchInput({
 
 const styles = StyleSheet.create({
   wrap: {
-    position: "relative",
-    marginBottom: Spacing.md,
+    flexDirection: "row",
+    alignItems: "center",
+    backgroundColor: Surface.highest,
+    borderRadius: BorderRadius.full,
+    paddingHorizontal: Spacing.md,
+    height: 46,
+    gap: Spacing.sm,
+    // subtle border for structure
+    borderWidth: 1,
+    borderColor: "transparent",
+  },
+  wrapFocused: {
+    borderColor: `${Accent.primary}33`,
+    // neon glow approximation via shadow
+    shadowColor: Accent.primary,
+    shadowOffset: { width: 0, height: 0 },
+    shadowOpacity: 0.2,
+    shadowRadius: 4,
+    elevation: 4,
+  },
+  searchIcon: {
+    flexShrink: 0,
   },
   input: {
-    height: 44,
-    paddingHorizontal: Spacing.md,
-    paddingRight: 44,
-    borderRadius: BorderRadius.md,
-    borderWidth: 1,
+    flex: 1,
+    color: Accent.onSurface,
     fontSize: Typography.fontSize.md,
+    paddingVertical: 0,
   },
   clearBtn: {
-    position: "absolute",
-    right: Spacing.sm,
-    top: 0,
-    bottom: 0,
-    justifyContent: "center",
-    padding: Spacing.xs,
+    marginRight: -Spacing.xs,
+    minHeight: 0,
+    width: 32,
+    height: 32,
   },
 });

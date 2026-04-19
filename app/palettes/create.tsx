@@ -23,9 +23,8 @@ import { ThemedText } from "@/components/themed-text";
 import { ThemedView } from "@/components/themed-view";
 import { IconSymbol } from "@/components/ui/icon-symbol";
 import { COLOR_GRID } from "@/constants/color-grid";
-import { Spacing, Typography } from "@/constants/theme";
+import { Accent, Spacing, Surface, Typography } from "@/constants/theme";
 import { useSeriesColorSelection } from "@/hooks/use-series-color-selection";
-import { useTheme } from "@/hooks/use-theme";
 import { filterColorsBySearch, getColorDisplayName } from "@/lib/color";
 import { usePalettesStore } from "@/stores/usePalettesStore";
 import type { Color } from "@/types";
@@ -40,7 +39,6 @@ export default function CreatePaletteScreen() {
   }>();
   const router = useRouter();
   const { t, i18n } = useTranslation();
-  const { theme } = useTheme();
   const insets = useSafeAreaInsets();
   const {
     allSeries,
@@ -209,7 +207,7 @@ export default function CreatePaletteScreen() {
                 size="icon"
                 onPress={handleDeletePalette}
                 accessibilityLabel={t("projects.remove")}
-                icon={<IconSymbol name="trash" size={24} color={theme.tint} />}
+                icon={<IconSymbol name="trash" size={22} color={Accent.error} />}
               />
             ) : null}
             <Button
@@ -220,8 +218,8 @@ export default function CreatePaletteScreen() {
               icon={
                 <IconSymbol
                   name="line.3.horizontal.decrease.circle.fill"
-                  size={24}
-                  color={theme.tint}
+                  size={22}
+                  color={Accent.primary}
                 />
               }
             />
@@ -259,11 +257,7 @@ export default function CreatePaletteScreen() {
       <View
         style={[
           styles.footer,
-          {
-            backgroundColor: theme.background,
-            borderTopColor: theme.border,
-            paddingBottom: Spacing.md + insets.bottom,
-          },
+          { backgroundColor: Surface.low, paddingBottom: Spacing.md + insets.bottom },
         ]}
       >
         <View style={styles.footerActionsRow}>
@@ -271,12 +265,10 @@ export default function CreatePaletteScreen() {
             <Switch
               value={showOnlySelected}
               onValueChange={setShowOnlySelected}
-              trackColor={{ false: theme.border, true: theme.tint }}
-              thumbColor={theme.background}
+              trackColor={{ false: Accent.outlineVariant, true: `${Accent.primary}60` }}
+              thumbColor={showOnlySelected ? Accent.primary : Accent.onSurfaceMuted}
             />
-            <ThemedText
-              style={[styles.switchLabel, { color: theme.textSecondary }]}
-            >
+            <ThemedText style={[styles.switchLabel, { color: Accent.onSurfaceMuted }]}>
               {t("colors.colorCount", { count: selectedColors.length })}
             </ThemedText>
           </View>
@@ -331,7 +323,6 @@ const styles = StyleSheet.create({
     right: 0,
     bottom: 0,
     padding: Spacing.md,
-    borderTopWidth: 1,
   },
   footerActionsRow: {
     flexDirection: "row",

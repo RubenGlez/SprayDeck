@@ -2,17 +2,8 @@ import React from "react";
 import { StyleSheet, TouchableOpacity, View } from "react-native";
 
 import { ThemedText } from "@/components/themed-text";
-import {
-  IconSymbol,
-  type IconSymbolName,
-} from "@/components/ui/icon-symbol";
-import {
-  BorderRadius,
-  Shadows,
-  Spacing,
-  Typography,
-} from "@/constants/theme";
-import { useTheme } from "@/hooks/use-theme";
+import { IconSymbol, type IconSymbolName } from "@/components/ui/icon-symbol";
+import { Accent, BorderRadius, FontFamily, Spacing, Surface, Typography } from "@/constants/theme";
 
 export type EmptyStateCardProps = {
   icon: IconSymbolName;
@@ -21,67 +12,61 @@ export type EmptyStateCardProps = {
   onPress: () => void;
 };
 
-export function EmptyStateCard({
-  icon,
-  title,
-  subtitle,
-  onPress,
-}: EmptyStateCardProps) {
-  const { theme } = useTheme();
-
+export function EmptyStateCard({ icon, title, subtitle, onPress }: EmptyStateCardProps) {
   return (
-    <TouchableOpacity
-      activeOpacity={0.7}
-      style={[
-        styles.card,
-        {
-          backgroundColor: theme.backgroundSecondary,
-          borderColor: theme.border,
-        },
-      ]}
-      onPress={onPress}
-    >
-      <View style={[styles.iconWrap, { backgroundColor: theme.card }]}>
-        <IconSymbol name={icon} size={28} color={theme.tint} />
+    <TouchableOpacity activeOpacity={0.7} style={styles.card} onPress={onPress}>
+      <View style={styles.iconWrap}>
+        <IconSymbol name={icon} size={26} color={Accent.primary} />
       </View>
-      <ThemedText style={[styles.title, { color: theme.text }]}>
-        {title}
-      </ThemedText>
-      <ThemedText style={[styles.subtitle, { color: theme.textSecondary }]}>
-        {subtitle}
-      </ThemedText>
+      <ThemedText style={styles.title}>{title}</ThemedText>
+      <ThemedText style={styles.subtitle}>{subtitle}</ThemedText>
+      <View style={styles.cta}>
+        <ThemedText style={styles.ctaText}>Get started</ThemedText>
+        <IconSymbol name="arrow.right" size={14} color={Accent.primary} />
+      </View>
     </TouchableOpacity>
   );
 }
 
 const styles = StyleSheet.create({
   card: {
-    flexDirection: "column",
-    alignItems: "center",
-    justifyContent: "center",
+    backgroundColor: Surface.base,
+    borderRadius: BorderRadius.xl,
     paddingVertical: Spacing.xl,
     paddingHorizontal: Spacing.lg,
-    borderRadius: BorderRadius.lg,
-    borderWidth: 1.5,
-    borderStyle: "dashed",
-    minHeight: 140,
-    ...Shadows.sm,
+    alignItems: "center",
+    minHeight: 160,
+    gap: Spacing.sm,
   },
   iconWrap: {
-    width: 56,
-    height: 56,
-    borderRadius: 28,
+    width: 52,
+    height: 52,
+    borderRadius: 26,
+    backgroundColor: `${Accent.primary}18`,
     alignItems: "center",
     justifyContent: "center",
-    marginBottom: Spacing.md,
+    marginBottom: Spacing.xs,
   },
   title: {
+    fontFamily: FontFamily.displaySemiBold,
     fontSize: Typography.fontSize.md,
-    fontWeight: Typography.fontWeight.semibold,
-    marginBottom: Spacing.xs,
+    color: Accent.onSurface,
+    textAlign: "center",
   },
   subtitle: {
     fontSize: Typography.fontSize.sm,
+    color: Accent.onSurfaceMuted,
     textAlign: "center",
+  },
+  cta: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: Spacing.xs,
+    marginTop: Spacing.xs,
+  },
+  ctaText: {
+    fontSize: Typography.fontSize.sm,
+    color: Accent.primary,
+    fontFamily: FontFamily.displayMedium,
   },
 });

@@ -11,8 +11,7 @@ import { Alert, StyleSheet, TouchableOpacity, View } from "react-native";
 
 import { ThemedText } from "@/components/themed-text";
 import { IconSymbol } from "@/components/ui/icon-symbol";
-import { Colors, Spacing, Typography } from "@/constants/theme";
-import { useColorScheme } from "@/hooks/use-color-scheme";
+import { Accent, Spacing, Surface, Typography } from "@/constants/theme";
 
 export type DoodleShareBottomSheetRef = BottomSheetModal;
 
@@ -30,8 +29,6 @@ export const DoodleShareBottomSheet = forwardRef<
   ref,
 ) {
   const { t } = useTranslation();
-  const colorScheme = useColorScheme() ?? "light";
-  const theme = Colors[colorScheme];
 
   const renderBackdrop = useCallback(
     (props: React.ComponentProps<typeof BottomSheetBackdrop>) => (
@@ -96,7 +93,7 @@ export const DoodleShareBottomSheet = forwardRef<
     <BottomSheetModal
       ref={ref}
       backgroundStyle={{
-        backgroundColor: theme.background,
+        backgroundColor: Surface.low,
         borderTopLeftRadius: 20,
         borderTopRightRadius: 20,
       }}
@@ -105,29 +102,29 @@ export const DoodleShareBottomSheet = forwardRef<
     >
       <BottomSheetScrollView contentContainerStyle={styles.content}>
         <ThemedText
-          style={[styles.title, { color: theme.textSecondary }]}
+          style={[styles.title, { color: Accent.onSurfaceMuted }]}
         >
           {t("doodles.shareTitle")}
         </ThemedText>
         {options.map((opt) => (
           <TouchableOpacity
             key={opt.key}
-            style={[styles.optionRow, { borderBottomColor: theme.border }]}
+            style={[styles.optionRow, { borderBottomColor: Accent.outlineVariant }]}
             onPress={opt.onPress}
             activeOpacity={0.7}
           >
             <IconSymbol
               name={opt.icon}
               size={24}
-              color={theme.tint}
+              color={Accent.primary}
             />
-            <ThemedText style={[styles.optionLabel, { color: theme.text }]}>
+            <ThemedText style={[styles.optionLabel, { color: Accent.onSurface }]}>
               {opt.label}
             </ThemedText>
             <IconSymbol
               name="chevron.right"
               size={20}
-              color={theme.textSecondary}
+              color={Accent.onSurfaceMuted}
             />
           </TouchableOpacity>
         ))}

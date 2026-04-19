@@ -9,8 +9,7 @@ import { StyleSheet, TouchableOpacity, View } from "react-native";
 
 import { ThemedText } from "@/components/themed-text";
 import { IconSymbol } from "@/components/ui/icon-symbol";
-import { Colors, Spacing, Typography } from "@/constants/theme";
-import { useColorScheme } from "@/hooks/use-color-scheme";
+import { Accent, Spacing, Surface, Typography } from "@/constants/theme";
 import { SUPPORTED_LANGUAGES } from "@/stores/useLanguageStore";
 import type { LanguageCode } from "@/types";
 
@@ -29,8 +28,6 @@ export const LanguageSelectBottomSheet = forwardRef<
   ref,
 ) {
   const { t } = useTranslation();
-  const colorScheme = useColorScheme() ?? "light";
-  const theme = Colors[colorScheme];
 
   const renderBackdrop = useCallback(
     (props: React.ComponentProps<typeof BottomSheetBackdrop>) => (
@@ -55,7 +52,7 @@ export const LanguageSelectBottomSheet = forwardRef<
     <BottomSheetModal
       ref={ref}
       backgroundStyle={{
-        backgroundColor: theme.background,
+        backgroundColor: Surface.low,
         borderTopLeftRadius: 20,
         borderTopRightRadius: 20,
       }}
@@ -64,7 +61,7 @@ export const LanguageSelectBottomSheet = forwardRef<
     >
       <BottomSheetScrollView contentContainerStyle={styles.content}>
         <ThemedText
-          style={[styles.sectionLabel, { color: theme.textSecondary }]}
+          style={[styles.sectionLabel, { color: Accent.onSurfaceMuted }]}
         >
           {t("profile.language")}
         </ThemedText>
@@ -74,7 +71,7 @@ export const LanguageSelectBottomSheet = forwardRef<
             return (
               <TouchableOpacity
                 key={code}
-                style={[styles.row, { borderBottomColor: theme.border }]}
+                style={[styles.row, { borderBottomColor: Accent.outlineVariant }]}
                 onPress={() => handleSelect(code)}
                 activeOpacity={0.7}
                 accessibilityRole="radio"
@@ -87,7 +84,7 @@ export const LanguageSelectBottomSheet = forwardRef<
                   <IconSymbol
                     name="checkmark.circle.fill"
                     size={22}
-                    color={theme.tint}
+                    color={Accent.primary}
                   />
                 )}
               </TouchableOpacity>

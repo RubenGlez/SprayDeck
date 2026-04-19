@@ -10,8 +10,7 @@ import { StyleSheet, TouchableOpacity, View } from "react-native";
 import { FavoriteIcon } from "@/components/favorite-icon";
 import { ThemedText } from "@/components/themed-text";
 import { IconSymbol } from "@/components/ui/icon-symbol";
-import { Colors, Spacing, Typography } from "@/constants/theme";
-import { useColorScheme } from "@/hooks/use-color-scheme";
+import { Accent, Spacing, Surface, Typography } from "@/constants/theme";
 import { useFavoritesStore } from "@/stores/useFavoritesStore";
 import type { SeriesWithCountAndBrand } from "@/types";
 
@@ -33,8 +32,6 @@ export const SeriesSelectBottomSheet = forwardRef<
   ref,
 ) {
   const { t } = useTranslation();
-  const colorScheme = useColorScheme() ?? "light";
-  const theme = Colors[colorScheme];
   const favoriteSeriesIds = useFavoritesStore((s) => s.favoriteSeriesIds);
   const toggleFavoriteSeries = useFavoritesStore((s) => s.toggleFavoriteSeries);
 
@@ -54,7 +51,7 @@ export const SeriesSelectBottomSheet = forwardRef<
     <BottomSheetModal
       ref={ref}
       backgroundStyle={{
-        backgroundColor: theme.background,
+        backgroundColor: Surface.low,
         borderTopLeftRadius: 20,
         borderTopRightRadius: 20,
       }}
@@ -63,12 +60,12 @@ export const SeriesSelectBottomSheet = forwardRef<
     >
       <BottomSheetScrollView contentContainerStyle={styles.content}>
         <ThemedText
-          style={[styles.sectionLabel, { color: theme.textSecondary }]}
+          style={[styles.sectionLabel, { color: Accent.onSurfaceMuted }]}
         >
           {t("palettes.selectSeries")}
         </ThemedText>
         <ThemedText
-          style={[styles.sectionSubtitle, { color: theme.textSecondary }]}
+          style={[styles.sectionSubtitle, { color: Accent.onSurfaceMuted }]}
         >
           {t("palettes.selectSeriesSubtitle")}
         </ThemedText>
@@ -78,7 +75,7 @@ export const SeriesSelectBottomSheet = forwardRef<
               style={[
                 styles.seriesRow,
                 styles.selectAllRow,
-                { borderBottomColor: theme.border },
+                { borderBottomColor: Accent.outlineVariant },
               ]}
             >
               {onSelectAll != null ? (
@@ -99,10 +96,10 @@ export const SeriesSelectBottomSheet = forwardRef<
                     <IconSymbol
                       name="checkmark.square.fill"
                       size={24}
-                      color={theme.tint}
+                      color={Accent.primary}
                     />
                   ) : (
-                    <IconSymbol name="square" size={24} color={theme.icon} />
+                    <IconSymbol name="square" size={24} color={Accent.onSurfaceMuted} />
                   )}
                   <View style={styles.seriesLabelWrap}>
                     <ThemedText style={styles.seriesName} numberOfLines={1}>
@@ -121,7 +118,7 @@ export const SeriesSelectBottomSheet = forwardRef<
                   accessibilityLabel={t("palettes.clearSelection")}
                 >
                   <ThemedText
-                    style={[styles.clearLabel, { color: theme.tint }]}
+                    style={[styles.clearLabel, { color: Accent.primary }]}
                     numberOfLines={1}
                   >
                     {t("palettes.clearSelection")}
@@ -135,7 +132,7 @@ export const SeriesSelectBottomSheet = forwardRef<
             return (
               <TouchableOpacity
                 key={s.id}
-                style={[styles.seriesRow, { borderBottomColor: theme.border }]}
+                style={[styles.seriesRow, { borderBottomColor: Accent.outlineVariant }]}
                 onPress={() => onToggleSeries(s.id)}
                 activeOpacity={0.7}
                 accessibilityRole="checkbox"
@@ -145,10 +142,10 @@ export const SeriesSelectBottomSheet = forwardRef<
                   <IconSymbol
                     name="checkmark.square.fill"
                     size={24}
-                    color={theme.tint}
+                    color={Accent.primary}
                   />
                 ) : (
-                  <IconSymbol name="square" size={24} color={theme.icon} />
+                  <IconSymbol name="square" size={24} color={Accent.onSurfaceMuted} />
                 )}
                 <View style={styles.seriesLabelWrap}>
                   <ThemedText
@@ -159,7 +156,7 @@ export const SeriesSelectBottomSheet = forwardRef<
                     {s.name}
                   </ThemedText>
                   <ThemedText
-                    style={[styles.seriesMeta, { color: theme.textSecondary }]}
+                    style={[styles.seriesMeta, { color: Accent.onSurfaceMuted }]}
                     numberOfLines={1}
                     ellipsizeMode="tail"
                   >

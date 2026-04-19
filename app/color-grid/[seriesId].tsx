@@ -14,8 +14,7 @@ import { HeaderBackButton } from "@/components/header-back-button";
 import { Screen } from "@/components/screen";
 import { SearchInput } from "@/components/search-input";
 import { IconSymbol } from "@/components/ui/icon-symbol";
-import { Spacing } from "@/constants/theme";
-import { useTheme } from "@/hooks/use-theme";
+import { Accent, Spacing } from "@/constants/theme";
 import { filterColorsBySearch, getColorDisplayName } from "@/lib/color";
 import {
   getBrandById,
@@ -37,7 +36,6 @@ const SWATCH_SIZE = CARD_WIDTH;
 export default function ColorGridScreen() {
   const { seriesId } = useLocalSearchParams<{ seriesId: string }>();
   const { t, i18n } = useTranslation();
-  const { theme } = useTheme();
 
   const [searchQuery, setSearchQuery] = useState("");
   const [showOnlyFavorites, setShowOnlyFavorites] = useState(false);
@@ -134,7 +132,7 @@ export default function ColorGridScreen() {
                 <IconSymbol
                   name={showOnlyFavorites ? "star.fill" : "star"}
                   size={24}
-                  color={showOnlyFavorites ? theme.tint : theme.icon}
+                  color={showOnlyFavorites ? Accent.primary : Accent.onSurfaceMuted}
                 />
               }
             />

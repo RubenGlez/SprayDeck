@@ -1,18 +1,15 @@
 import { useRouter } from "expo-router";
 import React, { useMemo } from "react";
 import { useTranslation } from "react-i18next";
-import { ScrollView, StyleSheet, View } from "react-native";
+import { ScrollView, StyleSheet, TouchableOpacity, View } from "react-native";
 
-import { Button } from "@/components/button";
 import { DoodleCard } from "@/components/doodle-card";
 import { PaletteCard } from "@/components/palette-card";
 import { Screen } from "@/components/screen";
-import { ScreenHeader } from "@/components/screen-header";
 import { SeriesCard } from "@/components/series-card";
 import { ThemedText } from "@/components/themed-text";
 import { IconSymbol } from "@/components/ui/icon-symbol";
-import { Spacing, Typography } from "@/constants/theme";
-import { useTheme } from "@/hooks/use-theme";
+import { Accent, BorderRadius, FontFamily, Spacing, Surface, Typography } from "@/constants/theme";
 import { getAllSeriesWithCount } from "@/stores/useCatalogStore";
 import { useDoodlesStore } from "@/stores/useDoodlesStore";
 import { useFavoritesStore } from "@/stores/useFavoritesStore";
@@ -23,10 +20,47 @@ import type { SeriesWithCountAndBrand } from "@/types";
 const RECENT_PALETTES_COUNT = 4;
 const FAVORITE_SERIES_COUNT = 6;
 
+function QuickAction({
+  icon,
+  label,
+  onPress,
+  accent = false,
+}: {
+  icon: React.ReactNode;
+  label: string;
+  onPress: () => void;
+  accent?: boolean;
+}) {
+  return (
+    <TouchableOpacity
+      style={[styles.quickAction, accent && styles.quickActionAccent]}
+      onPress={onPress}
+      activeOpacity={0.75}
+    >
+      <View style={styles.quickActionIcon}>{icon}</View>
+      <ThemedText style={[styles.quickActionLabel, accent && styles.quickActionLabelAccent]}>
+        {label}
+      </ThemedText>
+    </TouchableOpacity>
+  );
+}
+
+function SectionHeader({ label, onSeeAll }: { label: string; onSeeAll?: () => void }) {
+  return (
+    <View style={styles.sectionHeader}>
+      <ThemedText type="label">{label}</ThemedText>
+      {onSeeAll && (
+        <TouchableOpacity onPress={onSeeAll} hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}>
+          <ThemedText style={styles.seeAll}>See all</ThemedText>
+        </TouchableOpacity>
+      )}
+    </View>
+  );
+}
+
 export default function HomeScreen() {
   const { t } = useTranslation();
   const router = useRouter();
-  const { theme } = useTheme();
   const aka = useProfileStore((s) => s.aka);
 
   const doodles = useDoodlesStore((s) => s.doodles);
@@ -36,27 +70,23 @@ export default function HomeScreen() {
   const toggleFavoriteSeries = useFavoritesStore((s) => s.toggleFavoriteSeries);
 
   const allSeries = useMemo(() => getAllSeriesWithCount(), []);
-  const favoriteSeries = useMemo(
-    () => allSeries.filter((s) => favoriteSeriesIds.includes(s.id)),
-    [allSeries, favoriteSeriesIds],
-  );
   const favoriteSeriesPreview = useMemo(
-    () => favoriteSeries.slice(0, FAVORITE_SERIES_COUNT),
-    [favoriteSeries],
+    () => allSeries.filter((s) => favoriteSeriesIds.includes(s.id)).slice(0, FAVORITE_SERIES_COUNT),
+    [allSeries, favoriteSeriesIds],
   );
 
   const lastDoodle = useMemo(() => {
     if (doodles.length === 0) return null;
     return [...doodles].sort(
-      (a, b) =>
-        new Date(b.updatedAt).getTime() - new Date(a.updatedAt).getTime(),
+      (a, b) => new Date(b.updatedAt).getTime() - new Date(a.updatedAt).getTime(),
     )[0];
   }, [doodles]);
 
-  const recentPalettes = useMemo(
-    () => palettes.slice(0, RECENT_PALETTES_COUNT),
-    [palettes],
-  );
+  const recentPalettes = useMemo(() => palettes.slice(0, RECENT_PALETTES_COUNT), [palettes]);
+
+  const greeting = aka.trim()
+    ? t("home.titleWithName", { name: aka.trim() })
+    : t("home.title");
 
   return (
     <Screen>
@@ -64,69 +94,42 @@ export default function HomeScreen() {
         contentContainerStyle={styles.scrollContent}
         showsVerticalScrollIndicator={false}
       >
-        <ScreenHeader
-          title={
-            (aka.trim()
-              ? t("home.titleWithName", { name: aka.trim() })
-              : t("home.title")) + " 👋"
-          }
-          subtitle={t("home.subtitle")}
-        />
-
-        {/* Action buttons: Crear paleta + Nuevo doodle en una línea, Explorar colores en otra */}
-        <View style={styles.actionsRow}>
-          <Button
-            variant="primary"
-            size="lg"
-            style={styles.actionButtonHalf}
-            icon={
-              <IconSymbol
-                name="paintpalette"
-                size={22}
-                color={theme.background}
-              />
-            }
-            onPress={() => router.push("/palettes/create")}
-          >
-            {t("home.createPalette")}
-          </Button>
-          <Button
-            variant="primary"
-            size="lg"
-            style={styles.actionButtonHalf}
-            icon={
-              <IconSymbol
-                name="square.stack.3d.up"
-                size={22}
-                color={theme.background}
-              />
-            }
-            onPress={() => router.push("/doodles/create")}
-          >
-            {t("home.newDoodle")}
-          </Button>
+        {/* Header */}
+        <View style={styles.header}>
+          <ThemedText style={styles.greetLabel} type="label">WALLAI</ThemedText>
+          <ThemedText type="title" style={styles.greeting}>{greeting}</ThemedText>
+          <ThemedText style={styles.subGreeting}>{t("home.subtitle")}</ThemedText>
         </View>
-        <Button
-          variant="secondary"
-          size="lg"
-          fullWidth
-          icon={
-            <IconSymbol name="square.grid.2x2" size={22} color={theme.text} />
-          }
-          onPress={() => router.push("/(tabs)/catalog")}
-        >
-          {t("home.exploreColors")}
-        </Button>
 
-        {/* Continuar último doodle */}
+        {/* Quick actions */}
+        <View style={styles.quickActions}>
+          <QuickAction
+            accent
+            icon={<IconSymbol name="paintpalette.fill" size={20} color={Accent.primary} />}
+            label={t("home.createPalette")}
+            onPress={() => router.push("/palettes/create")}
+          />
+          <QuickAction
+            accent
+            icon={<IconSymbol name="square.stack.3d.up.fill" size={20} color={Accent.primary} />}
+            label={t("home.newDoodle")}
+            onPress={() => router.push("/doodles/create")}
+          />
+          <QuickAction
+            icon={<IconSymbol name="square.grid.2x2" size={20} color={Accent.primary} />}
+            label={t("home.exploreColors")}
+            onPress={() => router.push("/(tabs)/catalog")}
+          />
+        </View>
+
+        {/* Continue last doodle */}
         {lastDoodle && (
           <View style={styles.section}>
-            <ThemedText
-              style={[styles.sectionTitle, { color: theme.textSecondary }]}
-            >
-              {t("home.continueLastDoodle")}
-            </ThemedText>
-            <View style={styles.doodlesGrid}>
+            <SectionHeader
+              label={t("home.continueLastDoodle")}
+              onSeeAll={() => router.push("/(tabs)/doodles")}
+            />
+            <View style={styles.grid}>
               <DoodleCard
                 doodle={lastDoodle}
                 onPress={() =>
@@ -143,12 +146,11 @@ export default function HomeScreen() {
         {/* Recent palettes */}
         {recentPalettes.length > 0 && (
           <View style={styles.section}>
-            <ThemedText
-              style={[styles.sectionTitle, { color: theme.textSecondary }]}
-            >
-              {t("home.recentPalettes")}
-            </ThemedText>
-            <View style={styles.palettesGrid}>
+            <SectionHeader
+              label={t("home.recentPalettes")}
+              onSeeAll={() => router.push("/(tabs)/palettes")}
+            />
+            <View style={styles.grid}>
               {recentPalettes.map((palette) => (
                 <PaletteCard
                   key={palette.id}
@@ -165,15 +167,14 @@ export default function HomeScreen() {
           </View>
         )}
 
-        {/* Favorite series (preview) — only show when there are favorites */}
+        {/* Favorite series */}
         {favoriteSeriesPreview.length > 0 && (
           <View style={styles.section}>
-            <ThemedText
-              style={[styles.sectionTitle, { color: theme.textSecondary }]}
-            >
-              {t("colors.favoriteSeries")}
-            </ThemedText>
-            <View style={styles.sectionGrid}>
+            <SectionHeader
+              label={t("colors.favoriteSeries")}
+              onSeeAll={() => router.push("/(tabs)/catalog")}
+            />
+            <View style={styles.grid}>
               {favoriteSeriesPreview.map((series: SeriesWithCountAndBrand) => (
                 <SeriesCard
                   key={series.id}
@@ -197,32 +198,70 @@ const styles = StyleSheet.create({
     paddingHorizontal: Spacing.md,
     gap: Spacing.lg,
   },
-  actionsRow: {
+  header: {
+    paddingTop: Spacing.sm,
+    gap: 2,
+  },
+  greetLabel: {
+    color: Accent.primary,
+    marginBottom: Spacing.xs,
+  },
+  greeting: {
+    fontSize: 28,
+  },
+  subGreeting: {
+    fontSize: Typography.fontSize.sm,
+    color: Accent.onSurfaceMuted,
+    marginTop: 4,
+  },
+  quickActions: {
     flexDirection: "row",
     gap: Spacing.sm,
   },
-  actionButtonHalf: {
+  quickAction: {
     flex: 1,
+    backgroundColor: Surface.base,
+    borderRadius: BorderRadius.lg,
+    padding: Spacing.md,
+    alignItems: "flex-start",
+    gap: Spacing.md,
+    minHeight: 90,
+  },
+  quickActionAccent: {
+    backgroundColor: `${Accent.primary}14`,
+    borderWidth: 1,
+    borderColor: `${Accent.primary}28`,
+  },
+  quickActionIcon: {
+    width: 36,
+    height: 36,
+    borderRadius: 18,
+    backgroundColor: `${Accent.primary}20`,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  quickActionLabel: {
+    fontFamily: FontFamily.displaySemiBold,
+    fontSize: Typography.fontSize.sm,
+    color: Accent.onSurface,
+  },
+  quickActionLabelAccent: {
+    color: Accent.primary,
+  },
+  sectionHeader: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+  },
+  seeAll: {
+    fontSize: Typography.fontSize.sm,
+    color: Accent.primary,
+    fontFamily: FontFamily.displayMedium,
   },
   section: {
     gap: Spacing.sm,
   },
-  sectionTitle: {
-    fontSize: Typography.fontSize.sm,
-    fontWeight: Typography.fontWeight.semibold,
-    textTransform: "uppercase",
-  },
-  doodlesGrid: {
-    flexDirection: "row",
-    flexWrap: "wrap",
-    justifyContent: "space-between",
-  },
-  palettesGrid: {
-    flexDirection: "row",
-    flexWrap: "wrap",
-    justifyContent: "space-between",
-  },
-  sectionGrid: {
+  grid: {
     flexDirection: "row",
     flexWrap: "wrap",
     justifyContent: "space-between",

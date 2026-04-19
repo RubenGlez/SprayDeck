@@ -4,8 +4,7 @@ import { Image, StyleSheet, TouchableOpacity, View } from "react-native";
 import { ThemedText } from "@/components/themed-text";
 import { IconSymbol } from "@/components/ui/icon-symbol";
 import { getListCardWidth, LIST_GAP } from "@/constants/list-layout";
-import { BorderRadius, Shadows, Spacing, Typography } from "@/constants/theme";
-import { useTheme } from "@/hooks/use-theme";
+import { Accent, BorderRadius, Shadows, Spacing, Surface, Typography } from "@/constants/theme";
 import { formatRelativeDate } from "@/lib/date";
 import type { Doodle } from "@/types";
 
@@ -22,7 +21,6 @@ export function DoodleCard({
   onPress: () => void;
 }) {
   const { t } = useTranslation();
-  const { theme } = useTheme();
   const thumbnailUri =
     doodle.thumbnailUri ??
     doodle.exportImageUri ??
@@ -31,17 +29,14 @@ export function DoodleCard({
 
   return (
     <TouchableOpacity
-      style={[
-        styles.card,
-        { backgroundColor: theme.card, borderColor: theme.border },
-      ]}
+      style={[styles.card, { backgroundColor: Surface.high }]}
       onPress={onPress}
       activeOpacity={0.7}
     >
       <View
         style={[
           styles.thumbnailWrap,
-          { backgroundColor: theme.backgroundSecondary },
+          { backgroundColor: Surface.highest },
         ]}
       >
         {thumbnailUri ? (
@@ -55,7 +50,7 @@ export function DoodleCard({
             <IconSymbol
               name="paintbrush"
               size={28}
-              color={theme.textSecondary}
+              color={Accent.onSurfaceMuted}
             />
           </View>
         )}
@@ -63,7 +58,7 @@ export function DoodleCard({
       <ThemedText style={styles.cardTitle} numberOfLines={1}>
         {doodle.name || t("common.untitled")}
       </ThemedText>
-      <ThemedText style={[styles.cardDate, { color: theme.textSecondary }]}>
+      <ThemedText style={[styles.cardDate, { color: Accent.onSurfaceMuted }]}>
         {formatRelativeDate(doodle.createdAt)}
       </ThemedText>
     </TouchableOpacity>
@@ -75,7 +70,6 @@ const styles = StyleSheet.create({
     width: CARD_WIDTH,
     padding: CARD_PADDING,
     borderRadius: BorderRadius.lg,
-    borderWidth: 1,
     marginBottom: LIST_GAP,
     ...Shadows.sm,
   },

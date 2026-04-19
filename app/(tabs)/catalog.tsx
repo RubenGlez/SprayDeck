@@ -1,8 +1,7 @@
 import React, { useCallback, useMemo, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { FlatList, StyleSheet, View } from "react-native";
+import { FlatList, ScrollView, StyleSheet, TouchableOpacity, View } from "react-native";
 
-import { Button } from "@/components/button";
 import {
   ColorDetailBottomSheet,
   type ColorDetailBottomSheetRef,
@@ -16,21 +15,21 @@ import {
   SeriesSelectBottomSheet,
   type SeriesSelectBottomSheetRef,
 } from "@/components/series-select-bottom-sheet";
+import { ThemedText } from "@/components/themed-text";
 import { IconSymbol } from "@/components/ui/icon-symbol";
 import { COLOR_GRID } from "@/constants/color-grid";
-import { Spacing } from "@/constants/theme";
+import { Accent, BorderRadius, FontFamily, Spacing, Surface, Typography } from "@/constants/theme";
 import { useSeriesColorSelection } from "@/hooks/use-series-color-selection";
-import { useTheme } from "@/hooks/use-theme";
 import { filterColorsBySearch, getColorDisplayName } from "@/lib/color";
-import { getBrandById, getSeriesById } from "@/stores/useCatalogStore";
+import { getBrandById, getBrandsWithCount, getSeriesById, getSeriesWithCountByBrandId } from "@/stores/useCatalogStore";
 import { useFavoritesStore } from "@/stores/useFavoritesStore";
 import type { Color } from "@/types";
 
 const { NUM_COLUMNS, GAP, CARD_WIDTH, SWATCH_SIZE } = COLOR_GRID;
+const ALL_BRAND_ID = "__all__";
 
 export default function CatalogScreen() {
   const { t, i18n } = useTranslation();
-  const { theme } = useTheme();
   const {
     allSeries,
     selectedSeriesIds,
@@ -39,37 +38,34 @@ export default function CatalogScreen() {
     allColors,
   } = useSeriesColorSelection();
 
+  const brands = useMemo(() => getBrandsWithCount(), []);
+  const [activeBrandId, setActiveBrandId] = useState<string>(ALL_BRAND_ID);
   const [searchQuery, setSearchQuery] = useState("");
   const [showOnlyFavorites, setShowOnlyFavorites] = useState(false);
-  const [detailParams, setDetailParams] = useState<ColorDetailParams | null>(
-    null,
-  );
+  const [detailParams, setDetailParams] = useState<ColorDetailParams | null>(null);
   const detailSheetRef = useRef<ColorDetailBottomSheetRef>(null);
   const seriesFilterSheetRef = useRef<SeriesSelectBottomSheetRef>(null);
 
   const favoriteColorIds = useFavoritesStore((s) => s.favoriteColorIds);
+  const toggleFavorite = useFavoritesStore((s) => s.toggleFavorite);
+
+  const handleBrandChip = useCallback((brandId: string) => {
+    setActiveBrandId(brandId);
+    if (brandId === ALL_BRAND_ID) {
+      setSelectedSeriesIds(new Set(allSeries.map((s) => s.id)));
+    } else {
+      const brandSeries = getSeriesWithCountByBrandId(brandId);
+      setSelectedSeriesIds(new Set(brandSeries.map((s) => s.id)));
+    }
+  }, [allSeries, setSelectedSeriesIds]);
 
   const filteredColors = useMemo(() => {
     let list = allColors;
-    if (showOnlyFavorites) {
-      list = list.filter((c) => favoriteColorIds.includes(c.id));
-    }
+    if (showOnlyFavorites) list = list.filter((c) => favoriteColorIds.includes(c.id));
     return filterColorsBySearch(list, searchQuery, i18n.language);
-  }, [
-    allColors,
-    searchQuery,
-    showOnlyFavorites,
-    favoriteColorIds,
-    i18n.language,
-  ]);
+  }, [allColors, searchQuery, showOnlyFavorites, favoriteColorIds, i18n.language]);
 
-  const toggleFavorite = useFavoritesStore((s) => s.toggleFavorite);
-  const handleFavorite = useCallback(
-    (color: Color) => {
-      toggleFavorite(color.id);
-    },
-    [toggleFavorite],
-  );
+  const handleFavorite = useCallback((color: Color) => toggleFavorite(color.id), [toggleFavorite]);
 
   const openDetailSheet = useCallback(
     (item: Color) => {
@@ -108,6 +104,49 @@ export default function CatalogScreen() {
     [i18n.language, favoriteColorIds, openDetailSheet, handleFavorite],
   );
 
+  const activeCount = selectedSeriesIds.size;
+  const totalCount = allSeries.length;
+
+  const listHeader = (
+    <View>
+      <SearchInput
+        value={searchQuery}
+        onChangeText={setSearchQuery}
+        placeholder={t("catalog.searchPlaceholder")}
+        clearAccessibilityLabel={t("common.clear")}
+      />
+      <ScrollView
+        horizontal
+        showsHorizontalScrollIndicator={false}
+        style={styles.chipScroll}
+        contentContainerStyle={styles.chipContent}
+      >
+        <BrandChip
+          label="All"
+          active={activeBrandId === ALL_BRAND_ID}
+          onPress={() => handleBrandChip(ALL_BRAND_ID)}
+        />
+        {brands.map((brand) => (
+          <BrandChip
+            key={brand.id}
+            label={brand.name}
+            active={activeBrandId === brand.id}
+            onPress={() => handleBrandChip(brand.id)}
+          />
+        ))}
+        <TouchableOpacity
+          style={styles.filterChip}
+          onPress={() => seriesFilterSheetRef.current?.present()}
+        >
+          <IconSymbol name="slider.horizontal.3" size={14} color={Accent.onSurfaceMuted} />
+          <ThemedText style={styles.filterChipText}>
+            {activeCount}/{totalCount}
+          </ThemedText>
+        </TouchableOpacity>
+      </ScrollView>
+    </View>
+  );
+
   return (
     <>
       <Screen>
@@ -115,48 +154,20 @@ export default function CatalogScreen() {
           <ScreenHeader
             title={t("catalog.overviewTitle")}
             right={
-              <View style={styles.headerRightRow}>
-                <Button
-                  variant="ghost"
-                  size="icon"
-                  onPress={() => setShowOnlyFavorites((s) => !s)}
-                  accessibilityLabel={
-                    showOnlyFavorites
-                      ? t("catalog.showAllColors")
-                      : t("catalog.showOnlyFavorites")
-                  }
-                  icon={
-                    <IconSymbol
-                      name={showOnlyFavorites ? "star.fill" : "star"}
-                      size={24}
-                      color={showOnlyFavorites ? theme.tint : theme.icon}
-                    />
-                  }
+              <TouchableOpacity
+                onPress={() => setShowOnlyFavorites((s) => !s)}
+                style={styles.favBtn}
+                hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
+                accessibilityLabel={showOnlyFavorites ? t("catalog.showAllColors") : t("catalog.showOnlyFavorites")}
+              >
+                <IconSymbol
+                  name={showOnlyFavorites ? "star.fill" : "star"}
+                  size={22}
+                  color={showOnlyFavorites ? Accent.primary : Accent.onSurfaceMuted}
                 />
-                <Button
-                  variant="ghost"
-                  size="icon"
-                  onPress={() => seriesFilterSheetRef.current?.present()}
-                  accessibilityLabel={t("palettes.selectSeries")}
-                  icon={
-                    <IconSymbol
-                      name="line.3.horizontal.decrease.circle.fill"
-                      size={24}
-                      color={theme.tint}
-                    />
-                  }
-                />
-              </View>
+              </TouchableOpacity>
             }
           />
-
-          <SearchInput
-            value={searchQuery}
-            onChangeText={setSearchQuery}
-            placeholder={t("catalog.searchPlaceholder")}
-            clearAccessibilityLabel={t("common.clear")}
-          />
-
           <FlatList
             data={filteredColors}
             keyExtractor={(item) => item.id}
@@ -164,6 +175,7 @@ export default function CatalogScreen() {
             numColumns={NUM_COLUMNS}
             columnWrapperStyle={styles.row}
             contentContainerStyle={styles.listContent}
+            ListHeaderComponent={listHeader}
             showsVerticalScrollIndicator={false}
           />
         </View>
@@ -172,14 +184,8 @@ export default function CatalogScreen() {
       <ColorDetailBottomSheet
         ref={detailSheetRef}
         color={detailParams}
-        isFavorite={
-          detailParams
-            ? favoriteColorIds.includes(detailParams.color.id)
-            : false
-        }
-        onToggleFavorite={() =>
-          detailParams && handleFavorite(detailParams.color)
-        }
+        isFavorite={detailParams ? favoriteColorIds.includes(detailParams.color.id) : false}
+        onToggleFavorite={() => detailParams && handleFavorite(detailParams.color)}
         onOpenColor={openDetailSheet}
       />
 
@@ -188,12 +194,24 @@ export default function CatalogScreen() {
         series={allSeries}
         selectedSeriesIds={selectedSeriesIds}
         onToggleSeries={toggleSeriesSelection}
-        onSelectAll={() =>
-          setSelectedSeriesIds(new Set(allSeries.map((s) => s.id)))
-        }
+        onSelectAll={() => setSelectedSeriesIds(new Set(allSeries.map((s) => s.id)))}
         onClear={() => setSelectedSeriesIds(new Set())}
       />
     </>
+  );
+}
+
+function BrandChip({ label, active, onPress }: { label: string; active: boolean; onPress: () => void }) {
+  return (
+    <TouchableOpacity
+      style={[styles.chip, active && styles.chipActive]}
+      onPress={onPress}
+      activeOpacity={0.7}
+    >
+      <ThemedText style={[styles.chipText, active && styles.chipTextActive]}>
+        {label}
+      </ThemedText>
+    </TouchableOpacity>
   );
 }
 
@@ -202,12 +220,49 @@ const styles = StyleSheet.create({
     flex: 1,
     paddingHorizontal: Spacing.md,
   },
-  headerRightRow: {
+  favBtn: {
+    padding: Spacing.xs,
+  },
+  chipScroll: {
+    marginBottom: Spacing.sm,
+  },
+  chipContent: {
+    gap: Spacing.sm,
+    paddingVertical: Spacing.xs,
+  },
+  chip: {
+    paddingHorizontal: Spacing.md,
+    paddingVertical: Spacing.xs + 2,
+    borderRadius: BorderRadius.full,
+    backgroundColor: Surface.high,
+  },
+  chipActive: {
+    backgroundColor: `${Accent.primary}22`,
+  },
+  chipText: {
+    fontSize: Typography.fontSize.sm,
+    fontFamily: FontFamily.displayMedium,
+    color: Accent.onSurfaceMuted,
+  },
+  chipTextActive: {
+    color: Accent.primary,
+  },
+  filterChip: {
     flexDirection: "row",
     alignItems: "center",
+    gap: 4,
+    paddingHorizontal: Spacing.sm + 2,
+    paddingVertical: Spacing.xs + 2,
+    borderRadius: BorderRadius.full,
+    backgroundColor: Surface.high,
+  },
+  filterChipText: {
+    fontSize: Typography.fontSize.xs,
+    color: Accent.onSurfaceMuted,
+    fontFamily: FontFamily.displayMedium,
   },
   listContent: {
-    flexGrow: 1,
+    paddingTop: GAP,
     paddingBottom: Spacing.sm,
   },
   row: {
