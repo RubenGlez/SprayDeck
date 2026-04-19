@@ -62,7 +62,7 @@ export function Tabs({ value, onChange, tabs }: TabsProps) {
 const styles = StyleSheet.create({
   tabBar: {
     height: TAB_BAR_HEIGHT,
-    paddingHorizontal: Spacing.sm,
+    paddingHorizontal: Spacing.md,
     paddingVertical: Spacing.xs,
   },
   tabTrack: {
