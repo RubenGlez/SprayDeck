@@ -16,21 +16,13 @@ import { FloatingActionButton } from "@/components/floating-action-button";
 import { PaletteCard } from "@/components/palette-card";
 import { Screen } from "@/components/screen";
 import { ScreenHeader } from "@/components/screen-header";
+import { SwipeableDeleteAction } from "@/components/swipeable-delete-action";
 import { ThemedText } from "@/components/themed-text";
 import { IconSymbol } from "@/components/ui/icon-symbol";
 import { Accent, BorderRadius, FontFamily, Spacing, Surface, Typography } from "@/constants/theme";
 import { useImagePicker } from "@/hooks/use-image-picker";
 import { usePalettesStore } from "@/stores/usePalettesStore";
 import type { Palette } from "@/types";
-
-function SwipeableDeleteAction({ onDelete }: { onDelete: () => void }) {
-  return (
-    <TouchableOpacity style={styles.deleteAction} onPress={onDelete} activeOpacity={0.8}>
-      <IconSymbol name="trash.fill" size={20} color={Accent.onSurface} />
-      <ThemedText style={styles.deleteActionText}>Delete</ThemedText>
-    </TouchableOpacity>
-  );
-}
 
 function SwipeablePaletteCard({
   palette,
@@ -182,7 +174,7 @@ const styles = StyleSheet.create({
   importBtn: {
     width: 36,
     height: 36,
-    borderRadius: 18,
+    borderRadius: BorderRadius.full,
     backgroundColor: `${Accent.primary}18`,
     alignItems: "center",
     justifyContent: "center",
@@ -214,19 +206,5 @@ const styles = StyleSheet.create({
     position: "absolute",
     bottom: Spacing.md,
     right: Spacing.md,
-  },
-  deleteAction: {
-    backgroundColor: Accent.error,
-    justifyContent: "center",
-    alignItems: "center",
-    width: 80,
-    borderRadius: BorderRadius.lg,
-    marginBottom: Spacing.sm,
-    gap: 4,
-  },
-  deleteActionText: {
-    color: Accent.onSurface,
-    fontSize: Typography.fontSize.xs,
-    fontFamily: FontFamily.displaySemiBold,
   },
 });

@@ -1,16 +1,13 @@
 import React from "react";
-import { StyleSheet, TouchableOpacity, View, type StyleProp, type ViewStyle } from "react-native";
-import { BlurView } from "@react-native-community/blur";
+import { StyleSheet, TouchableOpacity, type StyleProp, type ViewStyle } from "react-native";
 
-import { IconSymbol } from "@/components/ui/icon-symbol";
-import { Accent, BorderRadius, Glass, Shadows, Spacing } from "@/constants/theme";
+import { Accent, BorderRadius, Shadows } from "@/constants/theme";
 
 export type FloatingActionButtonProps = {
   onPress: () => void;
   icon: React.ReactNode;
   accessibilityLabel?: string;
   style?: StyleProp<ViewStyle>;
-  variant?: "primary" | "glass";
 };
 
 export function FloatingActionButton({
@@ -18,44 +15,14 @@ export function FloatingActionButton({
   icon,
   accessibilityLabel,
   style,
-  variant = "primary",
 }: FloatingActionButtonProps) {
-  const SIZE = 56;
-
-  if (variant === "glass") {
-    return (
-      <TouchableOpacity
-        onPress={onPress}
-        accessibilityRole="button"
-        accessibilityLabel={accessibilityLabel}
-        activeOpacity={0.8}
-        style={[styles.fabBase, { width: SIZE, height: SIZE }, style]}
-      >
-        <BlurView
-          style={StyleSheet.absoluteFill}
-          blurType="dark"
-          blurAmount={Glass.blurAmount}
-          reducedTransparencyFallbackColor={Glass.backgroundColor}
-        />
-        <View style={[StyleSheet.absoluteFill, styles.glassOverlay]} />
-        {icon}
-      </TouchableOpacity>
-    );
-  }
-
   return (
     <TouchableOpacity
       onPress={onPress}
       accessibilityRole="button"
       accessibilityLabel={accessibilityLabel}
       activeOpacity={0.8}
-      style={[
-        styles.fabBase,
-        styles.fabPrimary,
-        { width: SIZE, height: SIZE },
-        Shadows.neonGlow,
-        style,
-      ]}
+      style={[styles.fab, style]}
     >
       {icon}
     </TouchableOpacity>
@@ -63,18 +30,15 @@ export function FloatingActionButton({
 }
 
 const styles = StyleSheet.create({
-  fabBase: {
+  fab: {
+    width: 56,
+    height: 56,
     borderRadius: BorderRadius.full,
     alignItems: "center",
     justifyContent: "center",
     overflow: "hidden",
-    ...Shadows.lg,
-  },
-  fabPrimary: {
     backgroundColor: Accent.primary,
-  },
-  glassOverlay: {
-    backgroundColor: `${Glass.backgroundColor}99`,
-    borderRadius: BorderRadius.full,
+    ...Shadows.neonGlow,
+    ...Shadows.lg,
   },
 });

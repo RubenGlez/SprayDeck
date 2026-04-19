@@ -75,7 +75,7 @@ export default function ImportFromImageScreen() {
 
   const processImageUri = useCallback(async (uri: string) => {
     setImageUri(uri);
-    const colorsResult = await getColors(uri, { fallback: "#000000" });
+    const colorsResult = await getColors(uri, { fallback: Surface.lowest });
     const hexes = extractHexPalette(
       colorsResult as unknown as Record<string, string>,
     );

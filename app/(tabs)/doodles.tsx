@@ -1,7 +1,7 @@
 import { useRouter } from "expo-router";
 import React, { useRef } from "react";
 import { useTranslation } from "react-i18next";
-import { Alert, ScrollView, StyleSheet, TouchableOpacity, View } from "react-native";
+import { Alert, ScrollView, StyleSheet, View } from "react-native";
 import Swipeable from "react-native-gesture-handler/Swipeable";
 
 import { DoodleCard } from "@/components/doodle-card";
@@ -9,20 +9,11 @@ import { EmptyStateCard } from "@/components/empty-state-card";
 import { FloatingActionButton } from "@/components/floating-action-button";
 import { Screen } from "@/components/screen";
 import { ScreenHeader } from "@/components/screen-header";
-import { ThemedText } from "@/components/themed-text";
+import { SwipeableDeleteAction } from "@/components/swipeable-delete-action";
 import { IconSymbol } from "@/components/ui/icon-symbol";
-import { Accent, BorderRadius, FontFamily, Spacing, Typography } from "@/constants/theme";
+import { Accent, Spacing } from "@/constants/theme";
 import { useDoodlesStore } from "@/stores/useDoodlesStore";
 import type { Doodle } from "@/types";
-
-function SwipeableDeleteAction({ onDelete }: { onDelete: () => void }) {
-  return (
-    <TouchableOpacity style={styles.deleteAction} onPress={onDelete} activeOpacity={0.8}>
-      <IconSymbol name="trash.fill" size={20} color={Accent.onSurface} />
-      <ThemedText style={styles.deleteActionText}>Delete</ThemedText>
-    </TouchableOpacity>
-  );
-}
 
 function SwipeableDoodleCard({
   doodle,
@@ -132,19 +123,5 @@ const styles = StyleSheet.create({
     position: "absolute",
     bottom: Spacing.md,
     right: Spacing.md,
-  },
-  deleteAction: {
-    backgroundColor: Accent.error,
-    justifyContent: "center",
-    alignItems: "center",
-    width: 80,
-    borderRadius: BorderRadius.lg,
-    marginBottom: Spacing.sm,
-    gap: 4,
-  },
-  deleteActionText: {
-    color: Accent.onSurface,
-    fontSize: Typography.fontSize.xs,
-    fontFamily: FontFamily.displaySemiBold,
   },
 });

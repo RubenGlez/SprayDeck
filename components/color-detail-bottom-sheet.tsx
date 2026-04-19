@@ -342,8 +342,8 @@ export const ColorDetailBottomSheet = forwardRef<
       ref={ref}
       backgroundStyle={{
         backgroundColor: Surface.low,
-        borderTopLeftRadius: 20,
-        borderTopRightRadius: 20,
+        borderTopLeftRadius: BorderRadius.xl,
+        borderTopRightRadius: BorderRadius.xl,
       }}
       backdropComponent={renderBackdrop}
       enableDynamicSizing

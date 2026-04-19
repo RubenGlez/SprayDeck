@@ -3,7 +3,7 @@ import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
 import { FavoriteIcon } from "@/components/favorite-icon";
 import { IconSymbol } from "@/components/ui/icon-symbol";
-import { Accent, BorderRadius, FontFamily, Spacing, Typography } from "@/constants/theme";
+import { BorderRadius, FontFamily, Spacing, Typography } from "@/constants/theme";
 import type { Color } from "@/types";
 
 function isLightBackground(hex: string): boolean {
@@ -19,7 +19,6 @@ export type ColorGridCardProps = {
   color: Color;
   displayName: string;
   onPress: () => void;
-  onAddToPalette?: () => void;
   isInPalette?: boolean;
   selectionMode?: boolean;
   isFavorite?: boolean;
@@ -32,7 +31,6 @@ export function ColorGridCard({
   color,
   displayName,
   onPress,
-  onAddToPalette,
   isInPalette = false,
   selectionMode = false,
   isFavorite,
@@ -43,7 +41,6 @@ export function ColorGridCard({
   const lightBg = isLightBackground(color.hex);
   const textColor = lightBg ? "rgba(0,0,0,0.85)" : "rgba(255,255,255,0.9)";
   const subTextColor = lightBg ? "rgba(0,0,0,0.55)" : "rgba(255,255,255,0.55)";
-  const showActionsRow = !selectionMode && onAddToPalette != null;
 
   return (
     <TouchableOpacity
@@ -92,21 +89,6 @@ export function ColorGridCard({
           </TouchableOpacity>
         )}
 
-        {/* Add to palette */}
-        {showActionsRow && (
-          <TouchableOpacity
-            style={styles.addBtn}
-            onPress={onAddToPalette}
-            hitSlop={{ top: 4, bottom: 4, left: 4, right: 4 }}
-            accessibilityLabel={isInPalette ? "Remove from palette" : "Add to palette"}
-          >
-            {isInPalette ? (
-              <IconSymbol name="checkmark.circle.fill" size={18} color={Accent.primary} />
-            ) : (
-              <IconSymbol name="plus.circle" size={18} color={textColor} />
-            )}
-          </TouchableOpacity>
-        )}
       </View>
     </TouchableOpacity>
   );
@@ -147,13 +129,6 @@ const styles = StyleSheet.create({
   favoriteBtn: {
     position: "absolute",
     top: Spacing.xs,
-    right: Spacing.xs,
-    padding: Spacing.xs,
-    zIndex: 1,
-  },
-  addBtn: {
-    position: "absolute",
-    bottom: Spacing.xs,
     right: Spacing.xs,
     padding: Spacing.xs,
     zIndex: 1,

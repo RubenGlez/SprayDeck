@@ -94,8 +94,8 @@ export const DoodleShareBottomSheet = forwardRef<
       ref={ref}
       backgroundStyle={{
         backgroundColor: Surface.highest,
-        borderTopLeftRadius: 20,
-        borderTopRightRadius: 20,
+        borderTopLeftRadius: BorderRadius.xl,
+        borderTopRightRadius: BorderRadius.xl,
       }}
       backdropComponent={renderBackdrop}
       enableDynamicSizing
