@@ -225,7 +225,6 @@ const styles = StyleSheet.create({
     alignItems: "center",
     marginBottom: Spacing.sm,
     gap: Spacing.xs,
-    paddingRight: Spacing.md,
   },
   chipScrollWrap: {
     flex: 1,
