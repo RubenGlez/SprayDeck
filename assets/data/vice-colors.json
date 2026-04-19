@@ -1,641 +1,12 @@
 [
   {
-    "id": "50f1e85d-5c35-43f5-9149-1a4decb05bc6",
-    "seriesId": "vice",
-    "hex": "#FDBA97",
-    "code": "Alive Orange",
-    "name": {
-      "en": "Alive Orange"
-    },
-    "lab": {
-      "l": 81.25,
-      "a": 21.83,
-      "b": 27.79
-    }
-  },
-  {
-    "id": "9078f229-7386-4139-8118-a09579763131",
-    "seriesId": "vice",
-    "hex": "#464458",
-    "code": "Atmos Violet",
-    "name": {
-      "en": "Atmos Violet"
-    },
-    "lab": {
-      "l": 29.66,
-      "a": 4.5,
-      "b": -11.66
-    }
-  },
-  {
-    "id": "dcb85e63-9d16-41a6-894a-ebb598ab6b61",
-    "seriesId": "vice",
-    "hex": "#BF633D",
-    "code": "Bhutan Orange",
-    "name": {
-      "en": "Bhutan Orange"
-    },
-    "lab": {
-      "l": 52.75,
-      "a": 35.51,
-      "b": 38.59
-    }
-  },
-  {
-    "id": "9a53ca7e-5f10-4b19-8edc-9c28688d1396",
-    "seriesId": "vice",
-    "hex": "#C14F6A",
-    "code": "Bougainville Pink",
-    "name": {
-      "en": "Bougainville Pink"
-    },
-    "lab": {
-      "l": 49.91,
-      "a": 48.29,
-      "b": 9.07
-    }
-  },
-  {
-    "id": "100eee34-d1f1-4ded-82c9-c78e101ae543",
-    "seriesId": "vice",
-    "hex": "#4E5257",
-    "code": "Bunker Grey",
-    "name": {
-      "en": "Bunker Grey"
-    },
-    "lab": {
-      "l": 34.64,
-      "a": -0.81,
-      "b": -3.52
-    }
-  },
-  {
-    "id": "ff6cc770-b7be-4b11-9898-b3e9bf894aaa",
-    "seriesId": "vice",
-    "hex": "#757B7F",
-    "code": "Butterfly Grey",
-    "name": {
-      "en": "Butterfly Grey"
-    },
-    "lab": {
-      "l": 51.2,
-      "a": -1.7,
-      "b": -3.01
-    }
-  },
-  {
-    "id": "b51a0269-7fc8-4966-bac6-adc24a04d234",
-    "seriesId": "vice",
-    "hex": "#9DB656",
-    "code": "Costla Green",
-    "name": {
-      "en": "Costla Green"
-    },
-    "lab": {
-      "l": 70.59,
-      "a": -19.85,
-      "b": 45.14
-    }
-  },
-  {
-    "id": "cca4527d-3433-4514-87bf-ee4bd5cee609",
-    "seriesId": "vice",
-    "hex": "#EFB256",
-    "code": "Delivery Yellow",
-    "name": {
-      "en": "Delivery Yellow"
-    },
-    "lab": {
-      "l": 77.09,
-      "a": 16.19,
-      "b": 54.83
-    }
-  },
-  {
-    "id": "781ba4d9-f120-48ba-8bd8-9958a806a5fa",
-    "seriesId": "vice",
-    "hex": "#734B5F",
-    "code": "Drank Purple",
-    "name": {
-      "en": "Drank Purple"
-    },
-    "lab": {
-      "l": 37.03,
-      "a": 19.84,
-      "b": -4.46
-    }
-  },
-  {
-    "id": "b5936963-1540-4ca7-a2b5-826ac446eee9",
-    "seriesId": "vice",
-    "hex": "#2EACD1",
-    "code": "Durango Blue",
-    "name": {
-      "en": "Durango Blue"
-    },
-    "lab": {
-      "l": 65,
-      "a": -25.29,
-      "b": -29.11
-    }
-  },
-  {
-    "id": "d055cf4e-a0b5-444b-939b-0b943616b578",
-    "seriesId": "vice",
-    "hex": "#0079AE",
-    "code": "Electric Blue",
-    "name": {
-      "en": "Electric Blue"
-    },
-    "lab": {
-      "l": 47.33,
-      "a": -13.87,
-      "b": -36.78
-    }
-  },
-  {
-    "id": "f488c81d-6b6b-4119-8b52-b8b703598316",
-    "seriesId": "vice",
-    "hex": "#E092A5",
-    "code": "Elephant Pink",
-    "name": {
-      "en": "Elephant Pink"
-    },
-    "lab": {
-      "l": 69.09,
-      "a": 32.11,
-      "b": 2.87
-    }
-  },
-  {
-    "id": "6401c4e0-6b13-4d6f-aa04-23cf4b9e5f04",
-    "seriesId": "vice",
-    "hex": "#1AAD97",
-    "code": "Exit Green",
-    "name": {
-      "en": "Exit Green"
-    },
-    "lab": {
-      "l": 63.39,
-      "a": -41.54,
-      "b": 0.49
-    }
-  },
-  {
-    "id": "1f33a8ab-6cab-49f3-af67-4b19298bef33",
-    "seriesId": "vice",
-    "hex": "#894649",
-    "code": "Fox Red",
-    "name": {
-      "en": "Fox Red"
-    },
-    "lab": {
-      "l": 38.48,
-      "a": 29.33,
-      "b": 11.87
-    }
-  },
-  {
-    "id": "14513e15-b6ca-4a22-813b-85bf1ea15325",
-    "seriesId": "vice",
-    "hex": "#544644",
-    "code": "Freight Brown",
-    "name": {
-      "en": "Freight Brown"
-    },
-    "lab": {
-      "l": 31.15,
-      "a": 5.88,
-      "b": 3.54
-    }
-  },
-  {
-    "id": "30785ae5-4138-4f61-9661-5b3c695b9a8f",
-    "seriesId": "vice",
-    "hex": "#468B51",
-    "code": "Frog Green",
-    "name": {
-      "en": "Frog Green"
-    },
-    "lab": {
-      "l": 52.25,
-      "a": -32.72,
-      "b": 24.04
-    }
-  },
-  {
-    "id": "a3c90fbd-22d3-4157-bd88-defd15c934bd",
-    "seriesId": "vice",
-    "hex": "#614D60",
-    "code": "Haze Purple",
-    "name": {
-      "en": "Haze Purple"
-    },
-    "lab": {
-      "l": 35.38,
-      "a": 11.43,
-      "b": -7.82
-    }
-  },
-  {
-    "id": "eaab64ef-7f7e-4c20-9f64-9d2fcbd12e57",
-    "seriesId": "vice",
-    "hex": "#DCB2CF",
-    "code": "Kink Purple",
-    "name": {
-      "en": "Kink Purple"
-    },
-    "lab": {
-      "l": 77.05,
-      "a": 19.22,
-      "b": -8.67
-    }
-  },
-  {
-    "id": "79fc2b3f-1daf-4190-82c6-2f3bc50285df",
-    "seriesId": "vice",
-    "hex": "#9894C7",
-    "code": "Lis Violet",
-    "name": {
-      "en": "Lis Violet"
-    },
-    "lab": {
-      "l": 63.08,
-      "a": 9.84,
-      "b": -25.97
-    }
-  },
-  {
-    "id": "2b378368-55a4-40dc-b488-1d0a3dabf54c",
-    "seriesId": "vice",
-    "hex": "#18B076",
-    "code": "Lizard Green",
-    "name": {
-      "en": "Lizard Green"
-    },
-    "lab": {
-      "l": 63.69,
-      "a": -48.97,
-      "b": 18.9
-    }
-  },
-  {
-    "id": "4fb906a1-7e0d-42ae-b9ab-a327adaba1fe",
-    "seriesId": "vice",
-    "hex": "#7573B0",
-    "code": "Loyalty Violet",
-    "name": {
-      "en": "Loyalty Violet"
-    },
-    "lab": {
-      "l": 50.55,
-      "a": 11.93,
-      "b": -32.49
-    }
-  },
-  {
-    "id": "a77c8d62-4a17-4d1e-b3f7-8bac692427de",
-    "seriesId": "vice",
-    "hex": "#B2393A",
-    "code": "Madrid Red",
-    "name": {
-      "en": "Madrid Red"
-    },
-    "lab": {
-      "l": 42.91,
-      "a": 49.73,
-      "b": 28.4
-    }
-  },
-  {
-    "id": "509c2027-a799-4892-8999-971820358c15",
-    "seriesId": "vice",
-    "hex": "#D65A5A",
-    "code": "Palanca Red",
-    "name": {
-      "en": "Palanca Red"
-    },
-    "lab": {
-      "l": 54.98,
-      "a": 49.78,
-      "b": 26.01
-    }
-  },
-  {
-    "id": "0b5db033-4a1e-4b61-ae4f-4dc1707ad833",
-    "seriesId": "vice",
-    "hex": "#88475A",
-    "code": "Paradise Pink",
-    "name": {
-      "en": "Paradise Pink"
-    },
-    "lab": {
-      "l": 38.92,
-      "a": 29.91,
-      "b": 1.85
-    }
-  },
-  {
-    "id": "5283a3a3-776d-4734-a106-0c4cb8638c1c",
-    "seriesId": "vice",
-    "hex": "#E4C19F",
-    "code": "Piggy Brown",
-    "name": {
-      "en": "Piggy Brown"
-    },
-    "lab": {
-      "l": 80.51,
-      "a": 9.27,
-      "b": 22.06
-    }
-  },
-  {
-    "id": "06017f5e-a3ad-4eed-8386-bf77a79626c3",
-    "seriesId": "vice",
-    "hex": "#38C3AB",
-    "code": "Saint-Denis Green",
-    "name": {
-      "en": "Saint-Denis Green"
-    },
-    "lab": {
-      "l": 71.19,
-      "a": -42.52,
-      "b": 0.88
-    }
-  },
-  {
-    "id": "02b5aff2-fc25-4970-a926-8a7efc205240",
-    "seriesId": "vice",
-    "hex": "#EB9191",
-    "code": "Sashimi",
-    "name": {
-      "en": "Sashimi"
-    },
-    "lab": {
-      "l": 69.82,
-      "a": 34.91,
-      "b": 15.23
-    }
-  },
-  {
-    "id": "ba6de1b7-9eb0-4167-ad86-7cdaaff85909",
-    "seriesId": "vice",
-    "hex": "#D4D7D8",
-    "code": "Schredder Grey",
-    "name": {
-      "en": "Schredder Grey"
-    },
-    "lab": {
-      "l": 85.77,
-      "a": -0.92,
-      "b": -0.87
-    }
-  },
-  {
-    "id": "a7b3d5a0-1ee4-4c48-8936-9ea3ceb25b66",
-    "seriesId": "vice",
-    "hex": "#F8D696",
-    "code": "Skinny Yellow",
-    "name": {
-      "en": "Skinny Yellow"
-    },
-    "lab": {
-      "l": 87.46,
-      "a": 5.98,
-      "b": 36.24
-    }
-  },
-  {
-    "id": "50e56617-38b2-430f-9e34-8e6bb455b8f4",
-    "seriesId": "vice",
-    "hex": "#B486AA",
-    "code": "Sleepless Violet",
-    "name": {
-      "en": "Sleepless Violet"
-    },
-    "lab": {
-      "l": 61.38,
-      "a": 22.58,
-      "b": -11.91
-    }
-  },
-  {
-    "id": "aa13d625-d826-4899-a0fa-5f280390d94a",
-    "seriesId": "vice",
-    "hex": "#81CDE0",
-    "code": "Smurf Blue",
-    "name": {
-      "en": "Smurf Blue"
-    },
-    "lab": {
-      "l": 77.97,
-      "a": -20.86,
-      "b": -17.29
-    }
-  },
-  {
-    "id": "0405ddc1-98d0-46a9-bd93-40e07bc32caa",
-    "seriesId": "vice",
-    "hex": "#76AA64",
-    "code": "Sniper Green",
-    "name": {
-      "en": "Sniper Green"
-    },
-    "lab": {
-      "l": 64.66,
-      "a": -27.99,
-      "b": 30.35
-    }
-  },
-  {
-    "id": "dd2c2e35-2859-4473-935d-6c47924317e6",
-    "seriesId": "vice",
-    "hex": "#006693",
-    "code": "Snoop Blue",
-    "name": {
-      "en": "Snoop Blue"
-    },
-    "lab": {
-      "l": 40.07,
-      "a": -12.46,
-      "b": -32.3
-    }
-  },
-  {
-    "id": "b050d6c7-7387-413b-a42b-578aa14cf698",
-    "seriesId": "vice",
-    "hex": "#185E53",
-    "code": "Snotty Green",
-    "name": {
-      "en": "Snotty Green"
-    },
-    "lab": {
-      "l": 35.5,
-      "a": -24.45,
-      "b": -0.23
-    }
-  },
-  {
-    "id": "c3873952-fa93-4e26-9f63-3ac9ecaaaf6d",
-    "seriesId": "vice",
-    "hex": "#80D5C3",
-    "code": "Squirtle Green",
-    "name": {
-      "en": "Squirtle Green"
-    },
-    "lab": {
-      "l": 79.51,
-      "a": -30.13,
-      "b": 0.38
-    }
-  },
-  {
-    "id": "445ef37c-7449-4a09-b979-69e01e161e54",
-    "seriesId": "vice",
-    "hex": "#CA9747",
-    "code": "Submarine Yellow",
-    "name": {
-      "en": "Submarine Yellow"
-    },
-    "lab": {
-      "l": 66.3,
-      "a": 13.69,
-      "b": 48.78
-    }
-  },
-  {
-    "id": "1525bebd-30d4-47ae-a2e6-5de0cc64bb7e",
-    "seriesId": "vice",
-    "hex": "#404944",
-    "code": "Tasmania Green",
-    "name": {
-      "en": "Tasmania Green"
-    },
-    "lab": {
-      "l": 30.08,
-      "a": -4.65,
-      "b": 1.7
-    }
-  },
-  {
-    "id": "8b5dc623-f813-43fd-aebb-7e3b3bea4d75",
-    "seriesId": "vice",
-    "hex": "#D29265",
-    "code": "Teddy Brown",
-    "name": {
-      "en": "Teddy Brown"
-    },
-    "lab": {
-      "l": 66.32,
-      "a": 21.28,
-      "b": 33.96
-    }
-  },
-  {
-    "id": "2a624053-2765-4a4e-bad9-a5efb77b3074",
-    "seriesId": "vice",
-    "hex": "#216F60",
-    "code": "Thumb Green",
-    "name": {
-      "en": "Thumb Green"
-    },
-    "lab": {
-      "l": 41.91,
-      "a": -27.46,
-      "b": 1.15
-    }
-  },
-  {
-    "id": "f6189afb-ba33-4ffa-8073-a4cb18c368fe",
-    "seriesId": "vice",
-    "hex": "#D6643E",
-    "code": "Tony Orange",
-    "name": {
-      "en": "Tony Orange"
-    },
-    "lab": {
-      "l": 56.48,
-      "a": 44,
-      "b": 43.31
-    }
-  },
-  {
-    "id": "18d51ec7-e0a3-440f-bbc6-5f8a117aa7b8",
-    "seriesId": "vice",
-    "hex": "#BBB85B",
-    "code": "Toxic Green",
-    "name": {
-      "en": "Toxic Green"
-    },
-    "lab": {
-      "l": 73.58,
-      "a": -8.24,
-      "b": 46.94
-    }
-  },
-  {
-    "id": "a16563ca-4ca5-45fe-8126-e200e2b8fbbc",
-    "seriesId": "vice",
-    "hex": "#FAC661",
-    "code": "Travis Yellow",
-    "name": {
-      "en": "Travis Yellow"
-    },
-    "lab": {
-      "l": 83.17,
-      "a": 11.29,
-      "b": 56.8
-    }
-  },
-  {
-    "id": "9c47db87-0ed3-403a-92e4-ee22396c6008",
-    "seriesId": "vice",
-    "hex": "#97C281",
-    "code": "Trinidad Green",
-    "name": {
-      "en": "Trinidad Green"
-    },
-    "lab": {
-      "l": 74.12,
-      "a": -23.77,
-      "b": 27.94
-    }
-  },
-  {
-    "id": "2ecac1ff-96f1-47b0-8a0a-6a5d097f6218",
-    "seriesId": "vice",
-    "hex": "#CE6E83",
-    "code": "Tusi Pink",
-    "name": {
-      "en": "Tusi Pink"
-    },
-    "lab": {
-      "l": 58.31,
-      "a": 40.29,
-      "b": 6.44
-    }
-  },
-  {
-    "id": "46409b8d-749a-40a9-8ef5-f5f73fe42065",
-    "seriesId": "vice",
-    "hex": "#525082",
-    "code": "Ursula Violet",
-    "name": {
-      "en": "Ursula Violet"
-    },
-    "lab": {
-      "l": 35.95,
-      "a": 10.71,
-      "b": -28.18
-    }
-  },
-  {
-    "id": "3d87b122-ecff-41a6-b538-2f3b79fd630d",
+    "id": "45645b0a-fca8-4ef9-938d-7dbcca876e36",
     "seriesId": "vice",
     "hex": "#000000",
-    "code": "Vanta Black",
+    "code": "Negro",
     "name": {
-      "en": "Vanta Black"
+      "es": "Mamba",
+      "en": "Black"
     },
     "lab": {
       "l": 0,
@@ -644,40 +15,717 @@
     }
   },
   {
-    "id": "78920e10-6ec1-4ab5-b339-cb85770e5c86",
+    "id": "2d5b72fd-09d5-47de-a811-a7023af1ecc2",
     "seriesId": "vice",
-    "hex": "#F17F51",
-    "code": "Vest Orange",
+    "hex": "#0F2405",
+    "code": "Verde",
     "name": {
-      "en": "Vest Orange"
+      "es": "Tasmania",
+      "en": "Green"
     },
     "lab": {
-      "l": 65.97,
-      "a": 42.15,
-      "b": 45.2
+      "l": 11.78,
+      "a": -15.77,
+      "b": 15.12
     }
   },
   {
-    "id": "1e2e525c-cee5-4eda-86d3-c05ef42ca894",
+    "id": "1ff70ac2-11ee-4c2b-a909-498a185a27aa",
     "seriesId": "vice",
-    "hex": "#79594F",
-    "code": "Wallaby Brown",
+    "hex": "#2F2280",
+    "code": "Violeta",
     "name": {
-      "en": "Wallaby Brown"
+      "es": "Atmos",
+      "en": "Violet"
     },
     "lab": {
-      "l": 41.04,
-      "a": 12.5,
-      "b": 11.23
+      "l": 21.23,
+      "a": 34.53,
+      "b": -50.92
     }
   },
   {
-    "id": "61be270f-be67-415a-abd0-b5d4cff29188",
+    "id": "83a300ac-9725-44c5-911c-ba481b1e6072",
+    "seriesId": "vice",
+    "hex": "#5BB89E",
+    "code": "Verde",
+    "name": {
+      "es": "Salida",
+      "en": "Green"
+    },
+    "lab": {
+      "l": 68.73,
+      "a": -34.02,
+      "b": 4.77
+    }
+  },
+  {
+    "id": "e47ba9f2-7a04-4529-bf6c-ff2bd6457da2",
+    "seriesId": "vice",
+    "hex": "#6A9720",
+    "code": "Verde",
+    "name": {
+      "es": "Sapo",
+      "en": "Green"
+    },
+    "lab": {
+      "l": 57.37,
+      "a": -33.04,
+      "b": 53.29
+    }
+  },
+  {
+    "id": "31b47f5c-1b81-4f28-8c29-460d7051f6d2",
+    "seriesId": "vice",
+    "hex": "#6D63A5",
+    "code": "Violeta",
+    "name": {
+      "es": "Lealtad",
+      "en": "Violet"
+    },
+    "lab": {
+      "l": 45.48,
+      "a": 19.74,
+      "b": -34.23
+    }
+  },
+  {
+    "id": "a3a64831-a0f5-4d73-acdb-ff4baf175124",
+    "seriesId": "vice",
+    "hex": "#7B7C7E",
+    "code": "Gris",
+    "name": {
+      "es": "Alambrada",
+      "en": "Grey"
+    },
+    "lab": {
+      "l": 51.99,
+      "a": 0.03,
+      "b": -1.22
+    }
+  },
+  {
+    "id": "c4629ce8-8ff0-496f-a0c8-444caa5581c1",
+    "seriesId": "vice",
+    "hex": "#007FC4",
+    "code": "Azul",
+    "name": {
+      "es": "Eléctrico",
+      "en": "Blue"
+    },
+    "lab": {
+      "l": 50.88,
+      "a": -3.54,
+      "b": -43.97
+    }
+  },
+  {
+    "id": "6ae135a3-f172-4b99-934a-d64b3a19c170",
+    "seriesId": "vice",
+    "hex": "#8A5531",
+    "code": "Marrón",
+    "name": {
+      "es": "Wallaby",
+      "en": "Brown"
+    },
+    "lab": {
+      "l": 41.41,
+      "a": 18.38,
+      "b": 29.87
+    }
+  },
+  {
+    "id": "c6d67c7e-0a0f-4882-815f-117809eea021",
+    "seriesId": "vice",
+    "hex": "#8BC8AA",
+    "code": "Verde",
+    "name": {
+      "es": "Saint-Denis"
+    },
+    "lab": {
+      "l": 75.88,
+      "a": -25.92,
+      "b": 8.8
+    }
+  },
+  {
+    "id": "de7d397c-7cc9-40b3-b7b8-269bccd0764d",
+    "seriesId": "vice",
+    "hex": "#8F154B",
+    "code": "Púrpura",
+    "name": {
+      "es": "Drank",
+      "en": "Purple"
+    },
+    "lab": {
+      "l": 31.55,
+      "a": 51.8,
+      "b": 0.7
+    }
+  },
+  {
+    "id": "7052047c-a94a-4732-beaf-edba3e2b6377",
+    "seriesId": "vice",
+    "hex": "#9FE5C2",
+    "code": "Verde",
+    "name": {
+      "es": "Squirtle",
+      "en": "Green"
+    },
+    "lab": {
+      "l": 85.66,
+      "a": -29.1,
+      "b": 10.15
+    }
+  },
+  {
+    "id": "f026b46f-76bd-4007-af18-34078272dab6",
+    "seriesId": "vice",
+    "hex": "#60B565",
+    "code": "Verde",
+    "name": {
+      "es": "Lagarto",
+      "en": "Green"
+    },
+    "lab": {
+      "l": 66.88,
+      "a": -42.55,
+      "b": 32.93
+    }
+  },
+  {
+    "id": "e345a35f-044f-4e47-a702-9150e0ec1516",
+    "seriesId": "vice",
+    "hex": "#60C5E7",
+    "code": "Azul",
+    "name": {
+      "es": "Durango",
+      "en": "Blue"
+    },
+    "lab": {
+      "l": 74.94,
+      "a": -19.78,
+      "b": -25.77
+    }
+  },
+  {
+    "id": "bc04d570-52bf-4373-a67d-a79a8fcec4fa",
+    "seriesId": "vice",
+    "hex": "#74B957",
+    "code": "Verde",
+    "name": {
+      "es": "Trinidad",
+      "en": "Green"
+    },
+    "lab": {
+      "l": 68.82,
+      "a": -39.91,
+      "b": 42.55
+    }
+  },
+  {
+    "id": "d0097fbe-7b16-4d30-9694-fd3d1a5cf8fd",
+    "seriesId": "vice",
+    "hex": "#88B14F",
+    "code": "Verde",
+    "name": {
+      "es": "Tirador",
+      "en": "Green"
+    },
+    "lab": {
+      "l": 67.46,
+      "a": -29.89,
+      "b": 45.04
+    }
+  },
+  {
+    "id": "5317f726-4d61-463f-a808-10b713bbc1c2",
+    "seriesId": "vice",
+    "hex": "#97E6FF",
+    "code": "Azul",
+    "name": {
+      "es": "Pitufo",
+      "en": "Blue"
+    },
+    "lab": {
+      "l": 87.19,
+      "a": -18,
+      "b": -19.72
+    }
+  },
+  {
+    "id": "0cad571a-023c-4fa7-996d-017a23cfd542",
+    "seriesId": "vice",
+    "hex": "#00659D",
+    "code": "Azul",
+    "name": {
+      "es": "Snoop",
+      "en": "Blue"
+    },
+    "lab": {
+      "l": 40.8,
+      "a": -3.12,
+      "b": -37.21
+    }
+  },
+  {
+    "id": "7bfa9c1c-33bb-44f5-8814-a2a35b7497e7",
+    "seriesId": "vice",
+    "hex": "#762A3D",
+    "code": "Rosa",
+    "name": {
+      "es": "Paradise",
+      "en": "Pink"
+    },
+    "lab": {
+      "l": 29.02,
+      "a": 35.04,
+      "b": 5.71
+    }
+  },
+  {
+    "id": "e18e0b25-6719-4041-a3bf-81eb1124a109",
+    "seriesId": "vice",
+    "hex": "#005231",
+    "code": "Verde",
+    "name": {
+      "es": "Mocoso",
+      "en": "Green"
+    },
+    "lab": {
+      "l": 30.05,
+      "a": -31.02,
+      "b": 13.33
+    }
+  },
+  {
+    "id": "c90e69cb-96da-4cbd-8938-05f94d5b4720",
+    "seriesId": "vice",
+    "hex": "#006942",
+    "code": "Verde",
+    "name": {
+      "es": "Pulgar",
+      "en": "Green"
+    },
+    "lab": {
+      "l": 38.72,
+      "a": -36.39,
+      "b": 14.75
+    }
+  },
+  {
+    "id": "9c22339b-e4fa-4819-a748-568ac6ea0d2a",
+    "seriesId": "vice",
+    "hex": "#9993C3",
+    "code": "Violeta",
+    "name": {
+      "es": "Lis",
+      "en": "Violet"
+    },
+    "lab": {
+      "l": 62.99,
+      "a": 12.41,
+      "b": -24
+    }
+  },
+  {
+    "id": "3744505d-9c7f-411c-9c2e-d41a21f44c32",
+    "seriesId": "vice",
+    "hex": "#45347A",
+    "code": "Violeta",
+    "name": {
+      "es": "Úrsula",
+      "en": "Violet"
+    },
+    "lab": {
+      "l": 27.09,
+      "a": 25.77,
+      "b": -37.5
+    }
+  },
+  {
+    "id": "f09aebc6-79e3-4dcb-94aa-8dff6691a2a5",
+    "seriesId": "vice",
+    "hex": "#82131D",
+    "code": "Rojo",
+    "name": {
+      "es": "Zorro",
+      "en": "Red"
+    },
+    "lab": {
+      "l": 27.58,
+      "a": 45.51,
+      "b": 25.38
+    }
+  },
+  {
+    "id": "cf9fc1e4-8b21-495c-9c19-2bec13558dd9",
+    "seriesId": "vice",
+    "hex": "#402009",
+    "code": "Marrón",
+    "name": {
+      "es": "Mercancía",
+      "en": "Brown"
+    },
+    "lab": {
+      "l": 16.22,
+      "a": 13.31,
+      "b": 20.37
+    }
+  },
+  {
+    "id": "0a366cd7-255e-4b58-967c-a76b7037ea21",
+    "seriesId": "vice",
+    "hex": "#464648",
+    "code": "Gris",
+    "name": {
+      "es": "Búnquer",
+      "en": "Grey"
+    },
+    "lab": {
+      "l": 29.79,
+      "a": 0.45,
+      "b": -1.2
+    }
+  },
+  {
+    "id": "548e865b-3e98-453d-b469-f0b952aa6b47",
+    "seriesId": "vice",
+    "hex": "#582741",
+    "code": "Púrpura",
+    "name": {
+      "es": "Haze",
+      "en": "Purple"
+    },
+    "lab": {
+      "l": 23.36,
+      "a": 26.09,
+      "b": -5.85
+    }
+  },
+  {
+    "id": "b00ee765-6808-4796-aa41-016ef89ee35a",
+    "seriesId": "vice",
+    "hex": "#616264",
+    "code": "Gris",
+    "name": {
+      "es": "Mariposa",
+      "en": "Grey"
+    },
+    "lab": {
+      "l": 41.53,
+      "a": 0.03,
+      "b": -1.27
+    }
+  },
+  {
+    "id": "502c649e-6d2a-417b-9e74-791c96d690ab",
+    "seriesId": "vice",
+    "hex": "#B0C643",
+    "code": "Verde",
+    "name": {
+      "es": "Costla",
+      "en": "Green"
+    },
+    "lab": {
+      "l": 76.08,
+      "a": -25.01,
+      "b": 60.53
+    }
+  },
+  {
+    "id": "8d3653b5-5060-4723-840a-c8494656267c",
+    "seriesId": "vice",
+    "hex": "#B9501A",
+    "code": "Naranja",
+    "name": {
+      "es": "Bután",
+      "en": "Orange"
+    },
+    "lab": {
+      "l": 47.14,
+      "a": 39.7,
+      "b": 49.31
+    }
+  },
+  {
+    "id": "fd51b096-29d2-4ef4-9447-b769e31ea4cb",
+    "seriesId": "vice",
+    "hex": "#C8A10A",
+    "code": "Amarillo",
+    "name": {
+      "es": "Submarino",
+      "en": "Yellow"
+    },
+    "lab": {
+      "l": 67.87,
+      "a": 2.33,
+      "b": 69.99
+    }
+  },
+  {
+    "id": "ec34f94c-ea6b-4888-a72f-9acfa628ca11",
+    "seriesId": "vice",
+    "hex": "#C8739F",
+    "code": "Violeta",
+    "name": {
+      "es": "Insomnio",
+      "en": "Violet"
+    },
+    "lab": {
+      "l": 59.02,
+      "a": 39.11,
+      "b": -9.09
+    }
+  },
+  {
+    "id": "2e234dce-3373-45f8-b73f-6ffd4ab3b520",
+    "seriesId": "vice",
+    "hex": "#C52332",
+    "code": "Rojo",
+    "name": {
+      "es": "Madrid",
+      "en": "Red"
+    },
+    "lab": {
+      "l": 43.22,
+      "a": 61.66,
+      "b": 33.94
+    }
+  },
+  {
+    "id": "4e0d49be-8ac1-4fb7-8257-cef3d07ea110",
+    "seriesId": "vice",
+    "hex": "#CC9456",
+    "code": "Marrón",
+    "name": {
+      "es": "Peluche",
+      "en": "Brown"
+    },
+    "lab": {
+      "l": 65.51,
+      "a": 14.32,
+      "b": 40.7
+    }
+  },
+  {
+    "id": "62bb5194-1ca8-42b8-8728-21973f77aec4",
+    "seriesId": "vice",
+    "hex": "#CED50A",
+    "code": "Verde",
+    "name": {
+      "es": "Tóxico",
+      "en": "Green"
+    },
+    "lab": {
+      "l": 82.24,
+      "a": -21.68,
+      "b": 80.94
+    }
+  },
+  {
+    "id": "314e52c7-84cb-468b-9c25-82f1ec7af6c6",
+    "seriesId": "vice",
+    "hex": "#DD1D5A",
+    "code": "Rosa",
+    "name": {
+      "es": "Bougainville",
+      "en": "Pink"
+    },
+    "lab": {
+      "l": 48.25,
+      "a": 71.27,
+      "b": 16.9
+    }
+  },
+  {
+    "id": "38e31912-f412-41e8-a04d-4ab77ca3e9fb",
+    "seriesId": "vice",
+    "hex": "#DE336B",
+    "code": "Rosa",
+    "name": {
+      "es": "Tusi",
+      "en": "Pink"
+    },
+    "lab": {
+      "l": 50.64,
+      "a": 67.55,
+      "b": 9.85
+    }
+  },
+  {
+    "id": "06bd70d4-f59a-4b43-aeb1-c96324b8cb24",
+    "seriesId": "vice",
+    "hex": "#E1E2E2",
+    "code": "Gris",
+    "name": {
+      "es": "Schredder",
+      "en": "Grey"
+    },
+    "lab": {
+      "l": 89.81,
+      "a": -0.34,
+      "b": -0.12
+    }
+  },
+  {
+    "id": "d4e792ef-e659-494c-a25c-b84b343dfa73",
+    "seriesId": "vice",
+    "hex": "#E74F45",
+    "code": "Rojo",
+    "name": {
+      "es": "Palanca",
+      "en": "Red"
+    },
+    "lab": {
+      "l": 55.09,
+      "a": 58.1,
+      "b": 38.34
+    }
+  },
+  {
+    "id": "89d56b2e-5881-4403-bbbc-2da0db15fbd5",
+    "seriesId": "vice",
+    "hex": "#E77A19",
+    "code": "Naranja",
+    "name": {
+      "es": "Chaleco",
+      "en": "Orange"
+    },
+    "lab": {
+      "l": 62.49,
+      "a": 36.65,
+      "b": 64.74
+    }
+  },
+  {
+    "id": "1e484bd6-5d8e-4a4c-928a-0e9c88326299",
+    "seriesId": "vice",
+    "hex": "#E95E0F",
+    "code": "Naranja",
+    "name": {
+      "es": "Tony",
+      "en": "Orange"
+    },
+    "lab": {
+      "l": 57.43,
+      "a": 50.84,
+      "b": 63.85
+    }
+  },
+  {
+    "id": "d3c34a71-ddf4-4ea0-8fa2-f12460c1d64f",
+    "seriesId": "vice",
+    "hex": "#EECF99",
+    "code": "Marrón",
+    "name": {
+      "es": "Piggy",
+      "en": "Brown"
+    },
+    "lab": {
+      "l": 84.54,
+      "a": 3.34,
+      "b": 30.87
+    }
+  },
+  {
+    "id": "69651d09-a534-453d-bdbf-83b8e78c5ae1",
+    "seriesId": "vice",
+    "hex": "#F6B8D0",
+    "code": "Púrpura",
+    "name": {
+      "es": "Kink",
+      "en": "Purple"
+    },
+    "lab": {
+      "l": 80.98,
+      "a": 25.94,
+      "b": -3.28
+    }
+  },
+  {
+    "id": "c4046f17-3b92-425e-af18-c83ce68b38af",
+    "seriesId": "vice",
+    "hex": "#FAC294",
+    "code": "Naranja",
+    "name": {
+      "es": "Alive",
+      "en": "Orange"
+    },
+    "lab": {
+      "l": 82.41,
+      "a": 14.23,
+      "b": 30.83
+    }
+  },
+  {
+    "id": "eedeefe3-b9e3-4a02-bc23-1d1395af7056",
+    "seriesId": "vice",
+    "hex": "#FFA2CA",
+    "code": "Rosa",
+    "name": {
+      "es": "Elefante",
+      "en": "Pink"
+    },
+    "lab": {
+      "l": 76.9,
+      "a": 39.67,
+      "b": -5.92
+    }
+  },
+  {
+    "id": "5ed70ebf-36ba-4d72-93d7-56aa5b96d4f3",
+    "seriesId": "vice",
+    "hex": "#FFE100",
+    "code": "Amarillo",
+    "name": {
+      "es": "Entrega",
+      "en": "Yellow"
+    },
+    "lab": {
+      "l": 89.45,
+      "a": -6.95,
+      "b": 88.92
+    }
+  },
+  {
+    "id": "b083f33e-c2ac-434a-9266-2d5c916213c5",
+    "seriesId": "vice",
+    "hex": "#FFF048",
+    "code": "Amarillo",
+    "name": {
+      "es": "Travis",
+      "en": "Yellow"
+    },
+    "lab": {
+      "l": 93.47,
+      "a": -12.78,
+      "b": 78.02
+    }
+  },
+  {
+    "id": "b6ae8fb2-b7a6-4f3f-80ce-2f7e9fd4c8a0",
+    "seriesId": "vice",
+    "hex": "#FFF386",
+    "code": "Amarillo",
+    "name": {
+      "es": "Skinny",
+      "en": "Yellow"
+    },
+    "lab": {
+      "l": 94.77,
+      "a": -10.17,
+      "b": 53.63
+    }
+  },
+  {
+    "id": "205501fb-466c-466d-b23f-2232d44d29d0",
     "seriesId": "vice",
     "hex": "#FFFFFF",
-    "code": "White Lines",
+    "code": "Blanco",
     "name": {
-      "en": "White Lines"
+      "es": "Líneas",
+      "en": "Lines"
     },
     "lab": {
       "l": 100,
@@ -686,17 +734,17 @@
     }
   },
   {
-    "id": "9872b58c-2e24-4e37-ba91-d97b4093386d",
+    "id": "073017ce-7a2c-426f-98c3-aefad1bf6f60",
     "seriesId": "vice",
-    "hex": "#9B9FA1",
-    "code": "Wire Grey",
+    "hex": "#8BC8AA",
+    "code": "Saint-Denis",
     "name": {
-      "en": "Wire Grey"
+      "en": "Green"
     },
     "lab": {
-      "l": 65.21,
-      "a": -1.19,
-      "b": -1.57
+      "l": 75.88,
+      "a": -25.92,
+      "b": 8.8
     }
   }
 ]

@@ -130,18 +130,18 @@ Doodles export as PNG but palettes can't be shared. Artists show color plans to 
 
 ## Launch Readiness
 
-| Area | Status |
-|---|---|
-| Privacy policy | ⬜ Not started |
-| App icon / splash | ⬜ Unknown |
-| Store metadata + screenshots | ⬜ Not started |
-| Onboarding flow | ⬜ Not started |
-| Artist tag prompt | ⬜ Not started |
-| ⚠️ Loop Colors empty brand — fix or remove | ⬜ Not started |
-| Montana Vice completeness audit | ⬜ Not started |
-| In-app review prompt | ⬜ Not started |
-| About & Support section (Profile) | ⬜ Not started |
-| Analytics — PostHog | ⬜ Not started |
-| Crash reporting — Sentry | ⬜ Not started |
-| Palette sharing / export | ⬜ Not started |
-| Accessibility pass | ⬜ Not started |
+| # | Area | Priority | Status |
+|---|---|---|---|
+| 1 | Loop Colors — fix or remove empty brand | Blocker | ✅ Done (200 colors) |
+| 2 | Montana Vice completeness audit | Blocker | ⬜ Not started |
+| 3 | App icon / splash screen | Blocker | ⬜ Not started |
+| 4 | Privacy policy (hosted URL) | Blocker | ⬜ Not started |
+| 5 | Store metadata + screenshots | Blocker | ⬜ Not started |
+| 6 | Onboarding flow (first-run) | High | ⬜ Not started |
+| 7 | Artist tag prompt (first-launch nudge) | High | ⬜ Not started |
+| 8 | In-app review prompt | High | ⬜ Not started |
+| 9 | About & Support section — Profile (Ko-fi) | Medium | ⬜ Not started |
+| 10 | Analytics — PostHog | Medium | ⬜ Not started |
+| 11 | Crash reporting — Sentry (or PostHog) | Medium | ⬜ Not started |
+| 12 | Palette sharing / export | Medium | ⬜ Not started |
+| 13 | Accessibility pass | Medium | ⬜ Not started |

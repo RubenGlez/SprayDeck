@@ -1,0 +1,1416 @@
+[
+  {
+    "id": "bbb05287-4d0c-488f-8693-9a940c5b8503",
+    "seriesId": "ironlak",
+    "hex": "#FFFFFF",
+    "code": "Appliance White",
+    "name": {
+      "en": "Appliance White"
+    },
+    "lab": {
+      "l": 100,
+      "a": 0,
+      "b": 0
+    }
+  },
+  {
+    "id": "11df08b3-f0e2-4531-883c-fffbe6739ad7",
+    "seriesId": "ironlak",
+    "hex": "#FFFFFF",
+    "code": "Apsen (White)",
+    "name": {
+      "en": "Apsen (White)"
+    },
+    "lab": {
+      "l": 100,
+      "a": 0,
+      "b": 0
+    }
+  },
+  {
+    "id": "83cfa43a-0c68-430b-9799-22b68c200220",
+    "seriesId": "ironlak",
+    "hex": "#514E26",
+    "code": "Askew's Olivia",
+    "name": {
+      "en": "Askew's Olivia"
+    },
+    "lab": {
+      "l": 32.56,
+      "a": -5.2,
+      "b": 23.94
+    }
+  },
+  {
+    "id": "2934c70c-68c3-4f0c-b2a2-cf8858b0ee47",
+    "seriesId": "ironlak",
+    "hex": "#336094",
+    "code": "Atlantic",
+    "name": {
+      "en": "Atlantic"
+    },
+    "lab": {
+      "l": 39.93,
+      "a": 1.8,
+      "b": -33.14
+    }
+  },
+  {
+    "id": "77881270-8f1e-47ec-a11d-4446997ab9dc",
+    "seriesId": "ironlak",
+    "hex": "#8FC6E7",
+    "code": "Atmosphere",
+    "name": {
+      "en": "Atmosphere"
+    },
+    "lab": {
+      "l": 77.28,
+      "a": -9.66,
+      "b": -22.02
+    }
+  },
+  {
+    "id": "8691f361-e63d-4d30-aac8-f63277963374",
+    "seriesId": "ironlak",
+    "hex": "#D03238",
+    "code": "Autumn",
+    "name": {
+      "en": "Autumn"
+    },
+    "lab": {
+      "l": 46.95,
+      "a": 60.84,
+      "b": 35.24
+    }
+  },
+  {
+    "id": "21abb618-54eb-4479-9c36-f07717fed577",
+    "seriesId": "ironlak",
+    "hex": "#9C842F",
+    "code": "Banos Asbestos",
+    "name": {
+      "en": "Banos Asbestos"
+    },
+    "lab": {
+      "l": 55.86,
+      "a": -0.57,
+      "b": 47.4
+    }
+  },
+  {
+    "id": "b0012fa0-0c79-4c79-b4fc-adfe4d63982d",
+    "seriesId": "ironlak",
+    "hex": "#717271",
+    "code": "Battleship",
+    "name": {
+      "en": "Battleship"
+    },
+    "lab": {
+      "l": 47.93,
+      "a": -0.58,
+      "b": 0.42
+    }
+  },
+  {
+    "id": "0deeb098-f35e-43ba-912d-51276d14e7fc",
+    "seriesId": "ironlak",
+    "hex": "#409C7E",
+    "code": "Boston",
+    "name": {
+      "en": "Boston"
+    },
+    "lab": {
+      "l": 58.39,
+      "a": -34.75,
+      "b": 7.63
+    }
+  },
+  {
+    "id": "9df6fcaf-0f2d-4791-8e01-00b83a136884",
+    "seriesId": "ironlak",
+    "hex": "#8B8C8D",
+    "code": "Bright Chrome",
+    "name": {
+      "en": "Bright Chrome"
+    },
+    "lab": {
+      "l": 58.2,
+      "a": -0.17,
+      "b": -0.66
+    }
+  },
+  {
+    "id": "bd36fa2d-759e-44c7-bfe3-ace36e74e466",
+    "seriesId": "ironlak",
+    "hex": "#F6C55B",
+    "code": "Butter",
+    "name": {
+      "en": "Butter"
+    },
+    "lab": {
+      "l": 81.99,
+      "a": 6.21,
+      "b": 58.42
+    }
+  },
+  {
+    "id": "ca1cb48f-583b-4ad2-8cf7-fbe76bb924c3",
+    "seriesId": "ironlak",
+    "hex": "#62A744",
+    "code": "Cameleon",
+    "name": {
+      "en": "Cameleon"
+    },
+    "lab": {
+      "l": 62.21,
+      "a": -40.23,
+      "b": 43.61
+    }
+  },
+  {
+    "id": "2dc170a1-4016-4205-a9b1-a5fb1cc8958b",
+    "seriesId": "ironlak",
+    "hex": "#C7B9AB",
+    "code": "Cassius",
+    "name": {
+      "en": "Cassius"
+    },
+    "lab": {
+      "l": 75.93,
+      "a": 2.6,
+      "b": 8.89
+    }
+  },
+  {
+    "id": "71c7d13b-486e-4ff3-88d8-8e28022eeeec",
+    "seriesId": "ironlak",
+    "hex": "#7E9ABF",
+    "code": "Chicago",
+    "name": {
+      "en": "Chicago"
+    },
+    "lab": {
+      "l": 62.77,
+      "a": -0.75,
+      "b": -22.28
+    }
+  },
+  {
+    "id": "2daaee58-881f-4bf9-ba54-53dfbd36021d",
+    "seriesId": "ironlak",
+    "hex": "#CFA075",
+    "code": "Cuppa",
+    "name": {
+      "en": "Cuppa"
+    },
+    "lab": {
+      "l": 69.25,
+      "a": 11.91,
+      "b": 29.09
+    }
+  },
+  {
+    "id": "58004f45-ab02-4b80-9df4-d731ce368c7b",
+    "seriesId": "ironlak",
+    "hex": "#F49EC4",
+    "code": "Delicious",
+    "name": {
+      "en": "Delicious"
+    },
+    "lab": {
+      "l": 74.62,
+      "a": 37.12,
+      "b": -6.15
+    }
+  },
+  {
+    "id": "b2ddd53f-4ccf-4922-98c7-9905ec5e605e",
+    "seriesId": "ironlak",
+    "hex": "#513528",
+    "code": "Earth",
+    "name": {
+      "en": "Earth"
+    },
+    "lab": {
+      "l": 25.1,
+      "a": 10.79,
+      "b": 13.28
+    }
+  },
+  {
+    "id": "4bb29542-bda2-49ab-a5f3-cdf4cfd0efe5",
+    "seriesId": "ironlak",
+    "hex": "#604776",
+    "code": "Eggplant",
+    "name": {
+      "en": "Eggplant"
+    },
+    "lab": {
+      "l": 34.6,
+      "a": 20.62,
+      "b": -22.91
+    }
+  },
+  {
+    "id": "5d6ea582-f647-4edd-9a70-27b0192577ad",
+    "seriesId": "ironlak",
+    "hex": "#69CADA",
+    "code": "Electro",
+    "name": {
+      "en": "Electro"
+    },
+    "lab": {
+      "l": 76.25,
+      "a": -24.22,
+      "b": -16.73
+    }
+  },
+  {
+    "id": "08698b39-bd5c-400e-b88e-f4d484849313",
+    "seriesId": "ironlak",
+    "hex": "#FFB718",
+    "code": "Eureka",
+    "name": {
+      "en": "Eureka"
+    },
+    "lab": {
+      "l": 79.16,
+      "a": 14.78,
+      "b": 78.77
+    }
+  },
+  {
+    "id": "24fa7a9e-3152-4eeb-b63b-a3b6564ee283",
+    "seriesId": "ironlak",
+    "hex": "#949436",
+    "code": "Ewok's Froggy",
+    "name": {
+      "en": "Ewok's Froggy"
+    },
+    "lab": {
+      "l": 59.66,
+      "a": -12.42,
+      "b": 48.07
+    }
+  },
+  {
+    "id": "72f91006-e0da-434b-89a3-5f16b50e339e",
+    "seriesId": "ironlak",
+    "hex": "#4C8B3F",
+    "code": "Field",
+    "name": {
+      "en": "Field"
+    },
+    "lab": {
+      "l": 52.24,
+      "a": -35.81,
+      "b": 34.1
+    }
+  },
+  {
+    "id": "195cf5a9-f6b8-49c2-8be6-960b8c2cff7f",
+    "seriesId": "ironlak",
+    "hex": "#E01382",
+    "code": "Flirt",
+    "name": {
+      "en": "Flirt"
+    },
+    "lab": {
+      "l": 49.41,
+      "a": 76.46,
+      "b": -5.87
+    }
+  },
+  {
+    "id": "b1ad11f3-cdc1-40c6-9d20-a576500a37c8",
+    "seriesId": "ironlak",
+    "hex": "#ACD58A",
+    "code": "Fluoro Green",
+    "name": {
+      "en": "Fluoro Green"
+    },
+    "lab": {
+      "l": 80.85,
+      "a": -26.61,
+      "b": 32.8
+    }
+  },
+  {
+    "id": "f1e77b4c-a5fb-45cf-9cba-1f49491bbf5e",
+    "seriesId": "ironlak",
+    "hex": "#FF4500",
+    "code": "Fluoro Orange",
+    "name": {
+      "en": "Fluoro Orange"
+    },
+    "lab": {
+      "l": 57.58,
+      "a": 67.78,
+      "b": 68.96
+    }
+  },
+  {
+    "id": "ffe47ba8-9b58-45b3-a4c0-3bea824ef884",
+    "seriesId": "ironlak",
+    "hex": "#CE008C",
+    "code": "Fluoro Pink",
+    "name": {
+      "en": "Fluoro Pink"
+    },
+    "lab": {
+      "l": 45.66,
+      "a": 75.37,
+      "b": -17.95
+    }
+  },
+  {
+    "id": "2841bf5c-bf8c-4359-a110-06443f54f417",
+    "seriesId": "ironlak",
+    "hex": "#F16D78",
+    "code": "Fluoro Red",
+    "name": {
+      "en": "Fluoro Red"
+    },
+    "lab": {
+      "l": 62.51,
+      "a": 51.7,
+      "b": 19.13
+    }
+  },
+  {
+    "id": "64fd21b8-a615-4ca9-bc2e-6bd8008ff9e9",
+    "seriesId": "ironlak",
+    "hex": "#FFE500",
+    "code": "Fluoro Yellow",
+    "name": {
+      "en": "Fluoro Yellow"
+    },
+    "lab": {
+      "l": 90.46,
+      "a": -8.94,
+      "b": 89.64
+    }
+  },
+  {
+    "id": "e28569b9-f753-4395-a39c-a31accc0c091",
+    "seriesId": "ironlak",
+    "hex": "#F2DFCD",
+    "code": "Fraser",
+    "name": {
+      "en": "Fraser"
+    },
+    "lab": {
+      "l": 89.89,
+      "a": 3.61,
+      "b": 11.17
+    }
+  },
+  {
+    "id": "c683a676-4895-4004-b5a4-1b8382ec1323",
+    "seriesId": "ironlak",
+    "hex": "#00B3AA",
+    "code": "Frazetta",
+    "name": {
+      "en": "Frazetta"
+    },
+    "lab": {
+      "l": 65.86,
+      "a": -39.58,
+      "b": -6.25
+    }
+  },
+  {
+    "id": "31281c98-4397-4548-b945-fc28c83474d5",
+    "seriesId": "ironlak",
+    "hex": "#D0D9E5",
+    "code": "Frostbite",
+    "name": {
+      "en": "Frostbite"
+    },
+    "lab": {
+      "l": 86.35,
+      "a": -0.73,
+      "b": -6.93
+    }
+  },
+  {
+    "id": "58f4a7ff-b1a6-4cd3-8666-2e98f192d03c",
+    "seriesId": "ironlak",
+    "hex": "#AB6388",
+    "code": "Furious",
+    "name": {
+      "en": "Furious"
+    },
+    "lab": {
+      "l": 51.11,
+      "a": 34.07,
+      "b": -7.85
+    }
+  },
+  {
+    "id": "9d029f63-8f8e-4ebb-a220-f5e44ed5ec36",
+    "seriesId": "ironlak",
+    "hex": "#A29061",
+    "code": "Gold (Metallic)",
+    "name": {
+      "en": "Gold (Metallic)"
+    },
+    "lab": {
+      "l": 60.33,
+      "a": -0.2,
+      "b": 27.44
+    }
+  },
+  {
+    "id": "18b7ab5c-f72c-4677-aae1-c5195a4cf84f",
+    "seriesId": "ironlak",
+    "hex": "#6D702E",
+    "code": "Guacamole",
+    "name": {
+      "en": "Guacamole"
+    },
+    "lab": {
+      "l": 45.68,
+      "a": -10.98,
+      "b": 35.59
+    }
+  },
+  {
+    "id": "9541e82f-4ba4-4fb3-bf4c-d578efee5192",
+    "seriesId": "ironlak",
+    "hex": "#F06177",
+    "code": "Guava",
+    "name": {
+      "en": "Guava"
+    },
+    "lab": {
+      "l": 60.26,
+      "a": 56.74,
+      "b": 16.59
+    }
+  },
+  {
+    "id": "dd66453b-5c35-471e-a5ff-5f9d57cf5f51",
+    "seriesId": "ironlak",
+    "hex": "#C08CBE",
+    "code": "Gypsy",
+    "name": {
+      "en": "Gypsy"
+    },
+    "lab": {
+      "l": 64.71,
+      "a": 28.09,
+      "b": -18.25
+    }
+  },
+  {
+    "id": "6b1abe34-59c5-4c22-8c2f-cfe9c861b137",
+    "seriesId": "ironlak",
+    "hex": "#D3441C",
+    "code": "Halloween",
+    "name": {
+      "en": "Halloween"
+    },
+    "lab": {
+      "l": 49.58,
+      "a": 54.48,
+      "b": 52.32
+    }
+  },
+  {
+    "id": "a9f17c6d-2d24-456e-be79-1549e0243be3",
+    "seriesId": "ironlak",
+    "hex": "#B2B3B2",
+    "code": "Hitachi",
+    "name": {
+      "en": "Hitachi"
+    },
+    "lab": {
+      "l": 72.84,
+      "a": -0.54,
+      "b": 0.39
+    }
+  },
+  {
+    "id": "5886b294-0f63-47ef-aac9-9767208c03e9",
+    "seriesId": "ironlak",
+    "hex": "#1D5632",
+    "code": "Huey",
+    "name": {
+      "en": "Huey"
+    },
+    "lab": {
+      "l": 32.14,
+      "a": -27.83,
+      "b": 15.61
+    }
+  },
+  {
+    "id": "ad1e5e63-101a-4b09-bd1d-3a890ca4d2a0",
+    "seriesId": "ironlak",
+    "hex": "#007277",
+    "code": "Hunter",
+    "name": {
+      "en": "Hunter"
+    },
+    "lab": {
+      "l": 43.31,
+      "a": -24.86,
+      "b": -10.55
+    }
+  },
+  {
+    "id": "0543072a-a565-4990-ae17-56ec1c6962a1",
+    "seriesId": "ironlak",
+    "hex": "#E2C19D",
+    "code": "Irwin",
+    "name": {
+      "en": "Irwin"
+    },
+    "lab": {
+      "l": 80.04,
+      "a": 6.51,
+      "b": 22.5
+    }
+  },
+  {
+    "id": "3c1b41ad-d28a-47bc-b837-d7b5090e4174",
+    "seriesId": "ironlak",
+    "hex": "#BE3B4A",
+    "code": "Isla Rose",
+    "name": {
+      "en": "Isla Rose"
+    },
+    "lab": {
+      "l": 45.04,
+      "a": 53.08,
+      "b": 21.4
+    }
+  },
+  {
+    "id": "f598adaf-d9c8-4236-b997-35a35235e771",
+    "seriesId": "ironlak",
+    "hex": "#45BC96",
+    "code": "Jarnte",
+    "name": {
+      "en": "Jarnte"
+    },
+    "lab": {
+      "l": 69.06,
+      "a": -42.32,
+      "b": 9.54
+    }
+  },
+  {
+    "id": "6c2eb950-a30a-4894-b3b0-1a2e937e8932",
+    "seriesId": "ironlak",
+    "hex": "#9F3122",
+    "code": "Jurne's Micah",
+    "name": {
+      "en": "Jurne's Micah"
+    },
+    "lab": {
+      "l": 37.27,
+      "a": 44.64,
+      "b": 34.58
+    }
+  },
+  {
+    "id": "a2c50c95-3a86-434d-b8fd-c0af591f8c9c",
+    "seriesId": "ironlak",
+    "hex": "#C5AB2E",
+    "code": "Keen",
+    "name": {
+      "en": "Keen"
+    },
+    "lab": {
+      "l": 70.31,
+      "a": -3.42,
+      "b": 63.24
+    }
+  },
+  {
+    "id": "7440889b-c16d-4136-8a05-e3b988a7486c",
+    "seriesId": "ironlak",
+    "hex": "#96665C",
+    "code": "Knockout",
+    "name": {
+      "en": "Knockout"
+    },
+    "lab": {
+      "l": 47.96,
+      "a": 18.01,
+      "b": 13.47
+    }
+  },
+  {
+    "id": "c6b72f85-856f-4096-9182-ed992de39c1f",
+    "seriesId": "ironlak",
+    "hex": "#383935",
+    "code": "Lazy Grey",
+    "name": {
+      "en": "Lazy Grey"
+    },
+    "lab": {
+      "l": 23.75,
+      "a": -1.33,
+      "b": 2.34
+    }
+  },
+  {
+    "id": "559fca98-74be-4f71-a8ad-e1be027590f5",
+    "seriesId": "ironlak",
+    "hex": "#00ABC7",
+    "code": "Lightning",
+    "name": {
+      "en": "Lightning"
+    },
+    "lab": {
+      "l": 64.36,
+      "a": -26.59,
+      "b": -24.62
+    }
+  },
+  {
+    "id": "11eac16f-f193-4ec2-813c-e6719c394af2",
+    "seriesId": "ironlak",
+    "hex": "#58C2B6",
+    "code": "Linz Iceberg",
+    "name": {
+      "en": "Linz Iceberg"
+    },
+    "lab": {
+      "l": 72.25,
+      "a": -33.44,
+      "b": -3.24
+    }
+  },
+  {
+    "id": "9cdd7759-8121-43df-a5e1-67d62df1ba77",
+    "seriesId": "ironlak",
+    "hex": "#6F5722",
+    "code": "Marsh",
+    "name": {
+      "en": "Marsh"
+    },
+    "lab": {
+      "l": 38.4,
+      "a": 3.55,
+      "b": 33.63
+    }
+  },
+  {
+    "id": "c352b07c-235a-4c1b-81da-130c58d6f6db",
+    "seriesId": "ironlak",
+    "hex": "#8B0E04",
+    "code": "Matador",
+    "name": {
+      "en": "Matador"
+    },
+    "lab": {
+      "l": 28.94,
+      "a": 48.69,
+      "b": 40.35
+    }
+  },
+  {
+    "id": "a482e173-49a5-45a6-9af0-bae0ad8013ff",
+    "seriesId": "ironlak",
+    "hex": "#231F20",
+    "code": "Matt Black",
+    "name": {
+      "en": "Matt Black"
+    },
+    "lab": {
+      "l": 12.23,
+      "a": 2.14,
+      "b": 0.01
+    }
+  },
+  {
+    "id": "9d324044-8bba-433e-b308-33ae10618c30",
+    "seriesId": "ironlak",
+    "hex": "#C6B3D7",
+    "code": "Meks Magic",
+    "name": {
+      "en": "Meks Magic"
+    },
+    "lab": {
+      "l": 75.55,
+      "a": 13.48,
+      "b": -15.63
+    }
+  },
+  {
+    "id": "b2f5bd4c-4768-4dcc-bf39-c66ca97d5fea",
+    "seriesId": "ironlak",
+    "hex": "#545759",
+    "code": "Melbourne",
+    "name": {
+      "en": "Melbourne"
+    },
+    "lab": {
+      "l": 36.79,
+      "a": -0.75,
+      "b": -1.57
+    }
+  },
+  {
+    "id": "526eb439-265c-4f2a-9dab-f709333cdedb",
+    "seriesId": "ironlak",
+    "hex": "#0F2C52",
+    "code": "Midnight",
+    "name": {
+      "en": "Midnight"
+    },
+    "lab": {
+      "l": 17.97,
+      "a": 4.61,
+      "b": -26.32
+    }
+  },
+  {
+    "id": "696d56bd-e406-45b6-9b2d-1e98dc2883b6",
+    "seriesId": "ironlak",
+    "hex": "#8D0B56",
+    "code": "Moberry",
+    "name": {
+      "en": "Moberry"
+    },
+    "lab": {
+      "l": 30.82,
+      "a": 54.37,
+      "b": -7.66
+    }
+  },
+  {
+    "id": "eeb86701-ddaf-416f-94db-2f84d2d34865",
+    "seriesId": "ironlak",
+    "hex": "#A0662C",
+    "code": "Mocha",
+    "name": {
+      "en": "Mocha"
+    },
+    "lab": {
+      "l": 48.46,
+      "a": 18.07,
+      "b": 41.2
+    }
+  },
+  {
+    "id": "d163c85e-c203-408d-870a-c7f02fb2b85f",
+    "seriesId": "ironlak",
+    "hex": "#E2CA30",
+    "code": "Mustard",
+    "name": {
+      "en": "Mustard"
+    },
+    "lab": {
+      "l": 81.09,
+      "a": -6.87,
+      "b": 73.35
+    }
+  },
+  {
+    "id": "ec67ac71-da90-4c21-a0d1-9a5ba3e71339",
+    "seriesId": "ironlak",
+    "hex": "#004E58",
+    "code": "Neverland",
+    "name": {
+      "en": "Neverland"
+    },
+    "lab": {
+      "l": 29.79,
+      "a": -16.71,
+      "b": -11.82
+    }
+  },
+  {
+    "id": "3bfd9eaa-6ab3-46b3-8396-9535d9d6eef2",
+    "seriesId": "ironlak",
+    "hex": "#F0E048",
+    "code": "Nitro",
+    "name": {
+      "en": "Nitro"
+    },
+    "lab": {
+      "l": 88.12,
+      "a": -11.07,
+      "b": 72.39
+    }
+  },
+  {
+    "id": "b8201842-7c54-491d-b7b5-a48a07b2f9da",
+    "seriesId": "ironlak",
+    "hex": "#B2DDC9",
+    "code": "Ogre",
+    "name": {
+      "en": "Ogre"
+    },
+    "lab": {
+      "l": 84.69,
+      "a": -17.95,
+      "b": 5.21
+    }
+  },
+  {
+    "id": "981d5899-5116-4f72-b977-1143b5d4ca38",
+    "seriesId": "ironlak",
+    "hex": "#BEE0EA",
+    "code": "Ozone",
+    "name": {
+      "en": "Ozone"
+    },
+    "lab": {
+      "l": 87.09,
+      "a": -9.02,
+      "b": -8.6
+    }
+  },
+  {
+    "id": "c16c42b3-add8-4beb-8151-781ef54ed509",
+    "seriesId": "ironlak",
+    "hex": "#1B3C6D",
+    "code": "Pacific",
+    "name": {
+      "en": "Pacific"
+    },
+    "lab": {
+      "l": 25.47,
+      "a": 6.42,
+      "b": -32.01
+    }
+  },
+  {
+    "id": "a9af7bb8-1823-4507-9360-9d56eaf63ca8",
+    "seriesId": "ironlak",
+    "hex": "#231B33",
+    "code": "Panther",
+    "name": {
+      "en": "Panther"
+    },
+    "lab": {
+      "l": 11.83,
+      "a": 10.37,
+      "b": -14.44
+    }
+  },
+  {
+    "id": "12df6c99-b1cb-4c22-a9b3-f55bf6481282",
+    "seriesId": "ironlak",
+    "hex": "#775BA6",
+    "code": "Phantom",
+    "name": {
+      "en": "Phantom"
+    },
+    "lab": {
+      "l": 44.46,
+      "a": 27.76,
+      "b": -36.38
+    }
+  },
+  {
+    "id": "a4881d3e-23ef-4dcd-aabe-6959c6650766",
+    "seriesId": "ironlak",
+    "hex": "#FFDD00",
+    "code": "Pineapple Park",
+    "name": {
+      "en": "Pineapple Park"
+    },
+    "lab": {
+      "l": 88.44,
+      "a": -4.95,
+      "b": 88.2
+    }
+  },
+  {
+    "id": "e773a01e-271b-450b-be70-8cb9f05ca0fd",
+    "seriesId": "ironlak",
+    "hex": "#ABDCD4",
+    "code": "Placid",
+    "name": {
+      "en": "Placid"
+    },
+    "lab": {
+      "l": 84.27,
+      "a": -17.42,
+      "b": -1.26
+    }
+  },
+  {
+    "id": "78311303-6d1f-43d4-bbd5-10ac00b02eaf",
+    "seriesId": "ironlak",
+    "hex": "#9B268F",
+    "code": "Pose Sushi",
+    "name": {
+      "en": "Pose Sushi"
+    },
+    "lab": {
+      "l": 38.45,
+      "a": 58.54,
+      "b": -31.73
+    }
+  },
+  {
+    "id": "11055003-8301-43f4-b65f-2076c80bf184",
+    "seriesId": "ironlak",
+    "hex": "#EC80A8",
+    "code": "Potion",
+    "name": {
+      "en": "Potion"
+    },
+    "lab": {
+      "l": 66.6,
+      "a": 45.93,
+      "b": -2.49
+    }
+  },
+  {
+    "id": "8cd32144-0f80-4fff-8696-a80bab076e06",
+    "seriesId": "ironlak",
+    "hex": "#931D28",
+    "code": "Prestige",
+    "name": {
+      "en": "Prestige"
+    },
+    "lab": {
+      "l": 32.34,
+      "a": 48.3,
+      "b": 24.83
+    }
+  },
+  {
+    "id": "5660f796-8dfa-4b5a-b75e-14aefe3b633a",
+    "seriesId": "ironlak",
+    "hex": "#77246C",
+    "code": "Prince",
+    "name": {
+      "en": "Prince"
+    },
+    "lab": {
+      "l": 30.08,
+      "a": 44.65,
+      "b": -23.43
+    }
+  },
+  {
+    "id": "54112a81-8467-4313-b2e3-989879d5cc33",
+    "seriesId": "ironlak",
+    "hex": "#B969AA",
+    "code": "Punk",
+    "name": {
+      "en": "Punk"
+    },
+    "lab": {
+      "l": 55.4,
+      "a": 41.2,
+      "b": -21.11
+    }
+  },
+  {
+    "id": "40b4ff24-dee6-49ce-9b12-3a8752c9fb9a",
+    "seriesId": "ironlak",
+    "hex": "#3D1951",
+    "code": "Purple Reign",
+    "name": {
+      "en": "Purple Reign"
+    },
+    "lab": {
+      "l": 16.9,
+      "a": 28.51,
+      "b": -27.13
+    }
+  },
+  {
+    "id": "33c2d4d7-b274-4276-9489-3b3da1e55bb6",
+    "seriesId": "ironlak",
+    "hex": "#A3CF5E",
+    "code": "Reals Sublime",
+    "name": {
+      "en": "Reals Sublime"
+    },
+    "lab": {
+      "l": 78,
+      "a": -32.26,
+      "b": 50.74
+    }
+  },
+  {
+    "id": "010d700d-c97b-413b-903c-4a7da7bf72a0",
+    "seriesId": "ironlak",
+    "hex": "#008DA8",
+    "code": "Reef",
+    "name": {
+      "en": "Reef"
+    },
+    "lab": {
+      "l": 53.89,
+      "a": -21.84,
+      "b": -23.19
+    }
+  },
+  {
+    "id": "ad23d349-ae09-4f78-b6d0-5fbe5ff315f2",
+    "seriesId": "ironlak",
+    "hex": "#000000",
+    "code": "Roarke (Black)",
+    "name": {
+      "en": "Roarke (Black)"
+    },
+    "lab": {
+      "l": 0,
+      "a": 0,
+      "b": 0
+    }
+  },
+  {
+    "id": "6b811984-0f97-4ee1-9a8b-9032aea91480",
+    "seriesId": "ironlak",
+    "hex": "#A49382",
+    "code": "Sasha",
+    "name": {
+      "en": "Sasha"
+    },
+    "lab": {
+      "l": 61.97,
+      "a": 3.48,
+      "b": 11.31
+    }
+  },
+  {
+    "id": "a7322009-b42d-4b5d-b8af-692beb9e1ac9",
+    "seriesId": "ironlak",
+    "hex": "#71C6A6",
+    "code": "Shamrock",
+    "name": {
+      "en": "Shamrock"
+    },
+    "lab": {
+      "l": 73.97,
+      "a": -33.25,
+      "b": 8.05
+    }
+  },
+  {
+    "id": "d3db3707-1f83-4dfa-9879-299ccccac91e",
+    "seriesId": "ironlak",
+    "hex": "#7C6755",
+    "code": "Sharon",
+    "name": {
+      "en": "Sharon"
+    },
+    "lab": {
+      "l": 45.14,
+      "a": 5.48,
+      "b": 13.3
+    }
+  },
+  {
+    "id": "570c7437-9dd7-4471-b5da-10e177b28657",
+    "seriesId": "ironlak",
+    "hex": "#571C1F",
+    "code": "Sirum Black-Red",
+    "name": {
+      "en": "Sirum Black-Red"
+    },
+    "lab": {
+      "l": 19.87,
+      "a": 27.52,
+      "b": 12.6
+    }
+  },
+  {
+    "id": "6eaaa66a-1180-40a0-b69b-f22ba5f507bd",
+    "seriesId": "ironlak",
+    "hex": "#DBD8D6",
+    "code": "Smoulder",
+    "name": {
+      "en": "Smoulder"
+    },
+    "lab": {
+      "l": 86.52,
+      "a": 0.67,
+      "b": 1.34
+    }
+  },
+  {
+    "id": "fb3b6a59-379e-429b-9731-2d9df85f3083",
+    "seriesId": "ironlak",
+    "hex": "#0076BB",
+    "code": "Smurf",
+    "name": {
+      "en": "Smurf"
+    },
+    "lab": {
+      "l": 47.68,
+      "a": -1.63,
+      "b": -43.87
+    }
+  },
+  {
+    "id": "76961cf1-a434-4a7c-a2b1-d57b3d6579b8",
+    "seriesId": "ironlak",
+    "hex": "#AE95C6",
+    "code": "Sofles Violence / Violet",
+    "name": {
+      "en": "Sofles Violence / Violet"
+    },
+    "lab": {
+      "l": 65.41,
+      "a": 18.69,
+      "b": -21.82
+    }
+  },
+  {
+    "id": "e76f4b9b-841b-44e3-aff1-01a734e54153",
+    "seriesId": "ironlak",
+    "hex": "#FFFAC3",
+    "code": "Sorbet",
+    "name": {
+      "en": "Sorbet"
+    },
+    "lab": {
+      "l": 97.46,
+      "a": -6.81,
+      "b": 27.06
+    }
+  },
+  {
+    "id": "59ade7ae-34fb-4295-9bb4-526a398fd3dc",
+    "seriesId": "ironlak",
+    "hex": "#C21F32",
+    "code": "Soviet True Red",
+    "name": {
+      "en": "Soviet True Red"
+    },
+    "lab": {
+      "l": 42.28,
+      "a": 61.78,
+      "b": 32.71
+    }
+  },
+  {
+    "id": "12701bbb-1b1c-4e9f-aefa-96c7b3f5df9c",
+    "seriesId": "ironlak",
+    "hex": "#64340F",
+    "code": "Swiss",
+    "name": {
+      "en": "Swiss"
+    },
+    "lab": {
+      "l": 27.3,
+      "a": 18.57,
+      "b": 31.29
+    }
+  },
+  {
+    "id": "eeca6069-9bdd-4f29-bbf6-3519b94f337c",
+    "seriesId": "ironlak",
+    "hex": "#FF9D6B",
+    "code": "Tango",
+    "name": {
+      "en": "Tango"
+    },
+    "lab": {
+      "l": 73.83,
+      "a": 31.85,
+      "b": 41.33
+    }
+  },
+  {
+    "id": "6b600752-bba1-4dd0-8252-89f0a73571fb",
+    "seriesId": "ironlak",
+    "hex": "#FFFFFF",
+    "code": "Techie Black (Transparent Black)",
+    "name": {
+      "en": "Techie Black (Transparent Black)"
+    },
+    "lab": {
+      "l": 100,
+      "a": 0,
+      "b": 0
+    }
+  },
+  {
+    "id": "7a4357cc-b034-4bb1-a1a9-86c6ee671c16",
+    "seriesId": "ironlak",
+    "hex": "#009ADD",
+    "code": "Torquay",
+    "name": {
+      "en": "Torquay"
+    },
+    "lab": {
+      "l": 60.18,
+      "a": -9.73,
+      "b": -43.34
+    }
+  },
+  {
+    "id": "7166945e-7b4e-467d-89a8-8eac97906798",
+    "seriesId": "ironlak",
+    "hex": "#005189",
+    "code": "True Royal",
+    "name": {
+      "en": "True Royal"
+    },
+    "lab": {
+      "l": 33.33,
+      "a": 1.42,
+      "b": -37.01
+    }
+  },
+  {
+    "id": "5f80fe74-ed0f-483c-a5c8-aef61997d366",
+    "seriesId": "ironlak",
+    "hex": "#F58326",
+    "code": "Tues Afterburn",
+    "name": {
+      "en": "Tues Afterburn"
+    },
+    "lab": {
+      "l": 66.36,
+      "a": 37.93,
+      "b": 64.59
+    }
+  },
+  {
+    "id": "97e3e2d4-3d69-40ea-bb4d-bcca59c64952",
+    "seriesId": "ironlak",
+    "hex": "#8E634A",
+    "code": "Two Cents (Metallic Copper)",
+    "name": {
+      "en": "Two Cents (Metallic Copper)"
+    },
+    "lab": {
+      "l": 45.87,
+      "a": 14.24,
+      "b": 21.13
+    }
+  },
+  {
+    "id": "11bed081-9e0e-4d23-9884-86d58f759dd9",
+    "seriesId": "ironlak",
+    "hex": "#CDDC29",
+    "code": "Vans Kryptonite",
+    "name": {
+      "en": "Vans Kryptonite"
+    },
+    "lab": {
+      "l": 84.14,
+      "a": -24.86,
+      "b": 77.25
+    }
+  },
+  {
+    "id": "932f4ec6-debd-4108-abc9-470e6718a120",
+    "seriesId": "ironlak",
+    "hex": "#4D2F47",
+    "code": "Venom",
+    "name": {
+      "en": "Venom"
+    },
+    "lab": {
+      "l": 23.89,
+      "a": 18.05,
+      "b": -9.27
+    }
+  },
+  {
+    "id": "11b1ca39-69bf-44e4-a680-33fcd698719e",
+    "seriesId": "ironlak",
+    "hex": "#FFDB00",
+    "code": "Vizie's Smiley Face",
+    "name": {
+      "en": "Vizie's Smiley Face"
+    },
+    "lab": {
+      "l": 87.93,
+      "a": -3.94,
+      "b": 87.84
+    }
+  },
+  {
+    "id": "92e61f38-7d99-4ef9-91d6-f46c9c2fb4ea",
+    "seriesId": "ironlak",
+    "hex": "#FF7E2E",
+    "code": "Volcano",
+    "name": {
+      "en": "Volcano"
+    },
+    "lab": {
+      "l": 66.81,
+      "a": 44.51,
+      "b": 62.6
+    }
+  },
+  {
+    "id": "88f7ba7c-b7d1-435c-86ef-849a58c9bc4d",
+    "seriesId": "ironlak",
+    "hex": "#E53C2E",
+    "code": "Wanyology Blood Orange",
+    "name": {
+      "en": "Wanyology Blood Orange"
+    },
+    "lab": {
+      "l": 51.94,
+      "a": 63.56,
+      "b": 47.23
+    }
+  },
+  {
+    "id": "69b07ff6-d4e8-4905-8d28-8aad105e0ce5",
+    "seriesId": "ironlak",
+    "hex": "#8A8B8C",
+    "code": "Washington",
+    "name": {
+      "en": "Washington"
+    },
+    "lab": {
+      "l": 57.81,
+      "a": -0.17,
+      "b": -0.66
+    }
+  },
+  {
+    "id": "666ac23e-bd91-4361-a70a-76b2e064dcb3",
+    "seriesId": "ironlak",
+    "hex": "#FFBE9E",
+    "code": "Whip",
+    "name": {
+      "en": "Whip"
+    },
+    "lab": {
+      "l": 82.14,
+      "a": 19.35,
+      "b": 25.3
+    }
+  },
+  {
+    "id": "e862a78a-1ecd-49fb-9e8d-3febe0181090",
+    "seriesId": "ironlak",
+    "hex": "#D4E38E",
+    "code": "Whizbang",
+    "name": {
+      "en": "Whizbang"
+    },
+    "lab": {
+      "l": 87.43,
+      "a": -18.09,
+      "b": 39.86
+    }
+  },
+  {
+    "id": "1719b3b1-c7ea-492a-aaed-7f2361ed0132",
+    "seriesId": "ironlak",
+    "hex": "#172751",
+    "code": "Yankee",
+    "name": {
+      "en": "Yankee"
+    },
+    "lab": {
+      "l": 16.64,
+      "a": 9.27,
+      "b": -27.77
+    }
+  }
+]

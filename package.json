@@ -12,14 +12,7 @@
     "type-check": "tsc --noEmit",
     "clean": "rm -rf node_modules && rm -rf .expo && rm -rf ios && rm -rf android",
     "check": "npm run type-check && npm run lint",
-    "extract:aka-writer": "node scripts/extract-aka-writer-colors.cjs",
-    "extract:belton-premium": "node scripts/extract-belton-premium-colors.cjs",
-    "extract:flame-blue": "node scripts/extract-flame-blue-colors.cjs",
-    "extract:flame-orange": "node scripts/extract-flame-orange-colors.cjs",
-    "extract:hardcore": "node scripts/extract-hardcore-colors.cjs",
-    "extract:montana-94": "node scripts/extract-montana-94-colors.cjs",
-    "extract:vice": "node scripts/extract-vice-colors.cjs",
-    "colors:add-lab": "node scripts/add-lab-to-colors.cjs"
+    "catalog:fetch": "node scripts/fetch-catalog.cjs"
   },
   "dependencies": {
     "@expo-google-fonts/space-grotesk": "^0.4.1",

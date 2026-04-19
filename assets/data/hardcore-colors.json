@@ -1,11 +1,27 @@
 [
   {
-    "id": "f6c2dab0-9e67-4dc1-8a54-824869036eda",
+    "id": "8c5a952e-e452-4d5f-9827-88b90f368cd4",
+    "seriesId": "hardcore",
+    "hex": "#000000",
+    "code": "Negro",
+    "name": {
+      "es": "Mate",
+      "en": "Black"
+    },
+    "lab": {
+      "l": 0,
+      "a": 0,
+      "b": 0
+    }
+  },
+  {
+    "id": "1031c474-b9f4-4345-95b1-7f4c3a371dd8",
     "seriesId": "hardcore",
     "hex": "#FFFFFF",
-    "code": "Matt",
+    "code": "Blanco",
     "name": {
-      "en": "Black"
+      "es": "Mate",
+      "en": "White"
     },
     "lab": {
       "l": 100,
@@ -14,7 +30,7 @@
     }
   },
   {
-    "id": "ae597e8c-35e4-45af-aeb7-88a0af644083",
+    "id": "6cb4e26a-bb58-4793-90f7-72032d586625",
     "seriesId": "hardcore",
     "hex": "#7B7C7E",
     "code": "R-7040",
@@ -22,1179 +38,1263 @@
       "en": "Pearl Grey"
     },
     "lab": {
-      "l": 51.97,
-      "a": -0.09,
-      "b": -1.23
+      "l": 51.99,
+      "a": 0.03,
+      "b": -1.22
     }
   },
   {
-    "id": "ac1b386f-21cd-4c4e-b3a1-3d26b549947b",
+    "id": "b8278b91-b065-4c54-a39d-f4f15e33dafe",
     "seriesId": "hardcore",
     "hex": "#F4ADC5",
     "code": "RV-",
     "name": {
+      "es": "5021 Azul Caribe",
       "en": "5021 Caribbean Blue"
     },
     "lab": {
-      "l": 78.15,
-      "a": 29.25,
-      "b": -1.3
-    }
-  },
-  {
-    "id": "f33f9f19-ebd8-4580-9749-a1cc4e9892c6",
-    "seriesId": "hardcore",
-    "hex": "#574A96",
-    "code": "RV-3",
-    "name": {
-      "en": "Blue Violet"
-    },
-    "lab": {
-      "l": 35.75,
-      "a": 20.59,
-      "b": -40.62
-    }
-  },
-  {
-    "id": "17bc2a45-886a-4c0f-b59c-5222702ef067",
-    "seriesId": "hardcore",
-    "hex": "#74B957",
-    "code": "RV-4",
-    "name": {
-      "en": "Light Green"
-    },
-    "lab": {
-      "l": 68.93,
-      "a": -36.3,
-      "b": 41.96
-    }
-  },
-  {
-    "id": "1e8b47b6-46d3-4f98-810d-3a7e69229fb4",
-    "seriesId": "hardcore",
-    "hex": "#005900",
-    "code": "RV-5",
-    "name": {
-      "en": "Lutecia Green"
-    },
-    "lab": {
-      "l": 32.17,
-      "a": -36.79,
-      "b": 37.58
-    }
-  },
-  {
-    "id": "11f80f75-6368-4058-957d-0bb628533a45",
-    "seriesId": "hardcore",
-    "hex": "#E1E2E2",
-    "code": "RV-6",
-    "name": {
-      "en": "Light Grey"
-    },
-    "lab": {
-      "l": 89.81,
-      "a": -0.35,
-      "b": -0.12
-    }
-  },
-  {
-    "id": "4c08865f-b554-4bcf-b353-7c2df642405e",
-    "seriesId": "hardcore",
-    "hex": "#FFF7B6",
-    "code": "RV-7",
-    "name": {
-      "en": "Cream"
-    },
-    "lab": {
-      "l": 96.72,
-      "a": -4.37,
-      "b": 32.38
-    }
-  },
-  {
-    "id": "55aa1ac0-beca-4e5f-a05d-359f7ca293f7",
-    "seriesId": "hardcore",
-    "hex": "#60C5E7",
-    "code": "RV-8",
-    "name": {
-      "en": "Carlota Light Blue"
-    },
-    "lab": {
-      "l": 74.49,
-      "a": -23.36,
-      "b": -26.44
-    }
-  },
-  {
-    "id": "c3a62de3-f088-4dd1-871d-c61248cf817a",
-    "seriesId": "hardcore",
-    "hex": "#FAC294",
-    "code": "RV-9",
-    "name": {
-      "en": "Apricot"
-    },
-    "lab": {
-      "l": 82.77,
-      "a": 16.44,
-      "b": 31.27
-    }
-  },
-  {
-    "id": "99b507d8-00ab-44c4-a9bd-b385c634c9fb",
-    "seriesId": "hardcore",
-    "hex": "#C8A10A",
-    "code": "RV-11",
-    "name": {
-      "en": "Ganges Yellow"
-    },
-    "lab": {
-      "l": 68.33,
-      "a": 6.14,
-      "b": 69.65
-    }
-  },
-  {
-    "id": "99faee80-03da-4d68-90d9-7032cb9b1e6c",
-    "seriesId": "hardcore",
-    "hex": "#97E6FF",
-    "code": "RV-13",
-    "name": {
-      "en": "Himalayan Blue"
-    },
-    "lab": {
-      "l": 86.84,
-      "a": -20.53,
-      "b": -20.25
-    }
-  },
-  {
-    "id": "fc1e216e-c536-4b43-a59c-083af5ad9392",
-    "seriesId": "hardcore",
-    "hex": "#008098",
-    "code": "RV-14",
-    "name": {
-      "en": "Planet Blue"
-    },
-    "lab": {
-      "l": 48.73,
-      "a": -23.93,
-      "b": -21.85
-    }
-  },
-  {
-    "id": "3d03782c-9340-424b-abbc-0215112d45b2",
-    "seriesId": "hardcore",
-    "hex": "#ACB681",
-    "code": "RV-15",
-    "name": {
-      "en": "Apple Green"
-    },
-    "lab": {
-      "l": 72.26,
-      "a": -10.2,
-      "b": 25.84
-    }
-  },
-  {
-    "id": "63b62a3e-056f-4f5a-81b1-4c0a7e6809bf",
-    "seriesId": "hardcore",
-    "hex": "#B0C643",
-    "code": "RV-16",
-    "name": {
-      "en": "Pistachio Green"
-    },
-    "lab": {
-      "l": 76.36,
-      "a": -20.68,
-      "b": 59.96
-    }
-  },
-  {
-    "id": "a15db3c1-be67-4fee-933c-725eb8c140e5",
-    "seriesId": "hardcore",
-    "hex": "#6D2601",
-    "code": "RV-18",
-    "name": {
-      "en": "Rust Red"
-    },
-    "lab": {
-      "l": 26.14,
-      "a": 31.03,
-      "b": 37.09
-    }
-  },
-  {
-    "id": "96a876ed-0f84-4ec0-b853-a752097e79de",
-    "seriesId": "hardcore",
-    "hex": "#FFF048",
-    "code": "RV-20",
-    "name": {
-      "en": "Party Yellow"
-    },
-    "lab": {
-      "l": 93.93,
-      "a": -7.78,
-      "b": 77.56
-    }
-  },
-  {
-    "id": "d7f08fbd-3cf3-4084-9d3a-4e9350c832bc",
-    "seriesId": "hardcore",
-    "hex": "#009473",
-    "code": "RV-21",
-    "name": {
-      "en": "Surgical Green"
-    },
-    "lab": {
-      "l": 54.31,
-      "a": -41.17,
-      "b": 7.63
-    }
-  },
-  {
-    "id": "7a51fd48-fb58-4406-83b1-d0ef048f94d6",
-    "seriesId": "hardcore",
-    "hex": "#9CCD9A",
-    "code": "RV-24",
-    "name": {
-      "en": "Golden Green"
-    },
-    "lab": {
-      "l": 77.95,
-      "a": -24.04,
-      "b": 20.08
-    }
-  },
-  {
-    "id": "415659fa-12fd-4424-b2bd-a46a882f37eb",
-    "seriesId": "hardcore",
-    "hex": "#00084D",
-    "code": "RV-27",
-    "name": {
-      "en": "Vampire Violet"
-    },
-    "lab": {
-      "l": 5.64,
-      "a": 21.16,
-      "b": -42.91
-    }
-  },
-  {
-    "id": "1e7973c8-843c-4550-9f66-3c0e4f52bc29",
-    "seriesId": "hardcore",
-    "hex": "#6BDCFF",
-    "code": "RV-29",
-    "name": {
-      "en": "Arctic Blue"
-    },
-    "lab": {
-      "l": 82.18,
-      "a": -26.17,
-      "b": -27.47
-    }
-  },
-  {
-    "id": "e13603f4-6130-45e6-bc16-c8a9dfc7e5da",
-    "seriesId": "hardcore",
-    "hex": "#007FC4",
-    "code": "RV-30",
-    "name": {
-      "en": "Electric Blue"
-    },
-    "lab": {
-      "l": 50.17,
-      "a": -10.05,
-      "b": -44.94
-    }
-  },
-  {
-    "id": "1370df8a-2e4c-4ae6-ad78-cff74029fc4d",
-    "seriesId": "hardcore",
-    "hex": "#213A8F",
-    "code": "RV-32",
-    "name": {
-      "en": "Lewis Blue"
-    },
-    "lab": {
-      "l": 26.84,
-      "a": 15.91,
-      "b": -50.94
-    }
-  },
-  {
-    "id": "79365d81-f6ed-4394-8724-237c96e4c1e9",
-    "seriesId": "hardcore",
-    "hex": "#E74F45",
-    "code": "RV-33",
-    "name": {
-      "en": "Colorado Red"
-    },
-    "lab": {
-      "l": 55.83,
-      "a": 59.23,
-      "b": 39.81
-    }
-  },
-  {
-    "id": "c953ab3d-156e-47a7-a876-78ec773bc01f",
-    "seriesId": "hardcore",
-    "hex": "#88B14F",
-    "code": "RV-34",
-    "name": {
-      "en": "Guacamole Green"
-    },
-    "lab": {
-      "l": 67.63,
-      "a": -26.3,
-      "b": 44.57
-    }
-  },
-  {
-    "id": "f47807e6-28ac-46bf-891e-9e6ea980fea7",
-    "seriesId": "hardcore",
-    "hex": "#4D2200",
-    "code": "RV-35",
-    "name": {
-      "en": "Chocolate Brown"
-    },
-    "lab": {
-      "l": 19.22,
-      "a": 19.14,
-      "b": 28.25
-    }
-  },
-  {
-    "id": "89140815-9e7c-4cf4-be46-958a850fa72b",
-    "seriesId": "hardcore",
-    "hex": "#7E7F82",
-    "code": "RV-39",
-    "name": {
-      "en": "Ripley Grey"
-    },
-    "lab": {
-      "l": 53.18,
-      "a": 0.07,
+      "l": 77.97,
+      "a": 29.37,
       "b": -1.77
     }
   },
   {
-    "id": "e398739f-afeb-4f73-8e08-0bfad57d7241",
+    "id": "8d75c3e0-7917-4fb7-8fab-5c0b6a464061",
+    "seriesId": "hardcore",
+    "hex": "#574A96",
+    "code": "RV-3",
+    "name": {
+      "es": "Violeta Azulado",
+      "en": "Blue Violet"
+    },
+    "lab": {
+      "l": 36.22,
+      "a": 24.91,
+      "b": -40.08
+    }
+  },
+  {
+    "id": "1cfe6d1b-c04f-49c3-9465-9fa14980e9cd",
+    "seriesId": "hardcore",
+    "hex": "#74B957",
+    "code": "RV-4",
+    "name": {
+      "es": "Verde Claro",
+      "en": "Light Green"
+    },
+    "lab": {
+      "l": 68.82,
+      "a": -39.91,
+      "b": 42.55
+    }
+  },
+  {
+    "id": "60e06cb1-c3bb-4152-b4a8-5125b330034c",
+    "seriesId": "hardcore",
+    "hex": "#005900",
+    "code": "RV-5",
+    "name": {
+      "es": "Verde Lutecia",
+      "en": "Lutecia Green"
+    },
+    "lab": {
+      "l": 32.13,
+      "a": -39.99,
+      "b": 38.6
+    }
+  },
+  {
+    "id": "ca5af8c4-b5b7-4002-86a4-47a52391de24",
+    "seriesId": "hardcore",
+    "hex": "#E1E2E2",
+    "code": "RV-6",
+    "name": {
+      "es": "Gris Claro",
+      "en": "Light Grey"
+    },
+    "lab": {
+      "l": 89.81,
+      "a": -0.34,
+      "b": -0.12
+    }
+  },
+  {
+    "id": "2ab2b949-2a27-4034-b762-2b083db45539",
+    "seriesId": "hardcore",
+    "hex": "#FFF7B6",
+    "code": "RV-7",
+    "name": {
+      "es": "Crema",
+      "en": "Cream"
+    },
+    "lab": {
+      "l": 96.48,
+      "a": -7,
+      "b": 32.29
+    }
+  },
+  {
+    "id": "bd8c5480-5859-427f-9013-9fc45f8fbfd6",
+    "seriesId": "hardcore",
+    "hex": "#60C5E7",
+    "code": "RV-8",
+    "name": {
+      "es": "Azul Claro Carlota",
+      "en": "Carlota Light Blue"
+    },
+    "lab": {
+      "l": 74.94,
+      "a": -19.78,
+      "b": -25.77
+    }
+  },
+  {
+    "id": "b5772a62-82f4-4a67-b46f-ff56d37e64e6",
+    "seriesId": "hardcore",
+    "hex": "#FAC294",
+    "code": "RV-9",
+    "name": {
+      "es": "Albaricoque",
+      "en": "Apricot"
+    },
+    "lab": {
+      "l": 82.41,
+      "a": 14.23,
+      "b": 30.83
+    }
+  },
+  {
+    "id": "92ceaf54-fe9a-429f-be45-a197c52a703a",
+    "seriesId": "hardcore",
+    "hex": "#C8A10A",
+    "code": "RV-11",
+    "name": {
+      "es": "Amarillo Ganges",
+      "en": "Ganges Yellow"
+    },
+    "lab": {
+      "l": 67.87,
+      "a": 2.33,
+      "b": 69.99
+    }
+  },
+  {
+    "id": "92ecae41-7fd8-408c-bb98-3560146a6253",
+    "seriesId": "hardcore",
+    "hex": "#97E6FF",
+    "code": "RV-13",
+    "name": {
+      "es": "Azul Himalaya",
+      "en": "Himalayan Blue"
+    },
+    "lab": {
+      "l": 87.19,
+      "a": -18,
+      "b": -19.72
+    }
+  },
+  {
+    "id": "49a31604-6568-4002-8762-1a0d471e3039",
+    "seriesId": "hardcore",
+    "hex": "#008098",
+    "code": "RV-14",
+    "name": {
+      "es": "Azul Planeta",
+      "en": "Planet Blue"
+    },
+    "lab": {
+      "l": 49.13,
+      "a": -20.62,
+      "b": -21.24
+    }
+  },
+  {
+    "id": "3e88547f-cd1d-4229-9794-811b02a9c3cf",
+    "seriesId": "hardcore",
+    "hex": "#ACB681",
+    "code": "RV-15",
+    "name": {
+      "es": "Verde Manzana",
+      "en": "Apple Green"
+    },
+    "lab": {
+      "l": 72.1,
+      "a": -12.37,
+      "b": 25.89
+    }
+  },
+  {
+    "id": "00e324db-cb41-41be-90e8-d30df907f2b3",
+    "seriesId": "hardcore",
+    "hex": "#B0C643",
+    "code": "RV-16",
+    "name": {
+      "es": "Verde Pistacho",
+      "en": "Pistachio Green"
+    },
+    "lab": {
+      "l": 76.08,
+      "a": -25.01,
+      "b": 60.53
+    }
+  },
+  {
+    "id": "183d997c-d8bb-4c79-a7f2-c1c8c0153523",
+    "seriesId": "hardcore",
+    "hex": "#6D2601",
+    "code": "RV-18",
+    "name": {
+      "es": "Rojo Óxido",
+      "en": "Rust Red"
+    },
+    "lab": {
+      "l": 25.69,
+      "a": 29.97,
+      "b": 36.34
+    }
+  },
+  {
+    "id": "6f868b9a-974d-41f4-ba2a-67e2516ebb7a",
+    "seriesId": "hardcore",
+    "hex": "#FFF048",
+    "code": "RV-20",
+    "name": {
+      "es": "Amarillo Fiesta",
+      "en": "Party Yellow"
+    },
+    "lab": {
+      "l": 93.47,
+      "a": -12.78,
+      "b": 78.02
+    }
+  },
+  {
+    "id": "fbee1697-a981-497a-8b52-d2bf448e94b2",
+    "seriesId": "hardcore",
+    "hex": "#009473",
+    "code": "RV-21",
+    "name": {
+      "es": "Verde Quirúrgico",
+      "en": "Surgical Green"
+    },
+    "lab": {
+      "l": 54.47,
+      "a": -41.68,
+      "b": 8.14
+    }
+  },
+  {
+    "id": "1a455103-48cf-46f1-8634-a5bd45d9a8d7",
+    "seriesId": "hardcore",
+    "hex": "#9CCD9A",
+    "code": "RV-24",
+    "name": {
+      "es": "Verde Golden",
+      "en": "Golden Green"
+    },
+    "lab": {
+      "l": 77.91,
+      "a": -25.86,
+      "b": 20.33
+    }
+  },
+  {
+    "id": "0e021771-5222-41d0-b10b-5df7d8655a79",
+    "seriesId": "hardcore",
+    "hex": "#00084D",
+    "code": "RV-27",
+    "name": {
+      "es": "Violeta Vampiro",
+      "en": "Vampire Violet"
+    },
+    "lab": {
+      "l": 6.41,
+      "a": 26.73,
+      "b": -41.8
+    }
+  },
+  {
+    "id": "10d24f38-b1b1-489c-83eb-cf8673d42924",
+    "seriesId": "hardcore",
+    "hex": "#6BDCFF",
+    "code": "RV-29",
+    "name": {
+      "es": "Azul Ártico",
+      "en": "Arctic Blue"
+    },
+    "lab": {
+      "l": 82.66,
+      "a": -22.45,
+      "b": -26.76
+    }
+  },
+  {
+    "id": "06387898-fe70-4d57-94f2-e7f3e8450cf1",
+    "seriesId": "hardcore",
+    "hex": "#007FC4",
+    "code": "RV-30",
+    "name": {
+      "es": "Azul Eléctrico",
+      "en": "Electric Blue"
+    },
+    "lab": {
+      "l": 50.88,
+      "a": -3.54,
+      "b": -43.97
+    }
+  },
+  {
+    "id": "23953203-53f4-405d-8c47-7c1c1460ed09",
+    "seriesId": "hardcore",
+    "hex": "#213A8F",
+    "code": "RV-32",
+    "name": {
+      "es": "Azul Lewis",
+      "en": "Lewis Blue"
+    },
+    "lab": {
+      "l": 27.66,
+      "a": 22.35,
+      "b": -49.81
+    }
+  },
+  {
+    "id": "fcec295b-98a5-4262-a4a3-9c0789a370b7",
+    "seriesId": "hardcore",
+    "hex": "#E74F45",
+    "code": "RV-33",
+    "name": {
+      "es": "Rojo Colorado",
+      "en": "Colorado Red"
+    },
+    "lab": {
+      "l": 55.09,
+      "a": 58.1,
+      "b": 38.34
+    }
+  },
+  {
+    "id": "ecf513fa-3620-465e-8251-38a82a1fd589",
+    "seriesId": "hardcore",
+    "hex": "#88B14F",
+    "code": "RV-34",
+    "name": {
+      "es": "Verde Guacamole",
+      "en": "Guacamole Green"
+    },
+    "lab": {
+      "l": 67.46,
+      "a": -29.89,
+      "b": 45.04
+    }
+  },
+  {
+    "id": "1e932b66-01d1-44dc-a36c-f60f0b17258c",
+    "seriesId": "hardcore",
+    "hex": "#4D2200",
+    "code": "RV-35",
+    "name": {
+      "es": "Marrón Chocolate",
+      "en": "Chocolate Brown"
+    },
+    "lab": {
+      "l": 18.9,
+      "a": 18.02,
+      "b": 27.8
+    }
+  },
+  {
+    "id": "ac4df112-ecb1-467f-a73d-2b95c259038c",
+    "seriesId": "hardcore",
+    "hex": "#7E7F82",
+    "code": "RV-39",
+    "name": {
+      "es": "Gris Ripley",
+      "en": "Ripley Grey"
+    },
+    "lab": {
+      "l": 53.2,
+      "a": 0.23,
+      "b": -1.75
+    }
+  },
+  {
+    "id": "b90ed82a-fd32-4d96-80fd-7e86a396c325",
     "seriesId": "hardcore",
     "hex": "#928782",
     "code": "RV-40",
     "name": {
+      "es": "Gris Nazgul",
       "en": "Nazgul Grey"
     },
     "lab": {
-      "l": 57.19,
-      "a": 3.6,
-      "b": 4.27
+      "l": 57.13,
+      "a": 3.22,
+      "b": 4.17
     }
   },
   {
-    "id": "fa5ba3b5-ea5c-4704-ae67-bb7c5e50f3cd",
+    "id": "7c0a2b04-6260-4376-af56-c441092b0589",
     "seriesId": "hardcore",
     "hex": "#B7A794",
     "code": "RV-42",
     "name": {
+      "es": "Gris Regina",
       "en": "Regina Grey"
     },
     "lab": {
-      "l": 69.49,
-      "a": 3.67,
-      "b": 12.08
+      "l": 69.36,
+      "a": 2.64,
+      "b": 11.93
     }
   },
   {
-    "id": "464d092d-ebc3-4858-90a5-31c41e367970",
+    "id": "c3897e90-0e68-4866-9550-5565e37e4b3b",
     "seriesId": "hardcore",
     "hex": "#EBE6D6",
     "code": "RV-55",
     "name": {
+      "es": "Gris Arkalis",
       "en": "Arkalis Grey"
     },
     "lab": {
-      "l": 91.36,
-      "a": -0.27,
-      "b": 8.46
+      "l": 91.28,
+      "a": -1.03,
+      "b": 8.39
     }
   },
   {
-    "id": "be397cc8-1d4c-4627-9878-68522b229725",
+    "id": "bfb6aaee-4347-4dba-b609-aa6e6f8c1d7f",
     "seriesId": "hardcore",
     "hex": "#CABDB0",
     "code": "RV-57",
     "name": {
+      "es": "Gris Ciudad",
       "en": "City Grey"
     },
     "lab": {
-      "l": 77.43,
-      "a": 3.12,
-      "b": 8.33
+      "l": 77.33,
+      "a": 2.38,
+      "b": 8.21
     }
   },
   {
-    "id": "3e9c096e-c7dc-4d0a-8d02-e15a9e2d0242",
+    "id": "644f7b62-7ff2-4b56-a609-d50d2e620ca7",
     "seriesId": "hardcore",
     "hex": "#C8D3ED",
     "code": "RV-73",
     "name": {
+      "es": "Azul Aurora",
       "en": "Aurora Blue"
     },
     "lab": {
-      "l": 84.32,
-      "a": 0.04,
-      "b": -14.18
+      "l": 84.47,
+      "a": 1.48,
+      "b": -14.02
     }
   },
   {
-    "id": "f728b134-2960-4cbf-a78a-21db2c4697dd",
+    "id": "8b8ac513-cf81-4579-97af-b0c0a859bc07",
     "seriesId": "hardcore",
     "hex": "#94BFE5",
     "code": "RV-74",
     "name": {
+      "es": "Azul Costa Brava",
       "en": "Costa Brava Blue"
     },
     "lab": {
-      "l": 75.26,
-      "a": -7.86,
-      "b": -23.92
+      "l": 75.58,
+      "a": -5.11,
+      "b": -23.5
     }
   },
   {
-    "id": "c0c4b345-41bb-4745-ba55-f1f529a7a596",
+    "id": "945a9322-40e4-485b-83eb-49188a3db818",
     "seriesId": "hardcore",
     "hex": "#020E37",
     "code": "RV-75",
     "name": {
+      "es": "Azul Nostromo",
       "en": "Nostromo Blue"
     },
     "lab": {
-      "l": 5.06,
-      "a": 8.17,
-      "b": -28.23
+      "l": 5.44,
+      "a": 12.22,
+      "b": -27.71
     }
   },
   {
-    "id": "eef5324e-c9f7-4882-9ce5-e3ecb297d52d",
+    "id": "cf1dba55-381a-464a-b6c2-7e9a5fb29f52",
     "seriesId": "hardcore",
     "hex": "#FBCB8C",
     "code": "RV-206",
     "name": {
+      "es": "Amarillo Atacama",
       "en": "Atacama Yellow"
     },
     "lab": {
-      "l": 84.93,
-      "a": 11.79,
-      "b": 38.15
+      "l": 84.54,
+      "a": 9.1,
+      "b": 37.79
     }
   },
   {
-    "id": "d7d52551-629b-4109-bfd2-e9cfb44c4587",
+    "id": "c60ebbd9-9cc5-44ed-be9d-c15140c450cd",
     "seriesId": "hardcore",
     "hex": "#E77A19",
     "code": "RV-207",
     "name": {
+      "es": "Mango",
       "en": "Mango"
     },
     "lab": {
-      "l": 63.17,
-      "a": 39.21,
-      "b": 65.46
+      "l": 62.49,
+      "a": 36.65,
+      "b": 64.74
     }
   },
   {
-    "id": "716f2537-b102-40ca-9e7e-e0967ba2b21f",
+    "id": "bc61cecb-40ea-476a-8ec9-a77f85dcd1a6",
     "seriesId": "hardcore",
     "hex": "#F6AD6B",
     "code": "RV-208",
     "name": {
+      "es": "Calabaza",
       "en": "Pumpkin"
     },
     "lab": {
-      "l": 76.89,
-      "a": 22.6,
-      "b": 44.79
+      "l": 76.4,
+      "a": 19.89,
+      "b": 44.25
     }
   },
   {
-    "id": "04ad7045-33b8-4ced-b67e-f86f3f96361e",
+    "id": "7f61e304-f0e2-47e7-861e-ee6b57703faf",
     "seriesId": "hardcore",
     "hex": "#DC4126",
     "code": "RV-209",
     "name": {
+      "es": "Naranja Calcuta",
       "en": "Calcutta Orange"
     },
     "lab": {
-      "l": 51.65,
-      "a": 60,
-      "b": 51.16
+      "l": 50.85,
+      "a": 58.81,
+      "b": 49.59
     }
   },
   {
-    "id": "0436ad22-78cc-47f6-8b09-6e77379399d9",
+    "id": "17aca996-0975-4f86-af3b-a25ab8df7f01",
     "seriesId": "hardcore",
     "hex": "#910E14",
     "code": "RV-210",
     "name": {
+      "es": "Naranja Prometeo",
       "en": "Prometheus Orange"
     },
     "lab": {
-      "l": 31.01,
-      "a": 51.19,
-      "b": 36.11
+      "l": 30.37,
+      "a": 50.71,
+      "b": 34.65
     }
   },
   {
-    "id": "87d8e018-9d8f-49e1-b7c8-96c500191cff",
+    "id": "e65ac0e7-aaa3-435b-a027-e03c2bc63f1c",
     "seriesId": "hardcore",
     "hex": "#EE87AD",
     "code": "RV-211",
     "name": {
+      "es": "Rosa Amor",
       "en": "Love Pink"
     },
     "lab": {
-      "l": 68.7,
-      "a": 43.45,
-      "b": -1.89
+      "l": 68.41,
+      "a": 43.72,
+      "b": -2.62
     }
   },
   {
-    "id": "04d777f7-0a40-4797-a8f3-a0bb8682fbce",
+    "id": "82ba4c8b-521a-4a1c-80b2-020aa0460b40",
     "seriesId": "hardcore",
     "hex": "#C50041",
     "code": "RV-212",
     "name": {
+      "es": "Rojo Akari",
       "en": "Akari Red"
     },
     "lab": {
-      "l": 42.37,
-      "a": 67.66,
-      "b": 24.51
+      "l": 41.62,
+      "a": 67.59,
+      "b": 22.8
     }
   },
   {
-    "id": "248406e0-dc42-49c4-9e47-4141861b79ec",
+    "id": "8b447eef-5f27-40f6-8385-be1b164286af",
     "seriesId": "hardcore",
     "hex": "#762A3D",
     "code": "RV-213",
     "name": {
+      "es": "Rojo Merlot",
       "en": "Merlot Red"
     },
     "lab": {
-      "l": 29.35,
-      "a": 35.15,
-      "b": 6.43
+      "l": 29.02,
+      "a": 35.04,
+      "b": 5.71
     }
   },
   {
-    "id": "e84007c0-a31d-4f81-b523-87698f9e14f9",
+    "id": "bb2bca40-8e57-49bb-9a7a-ca7cd2ea6ef3",
     "seriesId": "hardcore",
     "hex": "#9993C3",
     "code": "RV-214",
     "name": {
+      "es": "Violeta",
       "en": "Violet"
     },
     "lab": {
-      "l": 62.77,
-      "a": 9.98,
-      "b": -24.19
+      "l": 62.99,
+      "a": 12.41,
+      "b": -24
     }
   },
   {
-    "id": "ac3d4265-d76b-4376-baa6-47bf33aeb81c",
+    "id": "a9e68d8d-974e-406b-852d-a181faad1ad5",
     "seriesId": "hardcore",
     "hex": "#6D63A5",
     "code": "RV-215",
     "name": {
+      "es": "Violeta Profeta",
       "en": "Prophet Violet"
     },
     "lab": {
-      "l": 45.12,
-      "a": 16.13,
-      "b": -34.61
+      "l": 45.48,
+      "a": 19.74,
+      "b": -34.23
     }
   },
   {
-    "id": "5ed5142e-d70e-48dc-a8f2-5af4476aa476",
+    "id": "2c16ed1f-f45b-4880-aa7b-1bfb6d6a9d63",
     "seriesId": "hardcore",
     "hex": "#45347A",
     "code": "RV-216",
     "name": {
+      "es": "Viol. Anonymous",
       "en": "Anonymous Violet"
     },
     "lab": {
-      "l": 26.64,
-      "a": 21.8,
-      "b": -38.03
+      "l": 27.09,
+      "a": 25.77,
+      "b": -37.5
     }
   },
   {
-    "id": "bdb58124-98e9-44e6-b423-9762a67f795d",
+    "id": "eab20237-77f3-4355-bec2-83889cad48c3",
     "seriesId": "hardcore",
     "hex": "#00A2DD",
     "code": "RV-217",
     "name": {
+      "es": "Azul Avatar",
       "en": "Avatar Blue"
     },
     "lab": {
-      "l": 61.9,
-      "a": -20.13,
-      "b": -40.55
+      "l": 62.56,
+      "a": -14.17,
+      "b": -39.62
     }
   },
   {
-    "id": "1da45015-e1c4-47a7-b009-07642677a445",
+    "id": "71670513-6768-4976-beb4-50860f96aa5d",
     "seriesId": "hardcore",
     "hex": "#004578",
     "code": "RV-218",
     "name": {
+      "es": "Azul Neptuno",
       "en": "Neptune Blue"
     },
     "lab": {
-      "l": 27.86,
-      "a": -2.85,
-      "b": -35.08
+      "l": 28.41,
+      "a": 2.17,
+      "b": -34.32
     }
   },
   {
-    "id": "864ab733-aa18-405f-96fe-04b8bcaa74ba",
+    "id": "de99b047-169d-4b0d-a439-dd01bdcf5966",
     "seriesId": "hardcore",
     "hex": "#8BC8AA",
     "code": "RV-219",
     "name": {
+      "es": "Verde París",
       "en": "Paris Green"
     },
     "lab": {
-      "l": 75.81,
-      "a": -25.19,
-      "b": 8.5
+      "l": 75.88,
+      "a": -25.92,
+      "b": 8.8
     }
   },
   {
-    "id": "81e7caed-c053-4b48-aa7a-a61f9de5d2ca",
+    "id": "82d3a8c9-6ae0-450a-ba7d-1f7631a0b91c",
     "seriesId": "hardcore",
     "hex": "#5BB89E",
     "code": "RV-220",
     "name": {
+      "es": "Verde UFO",
       "en": "UFO Green"
     },
     "lab": {
-      "l": 68.58,
-      "a": -33.81,
-      "b": 4.33
+      "l": 68.73,
+      "a": -34.02,
+      "b": 4.77
     }
   },
   {
-    "id": "46bc87b1-d5b4-469e-b72b-75e52851ec9e",
+    "id": "f89eff0b-7294-466f-8b0c-7036523a8835",
     "seriesId": "hardcore",
     "hex": "#005231",
     "code": "RV-221",
     "name": {
+      "es": "Verde Perséfone",
       "en": "Persephone Green"
     },
     "lab": {
-      "l": 30,
-      "a": -29.79,
-      "b": 12.96
+      "l": 30.05,
+      "a": -31.02,
+      "b": 13.33
     }
   },
   {
-    "id": "b61cc93c-1a60-4faf-b1ae-d29a5a11c71b",
+    "id": "4c6bbdb0-5672-4fc1-8ad2-2384fce42b2b",
     "seriesId": "hardcore",
     "hex": "#FFF386",
     "code": "RV-222",
     "name": {
+      "es": "Amarillo Playa",
       "en": "Beach Yellow"
     },
     "lab": {
-      "l": 95.14,
-      "a": -6.24,
-      "b": 53.6
+      "l": 94.77,
+      "a": -10.17,
+      "b": 53.63
     }
   },
   {
-    "id": "76aa879f-757a-4654-a77b-8f5f3efb4542",
+    "id": "9b6f9ddf-340a-49c9-b836-61d8a6bcd26f",
     "seriesId": "hardcore",
     "hex": "#C8739F",
     "code": "RV-224",
     "name": {
+      "es": "Violeta Bruja",
       "en": "Witch Violet"
     },
     "lab": {
-      "l": 59.2,
-      "a": 38.38,
-      "b": -8.55
+      "l": 59.02,
+      "a": 39.11,
+      "b": -9.09
     }
   },
   {
-    "id": "7dae0d4d-6206-403c-8738-07c0919d78cc",
+    "id": "747b5441-195b-4ac1-b1b1-9074c060d49c",
     "seriesId": "hardcore",
     "hex": "#C15C92",
     "code": "RV-225",
     "name": {
+      "es": "Violeta Geisha",
       "en": "Geisha Violet"
     },
     "lab": {
-      "l": 53.25,
-      "a": 45.81,
-      "b": -9.92
+      "l": 53.03,
+      "a": 46.68,
+      "b": -10.58
     }
   },
   {
-    "id": "571dafe4-2633-4756-a0e9-ae88c20ea06d",
+    "id": "41d6c805-d698-4585-93ea-af7cfc1238a9",
     "seriesId": "hardcore",
     "hex": "#7C3F60",
     "code": "RV-226",
     "name": {
+      "es": "Violeta Tube",
       "en": "Tube Violet"
     },
     "lab": {
-      "l": 35.51,
-      "a": 30.19,
-      "b": -7.15
+      "l": 35.37,
+      "a": 30.8,
+      "b": -7.58
     }
   },
   {
-    "id": "81037fc0-4d1f-4d38-89bd-4a23f9e395fd",
+    "id": "3b8e506a-e8c2-4b17-8750-e06a53820eba",
     "seriesId": "hardcore",
     "hex": "#6F9FD0",
     "code": "RV-227",
     "name": {
+      "es": "Azul Waimea",
       "en": "Waimea Blue"
     },
     "lab": {
-      "l": 63.52,
-      "a": -6.58,
-      "b": -30.58
+      "l": 63.94,
+      "a": -2.87,
+      "b": -30.04
     }
   },
   {
-    "id": "532ec8cc-b88f-4a2b-ad1b-983411168957",
+    "id": "ce612cf7-602e-47f7-9ba9-ada494a5f7a0",
     "seriesId": "hardcore",
     "hex": "#4875B3",
     "code": "RV-228",
     "name": {
+      "es": "Azul Zéppelin",
       "en": "Zeppelin Blue"
     },
     "lab": {
-      "l": 48.17,
-      "a": -1.11,
-      "b": -38.21
+      "l": 48.7,
+      "a": 3.75,
+      "b": -37.51
     }
   },
   {
-    "id": "9d106dbd-5e63-4213-a292-95bf49c2a620",
+    "id": "72496f0f-e621-4ab9-8db9-2da2fee6f111",
     "seriesId": "hardcore",
     "hex": "#465499",
     "code": "RV-229",
     "name": {
+      "es": "Azul Andrómeda",
       "en": "Andromeda Blue"
     },
     "lab": {
-      "l": 37.21,
-      "a": 10.51,
-      "b": -40.21
+      "l": 37.74,
+      "a": 15.27,
+      "b": -39.55
     }
   },
   {
-    "id": "7c7dd4da-9521-40d7-8e98-28672cf06988",
+    "id": "d7bd0def-601a-4fb8-96b4-7d157bd113e1",
     "seriesId": "hardcore",
     "hex": "#0D0F49",
     "code": "RV-230",
     "name": {
+      "es": "Azul Leviatán",
       "en": "Leviathan Blue"
     },
     "lab": {
-      "l": 7.55,
-      "a": 17.88,
-      "b": -36.94
+      "l": 8.2,
+      "a": 22.18,
+      "b": -36.02
     }
   },
   {
-    "id": "67c679fa-ed37-4fca-b980-1c0d25a5c2af",
+    "id": "57a3e71d-c202-4c2f-886f-bfbb471c1ccf",
     "seriesId": "hardcore",
     "hex": "#1BB2C4",
     "code": "RV-231",
     "name": {
+      "es": "Azul Cousteau",
       "en": "Cousteau Blue"
     },
     "lab": {
-      "l": 66.14,
-      "a": -33.03,
-      "b": -20.26
+      "l": 66.56,
+      "a": -29.92,
+      "b": -19.58
     }
   },
   {
-    "id": "0efb48aa-9ae6-4aa4-98f5-41f7cdfec7d6",
+    "id": "582f4d1b-3b9d-416b-866a-a76c3fcc4c8d",
     "seriesId": "hardcore",
     "hex": "#009CAB",
     "code": "RV-232",
     "name": {
+      "es": "Azul Glaciar",
       "en": "Glacier Blue"
     },
     "lab": {
-      "l": 58.32,
-      "a": -31.31,
-      "b": -18.18
+      "l": 58.71,
+      "a": -28.46,
+      "b": -17.54
     }
   },
   {
-    "id": "9fbd0c50-779f-4bfb-962d-271167135eac",
+    "id": "282c9e68-f3bd-4f70-9cc4-db78d5bb275d",
     "seriesId": "hardcore",
     "hex": "#006675",
     "code": "RV-233",
     "name": {
+      "es": "Azul Christiania",
       "en": "Christiania Blue"
     },
     "lab": {
-      "l": 38.9,
-      "a": -21.7,
-      "b": -16.04
+      "l": 39.22,
+      "a": -19.24,
+      "b": -15.55
     }
   },
   {
-    "id": "2a70e454-765f-46dd-8c78-ea421cbca600",
+    "id": "b7a3ef1b-4bdd-45e0-9d98-8707695994ea",
     "seriesId": "hardcore",
     "hex": "#004750",
     "code": "RV-234",
     "name": {
+      "es": "Azul Índigo",
       "en": "Indigo Blue"
     },
     "lab": {
-      "l": 26.74,
-      "a": -17.53,
-      "b": -11.33
+      "l": 26.98,
+      "a": -15.78,
+      "b": -10.96
     }
   },
   {
-    "id": "6926dcf6-ec53-4650-8ee3-ad1b19c5158d",
+    "id": "b323bac4-4697-4c2e-af15-c53416a1112a",
     "seriesId": "hardcore",
     "hex": "#DEDD3A",
     "code": "RV-235",
     "name": {
+      "es": "Verde Veneno",
       "en": "Poison Green"
     },
     "lab": {
-      "l": 86.18,
-      "a": -12.84,
-      "b": 73.82
+      "l": 85.78,
+      "a": -17.69,
+      "b": 74.42
     }
   },
   {
-    "id": "5ea9e072-6a76-4b1b-9a6b-125309564906",
+    "id": "de6fb236-80f0-4148-b5b2-bdcbb15e8321",
     "seriesId": "hardcore",
     "hex": "#CED50A",
     "code": "RV-236",
     "name": {
+      "es": "Verde Mojito",
       "en": "Mojito Green"
     },
     "lab": {
-      "l": 82.62,
-      "a": -16.6,
-      "b": 79.96
+      "l": 82.24,
+      "a": -21.68,
+      "b": 80.94
     }
   },
   {
-    "id": "70a5077f-3062-4241-b9f3-b9cda29f2543",
+    "id": "d8d1c1e4-8ce4-41f9-bdcd-4d57bdcfd13a",
     "seriesId": "hardcore",
     "hex": "#6A8515",
     "code": "RV-237",
     "name": {
+      "es": "Verde Cologno N.",
       "en": "Cologno N. Green"
     },
     "lab": {
-      "l": 51.91,
-      "a": -21.31,
-      "b": 50.73
+      "l": 51.72,
+      "a": -24.92,
+      "b": 51.47
     }
   },
   {
-    "id": "43ba9608-2026-4d1b-ac12-17daa3c473fa",
+    "id": "be0ab85b-b1ef-46d7-a408-44ff51a64abc",
     "seriesId": "hardcore",
     "hex": "#FAB700",
     "code": "RV-239",
     "name": {
+      "es": "Amarillo Luxor",
       "en": "Luxor Yellow"
     },
     "lab": {
-      "l": 79.17,
-      "a": 16.48,
-      "b": 80.93
+      "l": 78.58,
+      "a": 12.41,
+      "b": 81.11
     }
   },
   {
-    "id": "47ba9e2d-e1e5-4e7e-91ba-57eee6de37b7",
+    "id": "5377b671-cc48-429c-baf7-c8787e3e6d72",
     "seriesId": "hardcore",
     "hex": "#C52332",
     "code": "RV-241",
     "name": {
+      "es": "Rojo Madrid",
       "en": "Madrid Red"
     },
     "lab": {
-      "l": 43.98,
-      "a": 62.22,
-      "b": 35.58
+      "l": 43.22,
+      "a": 61.66,
+      "b": 33.94
     }
   },
   {
-    "id": "e80b8f49-f33a-44a1-94a7-662f28159bfa",
+    "id": "a65ccf3d-5773-444c-9df0-19aaeb8d581a",
     "seriesId": "hardcore",
     "hex": "#8D0000",
     "code": "RV-242",
     "name": {
+      "es": "Rojo Soviet",
       "en": "Soviet Red"
     },
     "lab": {
-      "l": 29.23,
-      "a": 52,
-      "b": 43.39
+      "l": 28.55,
+      "a": 51.53,
+      "b": 41.86
     }
   },
   {
-    "id": "7bb29aeb-a923-4b35-8e22-75bfd510e223",
+    "id": "c9301451-b1d3-4e35-a0ea-e793f67338ec",
     "seriesId": "hardcore",
     "hex": "#3D5588",
     "code": "RV-243",
     "name": {
+      "es": "Azul Babilonia",
       "en": "Babylon Blue"
     },
     "lab": {
-      "l": 36.07,
-      "a": 2.85,
-      "b": -31.79
+      "l": 36.49,
+      "a": 6.72,
+      "b": -31.26
     }
   },
   {
-    "id": "7c29a96c-fb5b-400a-9401-892f89b5d725",
+    "id": "977b6e25-ac4f-47e5-bb92-9b15cf433806",
     "seriesId": "hardcore",
     "hex": "#EECF99",
     "code": "RV-246",
     "name": {
+      "es": "Marrón Druída",
       "en": "Druide Brown"
     },
     "lab": {
-      "l": 84.84,
-      "a": 5.72,
-      "b": 31.11
+      "l": 84.54,
+      "a": 3.34,
+      "b": 30.87
     }
   },
   {
-    "id": "c3e9d1eb-7d5c-4c78-bdad-4409da68e5e5",
+    "id": "1b25dc51-6eaf-4a47-982a-679599854c5a",
     "seriesId": "hardcore",
     "hex": "#DEB276",
     "code": "RV-247",
     "name": {
+      "es": "Marron Tepuy",
       "en": "Tepuy Brown"
     },
     "lab": {
-      "l": 75.62,
-      "a": 11.01,
-      "b": 36.95
+      "l": 75.25,
+      "a": 8.45,
+      "b": 36.63
     }
   },
   {
-    "id": "fd3e59ed-0c30-4fc3-a855-2cc6dd7ac86c",
+    "id": "a3fec1b1-14ad-4d3d-995b-97a733fc7aa6",
     "seriesId": "hardcore",
     "hex": "#CC9456",
     "code": "RV-248",
     "name": {
+      "es": "Marrón Baobab",
       "en": "Baobab Brown"
     },
     "lab": {
-      "l": 65.93,
-      "a": 16.85,
-      "b": 41.1
+      "l": 65.51,
+      "a": 14.32,
+      "b": 40.7
     }
   },
   {
-    "id": "e978812b-c035-4fb8-a291-f75ec57903d2",
+    "id": "9935e79f-67e9-480d-b7da-d6ff7282e9cb",
     "seriesId": "hardcore",
     "hex": "#B0763F",
     "code": "RV-249",
     "name": {
+      "es": "Marrón Galgo",
       "en": "Greyhound Brown"
     },
     "lab": {
-      "l": 55.02,
-      "a": 19.45,
-      "b": 39.37
+      "l": 54.6,
+      "a": 17.23,
+      "b": 38.94
     }
   },
   {
-    "id": "6451643e-5d4c-440d-88ed-3ff21f5685ac",
+    "id": "cdff2747-2b8d-4126-b00a-853009b2a627",
     "seriesId": "hardcore",
     "hex": "#8F995B",
     "code": "RV-250",
     "name": {
+      "es": "Verde Rambo",
       "en": "Rambo Green"
     },
     "lab": {
-      "l": 61.29,
-      "a": -11.21,
-      "b": 31.26
+      "l": 61.11,
+      "a": -13.71,
+      "b": 31.37
     }
   },
   {
-    "id": "22daad05-ebbc-4243-a5a1-c73ff1e27891",
+    "id": "63f97e9f-8018-4d24-8466-5af4e1c6b628",
     "seriesId": "hardcore",
     "hex": "#46502C",
     "code": "RV-251",
     "name": {
+      "es": "Verde Bosque",
       "en": "Forest Green"
     },
     "lab": {
-      "l": 32.41,
-      "a": -9.2,
-      "b": 19.78
+      "l": 32.31,
+      "a": -10.81,
+      "b": 19.89
     }
   },
   {
-    "id": "70325ec0-008a-4afc-a1d2-8378c163f904",
+    "id": "e4183fc9-f364-4e54-b4c3-b8788098cb1b",
     "seriesId": "hardcore",
     "hex": "#FFFFBF",
     "code": "RV-252",
     "name": {
+      "es": "Amarillo Unicornio",
       "en": "Unicorn Yellow"
     },
     "lab": {
-      "l": 98.87,
-      "a": -7.25,
-      "b": 30.73
+      "l": 98.65,
+      "a": -9.81,
+      "b": 30.69
     }
   },
   {
-    "id": "e8a25168-d3e3-48b4-a39e-9aa1d09b211f",
+    "id": "f8dc19f0-fe35-4cb7-9e7e-6d42576e6d6d",
     "seriesId": "hardcore",
     "hex": "#C5CC8F",
     "code": "RV-253",
     "name": {
+      "es": "Verde Elemento",
       "en": "Element Green"
     },
     "lab": {
-      "l": 80.39,
-      "a": -9.72,
-      "b": 29.65
+      "l": 80.2,
+      "a": -12.18,
+      "b": 29.68
     }
   },
   {
-    "id": "d99a91ed-e954-478c-9389-9cddb0ff23f2",
+    "id": "bb7e7de4-0501-46bb-a7e4-402da0731010",
     "seriesId": "hardcore",
     "hex": "#9FE5C2",
     "code": "RV-254",
     "name": {
+      "es": "Verde Max",
       "en": "Max Green"
     },
     "lab": {
-      "l": 85.58,
-      "a": -28.25,
-      "b": 9.81
+      "l": 85.66,
+      "a": -29.1,
+      "b": 10.15
     }
   },
   {
-    "id": "8f2b92bc-3837-45c7-a40a-aead90e523d9",
+    "id": "8d07589a-5698-4121-abe3-f4fa1180b934",
     "seriesId": "hardcore",
     "hex": "#83CCDF",
     "code": "RV-255",
     "name": {
+      "es": "Azul Patagonia",
       "en": "Patagonia Blue"
     },
     "lab": {
-      "l": 77.76,
-      "a": -20.06,
-      "b": -17.06
+      "l": 78.07,
+      "a": -17.91,
+      "b": -16.58
     }
   },
   {
-    "id": "11f9eacf-d4a7-4d25-b816-873c13371263",
+    "id": "1939118c-5635-4853-9196-dec3e19c3819",
     "seriesId": "hardcore",
     "hex": "#ACA6D1",
     "code": "RV-256",
     "name": {
+      "es": "Malva",
       "en": "Malva"
     },
     "lab": {
-      "l": 69.74,
-      "a": 8.84,
-      "b": -21.2
+      "l": 69.93,
+      "a": 10.93,
+      "b": -21.05
     }
   },
   {
-    "id": "778538c6-5619-4b75-ae5c-85b66d904346",
+    "id": "c9b0095d-c46b-4588-aab0-6983012b1b8f",
     "seriesId": "hardcore",
     "hex": "#CA87B6",
     "code": "RV-257",
     "name": {
+      "es": "Violeta Princesa",
       "en": "Princess Violet"
     },
     "lab": {
-      "l": 64.44,
-      "a": 31.63,
-      "b": -13.81
+      "l": 64.37,
+      "a": 32.77,
+      "b": -14.15
     }
   },
   {
-    "id": "7ab1ef2c-8be1-4d8f-904d-44f8129cd34f",
+    "id": "1d9c2981-7ad8-495b-b0a0-8b363154542e",
     "seriesId": "hardcore",
     "hex": "#FFA2CA",
     "code": "RV-258",
     "name": {
+      "es": "Rosa Manga",
       "en": "Manga Pink"
     },
     "lab": {
-      "l": 77.12,
-      "a": 39.2,
-      "b": -5.33
+      "l": 76.9,
+      "a": 39.67,
+      "b": -5.92
     }
   },
   {
-    "id": "9bd674f1-f7f7-4bcb-8d44-81af811495b0",
+    "id": "387a3904-b174-409a-bd58-7594ab05ae7b",
     "seriesId": "hardcore",
     "hex": "#FF958E",
     "code": "RV-259",
     "name": {
+      "es": "Flamingo",
       "en": "Flamingo"
     },
     "lab": {
-      "l": 73.18,
-      "a": 40.22,
-      "b": 21.93
+      "l": 72.7,
+      "a": 39,
+      "b": 21.05
     }
   },
   {
-    "id": "05233121-b5b5-479e-a5f6-9f6f8a86dddb",
+    "id": "ed0aad66-3296-4a70-9883-f2575a7fc736",
     "seriesId": "hardcore",
     "hex": "#5E0000",
     "code": "RV-260",
     "name": {
+      "es": "Rojo Iroko",
       "en": "Iroko Red"
     },
     "lab": {
-      "l": 17.88,
-      "a": 38.95,
-      "b": 27.88
+      "l": 17.37,
+      "a": 38.6,
+      "b": 26.85
     }
   },
   {
-    "id": "8dc62271-7c94-485b-9f7c-b4897f5ff4a2",
+    "id": "fb96a9a3-4247-4d47-a17a-7f05630a21ce",
     "seriesId": "hardcore",
     "hex": "#933B00",
     "code": "RV-261",
     "name": {
+      "es": "Marrón Pangea",
       "en": "Pangea Brown"
     },
     "lab": {
-      "l": 37.17,
-      "a": 36.16,
-      "b": 48.47
+      "l": 36.62,
+      "a": 34.71,
+      "b": 47.68
     }
   },
   {
-    "id": "a234c75e-891c-49bb-8431-a54756d39cbf",
+    "id": "a38e8ae4-1cdf-40c7-ade7-102c29ec215e",
     "seriesId": "hardcore",
     "hex": "#7B7B7B",
     "code": "RV-262",
     "name": {
+      "es": "Gris Materia",
       "en": "Matter Grey"
     },
     "lab": {
@@ -1204,11 +1304,12 @@
     }
   },
   {
-    "id": "1cf26c7d-663f-4346-a61c-4798993bac00",
+    "id": "e0380672-07b3-43a7-8dde-667a374d96ce",
     "seriesId": "hardcore",
     "hex": "#575757",
     "code": "RV-263",
     "name": {
+      "es": "Gris Sputnik",
       "en": "Sputnik Grey"
     },
     "lab": {
@@ -1218,655 +1319,716 @@
     }
   },
   {
-    "id": "c0fc996b-c3c7-4911-9eaf-e38f86333752",
+    "id": "5c537ce5-a530-4e75-9194-e477e3429e13",
     "seriesId": "hardcore",
     "hex": "#2F2280",
     "code": "RV-264",
     "name": {
+      "es": "Violeta Galaxia",
       "en": "Galaxy Violet"
     },
     "lab": {
-      "l": 20.39,
-      "a": 28.89,
-      "b": -52.07
+      "l": 21.23,
+      "a": 34.53,
+      "b": -50.92
     }
   },
   {
-    "id": "61bd9731-9b2e-46d2-b2ad-557b202e94fb",
+    "id": "b37d5334-3427-46fc-b047-5868b6f251c8",
     "seriesId": "hardcore",
     "hex": "#60B565",
     "code": "RV-272",
     "name": {
+      "es": "Verde Menta",
       "en": "Mint Green"
     },
     "lab": {
-      "l": 66.91,
-      "a": -39.6,
-      "b": 32.38
+      "l": 66.88,
+      "a": -42.55,
+      "b": 32.93
     }
   },
   {
-    "id": "619747fc-0a1a-4557-bee7-2be0690c9c92",
+    "id": "ffeedeca-d468-42eb-862d-4de7f8022935",
     "seriesId": "hardcore",
     "hex": "#F6B8D0",
     "code": "RV-349",
     "name": {
+      "es": "Violeta Treze",
       "en": "Violet Treze"
     },
     "lab": {
-      "l": 81.12,
-      "a": 25.71,
-      "b": -2.89
+      "l": 80.98,
+      "a": 25.94,
+      "b": -3.28
     }
   },
   {
-    "id": "fb61e0e9-5878-4ec9-aecd-295faca13b28",
+    "id": "154acdc2-c5b3-4e51-b766-6a81d9a15760",
     "seriesId": "hardcore",
     "hex": "#8F154B",
     "code": "RV-350",
     "name": {
+      "es": "Púrpura Puro",
       "en": "Pure Purple"
     },
     "lab": {
-      "l": 31.98,
-      "a": 51.36,
-      "b": 1.73
+      "l": 31.55,
+      "a": 51.8,
+      "b": 0.7
     }
   },
   {
-    "id": "11e2f3c1-41b8-4bcc-973c-090c03df8535",
+    "id": "15a0cd5f-eefb-4d3e-b311-7c36800a3066",
     "seriesId": "hardcore",
     "hex": "#889ED1",
     "code": "RV-351",
     "name": {
+      "es": "Azul Hortensia",
       "en": "Hortensia Blue"
     },
     "lab": {
-      "l": 64.85,
-      "a": 1.35,
-      "b": -28.94
+      "l": 65.19,
+      "a": 4.57,
+      "b": -28.54
     }
   },
   {
-    "id": "0841ed75-7715-44ec-9fab-bdf33ff97fbc",
+    "id": "43cff40e-ed04-4a17-b29a-ce1f59b2ae93",
     "seriesId": "hardcore",
     "hex": "#5D78BA",
     "code": "RV-352",
     "name": {
+      "es": "Azul Gala",
       "en": "Gala Blue"
     },
     "lab": {
-      "l": 50.54,
-      "a": 4.3,
-      "b": -38.41
+      "l": 51.04,
+      "a": 8.87,
+      "b": -37.79
     }
   },
   {
-    "id": "ad9b6646-3769-40fd-8c6b-588d51b6921a",
+    "id": "ddd9567f-47ae-422f-9be9-5e5ff6180173",
     "seriesId": "hardcore",
     "hex": "#40549F",
     "code": "RV-353",
     "name": {
+      "es": "Azul Julione",
       "en": "Julione Blue"
     },
     "lab": {
-      "l": 37.11,
-      "a": 10.67,
-      "b": -43.98
+      "l": 37.72,
+      "a": 16.03,
+      "b": -43.2
     }
   },
   {
-    "id": "308bdde4-a1a7-4e66-a926-fde2213e76ba",
+    "id": "7e543ebe-6c66-467b-9a1d-910480657b40",
     "seriesId": "hardcore",
     "hex": "#0F2354",
     "code": "RV-354",
     "name": {
+      "es": "Azul Universo",
       "en": "Universe Blue"
     },
     "lab": {
-      "l": 14.67,
-      "a": 7.96,
-      "b": -32.86
+      "l": 15.19,
+      "a": 12.21,
+      "b": -32.15
     }
   },
   {
-    "id": "f475cfb1-f41c-4459-8b88-bfe333929f06",
+    "id": "93063b1b-18cd-492c-85eb-66742d64e554",
     "seriesId": "hardcore",
     "hex": "#8ECFD3",
     "code": "RV-355",
     "name": {
+      "es": "Azul Fukushima",
       "en": "Fukushima Blue"
     },
     "lab": {
-      "l": 78.87,
-      "a": -20.66,
-      "b": -8.95
+      "l": 79.09,
+      "a": -19.51,
+      "b": -8.56
     }
   },
   {
-    "id": "71ed03d3-131b-4c57-964b-14b231fbf43e",
+    "id": "54cf4930-f874-43c5-85b1-d16853adda3e",
     "seriesId": "hardcore",
     "hex": "#97D2D0",
     "code": "RV-356",
     "name": {
+      "es": "Azul Vintage",
       "en": "Vintage Blue"
     },
     "lab": {
-      "l": 80.13,
-      "a": -19.91,
-      "b": -5.43
+      "l": 80.31,
+      "a": -19.19,
+      "b": -5.1
     }
   },
   {
-    "id": "d288380a-ebbd-4c1b-a03e-a33301bc8c4d",
+    "id": "52c2e526-c730-4a47-b8ea-c5520453794f",
     "seriesId": "hardcore",
     "hex": "#6EC3BF",
     "code": "RV-357",
     "name": {
+      "es": "Azul Iceberg",
       "en": "Iceberg Blue"
     },
     "lab": {
-      "l": 73.38,
-      "a": -27.69,
-      "b": -6.49
+      "l": 73.61,
+      "a": -26.7,
+      "b": -6.04
     }
   },
   {
-    "id": "5cd6313b-e60e-4f40-901f-27c9c73d7748",
+    "id": "629dff44-662d-4034-8402-b8a8a2591404",
     "seriesId": "hardcore",
     "hex": "#60B3AC",
     "code": "RV-358",
     "name": {
+      "es": "Azul Nenúfar",
       "en": "Water Lily Blue"
     },
     "lab": {
-      "l": 67.59,
-      "a": -27.78,
-      "b": -4.71
+      "l": 67.8,
+      "a": -26.99,
+      "b": -4.27
     }
   },
   {
-    "id": "f995e0d0-e657-439e-9650-48e19bfa6c55",
+    "id": "f0dbf9dc-b827-4388-8df2-943d10ffd850",
     "seriesId": "hardcore",
     "hex": "#008C8D",
     "code": "RV-359",
     "name": {
+      "es": "Azul Mururoa",
       "en": "Mururoa Blue"
     },
     "lab": {
-      "l": 52.3,
-      "a": -32.18,
-      "b": -10.11
+      "l": 52.59,
+      "a": -30.46,
+      "b": -9.58
     }
   },
   {
-    "id": "eb54c1da-4206-4d5d-b367-0eef0c589051",
+    "id": "e1792740-6da8-4b0b-9a77-d2a0e6f36f90",
     "seriesId": "hardcore",
     "hex": "#1F6363",
     "code": "RV-360",
     "name": {
+      "es": "Azul Major",
       "en": "Major Blue"
     },
     "lab": {
-      "l": 37.85,
-      "a": -21.7,
-      "b": -6.59
+      "l": 38.05,
+      "a": -20.64,
+      "b": -6.22
     }
   },
   {
-    "id": "411078e7-7457-47fe-a6d4-f21625f8dc64",
+    "id": "55efba4d-e814-4165-9292-2ace1f7dd4a5",
     "seriesId": "hardcore",
     "hex": "#C5EFDA",
     "code": "RV-361",
     "name": {
+      "es": "Verde Potosí",
       "en": "Potosi Green"
     },
     "lab": {
-      "l": 91.03,
-      "a": -17.12,
-      "b": 5.47
+      "l": 91.08,
+      "a": -17.58,
+      "b": 5.67
     }
   },
   {
-    "id": "35551a82-c62c-482e-990d-53584997d444",
+    "id": "d2fb68de-b157-4f46-8dd3-874927c3be13",
     "seriesId": "hardcore",
     "hex": "#78BE7A",
     "code": "RV-362",
     "name": {
+      "es": "Verde Mantis",
       "en": "Mantis Green"
     },
     "lab": {
-      "l": 71.06,
-      "a": -33.45,
-      "b": 27.17
+      "l": 71.02,
+      "a": -35.92,
+      "b": 27.58
     }
   },
   {
-    "id": "fabce640-2468-4a43-bba4-3549c5a3e26f",
+    "id": "a1ff90fd-b92b-4dc4-b49c-f12874c6ff2f",
     "seriesId": "hardcore",
     "hex": "#00964F",
     "code": "RV-363",
     "name": {
+      "es": "Verde Natura",
       "en": "Natura Green"
     },
     "lab": {
-      "l": 54.38,
-      "a": -47.9,
-      "b": 27.43
+      "l": 54.42,
+      "a": -50.53,
+      "b": 28.09
     }
   },
   {
-    "id": "5526230b-315d-4ed3-a16b-f5f0d278fc6c",
+    "id": "fbf7a85e-ad09-437a-ae5d-afbf6833a12e",
     "seriesId": "hardcore",
     "hex": "#006942",
     "code": "RV-364",
     "name": {
+      "es": "Verde Reggae",
       "en": "Reggae Green"
     },
     "lab": {
-      "l": 38.65,
-      "a": -35.05,
-      "b": 14.32
+      "l": 38.72,
+      "a": -36.39,
+      "b": 14.75
     }
   },
   {
-    "id": "99af8341-ff21-4f0e-ab98-206598366694",
+    "id": "8331f0f8-7f2a-457d-a3f8-66fae2974d98",
     "seriesId": "hardcore",
     "hex": "#F9F7EA",
     "code": "RV-365",
     "name": {
+      "es": "Blanco Puchineli",
       "en": "Puchineli White"
     },
     "lab": {
-      "l": 97.12,
-      "a": -0.96,
-      "b": 6.52
+      "l": 97.07,
+      "a": -1.55,
+      "b": 6.48
     }
   },
   {
-    "id": "06cb645f-5095-4633-943a-831184bc56ac",
+    "id": "eb1ed003-cfec-47ea-a820-703b795d1d9c",
     "seriesId": "hardcore",
     "hex": "#C4C5C6",
     "code": "RV-366",
     "name": {
+      "es": "Gris Squatter",
       "en": "Squatter Grey"
     },
     "lab": {
-      "l": 79.46,
-      "a": -0.22,
-      "b": -0.63
+      "l": 79.47,
+      "a": -0.16,
+      "b": -0.62
     }
   },
   {
-    "id": "a3639d96-9c0f-4345-bc86-4498158dff4d",
+    "id": "6a06f832-912d-45aa-a8e2-423de514f7c6",
     "seriesId": "hardcore",
     "hex": "#F3EFD6",
     "code": "RV-1013",
     "name": {
+      "es": "Blanco hueso",
       "en": "Bone white"
     },
     "lab": {
-      "l": 94.27,
-      "a": -1.69,
-      "b": 12.65
+      "l": 94.16,
+      "a": -2.81,
+      "b": 12.58
     }
   },
   {
-    "id": "dbfb2b3e-4f86-4af0-9ca3-13d2a7f0894d",
+    "id": "8bafa6fc-1754-481f-94be-965a0c951dbf",
     "seriesId": "hardcore",
     "hex": "#F9BA57",
     "code": "RV-1017",
     "name": {
+      "es": "Melocotón",
       "en": "Peach"
     },
     "lab": {
-      "l": 80.1,
-      "a": 16.37,
-      "b": 57.96
+      "l": 79.59,
+      "a": 12.94,
+      "b": 57.66
     }
   },
   {
-    "id": "2ab2c485-ee68-4b71-b326-55ecbaaae812",
+    "id": "92641b05-2947-4a90-bd98-66fef6339028",
     "seriesId": "hardcore",
     "hex": "#FFE100",
     "code": "RV-1021",
     "name": {
+      "es": "Amarillo Claro",
       "en": "Light Yellow"
     },
     "lab": {
-      "l": 89.96,
-      "a": -1.87,
-      "b": 88.2
+      "l": 89.45,
+      "a": -6.95,
+      "b": 88.92
     }
   },
   {
-    "id": "0f278701-e924-4151-84d3-ee2016c7d1fd",
+    "id": "82d97950-0915-4292-8820-c156fb6e512f",
     "seriesId": "hardcore",
     "hex": "#F6A800",
     "code": "RV-1028",
     "name": {
+      "es": "Amarillo Medio",
       "en": "Medium Yellow"
     },
     "lab": {
-      "l": 75.19,
-      "a": 22.29,
-      "b": 78.22
+      "l": 74.57,
+      "a": 18.57,
+      "b": 78.2
     }
   },
   {
-    "id": "3dd1dfef-ad58-423d-ba3b-24f7224b369a",
+    "id": "881b202f-0b21-498e-b881-1cf596ae736c",
     "seriesId": "hardcore",
     "hex": "#EC753B",
     "code": "RV-2003",
     "name": {
+      "es": "Naranja Pastel",
       "en": "Pastel Orange"
     },
     "lab": {
-      "l": 63.08,
-      "a": 44.24,
-      "b": 52.78
+      "l": 62.4,
+      "a": 42.13,
+      "b": 51.77
     }
   },
   {
-    "id": "afdcdc62-c6a0-441f-a498-ab743ec77edc",
+    "id": "cca6f2fd-ad72-4157-a22f-0ba426c571f9",
     "seriesId": "hardcore",
     "hex": "#E95E0F",
     "code": "RV-2004",
     "name": {
+      "es": "Naranja Kalani",
       "en": "Kalani Orange"
     },
     "lab": {
-      "l": 58.21,
-      "a": 52.76,
-      "b": 65.08
+      "l": 57.43,
+      "a": 50.84,
+      "b": 63.85
     }
   },
   {
-    "id": "43801835-be56-46c7-a66d-759f9e127c89",
+    "id": "2c2c9f38-e84e-465b-abd5-80d86b387207",
     "seriesId": "hardcore",
     "hex": "#C90019",
     "code": "RV-3001",
     "name": {
+      "es": "Rojo Vivo",
       "en": "Vivid Red"
     },
     "lab": {
-      "l": 42.85,
-      "a": 67.75,
-      "b": 48.78
+      "l": 41.99,
+      "a": 67.25,
+      "b": 46.75
     }
   },
   {
-    "id": "574fa679-75c3-4093-9953-520c02540735",
+    "id": "d0dcb005-5456-47de-849b-98000a30254a",
     "seriesId": "hardcore",
     "hex": "#82131D",
     "code": "RV-3004",
     "name": {
+      "es": "Rojo Burdeos",
       "en": "Bordeaux Red"
     },
     "lab": {
-      "l": 28.14,
-      "a": 45.93,
-      "b": 26.59
+      "l": 27.58,
+      "a": 45.51,
+      "b": 25.38
     }
   },
   {
-    "id": "eb9c6af6-782b-412f-903a-eec07c4c35f0",
+    "id": "76bb6227-c665-409c-b7b2-49d5d71bf6a6",
     "seriesId": "hardcore",
     "hex": "#E5352D",
     "code": "RV-3020",
     "name": {
+      "es": "Rojo Claro",
       "en": "Light Red"
     },
     "lab": {
-      "l": 52,
-      "a": 66.64,
-      "b": 48.77
+      "l": 51.15,
+      "a": 65.71,
+      "b": 46.97
     }
   },
   {
-    "id": "fdd2c2e5-a6df-43d7-acc1-948b519da797",
+    "id": "17b4c5af-9a38-4e28-8d4e-fc46302268a1",
     "seriesId": "hardcore",
     "hex": "#DE336B",
     "code": "RV-4003",
     "name": {
+      "es": "Erika",
       "en": "Erika"
     },
     "lab": {
-      "l": 51.29,
-      "a": 67.43,
-      "b": 11.31
+      "l": 50.64,
+      "a": 67.55,
+      "b": 9.85
     }
   },
   {
-    "id": "ec8bc5cf-3c2e-4b36-b47f-5f0fb16c113d",
+    "id": "1d056dec-a5f0-40ed-9301-9d610e6010b7",
     "seriesId": "hardcore",
     "hex": "#582741",
     "code": "RV-4007",
     "name": {
+      "es": "Cereza",
       "en": "Cherry"
     },
     "lab": {
-      "l": 23.49,
-      "a": 25.6,
-      "b": -5.48
+      "l": 23.36,
+      "a": 26.09,
+      "b": -5.85
     }
   },
   {
-    "id": "9e74ef9f-f32a-4e83-bdd0-ac8a626ec8c5",
+    "id": "e45538fc-bf31-4d3f-a43e-f4968e3200ab",
     "seriesId": "hardcore",
     "hex": "#DD1D5A",
     "code": "RV-4010",
     "name": {
+      "es": "Magenta",
       "en": "Magenta"
     },
     "lab": {
-      "l": 48.99,
-      "a": 71.24,
-      "b": 18.57
+      "l": 48.25,
+      "a": 71.27,
+      "b": 16.9
     }
   },
   {
-    "id": "50c09029-8077-4794-8316-5ad0573b63ae",
+    "id": "63df6ff4-1b0c-42a7-84e9-4e1de0fd23c7",
     "seriesId": "hardcore",
     "hex": "#37306A",
     "code": "RV-5002",
     "name": {
+      "es": "Azul Ultramar",
       "en": "Ultramarine Blue"
     },
     "lab": {
-      "l": 23.14,
-      "a": 16.05,
-      "b": -33.53
+      "l": 23.56,
+      "a": 19.7,
+      "b": -33.03
     }
   },
   {
-    "id": "cfd20013-d5c7-4fad-9995-e9600fec66be",
+    "id": "6f2db66c-980f-4e95-8a88-113a814e4bba",
     "seriesId": "hardcore",
     "hex": "#00659D",
     "code": "RV-5005",
     "name": {
+      "es": "Azul Oscuro",
       "en": "Dark Blue"
     },
     "lab": {
-      "l": 40.2,
-      "a": -8.63,
-      "b": -38.04
+      "l": 40.8,
+      "a": -3.12,
+      "b": -37.21
     }
   },
   {
-    "id": "2dbdcc0c-5140-4859-9b10-7c1184269e03",
+    "id": "2a84db18-7fc2-448e-a070-2f5cbbe231dc",
     "seriesId": "hardcore",
     "hex": "#00454E",
     "code": "RV-5020",
     "name": {
+      "es": "Azul Océano",
       "en": "Ocean Blue"
     },
     "lab": {
-      "l": 25.95,
-      "a": -17.14,
-      "b": -11.24
+      "l": 26.17,
+      "a": -15.4,
+      "b": -10.88
     }
   },
   {
-    "id": "06324cff-76b9-4820-8ab1-981ba03388e0",
+    "id": "ca628112-89df-4578-87ac-692d298ded8c",
     "seriesId": "hardcore",
     "hex": "#60683D",
     "code": "RV-6003",
     "name": {
+      "es": "Verde Olivo",
       "en": "Olive Green"
     },
     "lab": {
-      "l": 42.47,
-      "a": -8.82,
-      "b": 23.11
+      "l": 42.35,
+      "a": -10.69,
+      "b": 23.2
     }
   },
   {
-    "id": "fb809fd4-e457-4706-8881-52e506174e55",
+    "id": "97bb5d0c-1e6d-4d4d-abdf-4321da874ed5",
     "seriesId": "hardcore",
     "hex": "#0F2405",
     "code": "RV-6009",
     "name": {
+      "es": "Verde Amazonas",
       "en": "Amazonas Green"
     },
     "lab": {
-      "l": 11.83,
-      "a": -14.3,
-      "b": 14.98
+      "l": 11.78,
+      "a": -15.77,
+      "b": 15.12
     }
   },
   {
-    "id": "ad07c01a-e829-40b1-af3e-2c4d020e0b4f",
+    "id": "9f4f0ae7-644b-4437-9fac-6b4375c89aa2",
     "seriesId": "hardcore",
     "hex": "#727E48",
     "code": "RV-6013",
     "name": {
+      "es": "Verde Caqui",
       "en": "Khaki Green"
     },
     "lab": {
-      "l": 50.8,
-      "a": -11.46,
-      "b": 27.76
+      "l": 50.65,
+      "a": -13.7,
+      "b": 27.89
     }
   },
   {
-    "id": "bea38627-7461-446d-bf83-d59493d98f8a",
+    "id": "2cddd751-c0f6-4beb-8d5d-cb9faa2ef7be",
     "seriesId": "hardcore",
     "hex": "#008352",
     "code": "RV-6016",
     "name": {
+      "es": "Verde Oscuro",
       "en": "Dark Green"
     },
     "lab": {
-      "l": 47.98,
-      "a": -41.3,
-      "b": 17.57
+      "l": 48.06,
+      "a": -42.95,
+      "b": 18.08
     }
   },
   {
-    "id": "4d8e447f-4bf1-4abb-917e-a25b17e02c1d",
+    "id": "8593f113-f620-44a6-a36f-1c36392e8639",
     "seriesId": "hardcore",
     "hex": "#6A9720",
     "code": "RV-6018",
     "name": {
+      "es": "Verde Valle",
       "en": "Valley Green"
     },
     "lab": {
-      "l": 57.54,
-      "a": -29.08,
-      "b": 52.46
+      "l": 57.37,
+      "a": -33.04,
+      "b": 53.29
     }
   },
   {
-    "id": "d045d6bb-ee78-40dd-9c7d-80ef7e675b24",
+    "id": "a304e7e5-9d75-44e4-b3b1-702b3150b629",
     "seriesId": "hardcore",
     "hex": "#CCE0AC",
     "code": "RV-6019",
     "name": {
+      "es": "Verde Pálido",
       "en": "Pale Green"
     },
     "lab": {
-      "l": 86.69,
-      "a": -13.54,
-      "b": 23.23
+      "l": 86.57,
+      "a": -15.57,
+      "b": 23.31
     }
   },
   {
-    "id": "1b52ba30-b609-4a00-80fe-bfd5218a4d8f",
+    "id": "ac53de1b-45ad-421b-a336-81a0212d94e5",
     "seriesId": "hardcore",
     "hex": "#464648",
     "code": "RV-7016",
     "name": {
+      "es": "Gris Antracita",
       "en": "Anthracite Grey"
     },
     "lab": {
-      "l": 29.78,
-      "a": 0.33,
-      "b": -1.21
+      "l": 29.79,
+      "a": 0.45,
+      "b": -1.2
     }
   },
   {
-    "id": "ff6686a2-abf3-4875-9d0f-d047ab368849",
+    "id": "325f35fb-3281-45d4-8149-dbeb9ec47f5b",
     "seriesId": "hardcore",
     "hex": "#616264",
     "code": "RV-7031",
     "name": {
+      "es": "Gris Oscuro",
       "en": "Dark Grey"
     },
     "lab": {
-      "l": 41.51,
-      "a": -0.09,
-      "b": -1.28
+      "l": 41.53,
+      "a": 0.03,
+      "b": -1.27
     }
   },
   {
-    "id": "77098cce-7312-4ef2-bad8-9156cdabe4a8",
+    "id": "0876d6c9-b4d2-48cf-a6dd-c8b4308a662f",
+    "seriesId": "hardcore",
+    "hex": "#7B7C7E",
+    "code": "RV-7040",
+    "name": {
+      "es": "Gris Perla"
+    },
+    "lab": {
+      "l": 51.99,
+      "a": 0.03,
+      "b": -1.22
+    }
+  },
+  {
+    "id": "12f5622c-e42b-4a35-a10d-af1d1c8089fa",
     "seriesId": "hardcore",
     "hex": "#8A5531",
     "code": "RV-8002",
     "name": {
+      "es": "Marrón Tostado",
       "en": "Toasted Brown"
     },
     "lab": {
-      "l": 41.77,
-      "a": 20.01,
-      "b": 30.33
+      "l": 41.41,
+      "a": 18.38,
+      "b": 29.87
     }
   },
   {
-    "id": "9be1bd41-2996-4721-a2d9-67e5e977e409",
+    "id": "82b6e897-16a5-4ac2-9cf1-af42332572c0",
     "seriesId": "hardcore",
     "hex": "#402009",
     "code": "RV-8017",
     "name": {
+      "es": "Marrón Tabaco",
       "en": "Tobacco Brown"
     },
     "lab": {
-      "l": 16.47,
-      "a": 14.3,
-      "b": 20.72
+      "l": 16.22,
+      "a": 13.31,
+      "b": 20.37
     }
   },
   {
-    "id": "5e9172ea-a867-43c3-904a-d2f86b5cf9c0",
+    "id": "11def81d-95e5-4a36-8eab-9a51cdab0f15",
     "seriesId": "hardcore",
     "hex": "#B9501A",
     "code": "RV-8023",
     "name": {
+      "es": "Mostaza",
       "en": "Mustard"
     },
     "lab": {
-      "l": 47.76,
-      "a": 41.39,
-      "b": 50.26
+      "l": 47.14,
+      "a": 39.7,
+      "b": 49.31
     }
   },
   {
-    "id": "4bbdc740-5bf3-4ada-8396-c910b91c1e87",
+    "id": "ce0f091b-915d-45ca-95b8-5538c9478935",
     "seriesId": "hardcore",
     "hex": "#FFFFFF",
     "code": "RV-9010",
     "name": {
+      "es": "Blanco Divinidad",
       "en": "Divinity White"
     },
     "lab": {
@@ -1876,29 +2038,16 @@
     }
   },
   {
-    "id": "10b64763-49b9-465d-ae5b-a6f602910f8b",
+    "id": "6120d243-955b-4db3-bf0c-93838c694b2f",
     "seriesId": "hardcore",
     "hex": "#000000",
     "code": "RV-9011",
     "name": {
+      "es": "Negro Brillante",
       "en": "Gloss Black"
     },
     "lab": {
       "l": 0,
-      "a": 0,
-      "b": 0
-    }
-  },
-  {
-    "id": "aaa977c4-0c89-4616-a6b8-fe811318232e",
-    "seriesId": "hardcore",
-    "hex": "#FFFFFF",
-    "code": "Satin",
-    "name": {
-      "en": "Black"
-    },
-    "lab": {
-      "l": 100,
       "a": 0,
       "b": 0
     }

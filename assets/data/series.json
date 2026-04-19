@@ -84,6 +84,34 @@
     }
   },
   {
+    "id": "loop",
+    "name": "Loop Standard",
+    "brandId": "loop",
+    "finishType": "satin",
+    "pressureType": "low",
+    "description": {
+      "es": "Loop Standard es la gama principal de Loop Colors, una marca italiana orientada al graffiti y el street art. Ofrece un acabado satinado, buena cobertura y una válvula equilibrada que permite tanto rellenos como trabajo de detalle. Destaca por su paleta moderna y su excelente relación calidad-precio.",
+      "en": "Loop Standard is the main line from Loop Colors, an Italian brand focused on graffiti and street art. It offers a satin finish, good coverage and a balanced valve suitable for both fills and detail work. It stands out for its modern colour palette and strong value for money.",
+      "de": "Loop Standard ist die Hauptserie von Loop Colors, einer italienischen Marke für Graffiti und Street Art. Satin-Finish, gute Deckkraft und ausgewogenes Ventil für Flächen und Details. Bekannt für eine moderne Farbpalette und gutes Preis-Leistungs-Verhältnis.",
+      "fr": "Loop Standard est la gamme principale de Loop Colors, une marque italienne dédiée au graffiti et au street art. Finition satinée, bonne couvrance et valve équilibrée pour remplissages et détails. Reconnue pour sa palette moderne et son bon rapport qualité-prix.",
+      "pt": "Loop Standard é a gama principal da Loop Colors, marca italiana voltada para graffiti e street art. Acabamento acetinado, boa cobertura e válvula equilibrada para preenchimentos e detalhes. Destaca-se pela paleta moderna e ótima relação custo-benefício."
+    }
+  },
+  {
+    "id": "ironlak",
+    "name": "Ironlak",
+    "brandId": "ironlak",
+    "finishType": "satin",
+    "pressureType": "low",
+    "description": {
+      "es": "Ironlak es la serie principal de la marca australiana del mismo nombre, con más de 100 colores únicos con nombres propios. Ofrece acabado satinado, buena opacidad y versatilidad tanto para rellenos como para detalles. Muy utilizada en la escena del graffiti de Oceanía y reconocida internacionalmente.",
+      "en": "Ironlak is the main line from the Australian brand of the same name, featuring over 100 unique colours with individual names. It offers a satin finish, good opacity and versatility for both fills and detail work. Widely used in the Oceanian graffiti scene and recognised internationally.",
+      "de": "Ironlak ist die Hauptserie der gleichnamigen australischen Marke mit über 100 einzigartigen Farben mit eigenen Namen. Satin-Finish, gute Deckkraft und Vielseitigkeit für Flächen und Details. In der ozeanischen Graffiti-Szene weit verbreitet und international bekannt.",
+      "fr": "Ironlak est la gamme principale de la marque australienne du même nom, avec plus de 100 couleurs uniques aux noms propres. Finition satinée, bonne opacité et polyvalence pour remplissages et détails. Très utilisée dans la scène graffiti d'Océanie et reconnue internationalement.",
+      "pt": "Ironlak é a série principal da marca australiana homónima, com mais de 100 cores únicas com nomes próprios. Acabamento acetinado, boa opacidade e versatilidade para preenchimentos e detalhes. Muito utilizada na cena de graffiti da Oceânia e reconhecida internacionalmente."
+    }
+  },
+  {
     "id": "vice",
     "name": "Montana Vice",
     "brandId": "montana",

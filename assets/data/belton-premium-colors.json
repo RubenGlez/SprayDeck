@@ -1,1047 +1,1047 @@
 [
   {
-    "id": "7d01d993-e9b4-468b-9060-04a2274198e1",
+    "id": "e105ac5c-c110-4bf3-9388-a7425eacfcfa",
     "seriesId": "belton-premium",
     "hex": "#FDF4A6",
     "code": "327.001",
     "name": {
-      "en": "Jasmin yellow"
+      "es": "Jasmin yellow"
     },
     "lab": {
-      "l": 95.59,
-      "a": -5.12,
-      "b": 38.79
+      "l": 95.3,
+      "a": -8.18,
+      "b": 38.72
     }
   },
   {
-    "id": "317d048c-491b-4a61-a599-a3d7b83a5f55",
+    "id": "931a5302-e78a-4a2a-acb7-68dc3e487a1b",
     "seriesId": "belton-premium",
     "hex": "#FFE26E",
     "code": "327.002",
     "name": {
-      "en": "Cashmere yellow"
+      "es": "Cashmere yellow"
     },
     "lab": {
-      "l": 90.65,
-      "a": 0.38,
-      "b": 59.36
+      "l": 90.22,
+      "a": -3.64,
+      "b": 59.35
     }
   },
   {
-    "id": "87706add-8c9b-4f02-b73c-14db25edefc2",
+    "id": "911d60d3-a545-42f5-9e97-3c041fc0be49",
     "seriesId": "belton-premium",
     "hex": "#FFCF59",
     "code": "327.003",
     "name": {
-      "en": "Quince"
+      "es": "Quince"
     },
     "lab": {
-      "l": 85.8,
-      "a": 8.57,
-      "b": 63.27
+      "l": 85.31,
+      "a": 4.66,
+      "b": 63.17
     }
   },
   {
-    "id": "e1bd0428-7284-4546-aacc-a0d6e08fa5c5",
+    "id": "476f78b7-7b1c-4599-9670-3361eab707f4",
     "seriesId": "belton-premium",
     "hex": "#FAD09B",
     "code": "327.004",
     "name": {
-      "en": "Apricot beige"
+      "es": "Apricot beige"
     },
     "lab": {
-      "l": 86.24,
-      "a": 10.09,
-      "b": 32.18
+      "l": 85.91,
+      "a": 7.71,
+      "b": 31.85
     }
   },
   {
-    "id": "47f49b46-e599-401a-807b-8eb2d32d0a6f",
+    "id": "16de6acb-f022-47b1-9fa1-19291df84625",
     "seriesId": "belton-premium",
     "hex": "#F0BF6E",
     "code": "327.005",
     "name": {
-      "en": "Sahara beige"
+      "es": "Sahara beige"
     },
     "lab": {
-      "l": 80.56,
-      "a": 11.34,
-      "b": 47.43
+      "l": 80.13,
+      "a": 8.23,
+      "b": 47.13
     }
   },
   {
-    "id": "9806ae74-4525-414e-95d3-18e6cfadaa47",
+    "id": "17b56a9a-29f4-4fe3-b965-2960906168af",
     "seriesId": "belton-premium",
     "hex": "#FFE655",
     "code": "327.006",
     "name": {
-      "en": "Zinc yellow"
+      "es": "Zinc yellow"
     },
     "lab": {
-      "l": 91.47,
-      "a": -2.64,
-      "b": 70.6
+      "l": 91.01,
+      "a": -7.21,
+      "b": 70.82
     }
   },
   {
-    "id": "0d64c766-d9fc-4393-bbc2-238334509604",
+    "id": "d39a9311-40eb-4421-8f09-74a8bf7a2e5d",
     "seriesId": "belton-premium",
     "hex": "#F7AC00",
     "code": "327.007",
     "name": {
-      "en": "Melon yellow"
+      "es": "Melon yellow"
     },
     "lab": {
-      "l": 76.23,
-      "a": 20.7,
-      "b": 78.92
+      "l": 75.63,
+      "a": 16.89,
+      "b": 78.96
     }
   },
   {
-    "id": "349394d0-0080-45b8-a0f3-fbf2a31ee747",
+    "id": "60422729-a44f-4a30-923f-26baf44ecb46",
     "seriesId": "belton-premium",
     "hex": "#F08C4A",
     "code": "327.008",
     "name": {
-      "en": "Goldfish"
+      "es": "Goldfish"
     },
     "lab": {
-      "l": 68.46,
-      "a": 35.15,
-      "b": 51.32
+      "l": 67.86,
+      "a": 32.67,
+      "b": 50.55
     }
   },
   {
-    "id": "7cb0f7a8-fe3a-4c7c-938a-60d75a4f9bd5",
+    "id": "aa08355d-05d9-46c0-9dff-896ce54ce1bc",
     "seriesId": "belton-premium",
     "hex": "#EB6B4A",
     "code": "327.009",
     "name": {
-      "en": "LOOMIT's apricot"
+      "es": "LOOMIT&#039;s apricot"
     },
     "lab": {
-      "l": 61.17,
-      "a": 48.99,
-      "b": 43.22
+      "l": 60.5,
+      "a": 47.33,
+      "b": 42.06
     }
   },
   {
-    "id": "f69f3466-278f-439b-9969-7f80d6efe242",
+    "id": "8899e238-d611-41d6-b19e-6e18076c2c19",
     "seriesId": "belton-premium",
     "hex": "#E74F2A",
     "code": "327.010",
     "name": {
-      "en": "Lobster"
+      "es": "Lobster"
     },
     "lab": {
-      "l": 55.61,
-      "a": 58.53,
-      "b": 53.54
+      "l": 54.82,
+      "a": 57.09,
+      "b": 52.06
     }
   },
   {
-    "id": "ec320684-eda5-4581-baa7-ffa0dbe05a0f",
+    "id": "c504a310-a120-4fb1-aae2-83df41002e93",
     "seriesId": "belton-premium",
     "hex": "#A53513",
     "code": "327.011",
     "name": {
-      "en": "Autumn leaf"
+      "es": "Autumn leaf"
     },
     "lab": {
-      "l": 39.52,
-      "a": 45.77,
-      "b": 45.14
+      "l": 38.89,
+      "a": 44.62,
+      "b": 43.97
     }
   },
   {
-    "id": "bfe93b0f-fecc-4a06-8fd4-4207aac48bb0",
+    "id": "865128f9-6292-4aed-8421-953ef465663d",
     "seriesId": "belton-premium",
     "hex": "#F0A2BA",
     "code": "327.012",
     "name": {
-      "en": "Piglet pink"
+      "es": "Piglet pink"
     },
     "lab": {
-      "l": 74.99,
-      "a": 32.12,
-      "b": 0.05
+      "l": 74.77,
+      "a": 32.16,
+      "b": -0.48
     }
   },
   {
-    "id": "2927d138-84b5-47bb-9504-21c6aae9e7e1",
+    "id": "c929b7d5-2cb5-4716-adc9-b1cdeae85b40",
     "seriesId": "belton-premium",
     "hex": "#D4021D",
     "code": "327.013",
     "name": {
-      "en": "SWEET 100 traffic red"
+      "es": "SWEET 100 traffic red"
     },
     "lab": {
-      "l": 45.31,
-      "a": 70.37,
-      "b": 49.83
+      "l": 44.42,
+      "a": 69.84,
+      "b": 47.73
     }
   },
   {
-    "id": "0791a91f-f4ca-43e0-8c19-711bd465a8b8",
+    "id": "2513e99f-3eb4-41af-92d8-c7817890f4b4",
     "seriesId": "belton-premium",
     "hex": "#41403E",
     "code": "327.13",
     "name": {
-      "en": "Black grey neutral"
+      "es": "Black grey neutral"
     },
     "lab": {
-      "l": 27.14,
-      "a": 0.11,
-      "b": 1.39
+      "l": 27.13,
+      "a": -0.01,
+      "b": 1.37
     }
   },
   {
-    "id": "e14837d1-142f-47ec-a21e-a6a9a74fd664",
+    "id": "42b33783-1f97-4aef-b350-26694c489f0e",
     "seriesId": "belton-premium",
     "hex": "#C00418",
     "code": "327.014",
     "name": {
-      "en": "Signal red"
+      "es": "Signal red"
     },
     "lab": {
-      "l": 41.01,
-      "a": 65.09,
-      "b": 46.92
+      "l": 40.19,
+      "a": 64.58,
+      "b": 44.98
     }
   },
   {
-    "id": "d8bff8f8-9b43-4244-ac4d-c03d55dd35b0",
+    "id": "a8a917cc-9f3f-4c6f-8367-c1f744221be6",
     "seriesId": "belton-premium",
     "hex": "#B6DCD2",
     "code": "327.016",
     "name": {
-      "en": "Baby blue"
+      "es": "Baby blue"
     },
     "lab": {
-      "l": 84.8,
-      "a": -14.42,
-      "b": 0.56
+      "l": 84.89,
+      "a": -14.41,
+      "b": 0.77
     }
   },
   {
-    "id": "688b41df-d456-4130-946d-50f316e51808",
+    "id": "050e169f-ce22-48ee-a84d-4174eef6b2a3",
     "seriesId": "belton-premium",
     "hex": "#88CAC1",
     "code": "327.017",
     "name": {
-      "en": "Crystal blue dark"
+      "es": "Crystal blue dark"
     },
     "lab": {
-      "l": 76.71,
-      "a": -23.29,
-      "b": -2.53
+      "l": 76.87,
+      "a": -22.85,
+      "b": -2.18
     }
   },
   {
-    "id": "a8efd5c1-7f5c-4e1d-83d1-e7d89cb42d0f",
+    "id": "378fd040-d8aa-411d-a8f6-80f6027c01ff",
     "seriesId": "belton-premium",
     "hex": "#CF918C",
     "code": "327.19",
     "name": {
-      "en": "Mauve"
+      "es": "Mauve"
     },
     "lab": {
-      "l": 66.34,
-      "a": 23.68,
-      "b": 12.58
+      "l": 66.07,
+      "a": 22.79,
+      "b": 12.08
     }
   },
   {
-    "id": "83cbe389-ac96-415d-961c-b55c44a7fc1d",
+    "id": "a21ae485-86df-4720-a8d7-0f14084d2cd3",
     "seriesId": "belton-premium",
     "hex": "#97CCD8",
     "code": "327.019",
     "name": {
-      "en": "Ice-blue dark"
+      "es": "Ice-blue dark"
     },
     "lab": {
-      "l": 78.66,
-      "a": -15.7,
-      "b": -11.85
+      "l": 78.88,
+      "a": -14.29,
+      "b": -11.5
     }
   },
   {
-    "id": "4fc6daf4-53fe-49c3-92ff-fe8411e85be0",
+    "id": "c1e260fb-58da-44de-9437-b599dc4bf6f3",
     "seriesId": "belton-premium",
     "hex": "#4899A1",
     "code": "327.021",
     "name": {
-      "en": "Olympia blue"
+      "es": "Olympia blue"
     },
     "lab": {
-      "l": 58.45,
-      "a": -23.99,
-      "b": -12.18
+      "l": 58.72,
+      "a": -22.27,
+      "b": -11.72
     }
   },
   {
-    "id": "09d54f4c-bd23-4f8d-8e8d-1e8183df5e61",
+    "id": "646b63d1-ce0d-4bf1-abb6-9e0aaf8ec319",
     "seriesId": "belton-premium",
     "hex": "#468F9C",
     "code": "327.022",
     "name": {
-      "en": "Dolphin blue"
+      "es": "Dolphin blue"
     },
     "lab": {
-      "l": 55.14,
-      "a": -20.87,
-      "b": -14.29
+      "l": 55.43,
+      "a": -18.91,
+      "b": -13.84
     }
   },
   {
-    "id": "3556331b-1ec6-415b-89c1-70d853f1193b",
+    "id": "0a3af814-1996-4278-9f70-50cc2b479061",
     "seriesId": "belton-premium",
     "hex": "#508389",
     "code": "327.023",
     "name": {
-      "en": "Verdigris"
+      "es": "Verdigris"
     },
     "lab": {
-      "l": 51.35,
-      "a": -16.59,
-      "b": -8.95
+      "l": 51.55,
+      "a": -15.42,
+      "b": -8.62
     }
   },
   {
-    "id": "5fdf9198-abd7-4d35-b97e-4db975296a0d",
+    "id": "7e507608-36d9-448f-bd33-ca0f3dfa3a67",
     "seriesId": "belton-premium",
     "hex": "#D7A795",
     "code": "327.23",
     "name": {
-      "en": "204-1 caramel light"
+      "es": "204-1 caramel light"
     },
     "lab": {
-      "l": 72.66,
-      "a": 16.35,
-      "b": 16.48
+      "l": 72.4,
+      "a": 15.11,
+      "b": 16.09
     }
   },
   {
-    "id": "e8b151c7-3d02-4bd7-9b9d-e84d749fb4ec",
+    "id": "5793ec08-1f2b-4352-bc05-e05140d01c4b",
     "seriesId": "belton-premium",
     "hex": "#002D5C",
     "code": "327.024",
     "name": {
-      "en": "Ultramarine blue"
+      "es": "Ultramarine blue"
     },
     "lab": {
-      "l": 18.05,
-      "a": 2.02,
-      "b": -32.77
+      "l": 18.58,
+      "a": 6.64,
+      "b": -32.05
     }
   },
   {
-    "id": "b5df0639-fd5b-41ae-8f66-6edfaf21bd96",
+    "id": "4c017996-957f-4482-9bed-a21cba3f5bff",
     "seriesId": "belton-premium",
     "hex": "#005362",
     "code": "327.026",
     "name": {
-      "en": "Alga"
+      "es": "Alga"
     },
     "lab": {
-      "l": 31.67,
-      "a": -18.07,
-      "b": -15.31
+      "l": 31.96,
+      "a": -15.74,
+      "b": -14.87
     }
   },
   {
-    "id": "a86b434b-781c-4b1a-a820-a68b4acdb05c",
+    "id": "76a783be-8ea8-4b49-b57f-091beb41766a",
     "seriesId": "belton-premium",
     "hex": "#0F3C50",
     "code": "327.027",
     "name": {
-      "en": "Petrol"
+      "es": "Petrol"
     },
     "lab": {
-      "l": 23.11,
-      "a": -9.65,
-      "b": -16.85
+      "l": 23.38,
+      "a": -7.28,
+      "b": -16.47
     }
   },
   {
-    "id": "24da27ff-b57b-4d13-843b-9d729b89e370",
+    "id": "f9bb65d1-34fc-4234-a2a8-1e0f9f043796",
     "seriesId": "belton-premium",
     "hex": "#1B394A",
     "code": "327.028",
     "name": {
-      "en": "Deep-sea blue"
+      "es": "Deep-sea blue"
     },
     "lab": {
-      "l": 22.27,
-      "a": -7.14,
-      "b": -14.12
+      "l": 22.49,
+      "a": -5.29,
+      "b": -13.82
     }
   },
   {
-    "id": "924f0c48-0c52-4070-9fce-b50d4709e286",
+    "id": "b3813412-0e55-4e99-9009-1ecb5533a39a",
     "seriesId": "belton-premium",
     "hex": "#77A5C7",
     "code": "327.029",
     "name": {
-      "en": "Ceramic Pastel"
+      "es": "Ceramic Pastel"
     },
     "lab": {
-      "l": 65.39,
-      "a": -9.38,
-      "b": -22.71
+      "l": 65.71,
+      "a": -6.68,
+      "b": -22.27
     }
   },
   {
-    "id": "88cd13a7-43cc-4174-9a12-e0d4bf9a1c8c",
+    "id": "0b2741fd-9012-4a9d-a84d-447750130dde",
     "seriesId": "belton-premium",
     "hex": "#5089AE",
     "code": "327.030",
     "name": {
-      "en": "Jeans blue"
+      "es": "Jeans blue"
     },
     "lab": {
-      "l": 54.33,
-      "a": -11.22,
-      "b": -25.75
+      "l": 54.71,
+      "a": -7.93,
+      "b": -25.23
     }
   },
   {
-    "id": "55d32988-bf5d-4369-aa6c-0b05e3478e15",
+    "id": "86508a63-d53b-4fc0-a7df-116c295cfb1a",
     "seriesId": "belton-premium",
     "hex": "#3396B9",
     "code": "327.031",
     "name": {
-      "en": "SOTEN light blue"
+      "es": "SOTEN light blue"
     },
     "lab": {
-      "l": 57.6,
-      "a": -20.63,
-      "b": -27.08
+      "l": 58.05,
+      "a": -16.8,
+      "b": -26.42
     }
   },
   {
-    "id": "e496ef88-e564-4ac3-a7dd-0e3f77659c9c",
+    "id": "292cace9-5906-4fd8-9ffc-9d037bd5093d",
     "seriesId": "belton-premium",
     "hex": "#0083BA",
     "code": "327.032",
     "name": {
-      "en": "Shock blue"
+      "es": "Shock blue"
     },
     "lab": {
-      "l": 50.98,
-      "a": -15.28,
-      "b": -37.98
+      "l": 51.58,
+      "a": -9.73,
+      "b": -37.13
     }
   },
   {
-    "id": "07838a38-e135-47f6-8f67-552426fdd2fb",
+    "id": "ec6d3091-c4ec-47d3-a079-240e08008888",
     "seriesId": "belton-premium",
     "hex": "#004B83",
     "code": "327.033",
     "name": {
-      "en": "Tulip blue"
+      "es": "Tulip blue"
     },
     "lab": {
-      "l": 30.45,
-      "a": -2.55,
-      "b": -37.79
+      "l": 31.04,
+      "a": 2.86,
+      "b": -36.97
     }
   },
   {
-    "id": "d5434a84-2b44-4605-bf45-989cd17a419d",
+    "id": "dd245aa9-b1cd-4de5-9f37-6b90d34f191f",
     "seriesId": "belton-premium",
     "hex": "#002E59",
     "code": "327.034",
     "name": {
-      "en": "Sapphire blue"
+      "es": "Sapphire blue"
     },
     "lab": {
-      "l": 18.21,
-      "a": 0.18,
-      "b": -30.54
+      "l": 18.69,
+      "a": 4.51,
+      "b": -29.87
     }
   },
   {
-    "id": "6cbe0171-e8bc-44cf-8100-6268a47e451f",
+    "id": "7e1e35ac-157e-4ce4-9631-269271a2052e",
     "seriesId": "belton-premium",
     "hex": "#D9DAD6",
     "code": "327.036",
     "name": {
-      "en": "Thistle"
+      "es": "Thistle"
     },
     "lab": {
-      "l": 86.89,
-      "a": -0.89,
-      "b": 1.85
+      "l": 86.87,
+      "a": -1.06,
+      "b": 1.84
     }
   },
   {
-    "id": "b23895e1-8c9d-4cdf-a785-6d076148667f",
+    "id": "10be112d-453d-4dad-934a-c3840eae001d",
     "seriesId": "belton-premium",
     "hex": "#D3E3D7",
     "code": "327.037",
     "name": {
-      "en": "Blueberry pastel"
+      "es": "Blueberry pastel"
     },
     "lab": {
-      "l": 88.77,
-      "a": -7.18,
-      "b": 3.95
+      "l": 88.78,
+      "a": -7.53,
+      "b": 4.03
     }
   },
   {
-    "id": "52acb707-a4bb-46c7-ba40-9cd8b3faadfc",
+    "id": "19ce62e9-941e-43a9-aa45-575a358c2777",
     "seriesId": "belton-premium",
     "hex": "#6581B1",
     "code": "327.038",
     "name": {
-      "en": "Blueberry light"
+      "es": "Blueberry light"
     },
     "lab": {
-      "l": 53.27,
-      "a": -0.57,
-      "b": -28.96
-    }
-  },
-  {
-    "id": "a527dc93-513a-4f47-961b-03c0da95aa01",
-    "seriesId": "belton-premium",
-    "hex": "#505B8E",
-    "code": "327.039",
-    "name": {
-      "en": "Grape middle"
-    },
-    "lab": {
-      "l": 39.45,
-      "a": 6.36,
-      "b": -30.01
-    }
-  },
-  {
-    "id": "462fb1ff-a835-4c1b-b10a-20582b255096",
-    "seriesId": "belton-premium",
-    "hex": "#3A4187",
-    "code": "327.040",
-    "name": {
-      "en": "Grape dark"
-    },
-    "lab": {
-      "l": 29.91,
-      "a": 14.08,
-      "b": -40.96
-    }
-  },
-  {
-    "id": "7adbc4ce-c5bf-41cd-82d6-b0ce9c593030",
-    "seriesId": "belton-premium",
-    "hex": "#243C81",
-    "code": "327.041",
-    "name": {
-      "en": "night SEEN blue"
-    },
-    "lab": {
-      "l": 26.63,
-      "a": 10.47,
-      "b": -42.6
-    }
-  },
-  {
-    "id": "08e5d995-e660-4d2d-a629-5c989e3a9e6c",
-    "seriesId": "belton-premium",
-    "hex": "#4C2561",
-    "code": "327.042",
-    "name": {
-      "en": "Currant"
-    },
-    "lab": {
-      "l": 22.51,
-      "a": 27.34,
+      "l": 53.64,
+      "a": 2.8,
       "b": -28.51
     }
   },
   {
-    "id": "04afcb9a-e5c4-4131-84a3-a3036be8abdb",
+    "id": "e09fe232-3289-4533-9d9a-dc1eb070cd32",
+    "seriesId": "belton-premium",
+    "hex": "#505B8E",
+    "code": "327.039",
+    "name": {
+      "es": "Grape middle"
+    },
+    "lab": {
+      "l": 39.82,
+      "a": 9.76,
+      "b": -29.58
+    }
+  },
+  {
+    "id": "4ba3f1b3-1444-4b7f-b472-363872cda9ec",
+    "seriesId": "belton-premium",
+    "hex": "#3A4187",
+    "code": "327.040",
+    "name": {
+      "es": "Grape dark"
+    },
+    "lab": {
+      "l": 30.47,
+      "a": 18.89,
+      "b": -40.25
+    }
+  },
+  {
+    "id": "8e17606c-e597-458e-85f7-9150f851059c",
+    "seriesId": "belton-premium",
+    "hex": "#243C81",
+    "code": "327.041",
+    "name": {
+      "es": "night SEEN blue"
+    },
+    "lab": {
+      "l": 27.27,
+      "a": 15.88,
+      "b": -41.74
+    }
+  },
+  {
+    "id": "5929e6d9-e027-447b-a314-cc865c139e27",
+    "seriesId": "belton-premium",
+    "hex": "#4C2561",
+    "code": "327.042",
+    "name": {
+      "es": "Currant"
+    },
+    "lab": {
+      "l": 22.73,
+      "a": 29.89,
+      "b": -28.36
+    }
+  },
+  {
+    "id": "8dc9ee13-5ec2-4cb5-a4c6-486daa17c199",
     "seriesId": "belton-premium",
     "hex": "#33265E",
     "code": "327.043",
     "name": {
-      "en": "Violet dark"
+      "es": "Violet dark"
     },
     "lab": {
-      "l": 19.24,
-      "a": 18.11,
-      "b": -31.98
+      "l": 19.63,
+      "a": 21.46,
+      "b": -31.52
     }
   },
   {
-    "id": "0d74eb0e-9fd7-43ce-96af-a47009190474",
+    "id": "b35af9f6-71f0-4313-a220-06ac93151986",
     "seriesId": "belton-premium",
     "hex": "#251241",
     "code": "327.044",
     "name": {
-      "en": "Crazy Plum"
+      "es": "Crazy Plum"
     },
     "lab": {
-      "l": 10.3,
-      "a": 19.17,
-      "b": -26.71
+      "l": 10.61,
+      "a": 21.77,
+      "b": -26.36
     }
   },
   {
-    "id": "b9423576-3a0b-425e-abd7-fcff2d5aa34d",
+    "id": "566140f0-2388-433e-8754-a70c1de3c5dd",
     "seriesId": "belton-premium",
     "hex": "#21194B",
     "code": "327.045",
     "name": {
-      "en": "Black violet"
+      "es": "Black violet"
     },
     "lab": {
-      "l": 12.36,
-      "a": 16.13,
-      "b": -30.38
+      "l": 12.78,
+      "a": 19.42,
+      "b": -29.86
     }
   },
   {
-    "id": "f3555b2c-c76b-4bf2-b23a-9b8cb82b92d6",
+    "id": "5bb2d08c-3d15-4444-9fda-ecda2ec27497",
     "seriesId": "belton-premium",
     "hex": "#3A2119",
     "code": "327.046",
     "name": {
-      "en": "LOOMIT´s aubergine"
+      "es": "LOOMIT´s aubergine"
     },
     "lab": {
-      "l": 15.96,
-      "a": 11.61,
-      "b": 10.73
+      "l": 15.79,
+      "a": 10.98,
+      "b": 10.46
     }
   },
   {
-    "id": "4f3cd41f-8acf-4dc3-9413-b1ddc0af2263",
+    "id": "0a05b6a8-761d-447f-8ea2-47fe8e1d9782",
     "seriesId": "belton-premium",
     "hex": "#F0E397",
     "code": "327.047",
     "name": {
-      "en": "Sorbet green"
+      "es": "Sorbet green"
     },
     "lab": {
-      "l": 90.01,
-      "a": -3.33,
-      "b": 38.82
+      "l": 89.72,
+      "a": -6.33,
+      "b": 38.74
     }
   },
   {
-    "id": "e79676d2-dc19-4457-8cce-d5aa061133dd",
+    "id": "b2ca60de-7b5d-432c-921d-993708797d8d",
     "seriesId": "belton-premium",
     "hex": "#E5E08C",
     "code": "327.048",
     "name": {
-      "en": "Soft pastel"
+      "es": "Soft pastel"
     },
     "lab": {
-      "l": 88.19,
-      "a": -7.06,
+      "l": 87.9,
+      "a": -10.29,
       "b": 41.72
     }
   },
   {
-    "id": "df3ffffa-67db-4460-ab10-c2f3f1c1b0a1",
+    "id": "62a3e1ad-2674-4be3-ab0c-a361bd8bc8bd",
     "seriesId": "belton-premium",
     "hex": "#D3BB58",
     "code": "327.049",
     "name": {
-      "en": "Mustard"
+      "es": "Mustard"
     },
     "lab": {
-      "l": 76.5,
-      "a": 0.11,
-      "b": 52.3
+      "l": 76.13,
+      "a": -3.41,
+      "b": 52.31
     }
   },
   {
-    "id": "fe9f3368-e0f2-4ef7-9875-a1dfd359a1fc",
+    "id": "f7715a38-7d8d-4d8a-a837-ff967d7a4245",
     "seriesId": "belton-premium",
     "hex": "#B4A438",
     "code": "327.050",
     "name": {
-      "en": "Hemp"
+      "es": "Hemp"
     },
     "lab": {
-      "l": 67.28,
-      "a": -3.11,
-      "b": 55.44
+      "l": 66.93,
+      "a": -6.71,
+      "b": 55.65
     }
   },
   {
-    "id": "d4b592e8-0f37-4bd1-ba65-2d3e88cc54d0",
+    "id": "ff4e1cd3-e99b-4abe-99bf-11d89a1a9e76",
     "seriesId": "belton-premium",
     "hex": "#949955",
     "code": "327.051",
     "name": {
-      "en": "P.JAY green"
+      "es": "P.JAY green"
     },
     "lab": {
-      "l": 61.63,
-      "a": -9.63,
-      "b": 34.9
+      "l": 61.42,
+      "a": -12.33,
+      "b": 35
     }
   },
   {
-    "id": "c867c5e1-65de-4ea2-995b-09af8e2bb976",
+    "id": "1d5b523c-b0ea-4985-be58-ef03cf2ce6c9",
     "seriesId": "belton-premium",
     "hex": "#908F5E",
     "code": "327.052",
     "name": {
-      "en": "Amazonas"
+      "es": "Amazonas"
     },
     "lab": {
-      "l": 58.58,
-      "a": -5.46,
+      "l": 58.4,
+      "a": -7.56,
       "b": 26.26
     }
   },
   {
-    "id": "063b4990-6236-45c2-859e-d1b597c2020e",
+    "id": "8056de12-681a-4a0e-ad86-f6b074747708",
     "seriesId": "belton-premium",
     "hex": "#AAB98F",
     "code": "327.053",
     "name": {
-      "en": "Gale green"
+      "es": "Gale green"
     },
     "lab": {
-      "l": 73.15,
-      "a": -10.91,
-      "b": 19.58
+      "l": 73.04,
+      "a": -12.62,
+      "b": 19.64
     }
   },
   {
-    "id": "79ba5b7c-bf11-4bb2-b5fd-8516be3420f3",
+    "id": "fe34064d-e7d7-4730-b487-462b6494e01a",
     "seriesId": "belton-premium",
     "hex": "#77A479",
     "code": "327.054",
     "name": {
-      "en": "Aquamarine"
+      "es": "Aquamarine"
     },
     "lab": {
-      "l": 63.24,
-      "a": -22.41,
-      "b": 17.32
+      "l": 63.22,
+      "a": -23.98,
+      "b": 17.56
     }
   },
   {
-    "id": "e5c5b03d-24b3-4acc-a693-62a7db5cf97b",
+    "id": "9aec2f3c-efa3-47e7-9762-c74828feca54",
     "seriesId": "belton-premium",
     "hex": "#3D5B46",
     "code": "327.055",
     "name": {
-      "en": "Black forest green"
+      "es": "Black forest green"
     },
     "lab": {
-      "l": 35.81,
-      "a": -15.33,
-      "b": 8.46
+      "l": 35.82,
+      "a": -16.1,
+      "b": 8.63
     }
   },
   {
-    "id": "d2465097-dbbf-4f2e-9215-1cc4614faf53",
+    "id": "508a833b-0fad-4c9d-83d2-667cb59cd29e",
     "seriesId": "belton-premium",
     "hex": "#DAE07F",
     "code": "327.056",
     "name": {
-      "en": "Butterfly green"
+      "es": "Butterfly green"
     },
     "lab": {
-      "l": 87.15,
-      "a": -12.35,
-      "b": 46.51
+      "l": 86.87,
+      "a": -15.94,
+      "b": 46.64
     }
   },
   {
-    "id": "5066a4a2-d6ec-4e3a-976c-02d5d072f0d5",
+    "id": "babc8749-fde9-4964-b047-857efcaf00b8",
     "seriesId": "belton-premium",
     "hex": "#A5C85C",
     "code": "327.058",
     "name": {
-      "en": "Cream green"
+      "es": "Cream green"
     },
     "lab": {
-      "l": 76.33,
-      "a": -24.51,
-      "b": 49.07
+      "l": 76.12,
+      "a": -28.39,
+      "b": 49.5
     }
   },
   {
-    "id": "3fcbb7bf-9b11-4a27-88ea-441dc9c4dd40",
+    "id": "59402082-31fe-4686-b3dc-0ef7cb18c7c4",
     "seriesId": "belton-premium",
     "hex": "#DEDD2E",
     "code": "327.059",
     "name": {
-      "en": "Poison green"
+      "es": "Poison green"
     },
     "lab": {
-      "l": 86.13,
-      "a": -13.15,
-      "b": 77.15
+      "l": 85.73,
+      "a": -18.13,
+      "b": 77.86
     }
   },
   {
-    "id": "5e5e87dc-1ad4-4976-895a-d965b6b4af7d",
+    "id": "28316623-c4ee-45cb-875a-8e75cdb95415",
     "seriesId": "belton-premium",
     "hex": "#C8D97D",
     "code": "327.060",
     "name": {
-      "en": "Dandelion"
+      "es": "Dandelion"
     },
     "lab": {
-      "l": 83.88,
-      "a": -16.26,
-      "b": 43.12
+      "l": 83.65,
+      "a": -19.69,
+      "b": 43.31
     }
   },
   {
-    "id": "a60bf6a9-8c8a-445f-9fc7-f0c5ca3e90ea",
+    "id": "bf6b5708-be21-41ff-bc4e-3f568bb50e1a",
     "seriesId": "belton-premium",
     "hex": "#B2CC54",
     "code": "327.061",
     "name": {
-      "en": "Brilliant green"
+      "es": "Brilliant green"
     },
     "lab": {
-      "l": 78.3,
-      "a": -21.73,
-      "b": 55.09
+      "l": 78.05,
+      "a": -25.89,
+      "b": 55.56
     }
   },
   {
-    "id": "cb495488-f8dc-4225-b5be-4ff10b3ac5bb",
+    "id": "e9ec467f-cbae-496a-a344-c418b985faba",
     "seriesId": "belton-premium",
     "hex": "#93BF3D",
     "code": "327.062",
     "name": {
-      "en": "MIGHTY green"
+      "es": "MIGHTY green"
     },
     "lab": {
-      "l": 72.31,
-      "a": -29.32,
-      "b": 57.42
+      "l": 72.1,
+      "a": -33.69,
+      "b": 58.16
     }
   },
   {
-    "id": "efe48c06-0e2a-488c-8d6c-2a2f3f940818",
+    "id": "6707c278-f82e-4c16-85ff-6865604490a6",
     "seriesId": "belton-premium",
     "hex": "#88C25A",
     "code": "327.063",
     "name": {
-      "en": "Hippie green"
+      "es": "Hippie green"
     },
     "lab": {
-      "l": 72.74,
-      "a": -32.86,
-      "b": 45.31
+      "l": 72.6,
+      "a": -36.64,
+      "b": 45.86
     }
   },
   {
-    "id": "970af2f1-9754-4704-a97e-80715596e00a",
+    "id": "26a12650-054e-432c-b070-76e91b5ed531",
     "seriesId": "belton-premium",
     "hex": "#88BB3C",
     "code": "327.064",
     "name": {
-      "en": "Grasshopper"
+      "es": "Grasshopper"
     },
     "lab": {
-      "l": 70.44,
-      "a": -31.84,
-      "b": 55.67
+      "l": 70.25,
+      "a": -36.16,
+      "b": 56.43
     }
   },
   {
-    "id": "82351a86-0df3-491d-8c1d-e7443a47b661",
+    "id": "949f9f89-c65c-4bcf-b808-e2a2eef597ec",
     "seriesId": "belton-premium",
     "hex": "#57AB27",
     "code": "327.065",
     "name": {
-      "en": "Cliff green"
+      "es": "Cliff green"
     },
     "lab": {
-      "l": 62.88,
-      "a": -43.38,
-      "b": 54.73
+      "l": 62.76,
+      "a": -47.84,
+      "b": 55.8
     }
   },
   {
-    "id": "8fa6ff7b-8e25-4418-8129-6ef9a3c2f95f",
+    "id": "b5962290-27a2-422b-a3c3-140ef86f7fff",
     "seriesId": "belton-premium",
     "hex": "#008834",
     "code": "327.066",
     "name": {
-      "en": "Juice green"
+      "es": "Juice green"
     },
     "lab": {
       "l": 49.32,
-      "a": -46.87,
-      "b": 34.9
+      "a": -50.14,
+      "b": 35.69
     }
   },
   {
-    "id": "e63d6a23-a5ce-4679-8a8b-5ed3e8dd9380",
+    "id": "7f7abb97-2f4b-47d6-aacc-160e4eef9d41",
     "seriesId": "belton-premium",
     "hex": "#C2DEBA",
     "code": "327.068",
     "name": {
-      "en": "Calypso light"
+      "es": "Calypso light"
     },
     "lab": {
-      "l": 85.68,
-      "a": -14.56,
-      "b": 14.48
+      "l": 85.63,
+      "a": -15.86,
+      "b": 14.6
     }
   },
   {
-    "id": "18108a52-38ac-4ea6-b42e-b6a2340eafb0",
+    "id": "8b070554-9fd2-40e8-963c-5d49d83e0472",
     "seriesId": "belton-premium",
     "hex": "#74BD8B",
     "code": "327.069",
     "name": {
-      "en": "Calypso middle"
+      "es": "Calypso middle"
     },
     "lab": {
-      "l": 70.82,
-      "a": -32.06,
-      "b": 17.88
+      "l": 70.85,
+      "a": -33.7,
+      "b": 18.26
     }
   },
   {
-    "id": "6cdbdaa3-4816-4232-9fb6-aeb7d72ca575",
+    "id": "5413c483-ca09-4502-a562-9d9ff7921688",
     "seriesId": "belton-premium",
     "hex": "#53A977",
     "code": "327.070",
     "name": {
-      "en": "Calypso dark"
+      "es": "Calypso dark"
     },
     "lab": {
-      "l": 62.92,
-      "a": -36.07,
-      "b": 17.6
+      "l": 62.97,
+      "a": -37.7,
+      "b": 18.03
     }
   },
   {
-    "id": "e17cf12d-94e4-4586-835f-7969eaa3c1cd",
+    "id": "49484348-6a84-42c3-8fff-8be25757a8e6",
     "seriesId": "belton-premium",
     "hex": "#80C2AE",
     "code": "327.072",
     "name": {
-      "en": "Riviera light"
+      "es": "Riviera light"
     },
     "lab": {
-      "l": 73.57,
-      "a": -25.25,
-      "b": 3.08
+      "l": 73.69,
+      "a": -25.41,
+      "b": 3.42
     }
   },
   {
-    "id": "ea0860a4-94ed-42f1-b5a3-86efe4127ce4",
+    "id": "f38a7bc4-635c-42fa-bfa7-1bf7e743c02d",
     "seriesId": "belton-premium",
     "hex": "#00998A",
     "code": "327.073",
     "name": {
-      "en": "Riviera dark"
+      "es": "Riviera dark"
     },
     "lab": {
-      "l": 56.46,
-      "a": -38.14,
-      "b": -2.29
+      "l": 56.7,
+      "a": -37.42,
+      "b": -1.76
     }
   },
   {
-    "id": "8322cfe7-59a7-4f4d-984c-e0000232a653",
+    "id": "364f17dc-1afe-4089-a7f6-90b537962ee8",
     "seriesId": "belton-premium",
     "hex": "#00857D",
     "code": "327.074",
     "name": {
-      "en": "Lagoon blue"
+      "es": "Lagoon blue"
     },
     "lab": {
-      "l": 49.57,
-      "a": -33.21,
-      "b": -4.9
+      "l": 49.8,
+      "a": -32.19,
+      "b": -4.41
     }
   },
   {
-    "id": "25bc2f7f-c55c-40ca-8dd7-4357dd232023",
+    "id": "a1df2635-9776-4cb0-8a59-514ac80f8620",
     "seriesId": "belton-premium",
     "hex": "#D5B072",
     "code": "327.075",
     "name": {
-      "en": "Milk coffee"
+      "es": "Milk coffee"
     },
     "lab": {
-      "l": 74.16,
-      "a": 8.05,
-      "b": 36.95
+      "l": 73.81,
+      "a": 5.45,
+      "b": 36.69
     }
   },
   {
-    "id": "0324da5a-ff49-4465-b7ca-b1e7722a8a6a",
+    "id": "8f3cfe74-4f8d-4861-b31e-c4ca14e383e3",
     "seriesId": "belton-premium",
     "hex": "#B45A1D",
     "code": "327.076",
     "name": {
-      "en": "Orange brown"
+      "es": "Orange brown"
     },
     "lab": {
-      "l": 48.96,
-      "a": 34.6,
-      "b": 49.6
+      "l": 48.39,
+      "a": 32.67,
+      "b": 48.87
     }
   },
   {
-    "id": "e53b7e18-a284-4d01-86e0-130d57de9c9b",
+    "id": "b62e5cd4-c916-4347-8f00-a9f09be9ac15",
     "seriesId": "belton-premium",
     "hex": "#B87C3F",
     "code": "327.077",
     "name": {
-      "en": "Nougat"
+      "es": "Nougat"
     },
     "lab": {
-      "l": 57.48,
-      "a": 19.72,
-      "b": 42.41
+      "l": 57.04,
+      "a": 17.35,
+      "b": 41.99
     }
   },
   {
-    "id": "62caa273-ec09-4cd2-9abe-e9c18c1d73cb",
+    "id": "e6e55a58-c14d-4c4e-b82f-3e5bc73c8ac0",
     "seriesId": "belton-premium",
     "hex": "#AC8B34",
     "code": "327.078",
     "name": {
-      "en": "Kahki"
+      "es": "Kahki"
     },
     "lab": {
-      "l": 59.79,
-      "a": 6.06,
-      "b": 49.42
+      "l": 59.42,
+      "a": 3.05,
+      "b": 49.39
     }
   },
   {
-    "id": "c0be1206-3d91-4461-927e-3db8ae017268",
+    "id": "cefd30a3-a157-4bac-ba07-d8d46ee1d778",
     "seriesId": "belton-premium",
     "hex": "#FAF4E3",
     "code": "327.0079",
     "name": {
-      "en": "Nature white"
+      "es": "Nature white"
     },
     "lab": {
-      "l": 96.32,
-      "a": -0.03,
-      "b": 8.97
+      "l": 96.23,
+      "a": -0.84,
+      "b": 8.9
     }
   },
   {
-    "id": "08e317d7-3452-4637-997e-80d412b89867",
+    "id": "20e535e9-bf74-42ca-aaa6-43b82ceeff24",
     "seriesId": "belton-premium",
     "hex": "#000000",
     "code": "327.080",
     "name": {
-      "en": "Deep black"
+      "es": "Deep black"
     },
     "lab": {
       "l": 0,
@@ -1050,278 +1050,278 @@
     }
   },
   {
-    "id": "0153e423-24a6-40da-9ff6-b5a0bdb2a1af",
+    "id": "27f45ed6-e806-4a84-b0e0-c5d1fc89c932",
     "seriesId": "belton-premium",
     "hex": "#F3A18B",
     "code": "327.081",
     "name": {
-      "en": "LOOMIT's apricot light"
+      "es": "LOOMIT&#039;s apricot light"
     },
     "lab": {
-      "l": 74.23,
-      "a": 29.5,
-      "b": 24.64
+      "l": 73.81,
+      "a": 27.94,
+      "b": 23.97
     }
   },
   {
-    "id": "43594d24-47b0-4f0b-a9dd-81b0a17e6e21",
+    "id": "7befc4c1-26e8-44f1-a13e-613995711319",
     "seriesId": "belton-premium",
     "hex": "#FFD700",
     "code": "327.082",
     "name": {
-      "en": "Cadmium yellow"
+      "es": "Cadmium yellow"
     },
     "lab": {
-      "l": 87.47,
-      "a": 2.91,
-      "b": 86.55
+      "l": 86.93,
+      "a": -1.92,
+      "b": 87.13
     }
   },
   {
-    "id": "cd6ce4ed-0038-464b-b620-f91d7cb551cb",
+    "id": "511d7ff3-d11a-4f62-a9eb-a2c2541fac06",
     "seriesId": "belton-premium",
     "hex": "#FBBE00",
     "code": "327.083",
     "name": {
-      "en": "Golden yellow"
+      "es": "Golden yellow"
     },
     "lab": {
-      "l": 80.95,
-      "a": 13.44,
-      "b": 82.11
+      "l": 80.37,
+      "a": 9.2,
+      "b": 82.38
     }
   },
   {
-    "id": "b781954c-37d8-4e82-a1eb-c9f4fd90b1f2",
+    "id": "f7302d10-ab3b-4b46-b2a8-7fbb15831fc2",
     "seriesId": "belton-premium",
     "hex": "#F18C00",
     "code": "327.084",
     "name": {
-      "en": "SLIDER light orange"
+      "es": "SLIDER light orange"
     },
     "lab": {
-      "l": 68.29,
-      "a": 34.19,
-      "b": 73.82
+      "l": 67.62,
+      "a": 31.15,
+      "b": 73.39
     }
   },
   {
-    "id": "68771634-466a-4207-a18f-64c258f50873",
+    "id": "ea70bb0e-024c-4ec0-b49d-fe6999734deb",
     "seriesId": "belton-premium",
     "hex": "#E15C0F",
     "code": "327.085",
     "name": {
-      "en": "DARE orange"
+      "es": "DARE orange"
     },
     "lab": {
-      "l": 56.54,
-      "a": 50.74,
-      "b": 63.31
+      "l": 55.79,
+      "a": 48.85,
+      "b": 62.15
     }
   },
   {
-    "id": "ec239351-e69a-4803-a6e9-1fd59767d631",
+    "id": "c585c894-8dd9-42e2-a9ec-453668bf50f7",
     "seriesId": "belton-premium",
     "hex": "#711820",
     "code": "327.086",
     "name": {
-      "en": "Burgundy"
+      "es": "Burgundy"
     },
     "lab": {
-      "l": 25,
-      "a": 39.13,
-      "b": 19.92
+      "l": 24.54,
+      "a": 38.73,
+      "b": 18.95
     }
   },
   {
-    "id": "66559489-8752-4cbf-bd3e-3f91e849ac9d",
+    "id": "c82e32cf-01d3-435e-8ed7-d6f8d7fcec48",
     "seriesId": "belton-premium",
     "hex": "#BE4638",
     "code": "327.087",
     "name": {
-      "en": "Pussy pink"
+      "es": "Pussy pink"
     },
     "lab": {
-      "l": 47.09,
-      "a": 48.49,
-      "b": 35.03
+      "l": 46.47,
+      "a": 47.4,
+      "b": 33.84
     }
   },
   {
-    "id": "c2407491-9a05-49aa-ae88-f5c7738ee8f1",
+    "id": "ba516767-98b5-4687-ae4b-1cd6473116b2",
     "seriesId": "belton-premium",
     "hex": "#DB4430",
     "code": "327.088",
     "name": {
-      "en": "Shock orange"
+      "es": "Shock orange"
     },
     "lab": {
-      "l": 51.93,
-      "a": 58.82,
-      "b": 46.34
+      "l": 51.17,
+      "a": 57.66,
+      "b": 44.82
     }
   },
   {
-    "id": "3576da3c-af30-4415-8d92-7d2be51eecea",
+    "id": "45f7c186-22a1-4297-b13a-fab3e6712c22",
     "seriesId": "belton-premium",
     "hex": "#6C3640",
     "code": "327.089",
     "name": {
-      "en": "ESHER dirty red"
+      "es": "ESHER dirty red"
     },
     "lab": {
-      "l": 30.14,
-      "a": 25.33,
-      "b": 5.26
+      "l": 29.91,
+      "a": 25.11,
+      "b": 4.76
     }
   },
   {
-    "id": "3e239d1b-70da-41cb-8bb7-155027533d56",
+    "id": "e7c84207-ca0c-424a-a28b-ef73336dcd85",
     "seriesId": "belton-premium",
     "hex": "#00333D",
     "code": "327.090",
     "name": {
-      "en": "Black turquoise"
+      "es": "Black turquoise"
     },
     "lab": {
-      "l": 18.61,
-      "a": -13.13,
-      "b": -11.08
+      "l": 18.82,
+      "a": -11.45,
+      "b": -10.76
     }
   },
   {
-    "id": "e6d7af4e-292d-497f-af7c-101e670c93f2",
+    "id": "7c42d216-ce48-47d8-971d-49dada6d2485",
     "seriesId": "belton-premium",
     "hex": "#A76845",
     "code": "327.091",
     "name": {
-      "en": "Caramel"
+      "es": "Caramel"
     },
     "lab": {
-      "l": 50.55,
-      "a": 23.39,
-      "b": 30.65
+      "l": 50.15,
+      "a": 21.67,
+      "b": 30.11
     }
   },
   {
-    "id": "540833ab-9091-44d7-91fe-b4911d0600e1",
+    "id": "3578e74b-0ae8-4106-8393-0f1050a74ff3",
     "seriesId": "belton-premium",
     "hex": "#5E3121",
     "code": "327.092",
     "name": {
-      "en": "Hazelnut"
+      "es": "Hazelnut"
     },
     "lab": {
-      "l": 26.11,
-      "a": 19.67,
-      "b": 19.55
+      "l": 25.82,
+      "a": 18.7,
+      "b": 19.1
     }
   },
   {
-    "id": "5260ccfa-fa77-4251-b890-e723fe7fb11d",
+    "id": "f50b9d70-d061-4e64-b5a0-26de43be4983",
     "seriesId": "belton-premium",
     "hex": "#3F271B",
     "code": "327.093",
     "name": {
-      "en": "CMP dark brown"
+      "es": "CMP dark brown"
     },
     "lab": {
-      "l": 18.48,
-      "a": 10.45,
-      "b": 12.78
+      "l": 18.31,
+      "a": 9.67,
+      "b": 12.53
     }
   },
   {
-    "id": "c2c4bd5d-d10c-43d4-a8d1-c0540422dde6",
+    "id": "68bcdd3a-aa0b-471a-b20d-ca1ee21f2d9b",
     "seriesId": "belton-premium",
     "hex": "#86653D",
     "code": "327.094",
     "name": {
-      "en": "Espresso"
+      "es": "Espresso"
     },
     "lab": {
-      "l": 45.52,
-      "a": 10.01,
-      "b": 27.89
+      "l": 45.24,
+      "a": 8.2,
+      "b": 27.63
     }
   },
   {
-    "id": "9356acaa-9512-4542-b716-ef43465a4cc0",
+    "id": "1db42e46-6b7b-4e0b-bc62-8df2fcba1353",
     "seriesId": "belton-premium",
     "hex": "#002C1C",
     "code": "327.095",
     "name": {
-      "en": "Black green"
+      "es": "Black green"
     },
     "lab": {
-      "l": 14.82,
-      "a": -19.08,
-      "b": 6.1
+      "l": 14.87,
+      "a": -19.62,
+      "b": 6.33
     }
   },
   {
-    "id": "e6508d7d-3cfb-4fa9-949f-b67a35f5d4ed",
+    "id": "ac0b3ab8-e2ab-4134-a1d4-c79703cc0dba",
     "seriesId": "belton-premium",
     "hex": "#00763B",
     "code": "327.096",
     "name": {
-      "en": "MISTER GREEN"
+      "es": "MISTER GREEN"
     },
     "lab": {
-      "l": 43.14,
-      "a": -40.52,
-      "b": 24.03
+      "l": 43.17,
+      "a": -42.83,
+      "b": 24.6
     }
   },
   {
-    "id": "a0b2efa4-77a1-4676-896d-12b4615927b6",
+    "id": "1270e26c-8f79-4f51-8140-b54fe6ccd586",
     "seriesId": "belton-premium",
     "hex": "#C2002D",
     "code": "327.098",
     "name": {
-      "en": "Tornado red"
+      "es": "Tornado red"
     },
     "lab": {
-      "l": 41.47,
-      "a": 66.36,
-      "b": 35.72
+      "l": 40.67,
+      "a": 66.04,
+      "b": 33.9
     }
   },
   {
-    "id": "2ddff304-d835-4afd-b252-d1944a24573e",
+    "id": "ebdc8ffd-6af2-47af-96a6-9a4da46d6fc1",
     "seriesId": "belton-premium",
     "hex": "#910041",
     "code": "327.099",
     "name": {
-      "en": "Amaranth red"
+      "es": "Amaranth red"
     },
     "lab": {
-      "l": 30.93,
-      "a": 54.79,
-      "b": 6.97
+      "l": 30.41,
+      "a": 55.13,
+      "b": 5.77
     }
   },
   {
-    "id": "b68a7de4-3ff4-4eba-ac29-db2b6fe57a06",
+    "id": "e600bf31-03ca-4915-8191-f2f1d27fe5dc",
     "seriesId": "belton-premium",
     "hex": "#D8D7CC",
     "code": "327.100",
     "name": {
-      "en": "Light grey neutral"
+      "es": "Light grey neutral"
     },
     "lab": {
-      "l": 85.83,
-      "a": -1.09,
-      "b": 5.57
+      "l": 85.79,
+      "a": -1.59,
+      "b": 5.54
     }
   },
   {
-    "id": "93196491-b7f5-4738-8061-315a95f65b82",
+    "id": "25dbed81-6321-4fc1-9b89-f27f4ed77bb8",
     "seriesId": "belton-premium",
     "hex": "#989898",
     "code": "327.101",
     "name": {
-      "en": "CAPARSO middle grey"
+      "es": "CAPARSO middle grey"
     },
     "lab": {
       "l": 62.84,
@@ -1330,12 +1330,12 @@
     }
   },
   {
-    "id": "cb80632c-782c-4e46-a4fd-5ba5fb61d342",
+    "id": "0fd17278-79ed-47b5-8923-ef9addb3a06e",
     "seriesId": "belton-premium",
     "hex": "#5F5F5F",
     "code": "327.102",
     "name": {
-      "en": "Dark grey neutral"
+      "es": "Dark grey neutral"
     },
     "lab": {
       "l": 40.32,
@@ -1344,726 +1344,726 @@
     }
   },
   {
-    "id": "68a191dc-109a-4b5e-a7b8-384bcf3a5fba",
+    "id": "b57a689d-24b0-43e3-b250-d562293aa7af",
     "seriesId": "belton-premium",
     "hex": "#00233C",
     "code": "327.104",
     "name": {
-      "en": "Deep-sea blue dark"
+      "es": "Deep-sea blue dark"
     },
     "lab": {
-      "l": 12.47,
-      "a": -3.92,
-      "b": -19.92
+      "l": 12.79,
+      "a": -1.04,
+      "b": -19.49
     }
   },
   {
-    "id": "410b38dc-74c4-4fb1-ac13-31611c1d4c9d",
+    "id": "ac3d03ef-6016-46dd-ae53-8aa660d9fde1",
     "seriesId": "belton-premium",
     "hex": "#00243B",
     "code": "327.105",
     "name": {
-      "en": "ECB prussian blue dark"
+      "es": "ECB prussian blue dark"
     },
     "lab": {
-      "l": 12.8,
-      "a": -4.96,
-      "b": -18.71
+      "l": 13.09,
+      "a": -2.25,
+      "b": -18.3
     }
   },
   {
-    "id": "3b674b47-3a25-484e-be1f-cd5e23ed3280",
+    "id": "4bf85cc1-f81c-446b-90c2-e65d764f02c3",
     "seriesId": "belton-premium",
     "hex": "#9C052D",
     "code": "327.106",
     "name": {
-      "en": "Sangria"
+      "es": "Sangria"
     },
     "lab": {
-      "l": 33.28,
-      "a": 56.11,
-      "b": 23.87
+      "l": 32.63,
+      "a": 55.94,
+      "b": 22.42
     }
   },
   {
-    "id": "491fdf02-2ccf-456c-a0a8-93f83335ef2e",
+    "id": "80f810ae-35d7-4f8c-88f7-235c5c877324",
     "seriesId": "belton-premium",
     "hex": "#006A7D",
     "code": "327.107",
     "name": {
-      "en": "Petrol blue"
+      "es": "Petrol blue"
     },
     "lab": {
-      "l": 40.53,
-      "a": -21.29,
-      "b": -18.4
+      "l": 40.88,
+      "a": -18.5,
+      "b": -17.87
     }
   },
   {
-    "id": "65fbc806-3553-4755-86fc-c9e7cd045de9",
+    "id": "c6b81606-abce-4742-b2dd-224dd949c420",
     "seriesId": "belton-premium",
     "hex": "#54A79C",
     "code": "327.108",
     "name": {
-      "en": "Blue gin"
+      "es": "Blue gin"
     },
     "lab": {
-      "l": 63.09,
-      "a": -28.55,
-      "b": -2.5
+      "l": 63.28,
+      "a": -28.01,
+      "b": -2.08
     }
   },
   {
-    "id": "c2918ebe-c624-4213-add2-d7696921a070",
+    "id": "c19b9194-ba5d-48a1-a04e-904f36e1676c",
     "seriesId": "belton-premium",
     "hex": "#6166A2",
     "code": "327.110",
     "name": {
-      "en": "BOOGIE viola"
+      "es": "BOOGIE viola"
     },
     "lab": {
-      "l": 44.77,
-      "a": 9.94,
-      "b": -33.49
+      "l": 45.15,
+      "a": 13.63,
+      "b": -33.05
     }
   },
   {
-    "id": "db5d142c-38cf-404a-b4fd-2329a549832c",
+    "id": "52d0499f-b4c5-468b-9f73-00b199d19b67",
     "seriesId": "belton-premium",
     "hex": "#A3A0C3",
     "code": "327.111",
     "name": {
-      "en": "Viola light"
+      "es": "Viola light"
     },
     "lab": {
-      "l": 67.02,
-      "a": 6.53,
-      "b": -17.68
+      "l": 67.18,
+      "a": 8.27,
+      "b": -17.55
     }
   },
   {
-    "id": "358475f4-4287-4fcc-afce-e0b533c4b8c7",
+    "id": "28f33114-86cd-4a1d-bd03-5d0f7e5f7f75",
     "seriesId": "belton-premium",
     "hex": "#C7C4CF",
     "code": "327.112",
     "name": {
-      "en": "Viola pastel"
+      "es": "Viola pastel"
     },
     "lab": {
-      "l": 79.65,
-      "a": 2.61,
-      "b": -5.13
+      "l": 79.69,
+      "a": 3.09,
+      "b": -5.12
     }
   },
   {
-    "id": "d0be47c1-ec0c-4475-82af-3c6a022977cf",
+    "id": "ceed1245-42ff-42d0-a842-d596c578c253",
     "seriesId": "belton-premium",
     "hex": "#6BB8C4",
     "code": "327.113",
     "name": {
-      "en": "Cream blue"
+      "es": "Cream blue"
     },
     "lab": {
-      "l": 70.16,
-      "a": -22.47,
-      "b": -13.97
+      "l": 70.45,
+      "a": -20.62,
+      "b": -13.5
     }
   },
   {
-    "id": "36c4bf95-a47b-402b-84a8-c5725e1ad26b",
+    "id": "b4800f0b-9ca0-4137-9ffb-b5f39388ce83",
     "seriesId": "belton-premium",
     "hex": "#D0E8DD",
     "code": "327.114",
     "name": {
-      "en": "Caribbean"
+      "es": "Caribbean"
     },
     "lab": {
-      "l": 89.98,
-      "a": -9.76,
-      "b": 2.53
+      "l": 90.02,
+      "a": -9.96,
+      "b": 2.66
     }
   },
   {
-    "id": "9ad0ddf2-7bd5-43c6-be1c-2bc6ff5ea35d",
+    "id": "755f9f2b-b133-4c94-9a1e-832969909bc2",
     "seriesId": "belton-premium",
     "hex": "#FFF0B9",
     "code": "327.115",
     "name": {
-      "en": "Vanilla"
+      "es": "Vanilla"
     },
     "lab": {
-      "l": 95.02,
-      "a": -0.79,
-      "b": 28.61
+      "l": 94.77,
+      "a": -3.12,
+      "b": 28.47
     }
   },
   {
-    "id": "c4180b3c-f054-44ad-95c1-a92c7127c2c9",
+    "id": "0a122b6b-65f4-4d30-8c41-5a9f129fa367",
     "seriesId": "belton-premium",
     "hex": "#F39A5A",
     "code": "327.116",
     "name": {
-      "en": "Apricot"
+      "es": "Apricot"
     },
     "lab": {
-      "l": 72.05,
-      "a": 30.04,
-      "b": 47.55
+      "l": 71.49,
+      "a": 27.49,
+      "b": 46.87
     }
   },
   {
-    "id": "ca0ee40a-4b87-468a-a6d8-6472b4be20aa",
+    "id": "5488a553-0f90-484b-a900-37e061726a41",
     "seriesId": "belton-premium",
     "hex": "#F6B388",
     "code": "327.117",
     "name": {
-      "en": "Peach"
+      "es": "Peach"
     },
     "lab": {
-      "l": 78.64,
-      "a": 21.44,
-      "b": 32.08
+      "l": 78.24,
+      "a": 19.3,
+      "b": 31.54
     }
   },
   {
-    "id": "86b18859-e9e1-4413-9540-32dbbd75d84f",
+    "id": "6d1aec00-4f1d-454a-af61-9711ff863770",
     "seriesId": "belton-premium",
     "hex": "#95B922",
     "code": "327.118",
     "name": {
-      "en": "Kiwi"
+      "es": "Kiwi"
     },
     "lab": {
-      "l": 70.57,
-      "a": -26.91,
-      "b": 64.54
+      "l": 70.32,
+      "a": -31.5,
+      "b": 65.46
     }
   },
   {
-    "id": "7daf371d-4b3b-4840-bd45-e93a48b6657c",
+    "id": "65c5a8a0-7ee2-4756-a960-5c8cbd803537",
     "seriesId": "belton-premium",
     "hex": "#BACE3C",
     "code": "327.119",
     "name": {
-      "en": "Kiwi Light"
+      "es": "Kiwi Light"
     },
     "lab": {
-      "l": 79.3,
-      "a": -20.57,
-      "b": 65.65
+      "l": 78.99,
+      "a": -25.19,
+      "b": 66.31
     }
   },
   {
-    "id": "63dcbc0e-818a-4d29-982d-0175eeb4de32",
+    "id": "767f1777-6ae4-4ff4-b4d3-7294de016245",
     "seriesId": "belton-premium",
     "hex": "#DEE38C",
     "code": "327.120",
     "name": {
-      "en": "Kiwi Pastel"
+      "es": "Kiwi Pastel"
     },
     "lab": {
-      "l": 88.4,
-      "a": -11.19,
-      "b": 41.84
+      "l": 88.14,
+      "a": -14.5,
+      "b": 41.92
     }
   },
   {
-    "id": "c7bdbd7d-30be-4332-9d52-dd0b68240f39",
+    "id": "f7ff47a4-dd61-4450-a4b5-3e52ff4c9427",
     "seriesId": "belton-premium",
     "hex": "#F5B2A7",
     "code": "327.122",
     "name": {
-      "en": "Grapegruit"
+      "es": "Grapegruit"
     },
     "lab": {
-      "l": 78.8,
-      "a": 24.09,
-      "b": 15.81
+      "l": 78.49,
+      "a": 22.95,
+      "b": 15.28
     }
   },
   {
-    "id": "37af56d3-1f13-4765-9d63-db9d4fa02812",
+    "id": "64f44bfc-d3ed-47e1-a565-77215292491f",
     "seriesId": "belton-premium",
     "hex": "#6BB66C",
     "code": "327.123",
     "name": {
-      "en": "Menthol"
+      "es": "Menthol"
     },
     "lab": {
-      "l": 67.81,
-      "a": -35.88,
-      "b": 30.07
+      "l": 67.77,
+      "a": -38.62,
+      "b": 30.53
     }
   },
   {
-    "id": "6956af09-8946-47a7-a8c3-3c6036821888",
+    "id": "77bd35cd-fb6b-4c65-80e4-065ce92b9ff8",
     "seriesId": "belton-premium",
     "hex": "#B8D69D",
     "code": "327.124",
     "name": {
-      "en": "Menthol light"
+      "es": "Menthol light"
     },
     "lab": {
-      "l": 82.33,
-      "a": -17.86,
-      "b": 24.8
+      "l": 82.23,
+      "a": -20.04,
+      "b": 24.95
     }
   },
   {
-    "id": "065ed5d7-49bd-44cf-a8e7-655f1f1e2eee",
+    "id": "b6818eda-710a-46b9-ba12-cb9439c452a3",
     "seriesId": "belton-premium",
     "hex": "#783A2F",
     "code": "327.126",
     "name": {
-      "en": "Cocoa"
+      "es": "Cocoa"
     },
     "lab": {
-      "l": 32.67,
-      "a": 26.9,
-      "b": 19.92
+      "l": 32.31,
+      "a": 25.99,
+      "b": 19.3
     }
   },
   {
-    "id": "e218c21b-3510-4fa4-9f6d-6ec8e51ba172",
+    "id": "9ce05069-6162-446b-a4b5-e646047141e6",
     "seriesId": "belton-premium",
     "hex": "#383959",
     "code": "327.127",
     "name": {
-      "en": "NASTY SONS plum"
+      "es": "NASTY SONS plum"
     },
     "lab": {
-      "l": 25.01,
-      "a": 6.26,
-      "b": -19.56
+      "l": 25.22,
+      "a": 8.36,
+      "b": -19.33
     }
   },
   {
-    "id": "e256a742-ef02-4b59-ad3d-39958031c381",
+    "id": "917208f7-ad95-4d9e-8f05-b05cca1db726",
     "seriesId": "belton-premium",
     "hex": "#CCC545",
     "code": "327.128",
     "name": {
-      "en": "Apple"
+      "es": "Apple"
     },
     "lab": {
-      "l": 78.36,
-      "a": -8.58,
-      "b": 62.05
+      "l": 77.99,
+      "a": -12.74,
+      "b": 62.38
     }
   },
   {
-    "id": "f174aadf-0b93-4e54-b38f-fc7310ead84b",
+    "id": "a5adc27a-ec33-43e1-b8e7-60d4360cc575",
     "seriesId": "belton-premium",
     "hex": "#996A63",
     "code": "327.129",
     "name": {
-      "en": "Antique pink"
+      "es": "Antique pink"
     },
     "lab": {
-      "l": 49.71,
-      "a": 18.67,
-      "b": 11.89
+      "l": 49.47,
+      "a": 17.85,
+      "b": 11.49
     }
   },
   {
-    "id": "9b10da89-59d5-4ec5-b233-77131050e9b4",
+    "id": "c69c11a8-630e-4060-b306-e3391122f1b0",
     "seriesId": "belton-premium",
     "hex": "#74324A",
     "code": "327.130",
     "name": {
-      "en": "Purple"
+      "es": "Purple"
     },
     "lab": {
-      "l": 30.85,
-      "a": 31.59,
-      "b": -0.04
+      "l": 30.62,
+      "a": 31.76,
+      "b": -0.6
     }
   },
   {
-    "id": "3c96bc5f-727a-48bb-907c-e35199ba24a4",
+    "id": "c8e6b3b4-e805-4ca6-8b7e-2a3431606ecb",
     "seriesId": "belton-premium",
     "hex": "#00873E",
     "code": "327.131",
     "name": {
-      "en": "Lettuce green"
+      "es": "Lettuce green"
     },
     "lab": {
-      "l": 49.08,
-      "a": -45.46,
-      "b": 29.71
+      "l": 49.1,
+      "a": -48.29,
+      "b": 30.38
     }
   },
   {
-    "id": "4583916f-ee85-4fe3-82e5-3c7d43873a8a",
+    "id": "77b27927-70bd-49f9-a70e-51bd57239798",
     "seriesId": "belton-premium",
     "hex": "#DF4F1A",
     "code": "327.132",
     "name": {
-      "en": "LINDA's sunset"
+      "es": "LINDA&#039;s sunset"
     },
     "lab": {
-      "l": 54.12,
-      "a": 55.58,
-      "b": 58.34
+      "l": 53.34,
+      "a": 54.02,
+      "b": 56.94
     }
   },
   {
-    "id": "c4fcbad6-9ae0-49c2-a142-8ff5184f9ec8",
+    "id": "bd462ac3-f8fa-48c5-8dc9-4b5f38ff16e7",
     "seriesId": "belton-premium",
     "hex": "#ED7920",
     "code": "327.133",
     "name": {
-      "en": "Pastel orange"
+      "es": "Pastel orange"
     },
     "lab": {
-      "l": 63.87,
-      "a": 42.14,
-      "b": 64.37
+      "l": 63.17,
+      "a": 39.68,
+      "b": 63.52
     }
   },
   {
-    "id": "35432ee9-997d-4d89-87ba-b34e61005f0e",
+    "id": "a504847d-5c0d-4b36-a3e8-918fcd969cc8",
     "seriesId": "belton-premium",
     "hex": "#DB623A",
     "code": "327.134",
     "name": {
-      "en": "Salmon orange"
+      "es": "Salmon orange"
     },
     "lab": {
-      "l": 56.85,
-      "a": 46.67,
-      "b": 46.05
+      "l": 56.19,
+      "a": 44.97,
+      "b": 44.94
     }
   },
   {
-    "id": "3c1685a2-a92e-438e-ae49-e136e2cba3ea",
+    "id": "05250ef0-da05-41e8-97fb-f81911e784be",
     "seriesId": "belton-premium",
     "hex": "#BE372A",
     "code": "327.135",
     "name": {
-      "en": "Vermillion"
+      "es": "Vermillion"
     },
     "lab": {
-      "l": 44.71,
-      "a": 53.95,
-      "b": 40.38
+      "l": 44.02,
+      "a": 52.98,
+      "b": 38.98
     }
   },
   {
-    "id": "30dbf374-c57a-42ea-87e0-83f42aab0e54",
+    "id": "ca09968e-1d59-4d55-a5dc-f10042eec181",
     "seriesId": "belton-premium",
     "hex": "#D36AA2",
     "code": "327.136",
     "name": {
-      "en": "Fuchsia pink"
+      "es": "Fuchsia pink"
     },
     "lab": {
-      "l": 58.99,
-      "a": 46.94,
-      "b": -10.39
+      "l": 58.76,
+      "a": 47.84,
+      "b": -11.06
     }
   },
   {
-    "id": "0f96dbe4-1148-4094-abde-b912b8737bb2",
+    "id": "03a11ce5-bf52-4044-a27e-55ce3b3fc0dd",
     "seriesId": "belton-premium",
     "hex": "#BB2038",
     "code": "327.137",
     "name": {
-      "en": "Raspberry red"
+      "es": "Raspberry red"
     },
     "lab": {
-      "l": 41.74,
-      "a": 60.28,
-      "b": 28.78
+      "l": 41.04,
+      "a": 59.87,
+      "b": 27.24
     }
   },
   {
-    "id": "9b7d2506-8132-4198-9017-52547a36c6fd",
+    "id": "ac248c17-c336-45e1-9d19-aed01aa660f8",
     "seriesId": "belton-premium",
     "hex": "#3E1F30",
     "code": "327.138",
     "name": {
-      "en": "Purple violet"
+      "es": "Purple violet"
     },
     "lab": {
-      "l": 16.67,
-      "a": 17.34,
-      "b": -4.41
+      "l": 16.59,
+      "a": 17.72,
+      "b": -4.65
     }
   },
   {
-    "id": "387bf784-247a-4a76-bb4f-2e5799474606",
+    "id": "f3b60d02-b0a8-4088-804a-361473e09baf",
     "seriesId": "belton-premium",
     "hex": "#3E1715",
     "code": "327.139",
     "name": {
-      "en": "GEZER black red"
+      "es": "GEZER black red"
     },
     "lab": {
-      "l": 14.01,
-      "a": 19.38,
-      "b": 11.21
+      "l": 13.78,
+      "a": 18.92,
+      "b": 10.77
     }
   },
   {
-    "id": "463f05d3-29a1-42e8-8800-ff5b20fc47fe",
+    "id": "5e88652d-2f0d-419b-8cb8-34fee8a9b30c",
     "seriesId": "belton-premium",
     "hex": "#7D83B4",
     "code": "327.140",
     "name": {
-      "en": "Light violet"
+      "es": "Light violet"
     },
     "lab": {
-      "l": 55.69,
-      "a": 6.46,
-      "b": -26.79
+      "l": 55.97,
+      "a": 9.31,
+      "b": -26.49
     }
   },
   {
-    "id": "2aafae74-b532-4522-8236-686e7ac07af8",
+    "id": "46ee13cd-3827-4a20-87e1-a203a4a3e04e",
     "seriesId": "belton-premium",
     "hex": "#232A60",
     "code": "327.141",
     "name": {
-      "en": "Purple velvet"
+      "es": "Purple velvet"
     },
     "lab": {
-      "l": 18.98,
-      "a": 11.52,
-      "b": -33.81
+      "l": 19.46,
+      "a": 15.55,
+      "b": -33.19
     }
   },
   {
-    "id": "bc358fcd-0382-4715-be1c-597f92314237",
+    "id": "9e12ce7e-9af9-4f33-a590-0de7ba51071a",
     "seriesId": "belton-premium",
     "hex": "#567513",
     "code": "327.142",
     "name": {
-      "en": "Fern green"
+      "es": "Fern green"
     },
     "lab": {
-      "l": 45.45,
-      "a": -22.34,
-      "b": 45.11
+      "l": 45.29,
+      "a": -25.66,
+      "b": 45.81
     }
   },
   {
-    "id": "b7cc4115-cf77-49b0-8e88-0e9ab3478f41",
+    "id": "a037345f-1c89-44eb-a2e1-3186e8afcd89",
     "seriesId": "belton-premium",
     "hex": "#1F5A2E",
     "code": "327.143",
     "name": {
-      "en": "Leaf green"
+      "es": "Leaf green"
     },
     "lab": {
       "l": 33.56,
-      "a": -28.11,
-      "b": 19.47
+      "a": -29.93,
+      "b": 19.86
     }
   },
   {
-    "id": "9b32b387-2ea8-4400-b58f-8629e5bb9a1a",
+    "id": "d10d28b5-8847-4262-8995-6b27b5e12091",
     "seriesId": "belton-premium",
     "hex": "#2C4025",
     "code": "327.144",
     "name": {
-      "en": "Chromium oxide green"
+      "es": "Chromium oxide green"
     },
     "lab": {
-      "l": 24.79,
-      "a": -12.87,
-      "b": 13.89
+      "l": 24.75,
+      "a": -14.1,
+      "b": 14.05
     }
   },
   {
-    "id": "f5a0c340-6dc9-40fb-8c8c-2e52d9c10e7b",
+    "id": "cbd702d5-d36f-4ebe-800c-c4d7608a3c44",
     "seriesId": "belton-premium",
     "hex": "#004230",
     "code": "327.145",
     "name": {
-      "en": "SEAK future green"
+      "es": "SEAK future green"
     },
     "lab": {
-      "l": 23.95,
-      "a": -23.8,
-      "b": 5.39
+      "l": 24.03,
+      "a": -24.22,
+      "b": 5.68
     }
   },
   {
-    "id": "a91129a3-8046-4a21-9937-b1ead3ac8b10",
+    "id": "ec798e28-52a1-4e76-a3e5-ccd2b8b4ff33",
     "seriesId": "belton-premium",
     "hex": "#414423",
     "code": "327.146",
     "name": {
-      "en": "Evil Olive"
+      "es": "Evil Olive"
     },
     "lab": {
-      "l": 27.9,
-      "a": -5.68,
-      "b": 19.45
+      "l": 27.79,
+      "a": -7.19,
+      "b": 19.51
     }
   },
   {
-    "id": "a7ca4c1a-16b3-44cc-b76b-86df15823b4a",
+    "id": "a103acc7-9451-45f0-9ba0-5c735cfee2e0",
     "seriesId": "belton-premium",
     "hex": "#707574",
     "code": "327.147",
     "name": {
-      "en": "Mouse grey"
+      "es": "Mouse grey"
     },
     "lab": {
-      "l": 48.78,
-      "a": -2.12,
-      "b": -0.14
+      "l": 48.8,
+      "a": -2.09,
+      "b": -0.11
     }
   },
   {
-    "id": "763b9d4e-526f-46ce-b45f-71fbf588c0e6",
+    "id": "c944509f-527c-4a26-b4a1-a0cfc252ec82",
     "seriesId": "belton-premium",
     "hex": "#3C4144",
     "code": "327.148",
     "name": {
-      "en": "Anthracite grey"
+      "es": "Anthracite grey"
     },
     "lab": {
-      "l": 27.14,
-      "a": -1.62,
-      "b": -2.59
+      "l": 27.18,
+      "a": -1.35,
+      "b": -2.54
     }
   },
   {
-    "id": "caecc490-5201-4933-8277-c6a565aea16e",
+    "id": "fc1eee28-4fb9-40bc-9d91-f802e05409d3",
     "seriesId": "belton-premium",
     "hex": "#303330",
     "code": "327.149",
     "name": {
-      "en": "Black grey dark"
+      "es": "Black grey dark"
     },
     "lab": {
-      "l": 20.87,
-      "a": -1.88,
-      "b": 1.44
+      "l": 20.86,
+      "a": -2.01,
+      "b": 1.45
     }
   },
   {
-    "id": "e92dd681-9ac9-4dab-817c-153889ea330a",
+    "id": "fe3154e9-1b24-441a-a3ea-c9fd54138c37",
     "seriesId": "belton-premium",
     "hex": "#AC702E",
     "code": "327.150",
     "name": {
-      "en": "Ocher brown"
+      "es": "Ocher brown"
     },
     "lab": {
-      "l": 52.91,
-      "a": 20.2,
-      "b": 45.28
+      "l": 52.46,
+      "a": 17.84,
+      "b": 44.9
     }
   },
   {
-    "id": "e08fcf69-ad4b-42c9-8b17-4042c4d0fa77",
+    "id": "0fdc6c31-0296-4474-bf9c-e970a27dd4fd",
     "seriesId": "belton-premium",
     "hex": "#834E2D",
     "code": "327.151",
     "name": {
-      "en": "Beige brown"
+      "es": "Beige brown"
     },
     "lab": {
-      "l": 39.02,
-      "a": 20.58,
-      "b": 29.13
+      "l": 38.66,
+      "a": 19.05,
+      "b": 28.66
     }
   },
   {
-    "id": "a50c838b-66fe-4a78-b0ca-2c66a3ba2406",
+    "id": "3422d31f-eac9-4085-ae64-03398744d607",
     "seriesId": "belton-premium",
     "hex": "#4B301E",
     "code": "327.152",
     "name": {
-      "en": "Chocolate brown"
+      "es": "Chocolate brown"
     },
     "lab": {
-      "l": 22.87,
-      "a": 11.01,
-      "b": 16.73
+      "l": 22.67,
+      "a": 10.01,
+      "b": 16.46
     }
   },
   {
-    "id": "450a4d48-1c10-43fc-b258-35cb366bd6f6",
+    "id": "310aab38-5f02-43c0-b961-e5cbf065c294",
     "seriesId": "belton-premium",
     "hex": "#68184B",
     "code": "327.153",
     "name": {
-      "en": "MACrew purple"
+      "es": "MACrew purple"
     },
     "lab": {
-      "l": 24.2,
-      "a": 39.17,
-      "b": -10.82
+      "l": 24.02,
+      "a": 40.11,
+      "b": -11.37
     }
   },
   {
-    "id": "f3a16a04-152c-46a0-8515-40279f5d475f",
+    "id": "4da50778-55f9-4d93-9356-1406918619cb",
     "seriesId": "belton-premium",
     "hex": "#315384",
     "code": "327.154",
     "name": {
-      "en": "Wild WANE blue"
+      "es": "Wild WANE blue"
     },
     "lab": {
-      "l": 34.57,
-      "a": -0.14,
-      "b": -31.77
+      "l": 35.01,
+      "a": 3.92,
+      "b": -31.19
     }
   },
   {
-    "id": "d10f0ca6-c9d8-48a4-ae23-336dfd3f7ec2",
+    "id": "d3cf5d2d-5d7f-490f-b094-8383730122cc",
     "seriesId": "belton-premium",
     "hex": "#00605B",
     "code": "327.155",
     "name": {
-      "en": "MARTHA marine"
+      "es": "MARTHA marine"
     },
     "lab": {
-      "l": 36.02,
-      "a": -26.09,
-      "b": -4.45
+      "l": 36.21,
+      "a": -25.2,
+      "b": -4.06
     }
   },
   {
-    "id": "8c3c3e48-51bc-4ca4-9048-82a9b46fb9d6",
+    "id": "d32fd183-46c8-4ec2-9a7c-e8eb5802baa6",
     "seriesId": "belton-premium",
     "hex": "#00454D",
     "code": "327.156",
     "name": {
-      "en": "Turquoise dark"
+      "es": "Turquoise dark"
     },
     "lab": {
-      "l": 25.91,
-      "a": -17.44,
-      "b": -10.65
+      "l": 26.13,
+      "a": -15.78,
+      "b": -10.29
     }
   },
   {
-    "id": "c897fa28-413b-46d6-9b3d-a11bf897ee99",
+    "id": "60541652-301b-43d2-bf09-1b67870e5a72",
     "seriesId": "belton-premium",
     "hex": "#838423",
     "code": "327.157",
     "name": {
-      "en": "Pear"
+      "es": "Pear"
     },
     "lab": {
-      "l": 53.7,
-      "a": -9.36,
-      "b": 48.76
+      "l": 53.44,
+      "a": -12.62,
+      "b": 49.14
     }
   },
   {
-    "id": "7dea0dfc-0101-4115-95bb-52ade36cda47",
+    "id": "30b63163-918c-48b5-bcb1-04924bc571d5",
     "seriesId": "belton-premium",
     "hex": "#E3E3E3",
     "code": "327.158",
     "name": {
-      "en": "Silver Dollar"
+      "es": "Silver Dollar"
     },
     "lab": {
       "l": 90.24,
@@ -2072,26 +2072,26 @@
     }
   },
   {
-    "id": "eaed27f2-d90b-4e42-a219-fad287bd2651",
+    "id": "fc19ce87-3495-4bfe-af6d-7e5735f3a5a6",
     "seriesId": "belton-premium",
     "hex": "#3C3B36",
     "code": "327.159",
     "name": {
-      "en": "Tar black"
+      "es": "Tar black"
     },
     "lab": {
-      "l": 24.84,
-      "a": -0.36,
-      "b": 3.27
+      "l": 24.81,
+      "a": -0.65,
+      "b": 3.25
     }
   },
   {
-    "id": "3deba6a8-5a04-4c81-8b6e-dced8334cee7",
+    "id": "9d55b317-318c-463b-b3a9-96316399200c",
     "seriesId": "belton-premium",
     "hex": "#FFFFFF",
     "code": "327.160",
     "name": {
-      "en": "Signal white"
+      "es": "Signal white"
     },
     "lab": {
       "l": 100,
@@ -2100,1356 +2100,1356 @@
     }
   },
   {
-    "id": "09c19a5e-9822-4d9d-92cb-826ea21f0602",
+    "id": "b3b7b096-bc91-4b76-bb6d-7758390049f3",
     "seriesId": "belton-premium",
     "hex": "#59A8CD",
     "code": "327.161",
     "name": {
-      "en": "Shock blue middle"
+      "es": "Shock blue middle"
     },
     "lab": {
-      "l": 64.96,
-      "a": -17.19,
-      "b": -26.83
+      "l": 65.38,
+      "a": -13.66,
+      "b": -26.23
     }
   },
   {
-    "id": "4fa54a40-0b6c-4bbf-a1cf-e7235cb7c363",
+    "id": "8f97d446-78d0-4137-8ca4-bc2d143de1e6",
     "seriesId": "belton-premium",
     "hex": "#88BCD8",
     "code": "327.162",
     "name": {
-      "en": "Shock blue light"
+      "es": "Shock blue light"
     },
     "lab": {
-      "l": 73.34,
-      "a": -12.43,
-      "b": -19.88
+      "l": 73.65,
+      "a": -10.08,
+      "b": -19.46
     }
   },
   {
-    "id": "6a0b94e3-b0b8-4f67-b501-0e4bc81a8986",
+    "id": "d24889a6-736a-4bf5-8f7b-ba0bc5bc975c",
     "seriesId": "belton-premium",
     "hex": "#A1CEE4",
     "code": "327.163",
     "name": {
-      "en": "Shock blue pastel"
+      "es": "Shock blue pastel"
     },
     "lab": {
-      "l": 80.11,
-      "a": -11.48,
-      "b": -16.01
+      "l": 80.36,
+      "a": -9.65,
+      "b": -15.66
     }
   },
   {
-    "id": "0ea07b1c-8470-46df-942b-6e8f3c1a9521",
+    "id": "05aff207-1385-4dec-ba7d-249740b33cbe",
     "seriesId": "belton-premium",
     "hex": "#B71D5B",
     "code": "327.164",
     "name": {
-      "en": "Telemagenta"
+      "es": "Telemagenta"
     },
     "lab": {
-      "l": 41.3,
-      "a": 61.4,
-      "b": 5.96
+      "l": 40.74,
+      "a": 61.75,
+      "b": 4.67
     }
   },
   {
-    "id": "ef08e51a-6a84-4c0b-89d6-ef51648c65a0",
+    "id": "d77d1bc0-9f2d-48c9-a05a-8264b439be0d",
     "seriesId": "belton-premium",
     "hex": "#FFCC00",
     "code": "327.165",
     "name": {
-      "en": "Signal yellow"
+      "es": "Signal yellow"
     },
     "lab": {
-      "l": 84.76,
-      "a": 8.24,
-      "b": 84.79
+      "l": 84.2,
+      "a": 3.68,
+      "b": 85.22
     }
   },
   {
-    "id": "54e2e0fb-4458-4b12-a383-943d23fbd7d0",
+    "id": "d324ace0-3917-43c7-92be-21aa67a270fe",
     "seriesId": "belton-premium",
     "hex": "#990C25",
     "code": "327.166",
     "name": {
-      "en": "Ruby red"
+      "es": "Ruby red"
     },
     "lab": {
-      "l": 32.84,
-      "a": 54.13,
-      "b": 28.32
+      "l": 32.19,
+      "a": 53.81,
+      "b": 26.88
     }
   },
   {
-    "id": "4b3abd35-cbfa-47dc-b8d2-1aed1f410759",
+    "id": "30445688-75c0-4f46-9a85-c75d4f3cb860",
     "seriesId": "belton-premium",
     "hex": "#FDE9C5",
     "code": "327.167",
     "name": {
-      "en": "Ivory light"
+      "es": "Ivory light"
     },
     "lab": {
-      "l": 93.3,
-      "a": 2.97,
-      "b": 20.17
+      "l": 93.1,
+      "a": 1.29,
+      "b": 19.98
     }
   },
   {
-    "id": "b1c731ed-de51-4043-8791-0f52a2321aa6",
+    "id": "a6dc0077-8193-4e4f-81bb-bf863cc30731",
     "seriesId": "belton-premium",
     "hex": "#F7C6CD",
     "code": "327.168",
     "name": {
-      "en": "Piglet pink light"
+      "es": "Piglet pink light"
     },
     "lab": {
-      "l": 84.42,
-      "a": 18.74,
-      "b": 3.48
+      "l": 84.26,
+      "a": 18.44,
+      "b": 3.14
     }
   },
   {
-    "id": "91725dea-0b02-479a-abb4-943b6baa0ba7",
+    "id": "6381426a-3002-402f-a693-260e887f0bb9",
     "seriesId": "belton-premium",
     "hex": "#9F5348",
     "code": "327.169",
     "name": {
-      "en": "Cocoa light"
+      "es": "Cocoa light"
     },
     "lab": {
-      "l": 44.67,
-      "a": 31.35,
-      "b": 21.36
+      "l": 44.27,
+      "a": 30.3,
+      "b": 20.64
     }
   },
   {
-    "id": "efff5958-e74a-487d-b779-69cc756319d8",
+    "id": "b6993d80-bef7-4fa3-8472-8085e375ca00",
     "seriesId": "belton-premium",
     "hex": "#DC9B55",
     "code": "327.170",
     "name": {
-      "en": "Camel"
+      "es": "Camel"
     },
     "lab": {
-      "l": 69.45,
-      "a": 19.89,
-      "b": 46.2
+      "l": 68.98,
+      "a": 17.18,
+      "b": 45.76
     }
   },
   {
-    "id": "06b7bb36-aab1-42fe-b16b-c65ce85868ee",
+    "id": "c74041a7-56f8-476d-8bfe-5a968e4f63d2",
     "seriesId": "belton-premium",
     "hex": "#ED7929",
     "code": "327.171",
     "name": {
-      "en": "Lobster light"
+      "es": "Lobster light"
     },
     "lab": {
-      "l": 63.9,
-      "a": 42.3,
-      "b": 61.26
+      "l": 63.21,
+      "a": 39.9,
+      "b": 60.37
     }
   },
   {
-    "id": "6e5688a1-05be-45b3-a62a-f731b4bd9871",
+    "id": "e7284613-7a62-4815-bd65-cfd5036bcc2f",
     "seriesId": "belton-premium",
     "hex": "#005A3C",
     "code": "327.172",
     "name": {
-      "en": "Turquoise green middle"
+      "es": "Turquoise green middle"
     },
     "lab": {
-      "l": 33.14,
-      "a": -30.7,
-      "b": 10.49
+      "l": 33.22,
+      "a": -31.65,
+      "b": 10.87
     }
   },
   {
-    "id": "ae24d965-96b8-4cd0-aaac-b4114aebb3a9",
+    "id": "58657a73-8b1b-469c-9171-bb4b11c6a7a1",
     "seriesId": "belton-premium",
     "hex": "#533E27",
     "code": "327.173",
     "name": {
-      "en": "Mocca"
+      "es": "Mocca"
     },
     "lab": {
-      "l": 28.12,
-      "a": 7.06,
-      "b": 17.83
+      "l": 27.93,
+      "a": 5.86,
+      "b": 17.64
     }
   },
   {
-    "id": "a4f6da9f-75f2-42d5-b60d-0c5edf4a7851",
+    "id": "ff481de6-f0e5-48e5-a557-9f4f684ca0d4",
     "seriesId": "belton-premium",
     "hex": "#C4C1AB",
     "code": "327.174",
     "name": {
-      "en": "Stone grey light"
+      "es": "Stone grey light"
     },
     "lab": {
-      "l": 77.86,
-      "a": -1.73,
-      "b": 11.52
+      "l": 77.77,
+      "a": -2.74,
+      "b": 11.46
     }
   },
   {
-    "id": "0865ab9a-4596-40be-a554-2b0af6663f18",
+    "id": "7d0a921b-b313-415a-b3cb-c5a753ecfd19",
     "seriesId": "belton-premium",
     "hex": "#848169",
     "code": "327.175",
     "name": {
-      "en": "Stone grey middle"
+      "es": "Stone grey middle"
     },
     "lab": {
-      "l": 53.74,
-      "a": -1.99,
-      "b": 13.5
+      "l": 53.63,
+      "a": -3.14,
+      "b": 13.45
     }
   },
   {
-    "id": "b59ab161-4e55-405d-86ec-ddcd1c38d1b0",
+    "id": "806a79b9-4556-4c84-9354-e69e1ac44b75",
     "seriesId": "belton-premium",
     "hex": "#5D5947",
     "code": "327.176",
     "name": {
-      "en": "Stone grey dark"
+      "es": "Stone grey dark"
     },
     "lab": {
-      "l": 37.8,
-      "a": -0.81,
-      "b": 11.08
+      "l": 37.71,
+      "a": -1.74,
+      "b": 11.02
     }
   },
   {
-    "id": "e620e13e-7d30-459e-bbac-cc3074ea63db",
+    "id": "01613200-fd8e-4433-a0da-f6d706c89b6f",
     "seriesId": "belton-premium",
     "hex": "#BDBCBB",
     "code": "327.177",
     "name": {
-      "en": "Grey blue light"
+      "es": "Grey blue light"
     },
     "lab": {
-      "l": 76.31,
-      "a": 0.22,
-      "b": 0.64
+      "l": 76.3,
+      "a": 0.16,
+      "b": 0.63
     }
   },
   {
-    "id": "79704b0d-7ee4-41b4-a85b-26343fe7dcef",
+    "id": "db9b4d24-dccd-4ab9-bfad-d5c1669a8049",
     "seriesId": "belton-premium",
     "hex": "#9C9E9E",
     "code": "327.178",
     "name": {
-      "en": "Grey blue middle"
+      "es": "Grey blue middle"
     },
     "lab": {
       "l": 64.95,
-      "a": -0.75,
-      "b": -0.27
+      "a": -0.72,
+      "b": -0.25
     }
   },
   {
-    "id": "ff8d7fb9-b24d-4725-88f5-b0eef72614a6",
+    "id": "802f1482-d922-4b61-80b0-04d1b1a7d6dc",
     "seriesId": "belton-premium",
     "hex": "#6E7172",
     "code": "327.179",
     "name": {
-      "en": "Grey blue dark"
+      "es": "Grey blue dark"
     },
     "lab": {
-      "l": 47.4,
-      "a": -1.03,
-      "b": -0.98
-    }
-  },
-  {
-    "id": "9526348c-dfbe-42ff-b919-c76128e2cafb",
-    "seriesId": "belton-premium",
-    "hex": "#061722",
-    "code": "327.180",
-    "name": {
-      "en": "Toast signal black"
-    },
-    "lab": {
-      "l": 6.79,
-      "a": -3.5,
-      "b": -9.9
-    }
-  },
-  {
-    "id": "1e7af5e4-821f-4c92-a3cc-977f99ffce8b",
-    "seriesId": "belton-premium",
-    "hex": "#F49F4E",
-    "code": "327.181",
-    "name": {
-      "en": "Orange brown light"
-    },
-    "lab": {
-      "l": 73.18,
-      "a": 27.44,
-      "b": 54.57
-    }
-  },
-  {
-    "id": "455b2b52-a7c4-4b64-a5c3-9b75c1cbe910",
-    "seriesId": "belton-premium",
-    "hex": "#D7712E",
-    "code": "327.182",
-    "name": {
-      "en": "Orange brown middle"
-    },
-    "lab": {
-      "l": 59.09,
-      "a": 37.65,
-      "b": 53.61
-    }
-  },
-  {
-    "id": "7c1382b2-e8f4-41c0-985f-38d706b50c0f",
-    "seriesId": "belton-premium",
-    "hex": "#75462A",
-    "code": "327.183",
-    "name": {
-      "en": "Walnut"
-    },
-    "lab": {
-      "l": 34.98,
-      "a": 18.62,
-      "b": 25.58
-    }
-  },
-  {
-    "id": "ad4afa00-6431-4439-b987-39fc1f08cda5",
-    "seriesId": "belton-premium",
-    "hex": "#ED6916",
-    "code": "327.184",
-    "name": {
-      "en": "DARE orange light"
-    },
-    "lab": {
-      "l": 60.8,
-      "a": 49.44,
-      "b": 65.25
-    }
-  },
-  {
-    "id": "cf7878f9-4fcc-452c-b28a-703b9ab3afc6",
-    "seriesId": "belton-premium",
-    "hex": "#4D171C",
-    "code": "327.185",
-    "name": {
-      "en": "Garnet"
-    },
-    "lab": {
-      "l": 17.16,
-      "a": 26.21,
-      "b": 10.99
-    }
-  },
-  {
-    "id": "294d18da-2d24-4eb5-bdf3-ba8132cb2513",
-    "seriesId": "belton-premium",
-    "hex": "#FACCB0",
-    "code": "327.186",
-    "name": {
-      "en": "Peach pastel"
-    },
-    "lab": {
-      "l": 85.6,
-      "a": 13.9,
-      "b": 20.46
-    }
-  },
-  {
-    "id": "61c580bb-1956-4b22-941b-439a715c62f9",
-    "seriesId": "belton-premium",
-    "hex": "#F8C0A0",
-    "code": "327.187",
-    "name": {
-      "en": "Peach light"
-    },
-    "lab": {
-      "l": 82.27,
-      "a": 17.63,
-      "b": 24.31
-    }
-  },
-  {
-    "id": "9efee993-05a3-4ca9-9b10-537afa47a45f",
-    "seriesId": "belton-premium",
-    "hex": "#D80028",
-    "code": "327.188",
-    "name": {
-      "en": "MAD C cherry red"
-    },
-    "lab": {
-      "l": 46.19,
-      "a": 71.69,
-      "b": 45.1
-    }
-  },
-  {
-    "id": "f204fd4d-fbd0-42b1-8051-45edab6b55d6",
-    "seriesId": "belton-premium",
-    "hex": "#F4BEAE",
-    "code": "327.189",
-    "name": {
-      "en": "LOOMIT's apricot pastel"
-    },
-    "lab": {
-      "l": 81.62,
-      "a": 18.36,
-      "b": 15.95
-    }
-  },
-  {
-    "id": "be3c1b52-48cb-4643-a97b-929d8210551d",
-    "seriesId": "belton-premium",
-    "hex": "#EE836F",
-    "code": "327.190",
-    "name": {
-      "en": "LOOMIT's apricot middle"
-    },
-    "lab": {
-      "l": 66.72,
-      "a": 40.55,
-      "b": 29.96
-    }
-  },
-  {
-    "id": "5494dd4a-7260-42b7-b6d1-035c90b3190d",
-    "seriesId": "belton-premium",
-    "hex": "#D45746",
-    "code": "327.191",
-    "name": {
-      "en": "Strawberry red"
-    },
-    "lab": {
-      "l": 53.87,
-      "a": 49.48,
-      "b": 36
-    }
-  },
-  {
-    "id": "6c2cfe55-588d-4ac0-9215-f8617a3927cc",
-    "seriesId": "belton-premium",
-    "hex": "#F8CAC2",
-    "code": "327.192",
-    "name": {
-      "en": "Grapefruit light"
-    },
-    "lab": {
-      "l": 85.25,
-      "a": 15.92,
-      "b": 10.48
-    }
-  },
-  {
-    "id": "108dc8fc-990e-4acd-aff5-fe0c3eea70ef",
-    "seriesId": "belton-premium",
-    "hex": "#E2A09A",
-    "code": "327.193",
-    "name": {
-      "en": "Mauve light"
-    },
-    "lab": {
-      "l": 72.28,
-      "a": 24.69,
-      "b": 13.47
-    }
-  },
-  {
-    "id": "2310ac0e-0c45-4dc1-972e-f5fa9d36cf77",
-    "seriesId": "belton-premium",
-    "hex": "#A9736A",
-    "code": "327.194",
-    "name": {
-      "en": "Antique pink middle"
-    },
-    "lab": {
-      "l": 54.02,
-      "a": 21.08,
-      "b": 14.08
-    }
-  },
-  {
-    "id": "0ec0219d-659e-4149-ab66-1ea69646a211",
-    "seriesId": "belton-premium",
-    "hex": "#DC7FA0",
-    "code": "327.195",
-    "name": {
-      "en": "Candy"
-    },
-    "lab": {
-      "l": 64.38,
-      "a": 39.68,
-      "b": -1.18
-    }
-  },
-  {
-    "id": "81b49fe8-8e05-4137-ae83-fad2a589c1a4",
-    "seriesId": "belton-premium",
-    "hex": "#B74D74",
-    "code": "327.196",
-    "name": {
-      "en": "Lipstick"
-    },
-    "lab": {
-      "l": 48.15,
-      "a": 46.53,
-      "b": 0.28
-    }
-  },
-  {
-    "id": "d2909a84-549f-4314-9560-9b9680d405ee",
-    "seriesId": "belton-premium",
-    "hex": "#DE95BC",
-    "code": "327.197",
-    "name": {
-      "en": "TILT bubble pink"
-    },
-    "lab": {
-      "l": 70.07,
-      "a": 32.37,
-      "b": -8.52
-    }
-  },
-  {
-    "id": "f5aebf18-0770-413e-80c2-8f7216526e99",
-    "seriesId": "belton-premium",
-    "hex": "#D94476",
-    "code": "327.198",
-    "name": {
-      "en": "MAD C psycho pink"
-    },
-    "lab": {
-      "l": 52.6,
-      "a": 61.24,
-      "b": 6.34
-    }
-  },
-  {
-    "id": "4e65ec62-b7b2-4d3b-98fa-487a9d76e89b",
-    "seriesId": "belton-premium",
-    "hex": "#D7C7DB",
-    "code": "327.199",
-    "name": {
-      "en": "Crocus"
-    },
-    "lab": {
-      "l": 82.03,
-      "a": 8.45,
-      "b": -7.86
-    }
-  },
-  {
-    "id": "d9613d70-c70b-4972-a240-be913e8dc05d",
-    "seriesId": "belton-premium",
-    "hex": "#BCA0C0",
-    "code": "327.200",
-    "name": {
-      "en": "Lavender"
-    },
-    "lab": {
-      "l": 69.17,
-      "a": 14.9,
-      "b": -12.53
-    }
-  },
-  {
-    "id": "7d3ef9d0-d78e-42dc-b392-533834beebd2",
-    "seriesId": "belton-premium",
-    "hex": "#A77EA9",
-    "code": "327.201",
-    "name": {
-      "en": "Indigo"
-    },
-    "lab": {
-      "l": 58,
-      "a": 21.95,
-      "b": -16.57
-    }
-  },
-  {
-    "id": "c8029995-266b-49e6-99a0-b957e9f6f3db",
-    "seriesId": "belton-premium",
-    "hex": "#856195",
-    "code": "327.202",
-    "name": {
-      "en": "Grape"
-    },
-    "lab": {
-      "l": 46.46,
-      "a": 22.41,
-      "b": -22.86
-    }
-  },
-  {
-    "id": "5be449d8-0706-4086-a5fd-e0758abbbbc7",
-    "seriesId": "belton-premium",
-    "hex": "#673C7C",
-    "code": "327.203",
-    "name": {
-      "en": "Blackberry"
-    },
-    "lab": {
-      "l": 32.87,
-      "a": 28.4,
-      "b": -29.09
-    }
-  },
-  {
-    "id": "2b8c24a5-4fb1-4a61-9124-f5fd89b8e8f9",
-    "seriesId": "belton-premium",
-    "hex": "#595C79",
-    "code": "327.204",
-    "name": {
-      "en": "Plum middle"
-    },
-    "lab": {
-      "l": 39.67,
-      "a": 4.09,
-      "b": -16.89
-    }
-  },
-  {
-    "id": "e4082a65-d11c-488c-bf26-74a0b0ee10c2",
-    "seriesId": "belton-premium",
-    "hex": "#7B7CAB",
-    "code": "327.205",
-    "name": {
-      "en": "Viola middle"
-    },
-    "lab": {
-      "l": 53.3,
-      "a": 7.85,
-      "b": -25.31
-    }
-  },
-  {
-    "id": "6f4c753a-8c70-49aa-8d73-186c5bc5e5e2",
-    "seriesId": "belton-premium",
-    "hex": "#464E96",
-    "code": "327.206",
-    "name": {
-      "en": "Viola dark"
-    },
-    "lab": {
-      "l": 35.35,
-      "a": 13.34,
-      "b": -41.36
-    }
-  },
-  {
-    "id": "54fc64e1-6930-4335-9f41-ae42950941e0",
-    "seriesId": "belton-premium",
-    "hex": "#A6B3CC",
-    "code": "327.207",
-    "name": {
-      "en": "Pigeon blue middle"
-    },
-    "lab": {
-      "l": 72.54,
-      "a": -0.72,
-      "b": -14.34
-    }
-  },
-  {
-    "id": "ab0a7d47-4739-495c-9b1b-9907dcd5aeb4",
-    "seriesId": "belton-premium",
-    "hex": "#8D9FC0",
-    "code": "327.208",
-    "name": {
-      "en": "Pigeon blue"
-    },
-    "lab": {
-      "l": 64.94,
-      "a": -0.9,
-      "b": -19.34
-    }
-  },
-  {
-    "id": "210a9559-2b37-43ec-aa09-f04d9247754a",
-    "seriesId": "belton-premium",
-    "hex": "#1F3D79",
-    "code": "327.209",
-    "name": {
-      "en": "Navy blue"
-    },
-    "lab": {
-      "l": 26.18,
-      "a": 6.23,
-      "b": -38.32
-    }
-  },
-  {
-    "id": "c2c07995-3a40-45bb-bd58-82f9a449b841",
-    "seriesId": "belton-premium",
-    "hex": "#D1E6EE",
-    "code": "327.211",
-    "name": {
-      "en": "Azure blue light"
-    },
-    "lab": {
-      "l": 89.9,
-      "a": -6.02,
-      "b": -6.4
-    }
-  },
-  {
-    "id": "9345933a-6422-4e35-9c49-8ab84f46c02f",
-    "seriesId": "belton-premium",
-    "hex": "#B9DCEC",
-    "code": "327.212",
-    "name": {
-      "en": "Azure blue"
-    },
-    "lab": {
-      "l": 85.6,
-      "a": -9.36,
-      "b": -11.9
-    }
-  },
-  {
-    "id": "d5247e9b-c6e1-45e9-8033-dbfa9449051f",
-    "seriesId": "belton-premium",
-    "hex": "#3682BD",
-    "code": "327.213",
-    "name": {
-      "en": "Tulip blue light"
-    },
-    "lab": {
-      "l": 51.73,
-      "a": -8.94,
-      "b": -38.42
-    }
-  },
-  {
-    "id": "913b9702-5f80-41b8-8f9a-524b6bde788a",
-    "seriesId": "belton-premium",
-    "hex": "#0068A3",
-    "code": "327.214",
-    "name": {
-      "en": "Tulip blue middle"
-    },
-    "lab": {
-      "l": 41.44,
-      "a": -8.3,
-      "b": -39.62
-    }
-  },
-  {
-    "id": "56fc1235-1731-48ff-9369-9986a412aded",
-    "seriesId": "belton-premium",
-    "hex": "#217E8B",
-    "code": "327.215",
-    "name": {
-      "en": "Aqua"
-    },
-    "lab": {
-      "l": 48.08,
-      "a": -23.9,
-      "b": -15.21
-    }
-  },
-  {
-    "id": "ec5c5a3d-be51-4433-8e9c-d80d78ab1926",
-    "seriesId": "belton-premium",
-    "hex": "#A8D5C4",
-    "code": "327.216",
-    "name": {
-      "en": "Riviera Pastel"
-    },
-    "lab": {
-      "l": 81.71,
-      "a": -17.86,
-      "b": 3.35
-    }
-  },
-  {
-    "id": "c1004f9f-1c9c-4a35-b2c8-30a5d25675e9",
-    "seriesId": "belton-premium",
-    "hex": "#44B39B",
-    "code": "327.217",
-    "name": {
-      "en": "Riviera middle"
-    },
-    "lab": {
-      "l": 66.2,
-      "a": -37.35,
-      "b": 2.46
-    }
-  },
-  {
-    "id": "a6c3446f-c666-4567-a6be-0968ccbe20b6",
-    "seriesId": "belton-premium",
-    "hex": "#003C43",
-    "code": "327.218",
-    "name": {
-      "en": "Nori"
-    },
-    "lab": {
-      "l": 22.23,
-      "a": -15.95,
-      "b": -9.63
-    }
-  },
-  {
-    "id": "b5011e01-bf81-4e76-a482-67445a394d80",
-    "seriesId": "belton-premium",
-    "hex": "#00794D",
-    "code": "327.219",
-    "name": {
-      "en": "Turquoise green"
-    },
-    "lab": {
-      "l": 44.46,
-      "a": -38.72,
-      "b": 15.71
-    }
-  },
-  {
-    "id": "314ce9b5-bde9-4d8e-a89f-7514443957f0",
-    "seriesId": "belton-premium",
-    "hex": "#004932",
-    "code": "327.220",
-    "name": {
-      "en": "Turquoise green dark"
-    },
-    "lab": {
-      "l": 26.65,
-      "a": -26.19,
-      "b": 7.83
-    }
-  },
-  {
-    "id": "3f950cad-2c57-48bc-856b-5627dcdf526a",
-    "seriesId": "belton-premium",
-    "hex": "#009951",
-    "code": "327.221",
-    "name": {
-      "en": "KACAO77 UNIVER. green"
-    },
-    "lab": {
-      "l": 55.42,
-      "a": -48.56,
-      "b": 27.68
-    }
-  },
-  {
-    "id": "93f8c512-6605-4a4f-9134-c3e62e588063",
-    "seriesId": "belton-premium",
-    "hex": "#7EB94F",
-    "code": "327.222",
-    "name": {
-      "en": "Wasabi"
-    },
-    "lab": {
-      "l": 69.4,
-      "a": -33.48,
-      "b": 46.37
-    }
-  },
-  {
-    "id": "c27b6d39-b8be-4da6-96a2-fbc311c52183",
-    "seriesId": "belton-premium",
-    "hex": "#2DA43E",
-    "code": "327.223",
-    "name": {
-      "en": "Clover green"
-    },
-    "lab": {
-      "l": 59.42,
-      "a": -49.61,
-      "b": 41.82
-    }
-  },
-  {
-    "id": "4d200253-3514-4b1a-9987-4069eac0b8b7",
-    "seriesId": "belton-premium",
-    "hex": "#6B9619",
-    "code": "327.224",
-    "name": {
-      "en": "Avocado"
-    },
-    "lab": {
-      "l": 57.26,
-      "a": -28.48,
-      "b": 54.25
-    }
-  },
-  {
-    "id": "1fca41d3-f00d-4c64-b19f-6c29a4fa6209",
-    "seriesId": "belton-premium",
-    "hex": "#325815",
-    "code": "327.225",
-    "name": {
-      "en": "Moss green"
-    },
-    "lab": {
-      "l": 33.46,
-      "a": -23.6,
-      "b": 32.37
-    }
-  },
-  {
-    "id": "7fcbfd15-1782-4aca-a6e8-61b502c33eaa",
-    "seriesId": "belton-premium",
-    "hex": "#B9C579",
-    "code": "327.226",
-    "name": {
-      "en": "Green tea"
-    },
-    "lab": {
-      "l": 77.27,
-      "a": -13.06,
-      "b": 36.63
-    }
-  },
-  {
-    "id": "4df30efa-4490-41c5-8028-c52921f5d4ef",
-    "seriesId": "belton-premium",
-    "hex": "#5E5D33",
-    "code": "327.227",
-    "name": {
-      "en": "Camouflage"
-    },
-    "lab": {
-      "l": 38.79,
-      "a": -4.67,
-      "b": 24.17
-    }
-  },
-  {
-    "id": "2cdcc99f-7f18-4c4a-9be8-f03ecc37138d",
-    "seriesId": "belton-premium",
-    "hex": "#C1C13B",
-    "code": "327.228",
-    "name": {
-      "en": "Carambola"
-    },
-    "lab": {
-      "l": 76.29,
-      "a": -11.65,
-      "b": 63.41
-    }
-  },
-  {
-    "id": "4a4fd8fe-ce23-4dae-a042-d3a26f79f53e",
-    "seriesId": "belton-premium",
-    "hex": "#98961E",
-    "code": "327.229",
-    "name": {
-      "en": "Green bean"
-    },
-    "lab": {
-      "l": 60.72,
-      "a": -9.23,
-      "b": 57.42
-    }
-  },
-  {
-    "id": "309fd803-a814-4708-9ba6-1e977fcd6e22",
-    "seriesId": "belton-premium",
-    "hex": "#F6DEB2",
-    "code": "327.230",
-    "name": {
-      "en": "Sahara beige light"
-    },
-    "lab": {
-      "l": 89.66,
-      "a": 3.76,
-      "b": 24.84
-    }
-  },
-  {
-    "id": "1b24504d-1e27-4f18-8719-440b60751dd9",
-    "seriesId": "belton-premium",
-    "hex": "#F1CB83",
-    "code": "327.231",
-    "name": {
-      "en": "Sahara beige middle"
-    },
-    "lab": {
-      "l": 83.84,
-      "a": 7.17,
-      "b": 41.06
-    }
-  },
-  {
-    "id": "ff3bc96a-1cbf-4d01-9323-a0ab6813138f",
-    "seriesId": "belton-premium",
-    "hex": "#C2954A",
-    "code": "327.232",
-    "name": {
-      "en": "Papyrus"
-    },
-    "lab": {
-      "l": 64.93,
-      "a": 11.44,
-      "b": 45.57
-    }
-  },
-  {
-    "id": "cc870da9-b101-4a31-bb99-b5a737a690ce",
-    "seriesId": "belton-premium",
-    "hex": "#EDBF8B",
-    "code": "327.233",
-    "name": {
-      "en": "Labrador"
-    },
-    "lab": {
-      "l": 80.6,
-      "a": 12.09,
-      "b": 32.81
-    }
-  },
-  {
-    "id": "01868e89-2401-4fcd-a38c-7080093e7ba7",
-    "seriesId": "belton-premium",
-    "hex": "#88463D",
-    "code": "327.234",
-    "name": {
-      "en": "Cocoa middle"
-    },
-    "lab": {
-      "l": 38.11,
-      "a": 28.06,
-      "b": 18.77
-    }
-  },
-  {
-    "id": "f205a314-02bf-49b6-9acc-a07ec6f40496",
-    "seriesId": "belton-premium",
-    "hex": "#A47A4E",
-    "code": "327.235",
-    "name": {
-      "en": "Cappuccino"
-    },
-    "lab": {
-      "l": 54.73,
-      "a": 12.97,
-      "b": 30.67
-    }
-  },
-  {
-    "id": "c2268cd2-4aa6-4fcb-b57c-e155f063f255",
-    "seriesId": "belton-premium",
-    "hex": "#848788",
-    "code": "327.236",
-    "name": {
-      "en": "Granite"
-    },
-    "lab": {
-      "l": 56.08,
-      "a": -1,
+      "l": 47.42,
+      "a": -0.93,
       "b": -0.95
     }
   },
   {
-    "id": "78839ef9-8d50-4eee-87d6-cf3ef570c40a",
+    "id": "c57bc5c8-b887-450b-a140-e2d67f3572f6",
+    "seriesId": "belton-premium",
+    "hex": "#061722",
+    "code": "327.180",
+    "name": {
+      "es": "Toast signal black"
+    },
+    "lab": {
+      "l": 6.93,
+      "a": -2.41,
+      "b": -9.72
+    }
+  },
+  {
+    "id": "536d0801-a865-467b-833e-3daef1bc283f",
+    "seriesId": "belton-premium",
+    "hex": "#F49F4E",
+    "code": "327.181",
+    "name": {
+      "es": "Orange brown light"
+    },
+    "lab": {
+      "l": 72.62,
+      "a": 24.56,
+      "b": 54
+    }
+  },
+  {
+    "id": "e15538f6-333c-4a10-a851-640176649a8e",
+    "seriesId": "belton-premium",
+    "hex": "#D7712E",
+    "code": "327.182",
+    "name": {
+      "es": "Orange brown middle"
+    },
+    "lab": {
+      "l": 58.47,
+      "a": 35.42,
+      "b": 52.81
+    }
+  },
+  {
+    "id": "77f827c4-06d1-4816-9959-6013c747ec9b",
+    "seriesId": "belton-premium",
+    "hex": "#75462A",
+    "code": "327.183",
+    "name": {
+      "es": "Walnut"
+    },
+    "lab": {
+      "l": 34.66,
+      "a": 17.24,
+      "b": 25.15
+    }
+  },
+  {
+    "id": "d87bc170-370c-42ad-8ad8-23e041915d01",
+    "seriesId": "belton-premium",
+    "hex": "#ED6916",
+    "code": "327.184",
+    "name": {
+      "es": "DARE orange light"
+    },
+    "lab": {
+      "l": 60.04,
+      "a": 47.32,
+      "b": 64.16
+    }
+  },
+  {
+    "id": "22dc6d74-7760-43ec-ac58-ddabb63258fd",
+    "seriesId": "belton-premium",
+    "hex": "#4D171C",
+    "code": "327.185",
+    "name": {
+      "es": "Garnet"
+    },
+    "lab": {
+      "l": 16.87,
+      "a": 25.88,
+      "b": 10.39
+    }
+  },
+  {
+    "id": "d52a6ef4-a606-4266-ab94-b02851156693",
+    "seriesId": "belton-premium",
+    "hex": "#FACCB0",
+    "code": "327.186",
+    "name": {
+      "es": "Peach pastel"
+    },
+    "lab": {
+      "l": 85.33,
+      "a": 12.31,
+      "b": 20.09
+    }
+  },
+  {
+    "id": "73a6be9f-c795-42bb-8be1-4888f1d0cca8",
+    "seriesId": "belton-premium",
+    "hex": "#F8C0A0",
+    "code": "327.187",
+    "name": {
+      "es": "Peach light"
+    },
+    "lab": {
+      "l": 81.95,
+      "a": 15.86,
+      "b": 23.86
+    }
+  },
+  {
+    "id": "46f91c45-01de-4fc8-9295-4b09a28eef4b",
+    "seriesId": "belton-premium",
+    "hex": "#D80028",
+    "code": "327.188",
+    "name": {
+      "es": "MAD C cherry red"
+    },
+    "lab": {
+      "l": 45.3,
+      "a": 71.24,
+      "b": 43.06
+    }
+  },
+  {
+    "id": "87a57900-dd44-4f0b-a74d-ebb51c450880",
+    "seriesId": "belton-premium",
+    "hex": "#F4BEAE",
+    "code": "327.189",
+    "name": {
+      "es": "LOOMIT&#039;s apricot pastel"
+    },
+    "lab": {
+      "l": 81.36,
+      "a": 17.14,
+      "b": 15.53
+    }
+  },
+  {
+    "id": "fe265d81-fd86-4c85-af24-da1b70693d1d",
+    "seriesId": "belton-premium",
+    "hex": "#EE836F",
+    "code": "327.190",
+    "name": {
+      "es": "LOOMIT&#039;s apricot middle"
+    },
+    "lab": {
+      "l": 66.18,
+      "a": 39.03,
+      "b": 29.03
+    }
+  },
+  {
+    "id": "5ff461a2-5463-49c1-a572-0704b786ad4b",
+    "seriesId": "belton-premium",
+    "hex": "#D45746",
+    "code": "327.191",
+    "name": {
+      "es": "Strawberry red"
+    },
+    "lab": {
+      "l": 53.23,
+      "a": 48.21,
+      "b": 34.81
+    }
+  },
+  {
+    "id": "374fe5e9-10ee-4361-802f-772d0a0d6251",
+    "seriesId": "belton-premium",
+    "hex": "#F8CAC2",
+    "code": "327.192",
+    "name": {
+      "es": "Grapefruit light"
+    },
+    "lab": {
+      "l": 85.04,
+      "a": 15.07,
+      "b": 10.14
+    }
+  },
+  {
+    "id": "cdfae1e2-4222-42ee-9ac4-9fda352e2586",
+    "seriesId": "belton-premium",
+    "hex": "#E2A09A",
+    "code": "327.193",
+    "name": {
+      "es": "Mauve light"
+    },
+    "lab": {
+      "l": 71.99,
+      "a": 23.73,
+      "b": 12.94
+    }
+  },
+  {
+    "id": "690f57d7-9590-4e8c-917a-133594fc12ce",
+    "seriesId": "belton-premium",
+    "hex": "#A9736A",
+    "code": "327.194",
+    "name": {
+      "es": "Antique pink middle"
+    },
+    "lab": {
+      "l": 53.75,
+      "a": 20.12,
+      "b": 13.61
+    }
+  },
+  {
+    "id": "1cb0e690-b3f7-4829-8d61-4872ce99d74d",
+    "seriesId": "belton-premium",
+    "hex": "#DC7FA0",
+    "code": "327.195",
+    "name": {
+      "es": "Candy"
+    },
+    "lab": {
+      "l": 64.11,
+      "a": 39.88,
+      "b": -1.85
+    }
+  },
+  {
+    "id": "79259798-61a6-40fa-967c-e43d25cc7ff2",
+    "seriesId": "belton-premium",
+    "hex": "#B74D74",
+    "code": "327.196",
+    "name": {
+      "es": "Lipstick"
+    },
+    "lab": {
+      "l": 47.8,
+      "a": 46.78,
+      "b": -0.56
+    }
+  },
+  {
+    "id": "c316d6b4-6758-49bf-b4cf-bd5a7d4523c7",
+    "seriesId": "belton-premium",
+    "hex": "#DE95BC",
+    "code": "327.197",
+    "name": {
+      "es": "TILT bubble pink"
+    },
+    "lab": {
+      "l": 69.94,
+      "a": 33.08,
+      "b": -8.95
+    }
+  },
+  {
+    "id": "ae1a93b8-84f3-406f-bb1d-d5818a8b63a7",
+    "seriesId": "belton-premium",
+    "hex": "#D94476",
+    "code": "327.198",
+    "name": {
+      "es": "MAD C psycho pink"
+    },
+    "lab": {
+      "l": 52.06,
+      "a": 61.41,
+      "b": 5.1
+    }
+  },
+  {
+    "id": "427b9756-0d4a-4523-bf6c-6994eed1ecb7",
+    "seriesId": "belton-premium",
+    "hex": "#D7C7DB",
+    "code": "327.199",
+    "name": {
+      "es": "Crocus"
+    },
+    "lab": {
+      "l": 82.06,
+      "a": 9.16,
+      "b": -7.9
+    }
+  },
+  {
+    "id": "dbf6438d-1d98-49ff-9716-d0d39a06e04c",
+    "seriesId": "belton-premium",
+    "hex": "#BCA0C0",
+    "code": "327.200",
+    "name": {
+      "es": "Lavender"
+    },
+    "lab": {
+      "l": 69.21,
+      "a": 16.02,
+      "b": -12.61
+    }
+  },
+  {
+    "id": "9e96d8b1-53c4-4f41-8446-95355965225f",
+    "seriesId": "belton-premium",
+    "hex": "#A77EA9",
+    "code": "327.201",
+    "name": {
+      "es": "Indigo"
+    },
+    "lab": {
+      "l": 58.04,
+      "a": 23.39,
+      "b": -16.7
+    }
+  },
+  {
+    "id": "6a490ce2-1e51-4db1-93ca-6dd6346f972e",
+    "seriesId": "belton-premium",
+    "hex": "#856195",
+    "code": "327.202",
+    "name": {
+      "es": "Grape"
+    },
+    "lab": {
+      "l": 46.59,
+      "a": 24.48,
+      "b": -22.87
+    }
+  },
+  {
+    "id": "74a8dfeb-54c0-4d87-bb90-baf8177e7cb2",
+    "seriesId": "belton-premium",
+    "hex": "#673C7C",
+    "code": "327.203",
+    "name": {
+      "es": "Blackberry"
+    },
+    "lab": {
+      "l": 33.07,
+      "a": 31.01,
+      "b": -29
+    }
+  },
+  {
+    "id": "78dfdb66-b582-43b6-8c96-73cf7d1a91a5",
+    "seriesId": "belton-premium",
+    "hex": "#595C79",
+    "code": "327.204",
+    "name": {
+      "es": "Plum middle"
+    },
+    "lab": {
+      "l": 39.85,
+      "a": 5.85,
+      "b": -16.71
+    }
+  },
+  {
+    "id": "e2d8e526-7c77-468d-a062-0e15e6fb9d06",
+    "seriesId": "belton-premium",
+    "hex": "#7B7CAB",
+    "code": "327.205",
+    "name": {
+      "es": "Viola middle"
+    },
+    "lab": {
+      "l": 53.56,
+      "a": 10.49,
+      "b": -25.05
+    }
+  },
+  {
+    "id": "2056bc3b-f785-4763-93fa-cb8540f5c412",
+    "seriesId": "belton-premium",
+    "hex": "#464E96",
+    "code": "327.206",
+    "name": {
+      "es": "Viola dark"
+    },
+    "lab": {
+      "l": 35.89,
+      "a": 18.16,
+      "b": -40.69
+    }
+  },
+  {
+    "id": "fe401d3d-0f02-4a8d-a98a-1da63c0772a6",
+    "seriesId": "belton-premium",
+    "hex": "#A6B3CC",
+    "code": "327.207",
+    "name": {
+      "es": "Pigeon blue middle"
+    },
+    "lab": {
+      "l": 72.7,
+      "a": 0.75,
+      "b": -14.16
+    }
+  },
+  {
+    "id": "982ebc81-f378-46f5-962c-a63becef6b61",
+    "seriesId": "belton-premium",
+    "hex": "#8D9FC0",
+    "code": "327.208",
+    "name": {
+      "es": "Pigeon blue"
+    },
+    "lab": {
+      "l": 65.17,
+      "a": 1.17,
+      "b": -19.08
+    }
+  },
+  {
+    "id": "fb9a7dd3-8ec8-4a4f-a751-7caa816cf0b8",
+    "seriesId": "belton-premium",
+    "hex": "#1F3D79",
+    "code": "327.209",
+    "name": {
+      "es": "Navy blue"
+    },
+    "lab": {
+      "l": 26.76,
+      "a": 11.22,
+      "b": -37.55
+    }
+  },
+  {
+    "id": "0cb46607-3ded-4daf-b92e-965ff1245fcb",
+    "seriesId": "belton-premium",
+    "hex": "#D1E6EE",
+    "code": "327.211",
+    "name": {
+      "es": "Azure blue light"
+    },
+    "lab": {
+      "l": 90.01,
+      "a": -5.35,
+      "b": -6.25
+    }
+  },
+  {
+    "id": "4f63e22e-bc30-4422-97bc-29489cb2649d",
+    "seriesId": "belton-premium",
+    "hex": "#B9DCEC",
+    "code": "327.212",
+    "name": {
+      "es": "Azure blue"
+    },
+    "lab": {
+      "l": 85.78,
+      "a": -8.05,
+      "b": -11.64
+    }
+  },
+  {
+    "id": "4628e48b-83e1-4ffd-ab4d-cf049d0ad929",
+    "seriesId": "belton-premium",
+    "hex": "#3682BD",
+    "code": "327.213",
+    "name": {
+      "es": "Tulip blue light"
+    },
+    "lab": {
+      "l": 52.31,
+      "a": -3.71,
+      "b": -37.64
+    }
+  },
+  {
+    "id": "d2a06a89-c10e-474c-b2f7-1a5904a75394",
+    "seriesId": "belton-premium",
+    "hex": "#0068A3",
+    "code": "327.214",
+    "name": {
+      "es": "Tulip blue middle"
+    },
+    "lab": {
+      "l": 42.07,
+      "a": -2.57,
+      "b": -38.76
+    }
+  },
+  {
+    "id": "d1899a63-72a1-4ecc-a73e-990b08cb45b7",
+    "seriesId": "belton-premium",
+    "hex": "#217E8B",
+    "code": "327.215",
+    "name": {
+      "es": "Aqua"
+    },
+    "lab": {
+      "l": 48.4,
+      "a": -21.64,
+      "b": -14.7
+    }
+  },
+  {
+    "id": "cdf785da-2dcf-42c1-9c5f-4fb90dd829df",
+    "seriesId": "belton-premium",
+    "hex": "#A8D5C4",
+    "code": "327.216",
+    "name": {
+      "es": "Riviera Pastel"
+    },
+    "lab": {
+      "l": 81.78,
+      "a": -18.11,
+      "b": 3.58
+    }
+  },
+  {
+    "id": "7e1952c7-97b8-494d-89f8-eec5f8a58a62",
+    "seriesId": "belton-premium",
+    "hex": "#44B39B",
+    "code": "327.217",
+    "name": {
+      "es": "Riviera middle"
+    },
+    "lab": {
+      "l": 66.39,
+      "a": -37.29,
+      "b": 2.95
+    }
+  },
+  {
+    "id": "32b234f9-1b1f-4aca-b7cd-6542c229506b",
+    "seriesId": "belton-premium",
+    "hex": "#003C43",
+    "code": "327.218",
+    "name": {
+      "es": "Nori"
+    },
+    "lab": {
+      "l": 22.43,
+      "a": -14.45,
+      "b": -9.3
+    }
+  },
+  {
+    "id": "4fe7daca-5159-463a-a46b-3a58ea42e805",
+    "seriesId": "belton-premium",
+    "hex": "#00794D",
+    "code": "327.219",
+    "name": {
+      "es": "Turquoise green"
+    },
+    "lab": {
+      "l": 44.53,
+      "a": -40.2,
+      "b": 16.19
+    }
+  },
+  {
+    "id": "cc65e347-794d-422a-a568-d9f8364a6152",
+    "seriesId": "belton-premium",
+    "hex": "#004932",
+    "code": "327.220",
+    "name": {
+      "es": "Turquoise green dark"
+    },
+    "lab": {
+      "l": 26.72,
+      "a": -26.87,
+      "b": 8.15
+    }
+  },
+  {
+    "id": "05e721b3-c39a-4ad4-9d86-ce7482a49544",
+    "seriesId": "belton-premium",
+    "hex": "#009951",
+    "code": "327.221",
+    "name": {
+      "es": "KACAO77 UNIVER. green"
+    },
+    "lab": {
+      "l": 55.46,
+      "a": -51.21,
+      "b": 28.34
+    }
+  },
+  {
+    "id": "fb0328de-5e05-47a5-9761-11037c399421",
+    "seriesId": "belton-premium",
+    "hex": "#7EB94F",
+    "code": "327.222",
+    "name": {
+      "es": "Wasabi"
+    },
+    "lab": {
+      "l": 69.25,
+      "a": -37.32,
+      "b": 46.97
+    }
+  },
+  {
+    "id": "09b5a21f-c247-4e94-ab0d-f7aef44856b0",
+    "seriesId": "belton-premium",
+    "hex": "#2DA43E",
+    "code": "327.223",
+    "name": {
+      "es": "Clover green"
+    },
+    "lab": {
+      "l": 59.39,
+      "a": -53.42,
+      "b": 42.69
+    }
+  },
+  {
+    "id": "ea38afbc-8206-498f-912c-ca8322e7932f",
+    "seriesId": "belton-premium",
+    "hex": "#6B9619",
+    "code": "327.224",
+    "name": {
+      "es": "Avocado"
+    },
+    "lab": {
+      "l": 57.08,
+      "a": -32.5,
+      "b": 55.14
+    }
+  },
+  {
+    "id": "d60543c4-8c20-4382-a2dc-8de89e3d89e5",
+    "seriesId": "belton-premium",
+    "hex": "#325815",
+    "code": "327.225",
+    "name": {
+      "es": "Moss green"
+    },
+    "lab": {
+      "l": 33.37,
+      "a": -26.22,
+      "b": 32.91
+    }
+  },
+  {
+    "id": "441d0ff2-611c-4eb2-87e4-40c579c3617b",
+    "seriesId": "belton-premium",
+    "hex": "#B9C579",
+    "code": "327.226",
+    "name": {
+      "es": "Green tea"
+    },
+    "lab": {
+      "l": 77.06,
+      "a": -16.01,
+      "b": 36.74
+    }
+  },
+  {
+    "id": "1400ed5a-7b70-4a06-9ea6-2ed130170001",
+    "seriesId": "belton-premium",
+    "hex": "#5E5D33",
+    "code": "327.227",
+    "name": {
+      "es": "Camouflage"
+    },
+    "lab": {
+      "l": 38.63,
+      "a": -6.52,
+      "b": 24.2
+    }
+  },
+  {
+    "id": "3df1597f-a784-4178-b0f5-db6a092f45ba",
+    "seriesId": "belton-premium",
+    "hex": "#C1C13B",
+    "code": "327.228",
+    "name": {
+      "es": "Carambola"
+    },
+    "lab": {
+      "l": 75.94,
+      "a": -15.91,
+      "b": 63.86
+    }
+  },
+  {
+    "id": "4a450dcd-0ec1-4d8a-8472-f10270f73ec1",
+    "seriesId": "belton-premium",
+    "hex": "#98961E",
+    "code": "327.229",
+    "name": {
+      "es": "Green bean"
+    },
+    "lab": {
+      "l": 60.41,
+      "a": -12.93,
+      "b": 57.92
+    }
+  },
+  {
+    "id": "97191d8d-771c-48c7-9ede-243017cf7dcb",
+    "seriesId": "belton-premium",
+    "hex": "#F6DEB2",
+    "code": "327.230",
+    "name": {
+      "es": "Sahara beige light"
+    },
+    "lab": {
+      "l": 89.42,
+      "a": 1.75,
+      "b": 24.63
+    }
+  },
+  {
+    "id": "52f4cdb9-6af4-4563-85d4-415b59d0139a",
+    "seriesId": "belton-premium",
+    "hex": "#F1CB83",
+    "code": "327.231",
+    "name": {
+      "es": "Sahara beige middle"
+    },
+    "lab": {
+      "l": 83.47,
+      "a": 4.25,
+      "b": 40.8
+    }
+  },
+  {
+    "id": "612b9166-5590-4387-bd6e-cbe4c9f0dced",
+    "seriesId": "belton-premium",
+    "hex": "#C2954A",
+    "code": "327.232",
+    "name": {
+      "es": "Papyrus"
+    },
+    "lab": {
+      "l": 64.53,
+      "a": 8.62,
+      "b": 45.33
+    }
+  },
+  {
+    "id": "416e5c0b-7531-4109-bd05-e6a8cbe4c260",
+    "seriesId": "belton-premium",
+    "hex": "#EDBF8B",
+    "code": "327.233",
+    "name": {
+      "es": "Labrador"
+    },
+    "lab": {
+      "l": 80.25,
+      "a": 9.74,
+      "b": 32.46
+    }
+  },
+  {
+    "id": "2bc58e3b-4ddd-4222-973b-e5e77c56e6b4",
+    "seriesId": "belton-premium",
+    "hex": "#88463D",
+    "code": "327.234",
+    "name": {
+      "es": "Cocoa middle"
+    },
+    "lab": {
+      "l": 37.76,
+      "a": 27.13,
+      "b": 18.13
+    }
+  },
+  {
+    "id": "9ce45567-62c0-4419-85d2-a4d58c77c89a",
+    "seriesId": "belton-premium",
+    "hex": "#A47A4E",
+    "code": "327.235",
+    "name": {
+      "es": "Cappuccino"
+    },
+    "lab": {
+      "l": 54.41,
+      "a": 10.97,
+      "b": 30.34
+    }
+  },
+  {
+    "id": "de377873-d459-477a-9655-20402dec0b12",
+    "seriesId": "belton-premium",
+    "hex": "#848788",
+    "code": "327.236",
+    "name": {
+      "es": "Granite"
+    },
+    "lab": {
+      "l": 56.1,
+      "a": -0.91,
+      "b": -0.92
+    }
+  },
+  {
+    "id": "f772060c-5c76-40d0-8140-62d80d7739de",
     "seriesId": "belton-premium",
     "hex": "#ADAEAC",
     "code": "327.237",
     "name": {
-      "en": "Rock grey"
+      "es": "Rock grey"
     },
     "lab": {
-      "l": 70.97,
-      "a": -0.65,
+      "l": 70.96,
+      "a": -0.73,
       "b": 0.9
     }
   },
   {
-    "id": "4f035f62-fed4-4058-b9a7-703e1de8549f",
+    "id": "b3f00e56-ca6a-4f3e-99fa-4d1c8c20b197",
     "seriesId": "belton-premium",
     "hex": "#CDCBCA",
     "code": "327.238",
     "name": {
-      "en": "Pebble grey"
+      "es": "Pebble grey"
     },
     "lab": {
-      "l": 81.83,
-      "a": 0.58,
-      "b": 0.76
+      "l": 81.81,
+      "a": 0.51,
+      "b": 0.74
     }
   },
   {
-    "id": "18239a34-a4aa-4027-b8dc-ae4b2446a5e9",
+    "id": "cb82fc2a-2d86-4f64-b120-7f0df67d12d6",
     "seriesId": "belton-premium",
     "hex": "#DAD8D8",
     "code": "327.239",
     "name": {
-      "en": "Marble"
+      "es": "Marble"
     },
     "lab": {
-      "l": 86.5,
-      "a": 0.71,
-      "b": 0.25
+      "l": 86.49,
+      "a": 0.68,
+      "b": 0.24
     }
   },
   {
-    "id": "c6b3d403-b349-4140-a4d8-f6f49d064f84",
+    "id": "5d9eac4f-d1b2-484b-8483-098a041ea5e2",
     "seriesId": "belton-premium",
     "hex": "#8FB18D",
     "code": "327.240",
     "name": {
-      "en": "Reen"
+      "es": "Reen"
     },
     "lab": {
-      "l": 68.93,
-      "a": -17.32,
-      "b": 14.52
+      "l": 68.9,
+      "a": -18.64,
+      "b": 14.69
     }
   },
   {
-    "id": "cfa177ac-4ed5-47cd-b3cd-3fbf1a569d5b",
+    "id": "21d55728-b8a6-404b-9e3c-5062c4825129",
     "seriesId": "belton-premium",
     "hex": "#4D7057",
     "code": "327.241",
     "name": {
-      "en": "Swamp"
+      "es": "Swamp"
     },
     "lab": {
-      "l": 44.01,
-      "a": -17.35,
-      "b": 9.77
+      "l": 44.02,
+      "a": -18.24,
+      "b": 9.97
     }
   },
   {
-    "id": "4edde822-68a0-4994-98f4-52c2e9ac9413",
+    "id": "53915246-c04a-4812-85e7-cdefdc019f82",
     "seriesId": "belton-premium",
     "hex": "#E96024",
     "code": "327.242",
     "name": {
-      "en": "Lobster middle"
+      "es": "Lobster middle"
     },
     "lab": {
-      "l": 58.62,
-      "a": 52.15,
-      "b": 58.71
+      "l": 57.87,
+      "a": 50.3,
+      "b": 57.47
     }
   },
   {
-    "id": "db466ed9-4271-4357-8cc8-cd3b6195fe41",
+    "id": "93ab20e8-94e0-4fac-bce1-b236e27fa5be",
     "seriesId": "belton-premium",
     "hex": "#FAF2DF",
     "code": "327.244",
     "name": {
-      "en": "184-1 Skin light"
+      "es": "184-1 Skin light"
     },
     "lab": {
-      "l": 95.75,
-      "a": 0.44,
-      "b": 10.21
+      "l": 95.65,
+      "a": -0.47,
+      "b": 10.12
     }
   },
   {
-    "id": "c4d2d6ef-ce06-4a7b-84c3-810180d67682",
+    "id": "629eb6a1-328a-41dd-8aa1-74753da854a7",
     "seriesId": "belton-premium",
     "hex": "#F1DBCD",
     "code": "327.245",
     "name": {
-      "en": "184-2 Skin middle"
+      "es": "184-2 Skin middle"
     },
     "lab": {
-      "l": 88.95,
-      "a": 6.18,
-      "b": 9.81
+      "l": 88.82,
+      "a": 5.32,
+      "b": 9.63
     }
   },
   {
-    "id": "8772d4c3-afba-4296-a4a6-245900680ce0",
+    "id": "aff7cefd-07f7-4dca-9f68-327a94b1457a",
     "seriesId": "belton-premium",
     "hex": "#D9B092",
     "code": "327.246",
     "name": {
-      "en": "184-3 Skin"
+      "es": "184-3 Skin"
     },
     "lab": {
-      "l": 75.02,
-      "a": 12.28,
-      "b": 21.34
+      "l": 74.75,
+      "a": 10.66,
+      "b": 21
     }
   },
   {
-    "id": "dad6b9bb-817e-4175-9ab3-a502714156ea",
+    "id": "dbfc3198-c7ad-432d-8978-6ef8dc99ab59",
     "seriesId": "belton-premium",
     "hex": "#ACD0DE",
     "code": "327.0247",
     "name": {
-      "en": "106-1 storm blue middle"
+      "es": "106-1 storm blue middle"
     },
     "lab": {
-      "l": 81.2,
-      "a": -10.06,
-      "b": -11.13
+      "l": 81.38,
+      "a": -8.83,
+      "b": -10.86
     }
   },
   {
-    "id": "ba8ae9d5-31e2-41e7-b0ec-740e1034e157",
+    "id": "6ce006d3-ec40-4b04-affb-98fcf380c982",
     "seriesId": "belton-premium",
     "hex": "#95B4BF",
     "code": "327.248",
     "name": {
-      "en": "106-2 storm blue"
+      "es": "106-2 storm blue"
     },
     "lab": {
-      "l": 71.26,
-      "a": -9.1,
-      "b": -9.31
+      "l": 71.41,
+      "a": -8.06,
+      "b": -9.08
     }
   },
   {
-    "id": "92100f60-0bef-4de1-843c-dc0fba8d240c",
+    "id": "91c30a1b-0de7-48ae-9b2b-1def74f18618",
     "seriesId": "belton-premium",
     "hex": "#7C9BAB",
     "code": "327.249",
     "name": {
-      "en": "106-3 storm blue dark"
+      "es": "106-3 storm blue dark"
     },
     "lab": {
-      "l": 62.04,
-      "a": -8.31,
-      "b": -12.12
+      "l": 62.23,
+      "a": -6.95,
+      "b": -11.86
     }
   },
   {
-    "id": "ef1d1d9b-8dc1-40bf-91a4-1772e3de6782",
+    "id": "a7c3ff0f-159e-4c04-a4ab-b45ddcd3d243",
     "seriesId": "belton-premium",
     "hex": "#157727",
     "code": "327.250",
     "name": {
-      "en": "160-1 leaf green middle"
+      "es": "160-1 leaf green middle"
     },
     "lab": {
-      "l": 43.53,
-      "a": -41.08,
-      "b": 34.58
+      "l": 43.51,
+      "a": -44.23,
+      "b": 35.34
     }
   },
   {
-    "id": "0ac6fe79-3be3-4978-afce-9778c87defe5",
+    "id": "e6062272-bdae-4a90-8b5e-f2392ced037e",
     "seriesId": "belton-premium",
     "hex": "#616E24",
     "code": "327.251",
     "name": {
-      "en": "181-1 nature green light"
+      "es": "181-1 nature green light"
     },
     "lab": {
-      "l": 44.15,
-      "a": -13.38,
-      "b": 37.9
+      "l": 43.97,
+      "a": -16.15,
+      "b": 38.24
     }
   },
   {
-    "id": "096910a5-e041-476f-9a45-831f648ae12d",
+    "id": "35f51ec4-1866-44ac-9faa-987eab085eb6",
     "seriesId": "belton-premium",
     "hex": "#5E5E20",
     "code": "327.252",
     "name": {
-      "en": "181-2 nature green middle"
+      "es": "181-2 nature green middle"
     },
     "lab": {
-      "l": 38.9,
-      "a": -6.55,
-      "b": 34.25
+      "l": 38.71,
+      "a": -8.93,
+      "b": 34.44
     }
   },
   {
-    "id": "eba22b2d-b80b-4fa6-82ee-2e023d044691",
+    "id": "7dea932a-c6a5-45c0-87ca-529949f6b181",
     "seriesId": "belton-premium",
     "hex": "#D5A78B",
     "code": "327.254",
     "name": {
-      "en": "184-4 redskin"
+      "es": "184-4 redskin"
     },
     "lab": {
-      "l": 72.28,
-      "a": 14.63,
-      "b": 21.34
+      "l": 71.99,
+      "a": 13.05,
+      "b": 20.96
     }
   },
   {
-    "id": "b53d5e91-1fd6-416f-ad1d-751a7619b799",
+    "id": "9634e62c-aebb-4a1f-8113-7aa0d3ec1fa8",
     "seriesId": "belton-premium",
     "hex": "#EBCEBE",
     "code": "327.255",
     "name": {
-      "en": "184-5 redskin middle"
+      "es": "184-5 redskin middle"
     },
     "lab": {
-      "l": 84.92,
-      "a": 8.65,
-      "b": 11.92
+      "l": 84.75,
+      "a": 7.65,
+      "b": 11.68
     }
   },
   {
-    "id": "294fe49f-3063-4c8d-a1ce-c3ea929563c6",
+    "id": "b3871ae6-854f-448b-a461-7f620a45c0a3",
     "seriesId": "belton-premium",
     "hex": "#E9CFC6",
     "code": "327.256",
     "name": {
-      "en": "184-6 redskin light"
+      "es": "184-6 redskin light"
     },
     "lab": {
-      "l": 85.14,
-      "a": 8.32,
-      "b": 7.98
+      "l": 85.01,
+      "a": 7.62,
+      "b": 7.78
     }
   },
   {
-    "id": "be580e29-29aa-434a-b6e4-150365c184a9",
+    "id": "f41db286-5062-44a4-9432-bc6b43c7304e",
     "seriesId": "belton-premium",
     "hex": "#E4D7DB",
     "code": "327.257",
     "name": {
-      "en": "184-7 furwhite"
+      "es": "184-7 furwhite"
     },
     "lab": {
-      "l": 87.13,
-      "a": 5.14,
-      "b": -0.29
+      "l": 87.1,
+      "a": 5.15,
+      "b": -0.36
     }
   },
   {
-    "id": "cb7e4fd5-44a5-4b93-8725-cde706ccc842",
+    "id": "e55c0bc0-15dd-4f30-8e09-0d76150dbaea",
     "seriesId": "belton-premium",
     "hex": "#4E5254",
     "code": "327.259",
     "name": {
-      "en": "223-1Anthracite grey middle"
+      "es": "223-1Anthracite grey middle"
     },
     "lab": {
-      "l": 34.56,
-      "a": -1.33,
-      "b": -1.76
+      "l": 34.59,
+      "a": -1.15,
+      "b": -1.73
     }
   },
   {
-    "id": "8fe7457b-ec32-4929-b8d2-195c705fd3ac",
+    "id": "e4f19601-78b0-472a-a65a-c203d2319e81",
     "seriesId": "belton-premium",
     "hex": "#5D5D5B",
     "code": "327.260",
     "name": {
-      "en": "222-1 anthracite grey dark"
+      "es": "222-1 anthracite grey dark"
     },
     "lab": {
-      "l": 39.44,
-      "a": -0.31,
+      "l": 39.43,
+      "a": -0.42,
       "b": 1.15
     }
   },
   {
-    "id": "42c3e615-72b5-4419-bf54-05c9f3569854",
+    "id": "9f879b9e-91c1-4617-a1b0-f9d19f805fb5",
     "seriesId": "belton-premium",
     "hex": "#505050",
     "code": "327.261",
     "name": {
-      "en": "221-2 black grey middle"
+      "es": "221-2 black grey middle"
     },
     "lab": {
       "l": 34.03,
@@ -3458,45 +3458,45 @@
     }
   },
   {
-    "id": "ad573fab-3a9a-4c35-be4a-6fe35d063330",
+    "id": "201b8546-7c2e-416c-9275-75824928eb8d",
     "seriesId": "belton-premium",
     "hex": "#D79B00",
     "code": "327.262",
     "name": {
-      "en": "182-1 mustard yellow"
+      "es": "182-1 mustard yellow"
     },
     "lab": {
-      "l": 68.47,
-      "a": 15.67,
-      "b": 71.94
+      "l": 67.94,
+      "a": 12.09,
+      "b": 72.07
     }
   },
   {
-    "id": "080ab38d-6f6d-4033-a41c-dcb4ce053c60",
+    "id": "da1023d2-b901-4b05-a067-df2abe00cf9c",
     "seriesId": "belton-premium",
     "hex": "#A37622",
     "code": "327.263",
     "name": {
-      "en": "182-2 khaki green"
+      "es": "182-2 khaki green"
     },
     "lab": {
-      "l": 53.2,
-      "a": 12.59,
-      "b": 50.16
+      "l": 52.8,
+      "a": 9.87,
+      "b": 50.05
     }
   },
   {
-    "id": "ef00e4d0-3e18-4eb3-a36b-edf5295c71ec",
+    "id": "1b393444-042e-4bf4-8493-30c0d9005e63",
     "seriesId": "belton-premium",
     "hex": "#F1DE00",
     "code": "327000",
     "name": {
-      "en": "Oro"
+      "es": "Oro"
     },
     "lab": {
-      "l": 87.94,
-      "a": -6.28,
-      "b": 86.12
+      "l": 87.46,
+      "a": -11.38,
+      "b": 86.93
     }
   }
 ]
