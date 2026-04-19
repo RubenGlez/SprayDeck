@@ -6,7 +6,7 @@ import * as MediaLibrary from "expo-media-library";
 import * as Sharing from "expo-sharing";
 import React, { forwardRef, useCallback } from "react";
 import { useTranslation } from "react-i18next";
-import { Alert, StyleSheet, TouchableOpacity, View } from "react-native";
+import { Alert, StyleSheet, TouchableOpacity } from "react-native";
 
 import { ThemedText } from "@/components/themed-text";
 import { IconSymbol } from "@/components/ui/icon-symbol";

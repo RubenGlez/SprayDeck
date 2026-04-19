@@ -8,13 +8,10 @@ import type {
   SeriesWithCountAndBrand,
 } from '@/types';
 
-// eslint-disable-next-line @typescript-eslint/no-require-imports
 const brandsData = require('@/assets/data/brands.json') as Brand[];
-// eslint-disable-next-line @typescript-eslint/no-require-imports
 const seriesData = require('@/assets/data/series.json') as Series[];
 
 /** Colors loaded per series (one file per series). Add new series here when you add a *-colors.json. */
-// eslint-disable-next-line @typescript-eslint/no-require-imports
 const colorsBySeriesId: Record<string, Color[]> = {
   'aka-writter': require('@/assets/data/aka-writer-colors.json') as Color[],
   'belton-premium': require('@/assets/data/belton-premium-colors.json') as Color[],

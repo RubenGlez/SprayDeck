@@ -13,8 +13,7 @@ import {
 
 import { FavoriteIcon } from "@/components/favorite-icon";
 import { ThemedText } from "@/components/themed-text";
-import { IconSymbol } from "@/components/ui/icon-symbol";
-import { Accent, BorderRadius, FontFamily, Spacing, Surface, Typography } from "@/constants/theme";
+import { Accent, BorderRadius, Spacing, Surface, Typography } from "@/constants/theme";
 import { useSheetBackdrop } from "@/hooks/use-sheet-backdrop";
 import { findClosestColors } from "@/lib/colorMatch";
 import { getColorDisplayName } from "@/lib/color";

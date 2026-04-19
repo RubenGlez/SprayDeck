@@ -26,7 +26,7 @@ export function DoodlePreviewModal({
 }: Props) {
   useKeepAwake();
   const [showControls, setShowControls] = useState(true);
-  const hideTimer = useRef<ReturnType<typeof setTimeout>>();
+  const hideTimer = useRef<ReturnType<typeof setTimeout>>(undefined);
 
   const resetTimer = useCallback(() => {
     if (hideTimer.current) clearTimeout(hideTimer.current);
