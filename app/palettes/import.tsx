@@ -20,7 +20,7 @@ import {
 import { ThemedText } from "@/components/themed-text";
 import { ThemedView } from "@/components/themed-view";
 import { IconSymbol } from "@/components/ui/icon-symbol";
-import { Accent, BorderRadius, FontFamily, Spacing, Typography } from "@/constants/theme";
+import { Accent, BorderRadius, FontFamily, Spacing, Surface, Typography } from "@/constants/theme";
 import { useImportPaletteFromImage } from "@/hooks/use-import-palette-from-image";
 import { getColorDisplayName } from "@/lib/color";
 import { isVeryLightHex, swatchGhostBorder } from "@/lib/color-contrast";

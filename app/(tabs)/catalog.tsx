@@ -244,7 +244,7 @@ const styles = StyleSheet.create({
     fontFamily: FontFamily.displayMedium,
   },
   listContent: {
-    paddingTop: GAP,
+    paddingTop: COLOR_GRID.GAP,
     paddingBottom: Spacing.sm,
   },
 });
