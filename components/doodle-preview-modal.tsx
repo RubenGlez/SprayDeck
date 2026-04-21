@@ -1,6 +1,7 @@
 import React, { useCallback, useEffect, useRef, useState } from "react";
 import { Modal, Pressable, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import { useKeepAwake } from "expo-keep-awake";
+import { useTranslation } from "react-i18next";
 
 import { TransformableLayer, type TransformShared } from "@/components/doodle-transform-layer";
 import { BorderRadius, Spacing, Surface } from "@/constants/theme";
@@ -25,6 +26,7 @@ export function DoodlePreviewModal({
   onClose,
 }: Props) {
   useKeepAwake();
+  const { t } = useTranslation();
   const [showControls, setShowControls] = useState(true);
   const hideTimer = useRef<ReturnType<typeof setTimeout>>(undefined);
 
@@ -57,6 +59,7 @@ export function DoodlePreviewModal({
             onPress={onClose}
             activeOpacity={0.7}
             accessibilityRole="button"
+            accessibilityLabel={t("common.close")}
           >
             <View style={styles.closeBtnInner}>
               <Text style={styles.closeBtnText}>✕</Text>

@@ -102,6 +102,7 @@ export default function ColorGridScreen() {
                   ? t("colors.showAllColors")
                   : t("colors.showOnlyFavorites")
               }
+              accessibilityState={{ selected: showOnlyFavorites }}
               icon={
                 <IconSymbol
                   name={showOnlyFavorites ? "star.fill" : "star"}

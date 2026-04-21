@@ -32,6 +32,7 @@ function SettingsRow({
     <Pressable
       style={({ pressed }) => [styles.settingsRow, { opacity: pressed && onPress ? 0.7 : 1 }]}
       onPress={onPress}
+      accessibilityRole={onPress ? "button" : undefined}
     >
       <View style={styles.settingsRowText}>
         <ThemedText style={styles.settingsRowLabel}>{label}</ThemedText>
@@ -89,6 +90,7 @@ export default function ProfileScreen() {
               autoCapitalize="words"
               autoCorrect={false}
               selectionColor={Accent.primary}
+              accessibilityLabel={t("profile.akaSection")}
             />
           </View>
           <ThemedText style={styles.hint}>{t("profile.akaHint")}</ThemedText>

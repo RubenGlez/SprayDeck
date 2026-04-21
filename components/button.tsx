@@ -31,6 +31,7 @@ export type ButtonProps = {
   fullWidth?: boolean;
   onPress?: () => void;
   accessibilityLabel?: string;
+  accessibilityState?: { selected?: boolean; checked?: boolean; disabled?: boolean; busy?: boolean; expanded?: boolean };
   style?: StyleProp<ViewStyle>;
   children?: React.ReactNode;
 };
@@ -52,6 +53,7 @@ export function Button({
   fullWidth,
   onPress,
   accessibilityLabel,
+  accessibilityState,
   style,
   children,
 }: ButtonProps) {
@@ -99,18 +101,19 @@ export function Button({
 
   if (variant === "primary") {
     if (isDisabled) {
-      return (
-        <TouchableOpacity
-          disabled
-          style={[
-            baseContainerStyle,
-            { backgroundColor: Surface.highest },
-            fullWidth ? { alignSelf: "stretch" } : {},
-            style,
-          ]}
-          accessibilityRole="button"
-          accessibilityLabel={accessibilityLabel}
-        >
+    return (
+      <TouchableOpacity
+        disabled
+        style={[
+          baseContainerStyle,
+          { backgroundColor: Surface.highest },
+          fullWidth ? { alignSelf: "stretch" } : {},
+          style,
+        ]}
+        accessibilityRole="button"
+        accessibilityLabel={accessibilityLabel}
+        accessibilityState={accessibilityState}
+      >
           {loading ? (
             <ActivityIndicator size="small" color={Accent.onSurfaceMuted} />
           ) : (
@@ -144,6 +147,7 @@ export function Button({
         ]}
         accessibilityRole="button"
         accessibilityLabel={accessibilityLabel}
+        accessibilityState={accessibilityState}
         activeOpacity={0.8}
       >
         <LinearGradient
@@ -179,6 +183,7 @@ export function Button({
       ]}
       accessibilityRole="button"
       accessibilityLabel={accessibilityLabel}
+      accessibilityState={accessibilityState}
       activeOpacity={0.7}
     >
       {inner}

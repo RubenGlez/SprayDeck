@@ -96,6 +96,7 @@ export const SeriesSelectBottomSheet = forwardRef<
                   onPress={onClear}
                   activeOpacity={0.7}
                   style={styles.clearBtn}
+                  accessibilityRole="button"
                   accessibilityLabel={t("palettes.clearSelection")}
                 >
                   <ThemedText

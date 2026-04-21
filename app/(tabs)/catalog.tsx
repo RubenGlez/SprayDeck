@@ -149,6 +149,7 @@ export default function CatalogScreen() {
         <TouchableOpacity
           style={[styles.filterChip, activeCount < totalCount && styles.filterChipActive]}
           onPress={() => seriesFilterSheetRef.current?.present()}
+          accessibilityRole="button"
           accessibilityLabel={t("catalog.filterSeries")}
           hitSlop={{ top: 8, bottom: 8, left: 4, right: 8 }}
         >
@@ -174,7 +175,9 @@ export default function CatalogScreen() {
                 onPress={() => setShowOnlyFavorites((s) => !s)}
                 style={styles.favBtn}
                 hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
+                accessibilityRole="button"
                 accessibilityLabel={showOnlyFavorites ? t("catalog.showAllColors") : t("catalog.showOnlyFavorites")}
+                accessibilityState={{ selected: showOnlyFavorites }}
               >
                 <IconSymbol
                   name={showOnlyFavorites ? "star.fill" : "star"}
@@ -219,6 +222,8 @@ function BrandChip({ label, active, onPress }: { label: string; active: boolean;
       style={[styles.chip, active && styles.chipActive]}
       onPress={onPress}
       activeOpacity={0.7}
+      accessibilityRole="button"
+      accessibilityState={{ selected: active }}
     >
       <ThemedText style={[styles.chipText, active && styles.chipTextActive]}>
         {label}
@@ -274,8 +279,8 @@ const styles = StyleSheet.create({
     color: Accent.primary,
   },
   filterChip: {
-    width: 34,
-    height: 34,
+    width: 44,
+    height: 44,
     alignItems: "center",
     justifyContent: "center",
     borderRadius: BorderRadius.full,

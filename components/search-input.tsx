@@ -87,8 +87,5 @@ const styles = StyleSheet.create({
   },
   clearBtn: {
     marginRight: -Spacing.xs,
-    minHeight: 0,
-    width: 32,
-    height: 32,
   },
 });

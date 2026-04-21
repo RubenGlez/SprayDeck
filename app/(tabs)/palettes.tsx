@@ -158,8 +158,8 @@ const styles = StyleSheet.create({
     gap: Spacing.xs,
   },
   importBtn: {
-    width: 36,
-    height: 36,
+    width: 44,
+    height: 44,
     borderRadius: BorderRadius.full,
     backgroundColor: `${Accent.primary}18`,
     alignItems: "center",

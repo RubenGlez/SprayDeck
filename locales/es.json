@@ -35,6 +35,7 @@
     "newDoodle": "Nuevo doodle",
     "continueLastDoodle": "Continuar último doodle",
     "recentPalettes": "Paletas recientes",
+    "seeAll": "Ver todo",
     "setTagNudge": "Pon tu tag de artista",
     "setTagNudgeSubtitle": "Personaliza tu experiencia con tu aka"
   },
@@ -58,6 +59,7 @@
   "catalog": {
     "overviewTitle": "Catálogo",
     "searchPlaceholder": "Buscar por código o nombre...",
+    "filterSeries": "Filtrar por serie",
     "showOnlyFavorites": "Ver solo favoritos",
     "showAllColors": "Ver todos los colores"
   },

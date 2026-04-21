@@ -44,6 +44,7 @@ function QuickAction({
       style={[styles.quickAction, accent && styles.quickActionAccent]}
       onPress={onPress}
       activeOpacity={0.75}
+      accessibilityRole="button"
     >
       <View style={styles.quickActionIcon}>{icon}</View>
       <ThemedText
@@ -65,6 +66,7 @@ function SectionHeader({
   label: string;
   onSeeAll?: () => void;
 }) {
+  const { t } = useTranslation();
   return (
     <View style={styles.sectionHeader}>
       <ThemedText type="label">{label}</ThemedText>
@@ -72,8 +74,9 @@ function SectionHeader({
         <TouchableOpacity
           onPress={onSeeAll}
           hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
+          accessibilityRole="button"
         >
-          <ThemedText style={styles.seeAll}>See all</ThemedText>
+          <ThemedText style={styles.seeAll}>{t("home.seeAll")}</ThemedText>
         </TouchableOpacity>
       )}
     </View>
@@ -145,6 +148,7 @@ export default function HomeScreen() {
             style={styles.nudgeCard}
             onPress={() => router.push("/(tabs)/profile")}
             activeOpacity={0.75}
+            accessibilityRole="button"
           >
             <View style={styles.nudgeIcon}>
               <IconSymbol name="person.fill" size={16} color={Accent.primary} />

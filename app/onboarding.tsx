@@ -79,7 +79,11 @@ export default function OnboardingScreen() {
       <View style={styles.topBar}>
         <ThemedText style={styles.appLabel}>SprayDeck</ThemedText>
         {!isLast && (
-          <TouchableOpacity onPress={skip} hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}>
+          <TouchableOpacity
+            onPress={skip}
+            hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
+            accessibilityRole="button"
+          >
             <ThemedText style={styles.skip}>{t('onboarding.skip')}</ThemedText>
           </TouchableOpacity>
         )}

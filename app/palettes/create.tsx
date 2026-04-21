@@ -297,6 +297,7 @@ export default function CreatePaletteScreen() {
                 onValueChange={setShowOnlySelected}
                 trackColor={{ false: Accent.outlineVariant, true: `${Accent.primary}60` }}
                 thumbColor={showOnlySelected ? Accent.primary : Accent.onSurfaceMuted}
+                accessibilityLabel={t("palettes.showOnlySelected")}
               />
               <ThemedText style={[styles.switchLabel, { color: Accent.onSurfaceMuted }]}>
                 {t("colors.colorCount", { count: selectedColors.length })}

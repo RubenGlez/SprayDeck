@@ -101,6 +101,7 @@ export function ColorDetailContent({
         <TouchableOpacity
           style={styles.favoriteBtn}
           onPress={onToggleFavorite}
+          accessibilityRole="button"
           accessibilityLabel={
             isFavorite
               ? t("colors.removeFromFavorites")
