@@ -36,6 +36,18 @@
     }
   },
   {
+    "id": "ironlak",
+    "name": "Ironlak",
+    "logo": null,
+    "description": {
+      "es": "Ironlak es una marca australiana de spray acrílico pensada para graffiti y arte urbano, conocida por su amplia gama de colores vivos, buena cobertura y acabado satinado. Popular entre writers de todo el mundo por su relación calidad-precio y su paleta original con nombres únicos.",
+      "en": "Ironlak is an Australian acrylic spray paint brand made for graffiti and street art, known for its wide range of vibrant colours, good coverage and satin finish. Popular with writers worldwide for its value and original palette with unique colour names.",
+      "de": "Ironlak ist eine australische Acryl-Sprühfarbenmarke für Graffiti und Street Art, bekannt für lebhafte Farben, gute Deckkraft und Satin-Finish. Weltweit bei Writern beliebt durch das Preis-Leistungs-Verhältnis und eine originelle Palette mit einzigartigen Farbnamen.",
+      "fr": "Ironlak est une marque australienne de peinture aérosol acrylique pour graffiti et street art, connue pour sa large gamme de couleurs vives, sa bonne couvrance et sa finition satinée. Appréciée des writers du monde entier pour son rapport qualité-prix et sa palette originale aux noms uniques.",
+      "pt": "Ironlak é uma marca australiana de spray acrílico para graffiti e street art, conhecida pela ampla gama de cores vibrantes, boa cobertura e acabamento acetinado. Popular entre writers de todo o mundo pelo custo-benefício e paleta original com nomes únicos."
+    }
+  },
+  {
     "id": "aka",
     "name": "AKA",
     "logo": null,

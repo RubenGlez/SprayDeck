@@ -101,13 +101,18 @@ export function ColorDetailContent({
         <TouchableOpacity
           style={styles.favoriteBtn}
           onPress={onToggleFavorite}
+          accessibilityRole="button"
           accessibilityLabel={
             isFavorite
               ? t("colors.removeFromFavorites")
               : t("colors.addToFavorites")
           }
         >
-          <FavoriteIcon isFavorite={isFavorite} size={24} />
+          <FavoriteIcon
+            isFavorite={isFavorite}
+            size={24}
+            color={isLight ? "rgba(0,0,0,0.85)" : "rgba(255,255,255,0.9)"}
+          />
         </TouchableOpacity>
       </View>
       <ThemedText

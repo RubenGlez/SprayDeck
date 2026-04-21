@@ -1,0 +1,2802 @@
+[
+  {
+    "id": "05d18bfc-0f86-41b4-b9c3-9a8d3cf3499f",
+    "seriesId": "loop",
+    "hex": "#FFFFFF",
+    "code": "100",
+    "name": {
+      "en": "WHITE"
+    },
+    "lab": {
+      "l": 100,
+      "a": 0,
+      "b": 0
+    }
+  },
+  {
+    "id": "75fc9839-d48a-4efa-8515-dacbc84a5e9e",
+    "seriesId": "loop",
+    "hex": "#FFFFFF",
+    "code": "101",
+    "name": {
+      "en": "WHITE GLOSS"
+    },
+    "lab": {
+      "l": 100,
+      "a": 0,
+      "b": 0
+    }
+  },
+  {
+    "id": "be5bdb7c-26d2-429d-8a6c-df441f1b66b6",
+    "seriesId": "loop",
+    "hex": "#000000",
+    "code": "103",
+    "name": {
+      "en": "BLACK MATT"
+    },
+    "lab": {
+      "l": 0,
+      "a": 0,
+      "b": 0
+    }
+  },
+  {
+    "id": "2f4cac8f-c371-4e1f-9386-fc84f797de09",
+    "seriesId": "loop",
+    "hex": "#000000",
+    "code": "104",
+    "name": {
+      "en": "BLACK"
+    },
+    "lab": {
+      "l": 0,
+      "a": 0,
+      "b": 0
+    }
+  },
+  {
+    "id": "c3adc212-eb06-4e4a-97fd-9d9ee6ad3477",
+    "seriesId": "loop",
+    "hex": "#000000",
+    "code": "105",
+    "name": {
+      "en": "BLACK GLOSS"
+    },
+    "lab": {
+      "l": 0,
+      "a": 0,
+      "b": 0
+    }
+  },
+  {
+    "id": "dd9f98c9-a89c-4c40-8260-e3e664635a6c",
+    "seriesId": "loop",
+    "hex": "#FBF193",
+    "code": "106",
+    "name": {
+      "en": "MADRID"
+    },
+    "lab": {
+      "l": 94.11,
+      "a": -9.5,
+      "b": 46.51
+    }
+  },
+  {
+    "id": "3a8bc315-7838-4c62-9604-50d4359d40ed",
+    "seriesId": "loop",
+    "hex": "#FFEC65",
+    "code": "107",
+    "name": {
+      "en": "BARCELONA"
+    },
+    "lab": {
+      "l": 92.66,
+      "a": -9.24,
+      "b": 66.03
+    }
+  },
+  {
+    "id": "a56948ce-da57-4685-947a-3fd73550fb2a",
+    "seriesId": "loop",
+    "hex": "#FFDD00",
+    "code": "108",
+    "name": {
+      "en": "VALENCIA"
+    },
+    "lab": {
+      "l": 88.44,
+      "a": -4.95,
+      "b": 88.2
+    }
+  },
+  {
+    "id": "e8c6c7a7-5d36-473a-8119-37a124dc57e4",
+    "seriesId": "loop",
+    "hex": "#FDCE07",
+    "code": "109",
+    "name": {
+      "en": "SEVILLA"
+    },
+    "lab": {
+      "l": 84.51,
+      "a": 1.86,
+      "b": 84.71
+    }
+  },
+  {
+    "id": "7e5f100f-ea2f-4e54-a689-0d462cc4689b",
+    "seriesId": "loop",
+    "hex": "#F9B300",
+    "code": "110",
+    "name": {
+      "en": "MALAGA"
+    },
+    "lab": {
+      "l": 77.51,
+      "a": 14.08,
+      "b": 80.33
+    }
+  },
+  {
+    "id": "b8f10dd7-fdb8-46aa-bd66-d83fc759b7f8",
+    "seriesId": "loop",
+    "hex": "#F3991B",
+    "code": "120",
+    "name": {
+      "en": "AMSTERDAM"
+    },
+    "lab": {
+      "l": 70.82,
+      "a": 25.49,
+      "b": 71.23
+    }
+  },
+  {
+    "id": "464f202d-fa76-4dd4-b204-7c189106a940",
+    "seriesId": "loop",
+    "hex": "#E78010",
+    "code": "121",
+    "name": {
+      "en": "HAARLEM"
+    },
+    "lab": {
+      "l": 63.73,
+      "a": 33.43,
+      "b": 67.76
+    }
+  },
+  {
+    "id": "ca41c032-2a6a-48e2-b874-d0fc75ca6dee",
+    "seriesId": "loop",
+    "hex": "#EC6F07",
+    "code": "122",
+    "name": {
+      "en": "UTRECHT"
+    },
+    "lab": {
+      "l": 60.98,
+      "a": 43.89,
+      "b": 67.83
+    }
+  },
+  {
+    "id": "7fcb9de6-35c6-4b91-98ee-eec3c2993c88",
+    "seriesId": "loop",
+    "hex": "#FF3300",
+    "code": "123",
+    "name": {
+      "en": "ROTTERDAM"
+    },
+    "lab": {
+      "l": 55.72,
+      "a": 72.99,
+      "b": 68.15
+    }
+  },
+  {
+    "id": "9e625695-b31d-4535-a638-0607cd52dd27",
+    "seriesId": "loop",
+    "hex": "#BB4914",
+    "code": "124",
+    "name": {
+      "en": "EINDHOVEN"
+    },
+    "lab": {
+      "l": 46.16,
+      "a": 43.69,
+      "b": 50.94
+    }
+  },
+  {
+    "id": "35bb70aa-f764-463d-9dac-8bf3699ba592",
+    "seriesId": "loop",
+    "hex": "#FEDCA3",
+    "code": "125",
+    "name": {
+      "en": "BREDA"
+    },
+    "lab": {
+      "l": 89.35,
+      "a": 3.97,
+      "b": 32.38
+    }
+  },
+  {
+    "id": "3fd31a36-6de4-486f-b01e-247ba7965d2f",
+    "seriesId": "loop",
+    "hex": "#F8B14C",
+    "code": "126",
+    "name": {
+      "en": "HELMOND"
+    },
+    "lab": {
+      "l": 77.24,
+      "a": 16.64,
+      "b": 59.99
+    }
+  },
+  {
+    "id": "841c453b-dd6b-410f-bc79-26c065d69b6d",
+    "seriesId": "loop",
+    "hex": "#EB6D0F",
+    "code": "127",
+    "name": {
+      "en": "ROSENDHAL"
+    },
+    "lab": {
+      "l": 60.46,
+      "a": 44.55,
+      "b": 66
+    }
+  },
+  {
+    "id": "1b620ef5-c1f6-425b-8deb-1beb97c6be8b",
+    "seriesId": "loop",
+    "hex": "#E75815",
+    "code": "128",
+    "name": {
+      "en": "ARNHEM"
+    },
+    "lab": {
+      "l": 56.12,
+      "a": 52.87,
+      "b": 61.23
+    }
+  },
+  {
+    "id": "f5a84afe-7548-49c3-9e17-06c846cd9487",
+    "seriesId": "loop",
+    "hex": "#E04D14",
+    "code": "129",
+    "name": {
+      "en": "TILBURG"
+    },
+    "lab": {
+      "l": 53.18,
+      "a": 55.09,
+      "b": 58.93
+    }
+  },
+  {
+    "id": "d4880f84-41b8-4a28-9dae-e7eb6ef561f5",
+    "seriesId": "loop",
+    "hex": "#E24415",
+    "code": "130",
+    "name": {
+      "en": "OSS"
+    },
+    "lab": {
+      "l": 52.24,
+      "a": 59.28,
+      "b": 58.13
+    }
+  },
+  {
+    "id": "0a3abf91-2644-4038-b3eb-523333efd20e",
+    "seriesId": "loop",
+    "hex": "#FF3300",
+    "code": "131",
+    "name": {
+      "en": "BRUSSELS"
+    },
+    "lab": {
+      "l": 55.72,
+      "a": 72.99,
+      "b": 68.15
+    }
+  },
+  {
+    "id": "8e93cc78-09d1-4876-98d8-f74c9c932d47",
+    "seriesId": "loop",
+    "hex": "#E33617",
+    "code": "136",
+    "name": {
+      "en": "MANCHESTER"
+    },
+    "lab": {
+      "l": 50.73,
+      "a": 64.35,
+      "b": 56.45
+    }
+  },
+  {
+    "id": "52498c1a-8e53-485a-a7df-ccd503a83d1c",
+    "seriesId": "loop",
+    "hex": "#DD3118",
+    "code": "137",
+    "name": {
+      "en": "LIVERPOOL"
+    },
+    "lab": {
+      "l": 49.06,
+      "a": 64.08,
+      "b": 54.34
+    }
+  },
+  {
+    "id": "e577f6c5-78a9-4a2b-bc2f-2bc3aa0d5226",
+    "seriesId": "loop",
+    "hex": "#BE2C1C",
+    "code": "138",
+    "name": {
+      "en": "NEWCASTLE"
+    },
+    "lab": {
+      "l": 42.52,
+      "a": 56.39,
+      "b": 44.82
+    }
+  },
+  {
+    "id": "ac64b49f-7c46-4e2a-9272-a2809aaae3cd",
+    "seriesId": "loop",
+    "hex": "#A6241C",
+    "code": "139",
+    "name": {
+      "en": "YORK"
+    },
+    "lab": {
+      "l": 36.85,
+      "a": 51.52,
+      "b": 37.9
+    }
+  },
+  {
+    "id": "3b84f8ca-50c8-480e-a94b-2278f3a7d1a2",
+    "seriesId": "loop",
+    "hex": "#7B1417",
+    "code": "140",
+    "name": {
+      "en": "LEEDS"
+    },
+    "lab": {
+      "l": 26.08,
+      "a": 42.85,
+      "b": 27.07
+    }
+  },
+  {
+    "id": "e3f3b3b1-fa5d-421b-9bd2-ab2d744d4eee",
+    "seriesId": "loop",
+    "hex": "#4E0F0F",
+    "code": "141",
+    "name": {
+      "en": "CAMBRIDGE"
+    },
+    "lab": {
+      "l": 15.47,
+      "a": 29.1,
+      "b": 17.25
+    }
+  },
+  {
+    "id": "543e5a1c-abc1-411e-b9ba-ab3483672259",
+    "seriesId": "loop",
+    "hex": "#E8586D",
+    "code": "142",
+    "name": {
+      "en": "DERBY"
+    },
+    "lab": {
+      "l": 57.31,
+      "a": 57.22,
+      "b": 18.17
+    }
+  },
+  {
+    "id": "6018e36d-ee5c-4696-9958-ca103b0d88b6",
+    "seriesId": "loop",
+    "hex": "#E53049",
+    "code": "143",
+    "name": {
+      "en": "BRISTOL"
+    },
+    "lab": {
+      "l": 50.99,
+      "a": 68.19,
+      "b": 31.04
+    }
+  },
+  {
+    "id": "4ebcc315-2a29-480a-8bb1-00a3da62d81b",
+    "seriesId": "loop",
+    "hex": "#DA0531",
+    "code": "144",
+    "name": {
+      "en": "BRIGHTON"
+    },
+    "lab": {
+      "l": 45.96,
+      "a": 71.55,
+      "b": 38.76
+    }
+  },
+  {
+    "id": "c9b7be0f-e748-4660-911c-c36d2dd54589",
+    "seriesId": "loop",
+    "hex": "#963034",
+    "code": "145",
+    "name": {
+      "en": "OXFORD"
+    },
+    "lab": {
+      "l": 35.69,
+      "a": 42.86,
+      "b": 21.52
+    }
+  },
+  {
+    "id": "cb6616e2-e90b-403c-b59a-de11cb1ab605",
+    "seriesId": "loop",
+    "hex": "#330000",
+    "code": "146",
+    "name": {
+      "en": "LONDON"
+    },
+    "lab": {
+      "l": 6.36,
+      "a": 25.17,
+      "b": 10.05
+    }
+  },
+  {
+    "id": "6f2a4794-6e87-4489-9e43-de30cf503670",
+    "seriesId": "loop",
+    "hex": "#FF6699",
+    "code": "147",
+    "name": {
+      "en": "BIRMINGHAM"
+    },
+    "lab": {
+      "l": 64.22,
+      "a": 62.51,
+      "b": 2.9
+    }
+  },
+  {
+    "id": "b08e28d8-970f-4f9c-a026-80b8d220d40c",
+    "seriesId": "loop",
+    "hex": "#EF7C71",
+    "code": "148",
+    "name": {
+      "en": "NOTTINGHAM"
+    },
+    "lab": {
+      "l": 64.93,
+      "a": 43.11,
+      "b": 26.3
+    }
+  },
+  {
+    "id": "7f8cc3ef-9208-4f54-a676-63c19e2d4e6c",
+    "seriesId": "loop",
+    "hex": "#B50156",
+    "code": "149",
+    "name": {
+      "en": "WARSAW"
+    },
+    "lab": {
+      "l": 38.76,
+      "a": 65.02,
+      "b": 4.97
+    }
+  },
+  {
+    "id": "68466b35-399a-42a3-bc7d-65bb3a87508d",
+    "seriesId": "loop",
+    "hex": "#FAEDE2",
+    "code": "150",
+    "name": {
+      "en": "DUBLIN"
+    },
+    "lab": {
+      "l": 94.48,
+      "a": 2.56,
+      "b": 6.89
+    }
+  },
+  {
+    "id": "fe77a7cf-13c3-4e2c-b098-2faa8797ef90",
+    "seriesId": "loop",
+    "hex": "#F5B9A6",
+    "code": "151",
+    "name": {
+      "en": "GALWAY"
+    },
+    "lab": {
+      "l": 80.1,
+      "a": 19.13,
+      "b": 18.07
+    }
+  },
+  {
+    "id": "07a40f40-5c61-4f7d-b009-e4662ebd1b20",
+    "seriesId": "loop",
+    "hex": "#EE847F",
+    "code": "152",
+    "name": {
+      "en": "DUNDALK"
+    },
+    "lab": {
+      "l": 66.69,
+      "a": 39.95,
+      "b": 20.8
+    }
+  },
+  {
+    "id": "942d7540-3992-4920-9135-682c71a9a572",
+    "seriesId": "loop",
+    "hex": "#BD4140",
+    "code": "153",
+    "name": {
+      "en": "WATERFORD"
+    },
+    "lab": {
+      "l": 45.6,
+      "a": 49.66,
+      "b": 28.09
+    }
+  },
+  {
+    "id": "a5a4948f-d79e-4384-b762-e2245113cdcb",
+    "seriesId": "loop",
+    "hex": "#F8CBCD",
+    "code": "154",
+    "name": {
+      "en": "LIMERICK"
+    },
+    "lab": {
+      "l": 85.54,
+      "a": 16.17,
+      "b": 5.01
+    }
+  },
+  {
+    "id": "4401dd0f-20e9-460c-9f53-73aac46f5197",
+    "seriesId": "loop",
+    "hex": "#E7A4A9",
+    "code": "155",
+    "name": {
+      "en": "SWORDS"
+    },
+    "lab": {
+      "l": 73.81,
+      "a": 25.45,
+      "b": 7.35
+    }
+  },
+  {
+    "id": "b0c91901-df4c-4123-a8e6-aa88e5f56356",
+    "seriesId": "loop",
+    "hex": "#8F443C",
+    "code": "156",
+    "name": {
+      "en": "CORK"
+    },
+    "lab": {
+      "l": 38.38,
+      "a": 30.99,
+      "b": 19.76
+    }
+  },
+  {
+    "id": "ed2933a3-fdce-4480-b21d-a376bf4d1fe6",
+    "seriesId": "loop",
+    "hex": "#CC727C",
+    "code": "157",
+    "name": {
+      "en": "SLIGO"
+    },
+    "lab": {
+      "l": 58.35,
+      "a": 36.4,
+      "b": 10.25
+    }
+  },
+  {
+    "id": "2d0809c9-7be4-497e-8ec1-378b8325d033",
+    "seriesId": "loop",
+    "hex": "#E0B2C1",
+    "code": "158",
+    "name": {
+      "en": "FARO"
+    },
+    "lab": {
+      "l": 77.01,
+      "a": 19,
+      "b": -1.23
+    }
+  },
+  {
+    "id": "78bcb3c5-dc49-4d83-92c4-95fab4cc0969",
+    "seriesId": "loop",
+    "hex": "#F095A7",
+    "code": "159",
+    "name": {
+      "en": "BEJA"
+    },
+    "lab": {
+      "l": 71.43,
+      "a": 36.4,
+      "b": 5.16
+    }
+  },
+  {
+    "id": "c54342d8-ec53-4522-aee9-fb877ed61a4b",
+    "seriesId": "loop",
+    "hex": "#E85A82",
+    "code": "160",
+    "name": {
+      "en": "COIMBRA"
+    },
+    "lab": {
+      "l": 58.12,
+      "a": 58.22,
+      "b": 6.99
+    }
+  },
+  {
+    "id": "de4ffbfb-d504-4018-b7c1-ebfd3d87f1bd",
+    "seriesId": "loop",
+    "hex": "#C63D65",
+    "code": "161",
+    "name": {
+      "en": "PORTO"
+    },
+    "lab": {
+      "l": 47.35,
+      "a": 56.88,
+      "b": 8.24
+    }
+  },
+  {
+    "id": "1d70b5a2-402e-4f3e-8914-6d7faceeeee2",
+    "seriesId": "loop",
+    "hex": "#9E174F",
+    "code": "162",
+    "name": {
+      "en": "AMADORA"
+    },
+    "lab": {
+      "l": 34.9,
+      "a": 55.64,
+      "b": 3.32
+    }
+  },
+  {
+    "id": "2363473d-af5e-40ec-98d5-24e2fe5396e0",
+    "seriesId": "loop",
+    "hex": "#88072F",
+    "code": "163",
+    "name": {
+      "en": "LISBOA"
+    },
+    "lab": {
+      "l": 28.36,
+      "a": 50.54,
+      "b": 14.75
+    }
+  },
+  {
+    "id": "fd945742-2462-4349-9cf3-460ae60c9356",
+    "seriesId": "loop",
+    "hex": "#670134",
+    "code": "164",
+    "name": {
+      "en": "THESSALONIKI"
+    },
+    "lab": {
+      "l": 20.65,
+      "a": 43.56,
+      "b": -0.58
+    }
+  },
+  {
+    "id": "cc56958a-2aaf-4e19-bab4-e2dce013e9cd",
+    "seriesId": "loop",
+    "hex": "#CECCE3",
+    "code": "180",
+    "name": {
+      "en": "VILNIUS"
+    },
+    "lab": {
+      "l": 82.84,
+      "a": 5.06,
+      "b": -11.1
+    }
+  },
+  {
+    "id": "e58f38e5-7a2b-430c-86f7-2103229d6314",
+    "seriesId": "loop",
+    "hex": "#C9A7CB",
+    "code": "181",
+    "name": {
+      "en": "KALMAR"
+    },
+    "lab": {
+      "l": 72.47,
+      "a": 18.7,
+      "b": -13.66
+    }
+  },
+  {
+    "id": "06b571e0-36c9-4cdf-9333-14b762622ac7",
+    "seriesId": "loop",
+    "hex": "#AD83AF",
+    "code": "182",
+    "name": {
+      "en": "MALMO"
+    },
+    "lab": {
+      "l": 60.08,
+      "a": 23.8,
+      "b": -16.97
+    }
+  },
+  {
+    "id": "40b037db-ef55-4363-8f5e-f51c7435c0b5",
+    "seriesId": "loop",
+    "hex": "#8B5D8E",
+    "code": "183",
+    "name": {
+      "en": "GOTEBERG"
+    },
+    "lab": {
+      "l": 46,
+      "a": 27.36,
+      "b": -19.53
+    }
+  },
+  {
+    "id": "05571cbc-96cb-45be-992e-bab3766ca70f",
+    "seriesId": "loop",
+    "hex": "#591861",
+    "code": "184",
+    "name": {
+      "en": "MORA"
+    },
+    "lab": {
+      "l": 22.45,
+      "a": 39.84,
+      "b": -28.69
+    }
+  },
+  {
+    "id": "a5fcc757-ba8a-4f8b-960b-5f89ba8d476a",
+    "seriesId": "loop",
+    "hex": "#320939",
+    "code": "185",
+    "name": {
+      "en": "FALUN"
+    },
+    "lab": {
+      "l": 10.33,
+      "a": 27.96,
+      "b": -21
+    }
+  },
+  {
+    "id": "5ec100aa-27af-4e6b-87e1-3e9fbac7a7c4",
+    "seriesId": "loop",
+    "hex": "#EFD1CF",
+    "code": "186",
+    "name": {
+      "en": "STOCKHOLM"
+    },
+    "lab": {
+      "l": 86.24,
+      "a": 10.13,
+      "b": 4.84
+    }
+  },
+  {
+    "id": "bf875bb0-d065-4808-86ab-64c904741dba",
+    "seriesId": "loop",
+    "hex": "#ECC0BE",
+    "code": "187",
+    "name": {
+      "en": "HELSINKI"
+    },
+    "lab": {
+      "l": 81.43,
+      "a": 15.38,
+      "b": 6.95
+    }
+  },
+  {
+    "id": "2479bbcb-c3d0-4026-9887-0a95fb73a8e6",
+    "seriesId": "loop",
+    "hex": "#D78A8C",
+    "code": "188",
+    "name": {
+      "en": "OULU"
+    },
+    "lab": {
+      "l": 65.37,
+      "a": 29.63,
+      "b": 11.23
+    }
+  },
+  {
+    "id": "6d16f12a-95ca-4a53-a17a-971dc051bb34",
+    "seriesId": "loop",
+    "hex": "#AB5265",
+    "code": "189",
+    "name": {
+      "en": "OSLO"
+    },
+    "lab": {
+      "l": 46.49,
+      "a": 38.39,
+      "b": 6.41
+    }
+  },
+  {
+    "id": "90d22b34-644d-4d81-bd7d-eb9ff97cd645",
+    "seriesId": "loop",
+    "hex": "#5B0E45",
+    "code": "190",
+    "name": {
+      "en": "COPENHAGEN"
+    },
+    "lab": {
+      "l": 19.92,
+      "a": 39.11,
+      "b": -13.8
+    }
+  },
+  {
+    "id": "49af150e-7150-4ffc-8db7-a310e0934757",
+    "seriesId": "loop",
+    "hex": "#6D2C75",
+    "code": "191",
+    "name": {
+      "en": "MOSS"
+    },
+    "lab": {
+      "l": 30.25,
+      "a": 39.94,
+      "b": -29
+    }
+  },
+  {
+    "id": "8682190f-9e63-4e7b-ad51-3da02f17e595",
+    "seriesId": "loop",
+    "hex": "#600D20",
+    "code": "192",
+    "name": {
+      "en": "SKAGEN"
+    },
+    "lab": {
+      "l": 19.56,
+      "a": 36.91,
+      "b": 11.84
+    }
+  },
+  {
+    "id": "5ddb68e1-8919-4762-b145-f9fe94647e65",
+    "seriesId": "loop",
+    "hex": "#622054",
+    "code": "193",
+    "name": {
+      "en": "RIGA"
+    },
+    "lab": {
+      "l": 24.55,
+      "a": 36.34,
+      "b": -16.67
+    }
+  },
+  {
+    "id": "f57835e7-eb07-4ee9-bc9e-0a0896626106",
+    "seriesId": "loop",
+    "hex": "#33003E",
+    "code": "194",
+    "name": {
+      "en": "TALLINN"
+    },
+    "lab": {
+      "l": 9.42,
+      "a": 33.69,
+      "b": -26.05
+    }
+  },
+  {
+    "id": "81e7053f-97e1-48ef-82b8-80654a5aeef9",
+    "seriesId": "loop",
+    "hex": "#93D5F5",
+    "code": "199",
+    "name": {
+      "en": "MONACO"
+    },
+    "lab": {
+      "l": 82.04,
+      "a": -12.88,
+      "b": -22.25
+    }
+  },
+  {
+    "id": "d1aef367-2863-479d-a247-34522e399959",
+    "seriesId": "loop",
+    "hex": "#CEE6EC",
+    "code": "200",
+    "name": {
+      "en": "PARIS"
+    },
+    "lab": {
+      "l": 89.75,
+      "a": -6.7,
+      "b": -5.6
+    }
+  },
+  {
+    "id": "29cf8642-24ac-4a65-989a-8a4739570f09",
+    "seriesId": "loop",
+    "hex": "#CECAD9",
+    "code": "201",
+    "name": {
+      "en": "NANCY"
+    },
+    "lab": {
+      "l": 82.04,
+      "a": 4.17,
+      "b": -6.94
+    }
+  },
+  {
+    "id": "aa7e9714-1170-4f40-a619-0f15b927466d",
+    "seriesId": "loop",
+    "hex": "#7CB3CD",
+    "code": "202",
+    "name": {
+      "en": "STRASBOURG"
+    },
+    "lab": {
+      "l": 70.13,
+      "a": -11.33,
+      "b": -18.84
+    }
+  },
+  {
+    "id": "cd2e5df8-e66f-4052-a3a4-0cf0e432e871",
+    "seriesId": "loop",
+    "hex": "#3E8EB7",
+    "code": "203",
+    "name": {
+      "en": "METZ"
+    },
+    "lab": {
+      "l": 55.87,
+      "a": -11.4,
+      "b": -28.63
+    }
+  },
+  {
+    "id": "7615a821-e401-4048-b3fc-fbbae02f58bd",
+    "seriesId": "loop",
+    "hex": "#1E74A7",
+    "code": "204",
+    "name": {
+      "en": "LENS"
+    },
+    "lab": {
+      "l": 46.39,
+      "a": -6.41,
+      "b": -34.27
+    }
+  },
+  {
+    "id": "014a831b-5cfc-4e34-924b-f90006db9903",
+    "seriesId": "loop",
+    "hex": "#004A7C",
+    "code": "205",
+    "name": {
+      "en": "LILLE"
+    },
+    "lab": {
+      "l": 30.28,
+      "a": 0.53,
+      "b": -33.83
+    }
+  },
+  {
+    "id": "f7b2a133-5b2c-483f-bd7a-78cd6a85c2af",
+    "seriesId": "loop",
+    "hex": "#003361",
+    "code": "206",
+    "name": {
+      "en": "RENNES"
+    },
+    "lab": {
+      "l": 20.94,
+      "a": 4.54,
+      "b": -31.53
+    }
+  },
+  {
+    "id": "f6d51a7c-a1fc-45df-b904-350632db5a80",
+    "seriesId": "loop",
+    "hex": "#142754",
+    "code": "207",
+    "name": {
+      "en": "CALAIS"
+    },
+    "lab": {
+      "l": 16.7,
+      "a": 9.98,
+      "b": -29.7
+    }
+  },
+  {
+    "id": "a08cf573-9873-4a41-9a70-7b0a1b372730",
+    "seriesId": "loop",
+    "hex": "#0E1A45",
+    "code": "208",
+    "name": {
+      "en": "BREST"
+    },
+    "lab": {
+      "l": 11,
+      "a": 12.39,
+      "b": -28.64
+    }
+  },
+  {
+    "id": "76e1bbe5-68f3-430f-9dcb-c799f3ae07b3",
+    "seriesId": "loop",
+    "hex": "#B9CED6",
+    "code": "209",
+    "name": {
+      "en": "BORDEAUX"
+    },
+    "lab": {
+      "l": 81.46,
+      "a": -5.43,
+      "b": -6.36
+    }
+  },
+  {
+    "id": "d52866ae-d780-40bf-90e0-2e64395f09ba",
+    "seriesId": "loop",
+    "hex": "#77A5BF",
+    "code": "210",
+    "name": {
+      "en": "NANTES"
+    },
+    "lab": {
+      "l": 65.43,
+      "a": -8.81,
+      "b": -18.26
+    }
+  },
+  {
+    "id": "848deb34-260f-4818-a9df-5ff81be00cb9",
+    "seriesId": "loop",
+    "hex": "#5188A4",
+    "code": "211",
+    "name": {
+      "en": "GRENOBLES"
+    },
+    "lab": {
+      "l": 54.07,
+      "a": -10.19,
+      "b": -20.47
+    }
+  },
+  {
+    "id": "209a4232-f2bb-4285-a481-3afd9841eed3",
+    "seriesId": "loop",
+    "hex": "#004868",
+    "code": "212",
+    "name": {
+      "en": "LYON"
+    },
+    "lab": {
+      "l": 28.47,
+      "a": -6.67,
+      "b": -24.1
+    }
+  },
+  {
+    "id": "9dfd6891-69cf-4c2a-8a61-81b4c38ce100",
+    "seriesId": "loop",
+    "hex": "#C9DBE9",
+    "code": "213",
+    "name": {
+      "en": "MARSEILLE"
+    },
+    "lab": {
+      "l": 86.49,
+      "a": -3.22,
+      "b": -8.89
+    }
+  },
+  {
+    "id": "cc06e5fe-7d17-4bf9-b3be-be3e375c97e3",
+    "seriesId": "loop",
+    "hex": "#B1C4D4",
+    "code": "214",
+    "name": {
+      "en": "NIMES"
+    },
+    "lab": {
+      "l": 78.22,
+      "a": -3.14,
+      "b": -10.17
+    }
+  },
+  {
+    "id": "186cd21a-dc30-4458-b803-bce98796ba22",
+    "seriesId": "loop",
+    "hex": "#7C97B4",
+    "code": "215",
+    "name": {
+      "en": "MONTPELLIER"
+    },
+    "lab": {
+      "l": 61.41,
+      "a": -2.48,
+      "b": -18.18
+    }
+  },
+  {
+    "id": "aa77f4dc-1d09-4300-bf29-96b8f54cdcfb",
+    "seriesId": "loop",
+    "hex": "#4F6D91",
+    "code": "216",
+    "name": {
+      "en": "TOULOUSE"
+    },
+    "lab": {
+      "l": 45.14,
+      "a": -0.73,
+      "b": -23.09
+    }
+  },
+  {
+    "id": "41878265-4286-4abf-b59e-6f42bc78cf1f",
+    "seriesId": "loop",
+    "hex": "#0E2D52",
+    "code": "217",
+    "name": {
+      "en": "NICE"
+    },
+    "lab": {
+      "l": 18.27,
+      "a": 3.73,
+      "b": -25.85
+    }
+  },
+  {
+    "id": "c810312b-62e9-4431-8080-05f64caca55d",
+    "seriesId": "loop",
+    "hex": "#1F2A44",
+    "code": "218",
+    "name": {
+      "en": "AJACCIO"
+    },
+    "lab": {
+      "l": 17.29,
+      "a": 3.91,
+      "b": -17.83
+    }
+  },
+  {
+    "id": "5225ad3c-d2e8-4e26-8c1b-612a33e62afa",
+    "seriesId": "loop",
+    "hex": "#3F579F",
+    "code": "219",
+    "name": {
+      "en": "TAVERNY"
+    },
+    "lab": {
+      "l": 38.51,
+      "a": 13.88,
+      "b": -41.95
+    }
+  },
+  {
+    "id": "b2e1fbbb-c36f-436c-94dd-0d84e786e64c",
+    "seriesId": "loop",
+    "hex": "#04455F",
+    "code": "220",
+    "name": {
+      "en": "GENEVA"
+    },
+    "lab": {
+      "l": 27.04,
+      "a": -8.15,
+      "b": -20.57
+    }
+  },
+  {
+    "id": "c2fbe1b1-9321-4f43-ad30-5548b99c3031",
+    "seriesId": "loop",
+    "hex": "#1D327B",
+    "code": "221",
+    "name": {
+      "en": "BASEL"
+    },
+    "lab": {
+      "l": 23.58,
+      "a": 19.47,
+      "b": -43.97
+    }
+  },
+  {
+    "id": "18d844b2-c291-47b7-82ed-5b8bbab70722",
+    "seriesId": "loop",
+    "hex": "#004155",
+    "code": "222",
+    "name": {
+      "en": "ATHENS"
+    },
+    "lab": {
+      "l": 25.06,
+      "a": -10.19,
+      "b": -17.16
+    }
+  },
+  {
+    "id": "8f0917c5-d896-487d-bc5a-4c1cb4b8c3be",
+    "seriesId": "loop",
+    "hex": "#1D2E3F",
+    "code": "223",
+    "name": {
+      "en": "LIMASSOL"
+    },
+    "lab": {
+      "l": 18.25,
+      "a": -1.34,
+      "b": -12.92
+    }
+  },
+  {
+    "id": "12bad4a4-3bb1-4d29-9974-13d80d2823bf",
+    "seriesId": "loop",
+    "hex": "#004553",
+    "code": "248",
+    "name": {
+      "en": "SAN MARINO"
+    },
+    "lab": {
+      "l": 26.39,
+      "a": -13.43,
+      "b": -13.81
+    }
+  },
+  {
+    "id": "1ebf884f-672a-4e52-b44e-769134ec1298",
+    "seriesId": "loop",
+    "hex": "#99D7BA",
+    "code": "249",
+    "name": {
+      "en": "COMO"
+    },
+    "lab": {
+      "l": 81.25,
+      "a": -25.75,
+      "b": 8.02
+    }
+  },
+  {
+    "id": "d3a6999f-353e-48ec-80d2-14fa276e1cf9",
+    "seriesId": "loop",
+    "hex": "#BBDFD8",
+    "code": "250",
+    "name": {
+      "en": "TORINO"
+    },
+    "lab": {
+      "l": 86.15,
+      "a": -13.14,
+      "b": -0.51
+    }
+  },
+  {
+    "id": "1282a1b4-a0eb-4245-a8a8-e1950eb4ba35",
+    "seriesId": "loop",
+    "hex": "#61BEBC",
+    "code": "251",
+    "name": {
+      "en": "MILANO"
+    },
+    "lab": {
+      "l": 71.55,
+      "a": -28.04,
+      "b": -7.51
+    }
+  },
+  {
+    "id": "4a05b287-3a4b-4f86-9cc2-2f9b9a465a0d",
+    "seriesId": "loop",
+    "hex": "#13A9A1",
+    "code": "252",
+    "name": {
+      "en": "BERGAMO"
+    },
+    "lab": {
+      "l": 62.58,
+      "a": -36.98,
+      "b": -6.08
+    }
+  },
+  {
+    "id": "3a78e10f-abb3-43ba-9da2-4b9329e2d48d",
+    "seriesId": "loop",
+    "hex": "#007B77",
+    "code": "253",
+    "name": {
+      "en": "BRESCIA"
+    },
+    "lab": {
+      "l": 46.31,
+      "a": -29.33,
+      "b": -6.06
+    }
+  },
+  {
+    "id": "0ec66e43-527e-41ec-a8ec-367f0453f6ed",
+    "seriesId": "loop",
+    "hex": "#005155",
+    "code": "254",
+    "name": {
+      "en": "VENEZIA"
+    },
+    "lab": {
+      "l": 30.74,
+      "a": -19.48,
+      "b": -8.48
+    }
+  },
+  {
+    "id": "e19882a0-295c-46d4-bcf8-d8909d2ed75a",
+    "seriesId": "loop",
+    "hex": "#002E28",
+    "code": "255",
+    "name": {
+      "en": "BOLZANO"
+    },
+    "lab": {
+      "l": 16.04,
+      "a": -16.72,
+      "b": -0.38
+    }
+  },
+  {
+    "id": "d0ad75e9-3166-406e-93eb-f5869dad74f4",
+    "seriesId": "loop",
+    "hex": "#D2E8D6",
+    "code": "256",
+    "name": {
+      "en": "PIACENZA"
+    },
+    "lab": {
+      "l": 89.98,
+      "a": -10.58,
+      "b": 6.28
+    }
+  },
+  {
+    "id": "e9014f3e-67de-4fc0-b7f3-901f8f6dd2e7",
+    "seriesId": "loop",
+    "hex": "#9ACB9E",
+    "code": "257",
+    "name": {
+      "en": "PARMA"
+    },
+    "lab": {
+      "l": 77.31,
+      "a": -24.86,
+      "b": 17.36
+    }
+  },
+  {
+    "id": "db050cc6-416f-4ac1-8765-aec6e2435e57",
+    "seriesId": "loop",
+    "hex": "#71B26D",
+    "code": "258",
+    "name": {
+      "en": "MODENA"
+    },
+    "lab": {
+      "l": 66.87,
+      "a": -34.74,
+      "b": 28.88
+    }
+  },
+  {
+    "id": "1028bd52-8819-412c-87c5-79583b3e5b76",
+    "seriesId": "loop",
+    "hex": "#438B51",
+    "code": "259",
+    "name": {
+      "en": "REGGIO EMILIA"
+    },
+    "lab": {
+      "l": 52.12,
+      "a": -35.8,
+      "b": 24.29
+    }
+  },
+  {
+    "id": "669fb06f-268a-48b0-b749-49a903d28163",
+    "seriesId": "loop",
+    "hex": "#1E5142",
+    "code": "260",
+    "name": {
+      "en": "BOLOGNA"
+    },
+    "lab": {
+      "l": 30.77,
+      "a": -21.23,
+      "b": 3.76
+    }
+  },
+  {
+    "id": "dd68fa28-82e3-4640-8e04-3282ebce8520",
+    "seriesId": "loop",
+    "hex": "#163B2B",
+    "code": "261",
+    "name": {
+      "en": "FERRARA"
+    },
+    "lab": {
+      "l": 21.85,
+      "a": -17.87,
+      "b": 5.99
+    }
+  },
+  {
+    "id": "bea07bd1-f193-435d-9f7c-737273b899d6",
+    "seriesId": "loop",
+    "hex": "#D8DF74",
+    "code": "262",
+    "name": {
+      "en": "LA SPEZIA"
+    },
+    "lab": {
+      "l": 86.32,
+      "a": -17.29,
+      "b": 51.21
+    }
+  },
+  {
+    "id": "c7b928f1-a6a3-4c06-81b0-ee57b9d04aed",
+    "seriesId": "loop",
+    "hex": "#C1D678",
+    "code": "263",
+    "name": {
+      "en": "PISA"
+    },
+    "lab": {
+      "l": 82.26,
+      "a": -21.47,
+      "b": 43.93
+    }
+  },
+  {
+    "id": "604b688f-74ae-429a-9404-6c24564d6f32",
+    "seriesId": "loop",
+    "hex": "#B6CA70",
+    "code": "264",
+    "name": {
+      "en": "PRATO"
+    },
+    "lab": {
+      "l": 78.08,
+      "a": -20.7,
+      "b": 42.52
+    }
+  },
+  {
+    "id": "3b5c0998-046f-4835-aa6a-c75e8d66144a",
+    "seriesId": "loop",
+    "hex": "#86B54B",
+    "code": "265",
+    "name": {
+      "en": "LUCCA"
+    },
+    "lab": {
+      "l": 68.48,
+      "a": -32.93,
+      "b": 48.05
+    }
+  },
+  {
+    "id": "740cac8e-5685-4f7e-9559-6425ecedbb90",
+    "seriesId": "loop",
+    "hex": "#4E9825",
+    "code": "266",
+    "name": {
+      "en": "FIRENZE"
+    },
+    "lab": {
+      "l": 56.3,
+      "a": -43.21,
+      "b": 50.06
+    }
+  },
+  {
+    "id": "3c48f601-62f3-4215-9c27-8ce6c1b6a4e5",
+    "seriesId": "loop",
+    "hex": "#638234",
+    "code": "267",
+    "name": {
+      "en": "SIENA"
+    },
+    "lab": {
+      "l": 50.53,
+      "a": -24.3,
+      "b": 37.91
+    }
+  },
+  {
+    "id": "abc6b339-c8bf-4d67-abb8-456ea680c184",
+    "seriesId": "loop",
+    "hex": "#224A1E",
+    "code": "268",
+    "name": {
+      "en": "LIVORNO"
+    },
+    "lab": {
+      "l": 27.66,
+      "a": -24.37,
+      "b": 21.8
+    }
+  },
+  {
+    "id": "5ff4610e-9b59-468e-8c95-70af679b6097",
+    "seriesId": "loop",
+    "hex": "#183419",
+    "code": "269",
+    "name": {
+      "en": "PERUGIA"
+    },
+    "lab": {
+      "l": 18.89,
+      "a": -17.59,
+      "b": 13.85
+    }
+  },
+  {
+    "id": "0f46ee18-3264-4f18-a0c6-beb2dc1264cb",
+    "seriesId": "loop",
+    "hex": "#DCE3D1",
+    "code": "270",
+    "name": {
+      "en": "SASSARI"
+    },
+    "lab": {
+      "l": 89.28,
+      "a": -5.52,
+      "b": 7.98
+    }
+  },
+  {
+    "id": "2a17ace6-58c5-43a2-88f9-519e2cfce129",
+    "seriesId": "loop",
+    "hex": "#BFCDB2",
+    "code": "271",
+    "name": {
+      "en": "CAGLIARI"
+    },
+    "lab": {
+      "l": 80.71,
+      "a": -9.63,
+      "b": 11.84
+    }
+  },
+  {
+    "id": "a07e933e-b6df-4fa7-8613-b6bb230f944f",
+    "seriesId": "loop",
+    "hex": "#8E9E75",
+    "code": "272",
+    "name": {
+      "en": "MESSINA"
+    },
+    "lab": {
+      "l": 62.92,
+      "a": -13.14,
+      "b": 19.6
+    }
+  },
+  {
+    "id": "20fe7e4b-c8f6-4969-b805-90539513a238",
+    "seriesId": "loop",
+    "hex": "#2D4823",
+    "code": "273",
+    "name": {
+      "en": "CATANIA"
+    },
+    "lab": {
+      "l": 27.61,
+      "a": -18.48,
+      "b": 18.96
+    }
+  },
+  {
+    "id": "6c666925-d321-46f2-a994-a54849c1e547",
+    "seriesId": "loop",
+    "hex": "#29341B",
+    "code": "274",
+    "name": {
+      "en": "PALERMO"
+    },
+    "lab": {
+      "l": 20.07,
+      "a": -10.01,
+      "b": 14.31
+    }
+  },
+  {
+    "id": "12b6c3e0-7521-4b9e-8571-3064fbcf15fa",
+    "seriesId": "loop",
+    "hex": "#EBE886",
+    "code": "275",
+    "name": {
+      "en": "ROMA"
+    },
+    "lab": {
+      "l": 90.37,
+      "a": -12.56,
+      "b": 47.87
+    }
+  },
+  {
+    "id": "d2a3b877-ea4d-426e-81cd-23f238c79041",
+    "seriesId": "loop",
+    "hex": "#E5E14C",
+    "code": "276",
+    "name": {
+      "en": "MORIMONDO"
+    },
+    "lab": {
+      "l": 87.5,
+      "a": -15.91,
+      "b": 70.01
+    }
+  },
+  {
+    "id": "45336c08-db07-4968-b4c2-7aec7be59c80",
+    "seriesId": "loop",
+    "hex": "#DAD627",
+    "code": "277",
+    "name": {
+      "en": "NAPOLI"
+    },
+    "lab": {
+      "l": 83.52,
+      "a": -16.57,
+      "b": 77.6
+    }
+  },
+  {
+    "id": "971f731d-9251-4892-b521-c31f15aa5707",
+    "seriesId": "loop",
+    "hex": "#B9CD28",
+    "code": "278",
+    "name": {
+      "en": "SALERNO"
+    },
+    "lab": {
+      "l": 78.54,
+      "a": -25.98,
+      "b": 72.07
+    }
+  },
+  {
+    "id": "61e75799-391b-42ae-b6b6-41f760e16cb7",
+    "seriesId": "loop",
+    "hex": "#9FA72D",
+    "code": "279",
+    "name": {
+      "en": "FOGGIA"
+    },
+    "lab": {
+      "l": 65.9,
+      "a": -18.01,
+      "b": 58.26
+    }
+  },
+  {
+    "id": "7a9ccaad-3b0c-4ce7-907d-24e9ad204602",
+    "seriesId": "loop",
+    "hex": "#725F1D",
+    "code": "280",
+    "name": {
+      "en": "BARI"
+    },
+    "lab": {
+      "l": 40.98,
+      "a": -0.07,
+      "b": 38.81
+    }
+  },
+  {
+    "id": "8c453c00-cca8-48be-a03b-25b060401f06",
+    "seriesId": "loop",
+    "hex": "#534A19",
+    "code": "281",
+    "name": {
+      "en": "CATANZARO"
+    },
+    "lab": {
+      "l": 31.36,
+      "a": -2.97,
+      "b": 29.72
+    }
+  },
+  {
+    "id": "ea4741bf-6e12-4926-a649-5838f8b77b12",
+    "seriesId": "loop",
+    "hex": "#C0B561",
+    "code": "299",
+    "name": {
+      "en": "ISTANBUL"
+    },
+    "lab": {
+      "l": 72.97,
+      "a": -7.49,
+      "b": 43.86
+    }
+  },
+  {
+    "id": "420c8d20-13ea-4067-8c9f-4fa925a42567",
+    "seriesId": "loop",
+    "hex": "#F4EDB3",
+    "code": "300",
+    "name": {
+      "en": "ZAGREB"
+    },
+    "lab": {
+      "l": 93.04,
+      "a": -6.47,
+      "b": 29.03
+    }
+  },
+  {
+    "id": "cc49538a-d370-4925-b5bb-85f04ee65e55",
+    "seriesId": "loop",
+    "hex": "#DDD491",
+    "code": "301",
+    "name": {
+      "en": "BRATISLAVA"
+    },
+    "lab": {
+      "l": 84.23,
+      "a": -6.77,
+      "b": 34.31
+    }
+  },
+  {
+    "id": "a64f831f-da30-47a9-839b-19e542b57dfe",
+    "seriesId": "loop",
+    "hex": "#CBBF5C",
+    "code": "302",
+    "name": {
+      "en": "BUCAREST"
+    },
+    "lab": {
+      "l": 76.52,
+      "a": -8.53,
+      "b": 50.7
+    }
+  },
+  {
+    "id": "db3f1d34-440a-4a2f-b269-2d36277bc41d",
+    "seriesId": "loop",
+    "hex": "#AA8413",
+    "code": "303",
+    "name": {
+      "en": "BUDAPEST"
+    },
+    "lab": {
+      "l": 57.17,
+      "a": 4.75,
+      "b": 58.87
+    }
+  },
+  {
+    "id": "e6588aca-6bfd-423b-9e3c-a36bf9ce18af",
+    "seriesId": "loop",
+    "hex": "#917022",
+    "code": "304",
+    "name": {
+      "en": "PRAGA"
+    },
+    "lab": {
+      "l": 49.16,
+      "a": 4.99,
+      "b": 45.87
+    }
+  },
+  {
+    "id": "3b2a4f1b-d27b-4c31-969c-3ea087df0bae",
+    "seriesId": "loop",
+    "hex": "#5C4826",
+    "code": "305",
+    "name": {
+      "en": "BELGRADE"
+    },
+    "lab": {
+      "l": 31.92,
+      "a": 3.83,
+      "b": 23.44
+    }
+  },
+  {
+    "id": "c8597798-7dad-4cf8-b8f1-cc15422c6ac3",
+    "seriesId": "loop",
+    "hex": "#F6E4C2",
+    "code": "306",
+    "name": {
+      "en": "VIENNA"
+    },
+    "lab": {
+      "l": 91.22,
+      "a": 0.87,
+      "b": 18.83
+    }
+  },
+  {
+    "id": "469e910a-7f8a-4446-b09e-c18e6685372a",
+    "seriesId": "loop",
+    "hex": "#DDC69E",
+    "code": "307",
+    "name": {
+      "en": "KREMS"
+    },
+    "lab": {
+      "l": 80.87,
+      "a": 2.1,
+      "b": 23.03
+    }
+  },
+  {
+    "id": "2c9abbcb-e3c7-4e20-88fd-2a50d65e3cb6",
+    "seriesId": "loop",
+    "hex": "#D3A96B",
+    "code": "308",
+    "name": {
+      "en": "LINZ"
+    },
+    "lab": {
+      "l": 71.75,
+      "a": 7.7,
+      "b": 37.68
+    }
+  },
+  {
+    "id": "21cea221-59a9-434a-8be2-bc72e3920ab5",
+    "seriesId": "loop",
+    "hex": "#8A5623",
+    "code": "309",
+    "name": {
+      "en": "WELS"
+    },
+    "lab": {
+      "l": 41.5,
+      "a": 16.91,
+      "b": 37.44
+    }
+  },
+  {
+    "id": "888d7f83-d26f-441a-9392-701d93c913b6",
+    "seriesId": "loop",
+    "hex": "#6D4B2A",
+    "code": "310",
+    "name": {
+      "en": "SALZBURG"
+    },
+    "lab": {
+      "l": 34.91,
+      "a": 10.49,
+      "b": 25.19
+    }
+  },
+  {
+    "id": "2d39c7b2-d088-4e7c-9d5b-d0b547dc7d71",
+    "seriesId": "loop",
+    "hex": "#543B25",
+    "code": "311",
+    "name": {
+      "en": "GRAZ"
+    },
+    "lab": {
+      "l": 27.15,
+      "a": 8.04,
+      "b": 17.93
+    }
+  },
+  {
+    "id": "117e5c4b-02f9-43d1-976e-72137faa6a59",
+    "seriesId": "loop",
+    "hex": "#2B1307",
+    "code": "312",
+    "name": {
+      "en": "BADEN"
+    },
+    "lab": {
+      "l": 8.95,
+      "a": 11.04,
+      "b": 10.76
+    }
+  },
+  {
+    "id": "8a3c335e-98b5-4c2b-86be-e67171c007c7",
+    "seriesId": "loop",
+    "hex": "#F0D0B1",
+    "code": "313",
+    "name": {
+      "en": "BERLIN"
+    },
+    "lab": {
+      "l": 85.41,
+      "a": 6.61,
+      "b": 19.54
+    }
+  },
+  {
+    "id": "2b82f058-838e-434f-87a5-950078e99ac0",
+    "seriesId": "loop",
+    "hex": "#EAA77D",
+    "code": "314",
+    "name": {
+      "en": "HAMBURG"
+    },
+    "lab": {
+      "l": 73.94,
+      "a": 19.82,
+      "b": 31.5
+    }
+  },
+  {
+    "id": "0e53acf2-e9d5-4b75-855f-fd71028c8ab4",
+    "seriesId": "loop",
+    "hex": "#ECA368",
+    "code": "315",
+    "name": {
+      "en": "BREMEN"
+    },
+    "lab": {
+      "l": 72.91,
+      "a": 20.9,
+      "b": 41.26
+    }
+  },
+  {
+    "id": "24f91a3d-0fd8-401a-a3a4-093408086696",
+    "seriesId": "loop",
+    "hex": "#D56112",
+    "code": "316",
+    "name": {
+      "en": "HANNOVER"
+    },
+    "lab": {
+      "l": 54.81,
+      "a": 42.01,
+      "b": 59.81
+    }
+  },
+  {
+    "id": "0aed08fd-e61b-405f-a2a5-81a39f926ef8",
+    "seriesId": "loop",
+    "hex": "#A55520",
+    "code": "317",
+    "name": {
+      "en": "DORTMUND"
+    },
+    "lab": {
+      "l": 45.09,
+      "a": 29.2,
+      "b": 43.71
+    }
+  },
+  {
+    "id": "6334cca5-ae92-4888-8e99-ed6f2be67352",
+    "seriesId": "loop",
+    "hex": "#613B23",
+    "code": "318",
+    "name": {
+      "en": "HALLE"
+    },
+    "lab": {
+      "l": 28.88,
+      "a": 14.1,
+      "b": 21.7
+    }
+  },
+  {
+    "id": "f49cc2bc-e4a7-443e-ad17-d56520d42c99",
+    "seriesId": "loop",
+    "hex": "#F8E0CC",
+    "code": "319",
+    "name": {
+      "en": "MUNCHEN"
+    },
+    "lab": {
+      "l": 90.61,
+      "a": 5.1,
+      "b": 12.79
+    }
+  },
+  {
+    "id": "1c47a67f-8d3d-477f-9620-d696edc720c0",
+    "seriesId": "loop",
+    "hex": "#D4B99C",
+    "code": "320",
+    "name": {
+      "en": "STUTTGART"
+    },
+    "lab": {
+      "l": 76.74,
+      "a": 5.24,
+      "b": 18.28
+    }
+  },
+  {
+    "id": "c293becd-9fc9-4ef8-916a-7e422dce5145",
+    "seriesId": "loop",
+    "hex": "#AC825D",
+    "code": "321",
+    "name": {
+      "en": "NURNBERG"
+    },
+    "lab": {
+      "l": 57.59,
+      "a": 11.39,
+      "b": 26.26
+    }
+  },
+  {
+    "id": "3ddc4f1e-8664-458f-acb6-f73e9eccdb81",
+    "seriesId": "loop",
+    "hex": "#7B3F2C",
+    "code": "322",
+    "name": {
+      "en": "MAINZ"
+    },
+    "lab": {
+      "l": 33.88,
+      "a": 24.17,
+      "b": 23.21
+    }
+  },
+  {
+    "id": "9520067a-3bdc-45e9-9e14-461e954739df",
+    "seriesId": "loop",
+    "hex": "#724629",
+    "code": "323",
+    "name": {
+      "en": "FRANKFURT"
+    },
+    "lab": {
+      "l": 34.23,
+      "a": 15.79,
+      "b": 25.12
+    }
+  },
+  {
+    "id": "36f8f2dd-2094-43c3-9e00-26fe20586f47",
+    "seriesId": "loop",
+    "hex": "#775135",
+    "code": "324",
+    "name": {
+      "en": "BONN"
+    },
+    "lab": {
+      "l": 37.96,
+      "a": 12.5,
+      "b": 22.77
+    }
+  },
+  {
+    "id": "e9f43ef7-9cb5-4a3c-b43c-6a4f36975128",
+    "seriesId": "loop",
+    "hex": "#411412",
+    "code": "325",
+    "name": {
+      "en": "KOLN"
+    },
+    "lab": {
+      "l": 13.64,
+      "a": 21.72,
+      "b": 12.64
+    }
+  },
+  {
+    "id": "f6f2f06b-7b31-4d76-a6d9-83380b26292f",
+    "seriesId": "loop",
+    "hex": "#E06522",
+    "code": "326",
+    "name": {
+      "en": "LEIPZIG"
+    },
+    "lab": {
+      "l": 57.34,
+      "a": 44.58,
+      "b": 57.24
+    }
+  },
+  {
+    "id": "79c0fc94-56cf-4c24-b569-a700b9aaf6c3",
+    "seriesId": "loop",
+    "hex": "#B59253",
+    "code": "327",
+    "name": {
+      "en": "INNSBRUCK"
+    },
+    "lab": {
+      "l": 62.51,
+      "a": 5.37,
+      "b": 38.06
+    }
+  },
+  {
+    "id": "1c781630-0c2a-407a-952b-921e562431c4",
+    "seriesId": "loop",
+    "hex": "#522A00",
+    "code": "328",
+    "name": {
+      "en": "DUESSELDORF"
+    },
+    "lab": {
+      "l": 21.76,
+      "a": 15.5,
+      "b": 31.24
+    }
+  },
+  {
+    "id": "be05be90-03b4-4f82-846d-221553dd2b43",
+    "seriesId": "loop",
+    "hex": "#8C5B34",
+    "code": "329",
+    "name": {
+      "en": "BERN"
+    },
+    "lab": {
+      "l": 43.22,
+      "a": 15.99,
+      "b": 30.4
+    }
+  },
+  {
+    "id": "0d5c831a-3c28-41b9-9165-dde395184b4c",
+    "seriesId": "loop",
+    "hex": "#C4763F",
+    "code": "330",
+    "name": {
+      "en": "ZURICH"
+    },
+    "lab": {
+      "l": 57.13,
+      "a": 25.76,
+      "b": 42.49
+    }
+  },
+  {
+    "id": "448f28ac-8626-425b-b60b-ee9f2b352fef",
+    "seriesId": "loop",
+    "hex": "#ECE9E1",
+    "code": "340",
+    "name": {
+      "en": "LOS ANGELES"
+    },
+    "lab": {
+      "l": 92.37,
+      "a": -0.38,
+      "b": 4.24
+    }
+  },
+  {
+    "id": "31b34d1a-a97b-4eee-ad2f-756f01b7eb75",
+    "seriesId": "loop",
+    "hex": "#CCC9C1",
+    "code": "341",
+    "name": {
+      "en": "SAN DIEGO"
+    },
+    "lab": {
+      "l": 80.99,
+      "a": -0.38,
+      "b": 4.36
+    }
+  },
+  {
+    "id": "c8f7f8e0-c2b0-4c73-9758-f0422d84863d",
+    "seriesId": "loop",
+    "hex": "#BDB9B0",
+    "code": "342",
+    "name": {
+      "en": "SAN JOSE"
+    },
+    "lab": {
+      "l": 75.23,
+      "a": -0.2,
+      "b": 5.06
+    }
+  },
+  {
+    "id": "b0a33305-9d97-437b-a73e-baa718fa4ae2",
+    "seriesId": "loop",
+    "hex": "#A9A5A0",
+    "code": "343",
+    "name": {
+      "en": "SAN FRANCISCO"
+    },
+    "lab": {
+      "l": 67.93,
+      "a": 0.52,
+      "b": 3.1
+    }
+  },
+  {
+    "id": "820f7028-ff42-467b-8934-c1c13760f071",
+    "seriesId": "loop",
+    "hex": "#7E7970",
+    "code": "344",
+    "name": {
+      "en": "OAKLAND"
+    },
+    "lab": {
+      "l": 51.01,
+      "a": 0.21,
+      "b": 5.61
+    }
+  },
+  {
+    "id": "02be9fad-4a67-46b3-a078-7b694824f5f5",
+    "seriesId": "loop",
+    "hex": "#5A5551",
+    "code": "345",
+    "name": {
+      "en": "SACRAMENTO"
+    },
+    "lab": {
+      "l": 36.49,
+      "a": 1.23,
+      "b": 3.06
+    }
+  },
+  {
+    "id": "be3dd30a-a8d8-4ded-aa0c-c1a49ded494e",
+    "seriesId": "loop",
+    "hex": "#444342",
+    "code": "346",
+    "name": {
+      "en": "LONG BEACH"
+    },
+    "lab": {
+      "l": 28.48,
+      "a": 0.2,
+      "b": 0.75
+    }
+  },
+  {
+    "id": "758b9738-d02b-4289-a393-e2502e8100ee",
+    "seriesId": "loop",
+    "hex": "#E5D4C5",
+    "code": "347",
+    "name": {
+      "en": "HOUSTON"
+    },
+    "lab": {
+      "l": 85.9,
+      "a": 3.41,
+      "b": 9.54
+    }
+  },
+  {
+    "id": "e065f955-b8ed-4f39-841b-bca8a241b219",
+    "seriesId": "loop",
+    "hex": "#D1B4A2",
+    "code": "348",
+    "name": {
+      "en": "SAN ANTONIO"
+    },
+    "lab": {
+      "l": 75.33,
+      "a": 7.62,
+      "b": 13.04
+    }
+  },
+  {
+    "id": "71a1b357-2fc1-4a80-987d-188e1fa4c456",
+    "seriesId": "loop",
+    "hex": "#9F7D74",
+    "code": "349",
+    "name": {
+      "en": "DALLAS"
+    },
+    "lab": {
+      "l": 55.38,
+      "a": 11.76,
+      "b": 9.93
+    }
+  },
+  {
+    "id": "15a79f23-4dc0-451c-a2db-1ded122790ff",
+    "seriesId": "loop",
+    "hex": "#5F4444",
+    "code": "350",
+    "name": {
+      "en": "AUSTIN"
+    },
+    "lab": {
+      "l": 31.77,
+      "a": 11.64,
+      "b": 4.59
+    }
+  },
+  {
+    "id": "69204286-8d5d-44d1-aed9-fe7dde7a0a5f",
+    "seriesId": "loop",
+    "hex": "#403439",
+    "code": "351",
+    "name": {
+      "en": "EL PASO"
+    },
+    "lab": {
+      "l": 23.14,
+      "a": 6.37,
+      "b": -1.13
+    }
+  },
+  {
+    "id": "492ba058-01f7-4317-9c7c-60a0263fa532",
+    "seriesId": "loop",
+    "hex": "#D7D8D7",
+    "code": "352",
+    "name": {
+      "en": "NEW YORK"
+    },
+    "lab": {
+      "l": 86.24,
+      "a": -0.52,
+      "b": 0.37
+    }
+  },
+  {
+    "id": "dc179037-aba4-407b-abcc-6e1d56308f6d",
+    "seriesId": "loop",
+    "hex": "#C2C3C9",
+    "code": "353",
+    "name": {
+      "en": "BOSTON"
+    },
+    "lab": {
+      "l": 78.88,
+      "a": 0.78,
+      "b": -3.12
+    }
+  },
+  {
+    "id": "daaf327c-0d76-486a-9794-90053fb3598b",
+    "seriesId": "loop",
+    "hex": "#ABAAB4",
+    "code": "354",
+    "name": {
+      "en": "CHICAGO"
+    },
+    "lab": {
+      "l": 69.97,
+      "a": 2.28,
+      "b": -5
+    }
+  },
+  {
+    "id": "24eff9d9-dd89-4ffe-8092-26a7179b453e",
+    "seriesId": "loop",
+    "hex": "#666177",
+    "code": "355",
+    "name": {
+      "en": "PHILLY"
+    },
+    "lab": {
+      "l": 42.32,
+      "a": 6.8,
+      "b": -11.63
+    }
+  },
+  {
+    "id": "8a88befc-7564-43ad-9f46-92a5a90f6b63",
+    "seriesId": "loop",
+    "hex": "#3A3740",
+    "code": "356",
+    "name": {
+      "en": "WASHINGTON"
+    },
+    "lab": {
+      "l": 23.68,
+      "a": 3.42,
+      "b": -5.11
+    }
+  },
+  {
+    "id": "c4d076e5-37e6-428c-904f-3f842a4285fd",
+    "seriesId": "loop",
+    "hex": "#D8D5C2",
+    "code": "357",
+    "name": {
+      "en": "MIAMI"
+    },
+    "lab": {
+      "l": 85.04,
+      "a": -2.23,
+      "b": 9.76
+    }
+  },
+  {
+    "id": "bf44ed1e-3388-4104-ab6c-78b7ed134502",
+    "seriesId": "loop",
+    "hex": "#B8B39E",
+    "code": "358",
+    "name": {
+      "en": "ORLANDO"
+    },
+    "lab": {
+      "l": 72.83,
+      "a": -1.86,
+      "b": 11.36
+    }
+  },
+  {
+    "id": "cee7e44a-f0a1-4c65-ba41-109615c6e99e",
+    "seriesId": "loop",
+    "hex": "#9B937B",
+    "code": "359",
+    "name": {
+      "en": "TAMPA"
+    },
+    "lab": {
+      "l": 61.02,
+      "a": -1.16,
+      "b": 13.79
+    }
+  },
+  {
+    "id": "2d290bc0-174c-4631-aaf7-3c1cc4cbdd5b",
+    "seriesId": "loop",
+    "hex": "#76937B",
+    "code": "360",
+    "name": {
+      "en": "JACKSONVILLE"
+    },
+    "lab": {
+      "l": 58.18,
+      "a": -15.18,
+      "b": 9.39
+    }
+  },
+  {
+    "id": "cbb6bdc5-2439-4bf2-a0c0-5a62a3b5edab",
+    "seriesId": "loop",
+    "hex": "#564C42",
+    "code": "361",
+    "name": {
+      "en": "KEY WEST"
+    },
+    "lab": {
+      "l": 33.01,
+      "a": 2.31,
+      "b": 7.48
+    }
+  },
+  {
+    "id": "d982094e-849b-40ec-b199-09f5e8d32c78",
+    "seriesId": "loop",
+    "hex": "#382E2C",
+    "code": "362",
+    "name": {
+      "en": "FORT MYERS"
+    },
+    "lab": {
+      "l": 19.95,
+      "a": 4.15,
+      "b": 2.98
+    }
+  },
+  {
+    "id": "014fb8d0-7b6b-4e40-b91a-d3cfe7dfc07f",
+    "seriesId": "loop",
+    "hex": "#D8CCC1",
+    "code": "363",
+    "name": {
+      "en": "SEATTLE"
+    },
+    "lab": {
+      "l": 82.72,
+      "a": 2.3,
+      "b": 6.97
+    }
+  },
+  {
+    "id": "52724033-3bfa-4448-9946-857d5617d9bb",
+    "seriesId": "loop",
+    "hex": "#B6A18B",
+    "code": "364",
+    "name": {
+      "en": "PORTLAND"
+    },
+    "lab": {
+      "l": 67.5,
+      "a": 4.16,
+      "b": 14.28
+    }
+  },
+  {
+    "id": "fb9eeea9-d300-4bf6-bf97-53d64682e064",
+    "seriesId": "loop",
+    "hex": "#8C7464",
+    "code": "365",
+    "name": {
+      "en": "LAS VEGAS"
+    },
+    "lab": {
+      "l": 50.67,
+      "a": 6.81,
+      "b": 12.35
+    }
+  },
+  {
+    "id": "6585445c-d9f0-440b-b58b-746ad90804b6",
+    "seriesId": "loop",
+    "hex": "#644E41",
+    "code": "366",
+    "name": {
+      "en": "DETROIT"
+    },
+    "lab": {
+      "l": 35.08,
+      "a": 7.15,
+      "b": 11.22
+    }
+  },
+  {
+    "id": "ddf07246-ff30-4659-9529-b351c0260f8f",
+    "seriesId": "loop",
+    "hex": "#453536",
+    "code": "367",
+    "name": {
+      "en": "BALTIMORE"
+    },
+    "lab": {
+      "l": 23.93,
+      "a": 7.34,
+      "b": 2.11
+    }
+  },
+  {
+    "id": "f6e257ab-94bc-4945-a859-c6ac792d1f92",
+    "seriesId": "loop",
+    "hex": "#634F6F",
+    "code": "368",
+    "name": {
+      "en": "INDIANAPOLIS"
+    },
+    "lab": {
+      "l": 36.73,
+      "a": 14.97,
+      "b": -15.24
+    }
+  },
+  {
+    "id": "72c18f0f-8019-40b6-a077-da783b0f6547",
+    "seriesId": "loop",
+    "hex": "#F8C8B7",
+    "code": "370",
+    "name": {
+      "en": "MELBOURNE"
+    },
+    "lab": {
+      "l": 84.32,
+      "a": 14.58,
+      "b": 14.95
+    }
+  },
+  {
+    "id": "8b636a1f-9cdd-498a-a08e-209f392da9ce",
+    "seriesId": "loop",
+    "hex": "#DEAA9A",
+    "code": "371",
+    "name": {
+      "en": "SIDNEY"
+    },
+    "lab": {
+      "l": 73.94,
+      "a": 16.84,
+      "b": 15.62
+    }
+  },
+  {
+    "id": "ad710c42-4c8e-4292-bf16-6499377de79d",
+    "seriesId": "loop",
+    "hex": "#CF9684",
+    "code": "372",
+    "name": {
+      "en": "BRISBANE"
+    },
+    "lab": {
+      "l": 67.09,
+      "a": 19.06,
+      "b": 17.96
+    }
+  },
+  {
+    "id": "30d250a4-4ec8-4411-bccb-556748ce3099",
+    "seriesId": "loop",
+    "hex": "#B4857B",
+    "code": "373",
+    "name": {
+      "en": "CHRISTCHURCH"
+    },
+    "lab": {
+      "l": 59.81,
+      "a": 16.62,
+      "b": 12.46
+    }
+  },
+  {
+    "id": "334d7836-eab4-4027-b268-a6599e2f98d6",
+    "seriesId": "loop",
+    "hex": "#8B554C",
+    "code": "374",
+    "name": {
+      "en": "WELLINGTON"
+    },
+    "lab": {
+      "l": 42.01,
+      "a": 21.34,
+      "b": 14.72
+    }
+  },
+  {
+    "id": "10244c1b-9e16-4ddd-b760-7efeef921ddd",
+    "seriesId": "loop",
+    "hex": "#FFA38B",
+    "code": "375",
+    "name": {
+      "en": "MOSCOW"
+    },
+    "lab": {
+      "l": 75.65,
+      "a": 31.47,
+      "b": 26.68
+    }
+  },
+  {
+    "id": "f1ca6e9a-fa74-4c66-a7d9-b25d18e2e310",
+    "seriesId": "loop",
+    "hex": "#9B8D6D",
+    "code": "376",
+    "name": {
+      "en": "ST PETERSBURG"
+    },
+    "lab": {
+      "l": 59.09,
+      "a": 0.1,
+      "b": 19.01
+    }
+  },
+  {
+    "id": "9c3e0170-343c-4889-ac1e-dbe7374ba546",
+    "seriesId": "loop",
+    "hex": "#FF6A39",
+    "code": "377",
+    "name": {
+      "en": "KRASNODAR"
+    },
+    "lab": {
+      "l": 63.24,
+      "a": 54.24,
+      "b": 54.48
+    }
+  },
+  {
+    "id": "7b46cafa-997b-4e19-a8c9-e05a2a3c9ef9",
+    "seriesId": "loop",
+    "hex": "#89C275",
+    "code": "378",
+    "name": {
+      "en": "DUBAI"
+    },
+    "lab": {
+      "l": 73.01,
+      "a": -32.9,
+      "b": 32.96
+    }
+  },
+  {
+    "id": "f969ebae-3081-4856-aade-09cf262049d9",
+    "seriesId": "loop",
+    "hex": "#1652A1",
+    "code": "379",
+    "name": {
+      "en": "SAO PAULO"
+    },
+    "lab": {
+      "l": 35.55,
+      "a": 12.08,
+      "b": -47.98
+    }
+  },
+  {
+    "id": "e6dd4934-cea3-4f66-9f5c-1bdf5a947d0f",
+    "seriesId": "loop",
+    "hex": "#EA4890",
+    "code": "380",
+    "name": {
+      "en": "SANTIAGO"
+    },
+    "lab": {
+      "l": 56.23,
+      "a": 67.32,
+      "b": -3.94
+    }
+  },
+  {
+    "id": "0dbe1ac9-f87d-4b68-a216-8e2d8953c2d7",
+    "seriesId": "loop",
+    "hex": "#BEC2C5",
+    "code": "390",
+    "name": {
+      "en": "TRANSPARENT WHITE"
+    },
+    "lab": {
+      "l": 78.21,
+      "a": -0.81,
+      "b": -1.99
+    }
+  },
+  {
+    "id": "366e68c7-2f12-409f-a7c0-c146c4523782",
+    "seriesId": "loop",
+    "hex": "#D5A940",
+    "code": "401",
+    "name": {
+      "en": "GOLD"
+    },
+    "lab": {
+      "l": 71.48,
+      "a": 5.43,
+      "b": 58
+    }
+  },
+  {
+    "id": "1a0174c6-0ab3-466f-8469-a4359164fece",
+    "seriesId": "loop",
+    "hex": "#AA6255",
+    "code": "402",
+    "name": {
+      "en": "COOPER"
+    },
+    "lab": {
+      "l": 49.42,
+      "a": 27.7,
+      "b": 20.03
+    }
+  }
+]

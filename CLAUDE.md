@@ -4,19 +4,22 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this app is
 
-WallAI is a React Native/Expo mobile app for street artists and graffiti writers. It provides a spray paint color catalog, palette builder, and a doodle/wall simulator for planning pieces.
+SprayDeck is a React Native/Expo mobile app for street artists and graffiti writers. It provides a spray paint color catalog, palette builder, and a doodle/wall simulator for planning pieces.
 
 ## Commands
 
 ```bash
-npm start          # Expo dev server
-npm run ios        # iOS simulator
-npm run android    # Android emulator
-npm run lint       # ESLint
-npm run type-check # TypeScript check
-npm run check      # Both type-check and lint (run before committing)
-npm run prebuild   # Expo prebuild (clean)
-npm run clean      # Full clean (node_modules, .expo, ios, android)
+npm start               # Expo dev server
+npm run ios             # iOS simulator
+npm run android         # Android emulator
+npm run lint            # ESLint
+npm run type-check      # TypeScript check
+npm run check           # Both type-check and lint (run before committing)
+npm run prebuild        # Expo prebuild (clean)
+npm run clean           # Full clean (node_modules, .expo, ios, android)
+npm run build:preview   # EAS build — Android APK for device testing
+npm run build:production # EAS build — Android AAB for Play Store
+npm run submit:production # EAS submit — upload AAB to Google Play
 ```
 
 No test framework is configured.
@@ -39,15 +42,15 @@ app/
 
 All user data lives in Zustand stores with `persist()` middleware:
 
-| Store | Key | Purpose |
-|---|---|---|
-| `useCatalogStore` | in-memory | Static brand/series/color JSON, pure functions — no hooks |
-| `usePalettesStore` | `wallai-palettes` | User palettes CRUD |
-| `useFavoritesStore` | `wallai-favorites` | Favorited colors, brands, series |
-| `useDoodlesStore` | `wallai-doodles` | Doodle projects (wall/sketch images + transforms) |
-| `useProfileStore` | `wallai-profile` | Artist name (aka) |
-| `useLanguageStore` | `wallai-language` | Selected language |
-| `useThemeStore` | `wallai-theme` | Theme store (exists but unused — app is dark-only) |
+| Store               | Key                   | Purpose                                                   |
+| ------------------- | --------------------- | --------------------------------------------------------- |
+| `useCatalogStore`   | in-memory             | Static brand/series/color JSON, pure functions — no hooks |
+| `usePalettesStore`  | `spraydeck-palettes`  | User palettes CRUD                                        |
+| `useFavoritesStore` | `spraydeck-favorites` | Favorited colors, brands, series                          |
+| `useDoodlesStore`   | `spraydeck-doodles`   | Doodle projects (wall/sketch images + transforms)         |
+| `useProfileStore`   | `spraydeck-profile`   | Artist name (aka)                                         |
+| `useLanguageStore`  | `spraydeck-language`  | Selected language                                         |
+| `useThemeStore`     | `spraydeck-theme`     | Theme store (exists but unused — app is dark-only)        |
 
 `useCatalogStore` is different: it loads static JSON directly (no AsyncStorage). Colors are lazy-loaded per series via `colorsBySeriesId`.
 
@@ -69,6 +72,7 @@ All user data lives in Zustand stores with `persist()` middleware:
 ### Doodle editor
 
 The most complex screen (~900 LOC at `app/doodles/create.tsx`). It uses:
+
 - Two-layer system: wall (background) + sketch (overlay)
 - `react-native-reanimated` `SharedValue` for pan/pinch/rotate/flip/opacity
 - `react-native-view-shot` to export the composite as PNG
@@ -80,6 +84,7 @@ i18next with dot-notation keys (`tabs.home`, `catalog.searchPlaceholder`). Use `
 ### Design system
 
 The app uses the "High-Utility Obsidian" dark theme exclusively (see `docs/DESIGN.md`). Light mode is deferred. Key rules:
+
 - **Dark-only**: `_layout.tsx` forces `DarkTheme`; never use `useColorScheme` or `useTheme` — import `Accent` and `Surface` tokens directly from `constants/theme.ts`
 - **No borders**: depth is expressed through `Surface` color shifts (`lowest` → `bright`), not `borderWidth`
 - **Fonts**: Space Grotesk (`FontFamily.displayBold/SemiBold/Medium`) for titles/labels; system font for body text

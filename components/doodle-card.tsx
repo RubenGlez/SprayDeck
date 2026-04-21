@@ -32,6 +32,7 @@ export function DoodleCard({
       style={[styles.card, { backgroundColor: Surface.high }]}
       onPress={onPress}
       activeOpacity={0.7}
+      accessibilityRole="button"
     >
       <View
         style={[

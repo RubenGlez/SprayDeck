@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
 import { FavoriteIcon } from "@/components/favorite-icon";
@@ -30,6 +31,7 @@ export function ColorGridCard({
   cardWidth,
   swatchSize,
 }: ColorGridCardProps) {
+  const { t } = useTranslation();
   const lightBg = isLightHex(color.hex);
   const textColor = lightBg ? "rgba(0,0,0,0.85)" : "rgba(255,255,255,0.9)";
   const subTextColor = lightBg ? "rgba(0,0,0,0.55)" : "rgba(255,255,255,0.55)";
@@ -75,9 +77,10 @@ export function ColorGridCard({
             style={styles.favoriteBtn}
             onPress={onFavorite}
             hitSlop={{ top: 4, bottom: 4, left: 4, right: 4 }}
-            accessibilityLabel={isFavorite ? "Remove from favorites" : "Add to favorites"}
+            accessibilityRole="button"
+            accessibilityLabel={isFavorite ? t("colors.removeFromFavorites") : t("colors.addToFavorites")}
           >
-            <FavoriteIcon isFavorite={isFavorite ?? false} size={16} color={textColor} />
+            <FavoriteIcon isFavorite={isFavorite ?? false} size={20} color={textColor} />
           </TouchableOpacity>
         )}
 

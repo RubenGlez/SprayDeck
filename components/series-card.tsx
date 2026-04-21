@@ -24,6 +24,7 @@ export function SeriesCard({
       activeOpacity={0.7}
       style={styles.card}
       onPress={onPress}
+      accessibilityRole="button"
     >
       {/* Primary metric top-right — big dim number for data density */}
       <ThemedText style={styles.metric}>
@@ -34,6 +35,7 @@ export function SeriesCard({
         style={styles.favoriteBtn}
         onPress={onFavorite}
         hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
+        accessibilityRole="button"
         accessibilityLabel={
           isFavorite
             ? t("colors.removeFromFavorites")

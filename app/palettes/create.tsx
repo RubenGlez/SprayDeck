@@ -6,11 +6,18 @@ import React, {
   useRef,
   useState,
 } from "react";
+import { captureRef } from "react-native-view-shot";
 import { useTranslation } from "react-i18next";
 import { StyleSheet, Switch, View } from "react-native";
+import type { View as RNView } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 import { Button } from "@/components/button";
+import { PaletteExportView } from "@/components/palette-export-view";
+import {
+  DoodleShareBottomSheet,
+  type DoodleShareBottomSheetRef,
+} from "@/components/doodle-share-bottom-sheet";
 import { ColorGridCard } from "@/components/color-grid-card";
 import { ColorGridList } from "@/components/color-grid-list";
 import { HeaderBackButton } from "@/components/header-back-button";
@@ -31,6 +38,8 @@ import { useSeriesColorSelection } from "@/hooks/use-series-color-selection";
 import { filterColorsBySearch, getColorDisplayName } from "@/lib/color";
 import { confirmDelete } from "@/lib/confirm-delete";
 import { usePalettesStore } from "@/stores/usePalettesStore";
+import { useReviewPrompt } from "@/hooks/use-review-prompt";
+import { useAnalytics } from "@/hooks/use-analytics";
 import type { Color } from "@/types";
 
 const { GAP, HORIZONTAL_PADDING } = COLOR_GRID;
@@ -55,6 +64,9 @@ export default function CreatePaletteScreen() {
   const updatePalette = usePalettesStore((s) => s.updatePalette);
   const getPalette = usePalettesStore((s) => s.getPalette);
   const removePalette = usePalettesStore((s) => s.removePalette);
+  const palettes = usePalettesStore((s) => s.palettes);
+  const requestReview = useReviewPrompt();
+  const { capturePaletteCreated } = useAnalytics();
 
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedColors, setSelectedColors] = useState<Color[]>([]);
@@ -62,6 +74,9 @@ export default function CreatePaletteScreen() {
   const [paletteName, setPaletteName] = useState("");
   const [showOnlySelected, setShowOnlySelected] = useState(!!paletteId);
   const seriesFilterSheetRef = useRef<SeriesSelectBottomSheetRef>(null);
+  const shareSheetRef = useRef<DoodleShareBottomSheetRef>(null);
+  const exportViewRef = useRef<RNView>(null);
+  const [exportUri, setExportUri] = useState<string | null>(null);
   const initialAppliedRef = useRef(false);
 
   // Edit palette: load series and selected colors from palette
@@ -102,6 +117,17 @@ export default function CreatePaletteScreen() {
       },
     });
   }, [paletteId, removePalette, router, t]);
+
+  const handleShare = useCallback(async () => {
+    if (!exportViewRef.current) return;
+    try {
+      const uri = await captureRef(exportViewRef, { format: "png", quality: 1 });
+      setExportUri(uri);
+      shareSheetRef.current?.present();
+    } catch {
+      // capture failed silently
+    }
+  }, []);
 
   const headerTitle = useMemo(() => {
     if (!paletteId) return t("palettes.exploreColorsTitle");
@@ -157,6 +183,8 @@ export default function CreatePaletteScreen() {
       updatePalette(paletteId, { name, colors: selectedColors });
     } else {
       addPalette({ name, colors: selectedColors });
+      capturePaletteCreated(selectedColors.length);
+      if (palettes.length + 1 === 2) requestReview();
     }
     setShowNameModal(false);
     setPaletteName("");
@@ -167,6 +195,9 @@ export default function CreatePaletteScreen() {
     paletteId,
     paletteName,
     selectedColors,
+    capturePaletteCreated,
+    palettes.length,
+    requestReview,
     t,
     router,
   ]);
@@ -193,13 +224,22 @@ export default function CreatePaletteScreen() {
         right={
           <View style={styles.headerRightRow}>
             {paletteId ? (
-              <Button
-                variant="ghost"
-                size="icon"
-                onPress={handleDeletePalette}
-                accessibilityLabel={t("projects.remove")}
-                icon={<IconSymbol name="trash" size={22} color={Accent.error} />}
-              />
+              <>
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  onPress={handleShare}
+                  accessibilityLabel={t("palettes.share")}
+                  icon={<IconSymbol name="square.and.arrow.up" size={22} color={Accent.primary} />}
+                />
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  onPress={handleDeletePalette}
+                  accessibilityLabel={t("projects.remove")}
+                  icon={<IconSymbol name="trash" size={22} color={Accent.error} />}
+                />
+              </>
             ) : null}
             <Button
               variant="ghost"
@@ -257,6 +297,7 @@ export default function CreatePaletteScreen() {
                 onValueChange={setShowOnlySelected}
                 trackColor={{ false: Accent.outlineVariant, true: `${Accent.primary}60` }}
                 thumbColor={showOnlySelected ? Accent.primary : Accent.onSurfaceMuted}
+                accessibilityLabel={t("palettes.showOnlySelected")}
               />
               <ThemedText style={[styles.switchLabel, { color: Accent.onSurfaceMuted }]}>
                 {t("colors.colorCount", { count: selectedColors.length })}
@@ -287,6 +328,17 @@ export default function CreatePaletteScreen() {
         cancelLabel={t("common.cancel")}
         saveLabel={t("common.save")}
       />
+
+      {/* Off-screen view captured by react-native-view-shot for palette export */}
+      <View style={styles.offScreen} pointerEvents="none">
+        <PaletteExportView
+          ref={exportViewRef}
+          palette={{ id: paletteId ?? "", name: headerTitle, colors: selectedColors, createdAt: "" }}
+          language={i18n.language}
+        />
+      </View>
+
+      <DoodleShareBottomSheet ref={shareSheetRef} imageUri={exportUri} />
     </ThemedView>
   );
 }
@@ -328,5 +380,10 @@ const styles = StyleSheet.create({
   },
   switchLabel: {
     fontSize: Typography.fontSize.sm,
+  },
+  offScreen: {
+    position: "absolute",
+    top: 10000,
+    left: 0,
   },
 });

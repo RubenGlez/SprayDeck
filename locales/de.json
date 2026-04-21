@@ -34,11 +34,32 @@
     "createPalette": "Palette erstellen",
     "newDoodle": "Neues Doodle",
     "continueLastDoodle": "Letztes Doodle fortsetzen",
-    "recentPalettes": "Letzte Paletten"
+    "recentPalettes": "Letzte Paletten",
+    "seeAll": "Alle anzeigen",
+    "setTagNudge": "Künstlernamen festlegen",
+    "setTagNudgeSubtitle": "Personalisiere dein Erlebnis mit deinem Aka"
+  },
+  "onboarding": {
+    "skip": "Überspringen",
+    "next": "Weiter",
+    "getStarted": "Loslegen",
+    "slide1": {
+      "title": "Über 1.000 Sprayfarben",
+      "subtitle": "Durchsuche Montana, Molotow und AKA Colors. Finde markenübergreifende Entsprechungen mit LAB-Farbwissenschaft."
+    },
+    "slide2": {
+      "title": "Erstelle deine Palette",
+      "subtitle": "Wähle Farben manuell aus dem Katalog oder importiere ein Foto und lass SprayDeck die Töne automatisch zuordnen."
+    },
+    "slide3": {
+      "title": "Plane dein Piece",
+      "subtitle": "Lade ein Wandfoto, lege deine Skizze darüber, passe Größe und Deckkraft an — und exportiere als PNG."
+    }
   },
   "catalog": {
     "overviewTitle": "Katalog",
     "searchPlaceholder": "Nach Code oder Name suchen...",
+    "filterSeries": "Nach Serie filtern",
     "showOnlyFavorites": "Nur Favoriten anzeigen",
     "showAllColors": "Alle Farben anzeigen"
   },
@@ -141,7 +162,13 @@
     "lang_en": "Englisch",
     "lang_de": "Deutsch",
     "lang_fr": "Französisch",
-    "lang_pt": "Portugiesisch"
+    "lang_pt": "Portugiesisch",
+    "supportSection": "Projekt unterstützen",
+    "supportTitle": "Mit Liebe für die Straßen gemacht",
+    "supportBody": "Ich habe SprayDeck in meiner Freizeit gebaut, weil ich die Graffiti-Kultur wirklich liebe. Wenn es dir geholfen hat, ein Piece zu planen oder eine Farbe zu entdecken, kauf mir gerne einen Kaffee — das hält die App am Leben und hilft, Dinge wie die Apple Store Gebühr oder Features zu finanzieren, die echte Investitionen erfordern.",
+    "supportButton": "Kauf mir einen Kaffee auf Ko-fi",
+    "feedbackSection": "Feedback",
+    "reportIssue": "Fehler melden oder Funktion anfragen"
   },
   "filters": {
     "title": "Filter",
@@ -171,7 +198,7 @@
     "title": "Wand",
     "subtitle": "Überlagern Sie Ihre Skizze auf einem Wandfoto für präzise Positionierung",
     "loadingPermissions": "Kameraberechtigung wird geprüft…",
-    "cameraPermissionMessage": "WallAI benötigt Kamerazugriff, um die Live-Ansicht und Ihre Skizze auf der Wand anzuzeigen.",
+    "cameraPermissionMessage": "SprayDeck benötigt Kamerazugriff, um die Live-Ansicht und Ihre Skizze auf der Wand anzuzeigen.",
     "grantPermission": "Kamerazugriff erlauben",
     "noLayersTitle": "Ebenen hinzufügen",
     "noLayersSubtitle": "Fügen Sie ein Hintergrund- und/oder Skizzenbild hinzu. Sie können aus der Galerie wählen oder ein Foto für jede Ebene aufnehmen.",
@@ -264,6 +291,7 @@
     "editManually": "Manuell bearbeiten",
     "color": "Farbe",
     "colors": "Farben",
-    "searchPlaceholder": "Paletten suchen..."
+    "searchPlaceholder": "Paletten suchen...",
+    "share": "Palette teilen"
   }
 }

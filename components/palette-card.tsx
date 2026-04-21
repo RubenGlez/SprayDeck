@@ -48,6 +48,7 @@ export function PaletteCard({
       style={styles.card}
       onPress={onPress}
       activeOpacity={0.7}
+      accessibilityRole="button"
     >
       {/* Color swatch strip */}
       <View style={styles.swatchRow}>

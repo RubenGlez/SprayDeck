@@ -34,11 +34,32 @@
     "createPalette": "Criar paleta",
     "newDoodle": "Novo doodle",
     "continueLastDoodle": "Continuar último doodle",
-    "recentPalettes": "Paletas recentes"
+    "recentPalettes": "Paletas recentes",
+    "seeAll": "Ver tudo",
+    "setTagNudge": "Defina seu tag de artista",
+    "setTagNudgeSubtitle": "Personalize sua experiência com seu aka"
+  },
+  "onboarding": {
+    "skip": "Pular",
+    "next": "Próximo",
+    "getStarted": "Começar",
+    "slide1": {
+      "title": "+1.000 cores de spray",
+      "subtitle": "Explore Montana, Molotow e AKA Colors. Encontre correspondências entre marcas com ciência de cores LAB."
+    },
+    "slide2": {
+      "title": "Crie sua paleta",
+      "subtitle": "Escolha cores manualmente do catálogo, ou importe uma foto e deixe o SprayDeck combinar os tons automaticamente."
+    },
+    "slide3": {
+      "title": "Planeje sua peça",
+      "subtitle": "Carregue uma foto de parede, sobreponha seu esboço, ajuste escala e opacidade — e exporte como PNG."
+    }
   },
   "catalog": {
     "overviewTitle": "Catálogo",
     "searchPlaceholder": "Pesquisar por código ou nome...",
+    "filterSeries": "Filtrar por série",
     "showOnlyFavorites": "Mostrar apenas favoritos",
     "showAllColors": "Mostrar todas as cores"
   },
@@ -141,7 +162,13 @@
     "lang_en": "Inglês",
     "lang_de": "Alemão",
     "lang_fr": "Francês",
-    "lang_pt": "Português"
+    "lang_pt": "Português",
+    "supportSection": "Apoiar o projeto",
+    "supportTitle": "Feito com amor pelas ruas",
+    "supportBody": "Criei o SprayDeck no meu tempo livre porque amo genuinamente a cultura do graffiti. Se te ajudou a planejar um piece ou descobrir uma cor, considera me pagar um café — ajuda a manter o app vivo e a financiar coisas como a taxa da Apple Store ou funcionalidades que exigem investimento real.",
+    "supportButton": "Me pagar um café no Ko-fi",
+    "feedbackSection": "Feedback",
+    "reportIssue": "Reportar um bug ou solicitar uma funcionalidade"
   },
   "filters": {
     "title": "Filtros",
@@ -171,7 +198,7 @@
     "title": "Parede",
     "subtitle": "Sobreponha seu esboço em uma foto de parede para posicionamento preciso",
     "loadingPermissions": "Verificando permissão da câmera…",
-    "cameraPermissionMessage": "O WallAI precisa de acesso à câmera para mostrar a vista ao vivo e sobrepor seu esboço na parede.",
+    "cameraPermissionMessage": "O SprayDeck precisa de acesso à câmera para mostrar a vista ao vivo e sobrepor seu esboço na parede.",
     "grantPermission": "Conceder acesso à câmera",
     "noLayersTitle": "Adicionar camadas",
     "noLayersSubtitle": "Adicione uma imagem de fundo e/ou esboço. Você pode escolher da galeria ou tirar uma foto para cada camada.",
@@ -264,6 +291,7 @@
     "editManually": "Editar manualmente",
     "color": "cor",
     "colors": "cores",
-    "searchPlaceholder": "Pesquisar paletas..."
+    "searchPlaceholder": "Pesquisar paletas...",
+    "share": "Compartilhar paleta"
   }
 }

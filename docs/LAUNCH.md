@@ -1,6 +1,6 @@
 # Launch
 
-> Pre-launch work before publishing WallAI to Google Play.
+> Pre-launch work before publishing SprayDeck to Google Play.
 > Solo dev / spare time project — Android only, free app, no backend, no paid services.
 
 ---
@@ -130,18 +130,19 @@ Doodles export as PNG but palettes can't be shared. Artists show color plans to 
 
 ## Launch Readiness
 
-| Area | Status |
-|---|---|
-| Privacy policy | ⬜ Not started |
-| App icon / splash | ⬜ Unknown |
-| Store metadata + screenshots | ⬜ Not started |
-| Onboarding flow | ⬜ Not started |
-| Artist tag prompt | ⬜ Not started |
-| ⚠️ Loop Colors empty brand — fix or remove | ⬜ Not started |
-| Montana Vice completeness audit | ⬜ Not started |
-| In-app review prompt | ⬜ Not started |
-| About & Support section (Profile) | ⬜ Not started |
-| Analytics — PostHog | ⬜ Not started |
-| Crash reporting — Sentry | ⬜ Not started |
-| Palette sharing / export | ⬜ Not started |
-| Accessibility pass | ⬜ Not started |
+| # | Area | Priority | Status |
+|---|---|---|---|
+| 1 | Loop Colors — fix or remove empty brand | Blocker | ✅ Done (200 colors, series wired up) |
+| 2 | Montana Vice completeness audit | Blocker | ✅ Done (50 colors is the full range) |
+| 3 | App icon / splash screen | Blocker | ✅ Done (adaptive icon + splash configured in app.json) |
+| 4 | Privacy policy (hosted URL) | Blocker | ✅ Done (https://rubenglez.github.io/spraydeck-privacy/) |
+| 5 | Store metadata + screenshots | Blocker | ⬜ Not started |
+| 6 | Onboarding flow (first-run) | High | ✅ Done |
+| 7 | Artist tag prompt (first-launch nudge) | High | ✅ Done |
+| 8 | In-app review prompt | High | ✅ Done |
+| 9 | About & Support section — Profile (Ko-fi) | Medium | ✅ Done |
+| 10 | Analytics — PostHog | Medium | ✅ Done |
+| 11 | Crash reporting — Sentry (or PostHog) | Medium | ✅ Done (PostHog global error handler) |
+| 12 | Palette sharing / export | Medium | ✅ Done |
+| 13 | Accessibility pass | Medium | ✅ Done |
+| 14 | Ironlak brand — add to PRODUCT.md, verify catalog wiring | Low | ✅ Done (catalog wired up in useCatalogStore) |

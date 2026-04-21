@@ -18,6 +18,8 @@ const colorsBySeriesId: Record<string, Color[]> = {
   'flame-blue': require('@/assets/data/flame-blue-colors.json') as Color[],
   'flame-orange': require('@/assets/data/flame-orange-colors.json') as Color[],
   hardcore: require('@/assets/data/hardcore-colors.json') as Color[],
+  ironlak: require('@/assets/data/ironlak-colors.json') as Color[],
+  loop: require('@/assets/data/loop-colors.json') as Color[],
   'montana-94': require('@/assets/data/montana-94-colors.json') as Color[],
   vice: require('@/assets/data/vice-colors.json') as Color[],
 };
