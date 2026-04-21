@@ -1,5 +1,5 @@
 import { DarkTheme, ThemeProvider } from '@react-navigation/native';
-import { PostHogProvider } from 'posthog-react-native';
+import { PostHogProvider, usePostHog } from 'posthog-react-native';
 import {
   SpaceGrotesk_400Regular,
   SpaceGrotesk_500Medium,
@@ -9,7 +9,7 @@ import {
 import { useFonts } from 'expo-font';
 import { Stack } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { BottomSheetModalProvider } from '@gorhom/bottom-sheet';
@@ -19,6 +19,29 @@ import i18n from 'i18next';
 import { Surface } from '@/constants/theme';
 import { useLanguageStore } from '@/stores/useLanguageStore';
 import '@/i18n';
+
+function CrashReporter() {
+  const posthog = usePostHog();
+  const prevHandler = useRef<((error: Error, isFatal?: boolean) => void) | null>(null);
+
+  useEffect(() => {
+    prevHandler.current = ErrorUtils.getGlobalHandler();
+    ErrorUtils.setGlobalHandler((error: Error, isFatal?: boolean) => {
+      posthog?.capture('$exception', {
+        $exception_message: error.message,
+        $exception_type: error.name,
+        $exception_stack: error.stack ?? null,
+        is_fatal: isFatal ?? false,
+      });
+      prevHandler.current?.(error, isFatal);
+    });
+    return () => {
+      if (prevHandler.current) ErrorUtils.setGlobalHandler(prevHandler.current);
+    };
+  }, [posthog]);
+
+  return null;
+}
 
 export const unstable_settings = {
   anchor: '(tabs)',
@@ -47,6 +70,7 @@ export default function RootLayout() {
       apiKey={process.env.EXPO_PUBLIC_POSTHOG_API_KEY ?? ''}
       options={{ host: 'https://us.i.posthog.com' }}
     >
+    <CrashReporter />
     <GestureHandlerRootView style={{ flex: 1, backgroundColor: Surface.lowest }}>
       <SafeAreaProvider>
         <BottomSheetModalProvider>
