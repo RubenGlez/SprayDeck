@@ -1,14 +1,20 @@
-name: Create Production Builds
+name: Production Build and Submit
+
+on:
+  push:
+    branches:
+      - main
 
 jobs:
   build_android:
-    type: build # This job type creates a production build for Android
+    type: build
     params:
       platform: android
-  # build_ios:
-  #   type: build # This job type creates a production build for iOS
-  #   params:
-  #     platform: ios
+      profile: production
 
-# To run the workflow:
-# npx eas-cli@latest workflow:run create-production-builds.yml
+  submit_android:
+    type: submit
+    needs: [build_android]
+    params:
+      platform: android
+      profile: internal
