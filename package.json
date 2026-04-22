@@ -15,7 +15,8 @@
     "catalog:fetch": "node scripts/fetch-catalog.cjs",
     "build:preview": "eas build --platform android --profile preview",
     "build:production": "eas build --platform android --profile production",
-    "submit:production": "eas submit --platform android --profile production"
+    "submit:production": "eas submit --platform android --profile production",
+    "submit:internal": "eas submit --platform android --profile internal"
   },
   "dependencies": {
     "@expo-google-fonts/space-grotesk": "^0.4.1",
