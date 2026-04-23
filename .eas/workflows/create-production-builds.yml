@@ -4,7 +4,7 @@ on:
   push:
     tags:
       - v*
-  workflow_dispatch:
+  workflow_dispatch: {}
 
 jobs:
   fingerprint:
@@ -39,6 +39,7 @@ jobs:
     if: ${{ needs.get_android_build.outputs.build_id }}
     type: update
     params:
+      platform: android
       channel: production
       message: "Production OTA from existing native build"
 
@@ -47,5 +48,6 @@ jobs:
     if: ${{ !needs.get_android_build.outputs.build_id }}
     type: update
     params:
+      platform: android
       channel: production
       message: "Production OTA after successful submit"

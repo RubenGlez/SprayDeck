@@ -9,18 +9,21 @@ SprayDeck is a React Native/Expo mobile app for street artists and graffiti writ
 ## Commands
 
 ```bash
-npm start               # Expo dev server
-npm run ios             # iOS simulator
-npm run android         # Android emulator
-npm run lint            # ESLint
-npm run type-check      # TypeScript check
-npm run check           # Both type-check and lint (run before committing)
-npm run prebuild        # Expo prebuild (clean)
-npm run clean           # Full clean (node_modules, .expo, ios, android)
-npm run build:preview   # EAS build — Android APK for device testing
-npm run build:production # EAS build — Android AAB for Play Store
-npm run submit:internal  # EAS submit — upload to Play Store internal track
-npm run submit:production # EAS submit — upload to Play Store production track
+npm start                 # Expo dev server
+npm run android           # Android emulator
+npm run ios               # iOS simulator (local dev only — publishing is Android-only)
+npm run web               # Expo dev server (web)
+npm run lint              # ESLint
+npm run type-check        # TypeScript check
+npm run check             # Both type-check and lint (run before committing)
+npm run prebuild          # Expo prebuild (clean)
+npm run clean             # Full clean (node_modules, .expo, ios, android)
+npm run catalog:fetch     # Fetch/refresh catalog data via scripts/fetch-catalog.cjs
+npm run build:preview     # EAS build — Android APK for device testing
+npm run build:production  # EAS build — Android AAB for Play Store
+npm run submit:internal   # EAS submit — upload to Play Store internal track
+npm run submit:production # EAS submit — upload to Play Store production track (manual escape hatch)
+npm run update            # EAS OTA update — push JS changes to production channel immediately
 ```
 
 No test framework is configured.
@@ -89,7 +92,8 @@ Build success/failure notifications are configured in **expo.dev → project →
 ```bash
 npm run build:preview    # Trigger a preview APK build manually
 npm run submit:internal  # Submit an existing EAS build to the internal track
-npm run submit:production # Submit an existing EAS build to the production track
+npm run submit:production # Submit an existing EAS build directly to production track (bypasses internal gate)
+npm run update           # Push a JS-only OTA update to the production channel immediately
 ```
 
 ## Architecture
@@ -124,7 +128,7 @@ All user data lives in Zustand stores with `persist()` middleware:
 
 ### Color matching
 
-`/lib/colorMatch.ts` — LAB color space similarity for "closest match" across brands. Colors need LAB values (precomputed via `npm run colors:add-lab`). The catalog JSON files live in `/data/`.
+`/lib/colorMatch.ts` — LAB color space similarity for "closest match" across brands. Colors need LAB values precomputed and stored in the catalog JSON. The catalog JSON files live in `/data/`.
 
 ### Key directories
 
