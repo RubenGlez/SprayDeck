@@ -9,5 +9,6 @@ jobs:
   ota_update:
     type: update
     params:
+      platform: android
       channel: production
       message: "OTA update from main"
