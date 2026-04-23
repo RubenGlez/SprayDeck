@@ -11,6 +11,7 @@ SprayDeck is a React Native/Expo mobile app for street artists and graffiti writ
 ```bash
 npm start                 # Expo dev server
 npm run android           # Android emulator
+npm run ios               # iOS simulator (local dev only — publishing is Android-only)
 npm run web               # Expo dev server (web)
 npm run lint              # ESLint
 npm run type-check        # TypeScript check
